@@ -62,7 +62,7 @@ const config = {
     },
     tg: {
         appDefaultTg: '***REMOVED***', // bot id for app errors https://t.me/trusteeV20ProdAppErrorsBot
-        trusteeCore: ['272629139', '121249105', '231261669']
+        trusteeCore: ['272629139', '121249105']
     },
 }
 
