@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Gravy Wallet</string>
     <string name="rnsb_sync_account_type" translatable="false">com.trusteewallet</string>
     <string name="rnsb_content_authority" translatable="false">com.trusteewallet.provider</string>
     <string name="rnsb_allow_foreground">true</string>
