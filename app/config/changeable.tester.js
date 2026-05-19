@@ -5,10 +5,10 @@ const changeable = {
     tg: {
         info: {
             version: 'v9_tester VERSION_CODE_PLACEHOLDER COMMIT_SHORT_SHA_PLACEHOLDER',
-            theBot: '***REMOVED***', // bot id for app errors https://t.me/trusteeV20TestsAppErrorsBot
-            spamBot: '***REMOVED***', // bot id for app spam messages aka statistics https://t.me/trusteeV20ProdSpamBot
-            appErrorsChannel: '***REMOVED***', // trusteeTestErrors
-            cryptoErrorsChannel: '***REMOVED***', // trusteeTestErrors
+            theBot: '', // bot id for app errors https://t.me/trusteeV20TestsAppErrorsBot
+            spamBot: '', // bot id for app spam messages aka statistics https://t.me/trusteeV20ProdSpamBot
+            appErrorsChannel: '', // trusteeTestErrors
+            cryptoErrorsChannel: '', // trusteeTestErrors
             isTester: true // show in info as tester
         }
     }
