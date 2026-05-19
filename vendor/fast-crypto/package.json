@@ -1,0 +1,49 @@
+{
+  "name": "react-native-fast-crypto",
+  "version": "2.2.0",
+  "description": "Native C/C++ implemented crypto libraries for React Native apps",
+  "keywords": [
+    "react-native",
+    "scrypt",
+    "fast",
+    "native"
+  ],
+  "homepage": "https://github.com/EdgeApp/react-native-fast-crypto",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:EdgeApp/react-native-fast-crypto.git"
+  },
+  "license": "MIT",
+  "author": "Edge",
+  "contributors": [
+    "Paul Puey <paul@edge.app>",
+    "William Swanson <william@edge.app>"
+  ],
+  "main": "index.js",
+  "files": [
+    "/android/build.gradle",
+    "/android/jni/*",
+    "/android/src/*",
+    "/CHANGELOG.md",
+    "/index.js",
+    "/ios/*",
+    "/package.json",
+    "/react-native-fast-crypto.podspec",
+    "/README.md"
+  ],
+  "scripts": {
+    "build-secp256k1": "./build-secp256k1.sh",
+    "fix-android": "(cd android; ./format-java.sh)",
+    "fix": "prettier --write index.js"
+  },
+  "dependencies": {
+    "buffer": "^5.0.8",
+    "rfc4648": "^1.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.47.0 <1.0.0"
+  }
+}
