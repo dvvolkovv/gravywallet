@@ -94,8 +94,8 @@ export default new class AppNotificationPopup {
             await Log.log('AppNotificationPopup._display channel creating ' + Platform.OS)
             const channelId = await notifee.createChannel({
                 id: 'trusteeWalletChannel',
-                name: 'Trustee wallet channel',
-                description: 'Trustee wallet channel for notifications',
+                name: 'Gravy wallet channel',
+                description: 'Gravy wallet channel for notifications',
                 badge: true,
                 importance: 4, // (optional) default: 4. Int value of the Android notification importance
                 vibration: true // (optional) default: true. Creates the default vibration patten if true.
