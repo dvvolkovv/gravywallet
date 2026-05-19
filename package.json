@@ -82,7 +82,6 @@
     "react-native-awesome-card-io": "^0.9.1",
     "react-native-background-timer": "^2.4.1",
     "react-native-blocksoft-random": "git+https://git@github.com/trustee-wallet/react-native-blocksoft-random",
-    "react-native-branch": "6.0.0",
     "react-native-collapsible": "^1.6.1",
     "react-native-date-picker": "^4.4.2",
     "react-native-device-info": "^10.13.1",

@@ -18,7 +18,7 @@ import com.facebook.react.bridge.ReactApplicationContext
 import java.util.Collections
 import java.util.List
 
-import io.branch.rnbranch.RNBranchModule
+// Branch.io removed — deep links via gravy:// scheme only
 
 class MainApplication : Application(), ReactApplication {
   override val reactNativeHost: ReactNativeHost =
@@ -48,6 +48,6 @@ class MainApplication : Application(), ReactApplication {
       load()
     }
     ReactNativeFlipper.initializeFlipper(this, reactNativeHost.reactInstanceManager)
-    RNBranchModule.getAutoInstance(this)
+    // Branch.io removed
   }
 }

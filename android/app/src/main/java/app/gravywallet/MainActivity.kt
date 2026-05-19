@@ -8,7 +8,6 @@ import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnable
 import com.facebook.react.defaults.DefaultReactActivityDelegate
 
 import org.devio.rn.splashscreen.SplashScreen
-import io.branch.rnbranch.*
 import android.content.Intent
 
 class MainActivity : ReactActivity() {
@@ -27,20 +26,14 @@ class MainActivity : ReactActivity() {
         getWindow().clearFlags(WindowManager.LayoutParams.FLAG_SECURE)
     }
 
-    /**
-     * https://help.branch.io/developers-hub/docs/react-native
-     */
     override protected fun onStart() {
         super.onStart()
-        RNBranchModule.initSession(getIntent().getData(), this)
+        // Branch.io removed — deep links handled via gravy:// scheme
     }
 
-    /**
-     * https://help.branch.io/developers-hub/docs/react-native
-     */
     override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
-        RNBranchModule.onNewIntent(intent)
+        // Branch.io removed
     }
 
     /**
