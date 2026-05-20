@@ -35,7 +35,6 @@ import { setLoaderStatus } from '@app/appstores/Stores/Main/MainStoreActions'
 import { BlocksoftTransfer } from '@crypto/actions/BlocksoftTransfer/BlocksoftTransfer'
 import config from '@app/config/config'
 
-import { getCashBackLinkFromDataAPi } from '@app/appstores/Stores/CashBack/selectors'
 import BlocksoftPrettyStrings from '@crypto/common/BlocksoftPrettyStrings'
 
 class SolStakingTransactionScreen extends PureComponent {
@@ -69,7 +68,6 @@ class SolStakingTransactionScreen extends PureComponent {
 
         shareOptions.message += `https://explorer.solana.com/address/${this.state.element.stakeAddress}\n`
 
-        shareOptions.message += `\n${ strings('account.transactionScreen.cashbackLink')} ${this.props.cashBackData.cashbackLink}\n`
 
         prettyShare(shareOptions, 'solana_share_stakedAddress')
     }
@@ -274,7 +272,6 @@ SolStakingTransactionScreen.contextType = ThemeContext
 
 const mapStateToProps = (state) => {
     return{
-        cashBackData: getCashBackLinkFromDataAPi(state),
     }
 }
 

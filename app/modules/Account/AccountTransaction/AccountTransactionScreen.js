@@ -36,7 +36,6 @@ import CustomIcon from '@app/components/elements/CustomIcon'
 import HeaderTx from './elements/Header'
 
 import { getSelectedAccountData, getSelectedCryptoCurrencyData, getSelectedWalletData } from '@app/appstores/Stores/Main/selectors'
-import { getCashBackLinkFromDataAPi } from '@app/appstores/Stores/CashBack/selectors'
 import { getVisibleCurrencies } from '@app/appstores/Stores/Currency/selectors'
 import { HIT_SLOP } from '@app/theme/HitSlop'
 
@@ -517,7 +516,6 @@ const mapStateToProps = (state) => {
         selectedWallet: getSelectedWalletData(state),
         cryptoCurrency: getSelectedCryptoCurrencyData(state),
         account: getSelectedAccountData(state),
-        cashBackData: getCashBackLinkFromDataAPi(state),
         cryptoCurrencies: getVisibleCurrencies(state),
     }
 }

@@ -45,7 +45,6 @@ import { handleReceive, handleSend, handleHide, handleLateRefresh, getBalanceDat
 import trusteeAsyncStorage from '@appV2/services/trusteeAsyncStorage/trusteeAsyncStorage'
 import { getAccountList } from '@app/appstores/Stores/Account/selectors'
 import { strings } from '@app/services/i18n'
-import { getCashBackData } from '@app/appstores/Stores/CashBack/selectors'
 
 import SheetBottom from '@app/components/elements/SheetBottom/SheetBottom'
 import walletConnectActions from '@app/appstores/Stores/WalletConnect/WalletConnectStoreActions'
@@ -330,7 +329,6 @@ const mapStateToProps = (state) => {
         currencies: getVisibleCurrencies(state),
         isBalanceVisible: getIsBalanceVisible(state.settingsStore),
         sortValue: getSortValue(state),
-        cashbackStore: getCashBackData(state),
         accountList: getAccountList(state),
         homeFilterWithBalance: getHomeFilterWithBalance(state)
     }

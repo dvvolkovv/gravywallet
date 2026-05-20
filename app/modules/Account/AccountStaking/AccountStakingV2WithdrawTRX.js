@@ -18,7 +18,6 @@ import Input from '@app/components/elements/NewInput'
 import InputAndButtonsPartBalanceButton from '@app/modules/Send/elements/InputAndButtonsPartBalanceButton'
 import CustomIcon from '@app/components/elements/CustomIcon'
 
-import { getCashBackData } from '@app/appstores/Stores/CashBack/selectors'
 import { getSelectedAccountData, getSelectedWalletData } from '@app/appstores/Stores/Main/selectors'
 
 import BlocksoftPrettyNumbers from '@crypto/common/BlocksoftPrettyNumbers'
@@ -363,7 +362,6 @@ AccountStakingWithdrawTRX.contextType = ThemeContext
 
 const mapStateToProps = (state) => {
     return {
-        cashbackStore: getCashBackData(state),
         selectedWallet: getSelectedWalletData(state),
         account: getSelectedAccountData(state)
     }

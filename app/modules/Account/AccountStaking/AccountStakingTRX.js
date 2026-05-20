@@ -13,7 +13,6 @@ import { ThemeContext } from '@app/theme/ThemeProvider'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 import { showModal } from '@app/appstores/Stores/Modal/ModalActions'
-import { getCashBackData } from '@app/appstores/Stores/CashBack/selectors'
 import { getSelectedAccountData, getSelectedWalletData, getStakingCoins } from '@app/appstores/Stores/Main/selectors'
 
 import { strings } from '@app/services/i18n'
@@ -536,7 +535,6 @@ AccountStakingTRX.contextType = ThemeContext
 
 const mapStateToProps = (state) => {
     return {
-        cashbackStore: getCashBackData(state),
         selectedWallet: getSelectedWalletData(state),
         account: getSelectedAccountData(state),
         stakingCoins: getStakingCoins(state)
