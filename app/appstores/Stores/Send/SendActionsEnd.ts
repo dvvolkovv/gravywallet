@@ -15,7 +15,6 @@ import ApiRates from '@app/services/Api/ApiRates'
 import MarketingEvent from '@app/services/Marketing/MarketingEvent'
 import transactionActions from '@app/appstores/Actions/TransactionActions'
 
-import ApiV3 from '@app/services/Api/ApiV3'
 import { recordFioObtData } from '@crypto/blockchains/fio/FioUtils'
 
 import TransactionFilterTypeDict from '@appV2/dicts/transactionFilterTypeDict'
@@ -52,12 +51,6 @@ const logSendSell = async function(transaction: any, tx: any, logData: any, send
     }
     logData.bseOrderId = bseOrderId.toString()
 
-    const params = {
-        transactionHash: transaction.transactionHash,
-        orderHash: bseOrderId,
-        status: 'SUCCESS'
-    }
-    ApiV3.setExchangeStatus(params)
 
 
     // https://rnfirebase.io/reference/analytics#logPurchase
@@ -185,11 +178,7 @@ export namespace SendActionsEnd {
             })
         } else if (uiType === 'TRADE_LIKE_WALLET_CONNECT') {
             setBseLink(null)
-            const params = {
-                transactionHash: tx.transactionHash,
-                nonce: tx?.transactionJson?.nonce
-            }
-            await endClose(sendScreenStore, params)
+            await endClose(sendScreenStore)
             NavStore.goBack()
         } else {
             // fio request etc - direct to receipt
@@ -198,15 +187,11 @@ export namespace SendActionsEnd {
 
     }
 
-    export const endClose = async (sendScreenStore : any, params : any = false) => {
-        const { bse, extraData, walletConnectPayload, uiType } = sendScreenStore.ui
-        const { bseOrderId } = bse
-        const data = { extraData, ...params, orderHash: bseOrderId, status: 'CLOSE' }
+    export const endClose = async (sendScreenStore : any) => {
+        const { walletConnectPayload, uiType } = sendScreenStore.ui
         if (uiType === 'WALLET_CONNECT') {
             await walletConnectActions.rejectRequest(walletConnectPayload)
         }
-        if (typeof bseOrderId === 'undefined' || !bseOrderId) return
-        return ApiV3.setExchangeStatus(data)
     }
 
     export const saveTx = async (tx: any, sendScreenStore: any) => {

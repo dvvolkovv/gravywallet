@@ -12,7 +12,6 @@ import { sublocale } from '@app/services/i18n'
 import MarketingEvent from '@app/services/Marketing/MarketingEvent'
 import CashBackUtils from '@app/appstores/Stores/CashBack/CashBackUtils'
 import AppNotificationListener from '@app/services/AppNotification/AppNotificationListener'
-import ApiV3 from '@app/services/Api/ApiV3'
 import settingsActions from '@app/appstores/Stores/Settings/SettingsActions'
 import appNewsDS from '@app/appstores/DataSource/AppNews/AppNews'
 import customCurrencyDS from '@app/appstores/DataSource/CustomCurrency/CustomCurrency'
@@ -102,7 +101,7 @@ async function _getAll(params) {
         }
     }
 
-    walletAll = await ApiV3.initWallet({ walletHash }, 'ApiProxy')
+    walletAll = false
 
     if (!CACHE_SENT_FIRST_SKIP) {
 

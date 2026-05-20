@@ -22,7 +22,6 @@ import NavStore from '@app/components/navigation/NavStore'
 
 import Log from '@app/services/Log/Log'
 import { strings } from '@app/services/i18n'
-import ApiV3 from '@app/services/Api/ApiV3'
 import trusteeAsyncStorage from '@appV2/services/trusteeAsyncStorage/trusteeAsyncStorage'
 import prettyShare from '@app/services/UI/PrettyShare/PrettyShare'
 
@@ -302,17 +301,6 @@ export function renderReplaceByFee(array) {
             }
             try {
                 setLoaderStatus(true)
-                const disable = await ApiV3.getTBKDisable(transaction.transactionHash)
-                if (disable) {
-                    showModal({
-                        type: 'INFO_MODAL',
-                        icon: null,
-                        title: strings('modal.titles.attention'),
-                        description: strings('modal.send.noTBKprovider')
-                    })
-                    setLoaderStatus(false)
-                    return false
-                }
                 try {
                     await SendActionsStart.startFromTransactionScreenBoost(account, transaction)
                 } catch (e) {
