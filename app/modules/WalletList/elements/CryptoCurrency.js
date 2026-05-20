@@ -149,7 +149,7 @@ class CryptoCurrency extends React.PureComponent {
                     <RoundButton
                         type="receive"
                         containerStyle={styles.hiddenLayer__roundButton}
-                        onPress={() => handleCurrencySelect(this.props, 'CashbackScreen', this.bottomSheetRef)}
+                        onPress={() => handleCurrencySelect(this.props, 'HomeScreen', this.bottomSheetRef)}
                         noTitle
                     />
                 </View>

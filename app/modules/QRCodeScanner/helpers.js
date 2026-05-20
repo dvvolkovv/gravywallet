@@ -77,9 +77,8 @@ export const finishProcess = async (_param, qrCodeScannerConfig) => {
         }
         if (callback) {
             await callback(qrData)
-        } else {
-            NavStore.goNext('CashbackScreen', { qrData })
         }
+        // CashbackScreen removed (Plan B prune); cashback links now no-op when no callback present
         return
     }
 

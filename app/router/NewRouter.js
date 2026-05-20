@@ -74,7 +74,6 @@ import ScannerSettingsScreen from '@app/modules/Settings/Subsettings/ScannerSett
 import LoggingSettingsScreen from '@app/modules/Settings/Subsettings/LoggingSettingsScreen'
 import NotificationsSettingScreen from '@app/modules/Settings/Subsettings/NotificationsScreen'
 
-import CashbackScreen from '@app/modules/Cashback/CashbackScreen'
 import BotSupportScreen from '@app/modules/Support/botSupport'
 import StreamSupportScreen from '@app/modules/Support/streamSupport'
 
@@ -289,14 +288,6 @@ const TabBar = () => {
                             console.log('pressed')
                         }
                     }
-                }}
-            />
-            <Tab.Screen
-                name='CashbackScreen'
-                component={CashbackScreen}
-                options={{
-                    tabBarLabel: strings('dashboardStack.earn'),
-                    tabBarIcon: ({ color }) => <CustomIcon name='earn' color={color} size={22} style={{ marginBottom: 3 }} />
                 }}
             />
             {BlocksoftExternalSettings.getStatic('ROCKET_CHAT_USE') * 1 > 0 ? (
