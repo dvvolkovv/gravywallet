@@ -40,7 +40,6 @@
   },
   "tradeScreen": {
     "modalError": {
-      "selectPhoto": "აირჩიეთ ბარათის ფოტო გალერეადან",
       "serviceUnavailable": "სერვისი მიუწვდომელია. გთხოვთ, სცადოთ მოგვიანებით",
       "qrNotFoundInFile": "QR-კოდი არ მოიძებნა, გთხოვთ, გადატვირთოთ ფაილი."
     }
@@ -332,110 +331,9 @@
     "description": "მხარდაჭერილია Ethereum-ისა (ETH) და Tron-ის (TRX)  ტოკენების / აქტივების მისამართები",
     "add": "დამატება"
   },
-  "nftMainScreen": {
-    "assets": "Assets",
-    "receiveText": "Send only {coin} to this address. Sending another coin may result in permanent lost",
-    "emptyNftText": "You don’t have any NFT yet. But you can get it now.",
-    "proof": "Proof ownership",
-    "info": "Info",
-    "all": "All",
-    "collections": "Collections",
-    "receive": "Receive",
-    "title": "NFT",
-    "titleQR": "Scan QR-code with Trustee",
-    "signing": "Signature is creating, please wait - it only proofs that the current Address owns this NFT, so its secure to share with anyone",
-    "signed": "Signature only proofs that the current Address owns this NFT, so its secure to share with anyone",
-    "status": "Status",
-    "contract": "Collection contract",
-    "contractSchema": "Schema",
-    "tokenId": "Token ID",
-    "tokenQty": "Qty",
-    "blockchain": "Blockchain",
-    "address": "Owned by address",
-    "ownershipProved": "Ownership proved",
-    "ownershipNotProved": "Ownership not proved",
-    "checking": "Checking...",
-    "turnBasicAsset": "For NFT transfer you need add {asset} as it is used for transfer fee"
-  },
-  "nftAddAssetScreen": {
-    "title": "Add NFT Asset",
-    "addCustomLabel": "You can add a standard NFT token developed on Ethereum, BNB Smart Chain, Matic blockchains or on Ropsten, Rinkeby Testnet. Please enter or scan a new token / asset address.",
-    "addCustomLabelOpenSea": "Ethereum tokens could be added by OpenSea ",
-    "addCustomPlaceholder": "NFT Asset Address",
-    "addAssetButton": "Add asset"
-  },
   "cashback": {
-    "invite": "Invite:",
-    "cashback": "Cashback",
-    "cpa": "CPA",
-    "pageTitle": "Earn",
-    "pageSubtitle": "Earn to 30% from the commission with Trustee Wallet!",
-    "shareButton": "გაზიარება",
-    "promoButton": "შეიყვანეთ პრომო კოდი",
-    "detailsButton": "დეტალები",
-    "enterPromoPlaceholder": "შეიყვანეთ პრომო კოდი",
-    "enterInviteLinkPlaceholder": "შეიყვანე მოსაწვევი ბმული",
-    "applyButton": "დადასტურება",
-    "wholeBalance": "Balance for the whole time",
-    "availableCashBack": "საერთო ბალანსი",
     "balanceTitle": "Balance",
-    "toWithdraw": "Min. withdraw amount:",
-    "cpaTotal": "Total CPA",
-    "cpaLevel1": "CPA Level 1",
-    "cpaLevel2": "CPA Level 2",
-    "cpaLevel3": "CPA Level 3",
-    "cashbackToken": "ტოკენი",
-    "yourToken": "Your cashback link",
-    "cashbackMessage": "Get Cashback for your exchange transactions. Earn Crypto with Affiliate Program and CPA by recommending Trustee Wallet!",
-    "howItWorks": {
-      "title": "როგორ მუშაობს?",
-      "info1Title": "არსებობს Trustee Wallet-ში მომხმარებელთა დაჯილდოების პროგრამა?",
-      "info1Content": "პროგრამა შედგება ქეშბექისგან და ორდონიანი პარტნიორული პროგრამისგან, რაც, საბოლოო ჯამში, იძლევა მოწვეული მოხმარებელების მიერ  კრიპტოვალუტების ყიდვა-გაყიდვიდან გამომდინარე Trustee-ს საკომისიოდან 30%-ის მიღების საშუალებას.",
-      "info2Title": "როგორ გავააქტიურო ქეშბექი?",
-      "info2Content": "გასააქტიურებლად, თქვენ უნდა მოიწვიოთ ერთი ახალი მომხმარებელი თქვენი ბრუნვის ბმულის გამოყენებით. გააქტიურების შემდეგ, თქვენ მიიღებთ მეურვის კომისიის 10% -ს თქვენი ბირჟებიდან. ეს ფუნქცია გააქტიურებულია სამუდამოდ!",
-      "info3Title": "როგორია პარტნიორული პროგრამების პირობები?",
-      "info3Content": "დონე №1 – 10% Trustee-ს საკომისიოდან, რომელიც მიიღება მოწვეული მომხმარებელების მიერ კრიპტოვალუტების ყიდვა-გაყიდვიდან გამომდინარე (აქტიურდება პირველი პარტნიორიდან). რაც მეტი ადამიანი დააყენებს საფულეს თქვენი ბმულის საშუალებით, მით მეტი იქნება თქვენი შემოსავალი. დონე №2 – აქტიურდება კვირაში სტრუქტურის 5000 USDT -იანი ბრუნვის გადაჭარბების შემთხვევაში და იძლევა Trustee -ს საკომოსიოდან 10%-ის მიღების საშუალებას 2-ე დონის მომხმარებლებიდან (თქვენი პარტნიორების პარტნიორები).",
-      "info4Title": "როგორ გავიტანოთ ქეშბექი და პარტნიორული ანაზღაურება?",
-      "info4Content": "გატანის მინიმალური ოდენობა- 2 USDT",
-      "info5Title": "Who can access the CPA program?",
-      "info5Content": "We value each user and are happy to reward them for effective actions to popularize Trustee Wallet. Each Trustee user automatically becomes a member of the CPA program.",
-      "info6Title": "How does the CPA program work?",
-      "info6Content": "For each new active installation of the application using your cashback link (when the invited user has made at least one purchase of cryptocurrencies from any bank card), the program participant receives a one-time reward.",
-      "info7Title": "What are the awards for the CPA program?",
-      "info7Content": "Level 1\nThe first purchase is up to $100. Reward - $2\n\nLevel 2\nThe amount of the first purchase is $100-$500. Reward - $5\n\nLevel 3\nThe first purchase is over $500. Reward - $10",
-      "info8Title": "How can invite users to Trustee?",
-      "info8Content": "Recommend Trustee Wallet to your friends and colleagues using your cashback link. You can use all types of traffic for inviting users: Contextual advertising, Email-mailing, advertising in social networks, Teaser networks, YouTube channels. More information on the link.",
-      "info9Title": "How can I withdraw CPA rewards?",
-      "info9Content": "The minimum withdrawal amount is 100 USDT"
-    },
-    "invitedBy": "მოწვეულია",
-    "mainTitle": "მოიწვიე შენი მეგობრები - მიიღეთ ფულადი თანხა!",
-    "mainDescription": "მოიწვიე მეგობარი შენი ბმულის გამოყენებით და დაიწყე 10% ფულადი სახსრების მიღება თქვენი გაცვლის საკომისიოდან! რწმუნებული უბრუნებს 30% –მდე საკომისიოს თავის მომხმარებლებს!",
-    "shareText": "გაზიარება",
-    "more": "მეტი",
-    "shareTitle": "",
-    "shareMessage": "",
-    "friendsJoined": "თქვენი მეგობრები",
-    "updated": "Updated at",
-    "transAmount": "ტრანზაქციების რაოდენობა",
-    "level2UsersAmount": "მეგობრების მეგობრები",
-    "cashbackError": {
-      "title": "ვერ მოხერდა მონაცემთა მიღება",
-      "UI_ERROR_CASHBACK_NETWORK_ERROR": "არ არის კავშირი ინტერნეტთან",
-      "UI_ERROR_CASHBACK_SIGN_ERROR": "არასწორი ხელმოწერა საცავში - გთხოვთ, კიდევ ერთხელ შეხვიდეთ ქეშბექის განყოფილებაში",
-      "UI_ERROR_CASHBACK_TIME_ERROR": "მოწყობილობის არასწორი თარიღი და დრო",
-      "UI_ERROR_CASHBACK_TIME_ERROR_LOG": "სერვისმა შესაძლოა, არ იმუშაოს არასტაბილური ინტერნეტის არსებობის შედეგად ან თქვენს მობილურ მოწყობილობაზე არასწორი თარიღის და დროის დაფიქსირების შემთხვევაში. ",
-      "UI_ERROR_CASHBACK_PROMO_DUPLICATE": "პრომოკოდი უკვე გამოყენებულია",
-      "UI_ERROR_CASHBACK_PROMO_NOT_FOUND": "პრომოკოდი არ მოიძებნა"
-    },
-    "cashbackAmount": "ქეშბექის რაოდენობა",
-    "setParentToken": "მოსაწვევი ბმულის დაყენება",
-    "hasParentToken": "მოწვეულია {cashbackParentToken}",
-    "inputParentCashbackLink": "https://trustee.deals/link/example",
-    "withdraw": "თანხის გატანა",
-    "minWithdraw": "მინიმალური თანხა გასატანად",
-    "performWithdraw": "To withdraw your reward, contact our support and provide your cashback link and Tron (TRX) address from the app",
-    "withdrawSupport": "Support"
+    "updated": "Updated at"
   },
   "account": {
     "staking": "Staking",
@@ -624,96 +522,13 @@
       "transactionAmount": "{currencyCode} amount"
     }
   },
-  "fioMainSettings": {
-    "title": "FIO პარამეტრები",
-    "description": "გააკონტროლეთ ყველა შესაძლო FIO პარამეტრი",
-    "sendFioRequest": "FIO მოთხოვნის გაგზავნა",
-    "sendFioRequestDesc": "FIO მოთხოვნების გაგზავნა",
-    "fioRequest": "FIO მოთხოვნები",
-    "fioRequestDesc": "ყველა აქტიური ლოდინის რეჟმში მყოფი/გაგზავნილი FIO მოთხოვნების სია",
-    "fioAddresses": "FIO მისამართები",
-    "fioAddressesDesc": "ყველა დარეგისტრირებული FIO მისამართები და მათი ოფციები",
-    "registerFioAddress": "FIO მისამართის დარეგისტრირება",
-    "registerFioAddressDesc": "დაარეგისტრირეთ FIO მისამართი"
-  },
-  "FioChooseRecipient": {
-    "title": "აირჩიეთ FIO მიმღები",
-    "description": "შეიყვანეთ მიმღების FIO, ENS ან საჯარო მისამართი",
-    "btnText": "აირჩიე FIO"
-  },
-  "FioChooseAddress": {
-    "title": "აირჩიე FIO მისამართი",
-    "description": "შეიყვანე მისამართი, რომ მოითხოვო გადახდა მომხმარებლიდან",
-    "btnText": "აირჩიე FIO მისამართი"
-  },
-  "FioAddresses": {
-    "title": "FIO მისამართები",
-    "btnText": "დაარეგისტრირეთ მისამართი",
-    "WebViewTitle": "დაარეგისტრირეთ მისამართი"
-  },
-  "FioSettings": {
-    "title": "FIO პარამეტრები",
-    "description": "აირჩიეთ საფულე, რომელიც გინდათ მიაბათ საკუთარ FIO მისამართს",
-    "Expire": "დრო იწურება",
-    "connectAllWallets": "ყველა საფულის მიბმა",
-    "btnText": "შენახვა",
-    "noFioTitle": "თქვენ უნდა დაარეგისტრიროთ FIO მისამართი",
-    "noFioDescription": "FIO მისამართი დარეგისტრირებული არაა",
-    "noFioBtn": "დაარეგისტრირეთ FIO მისამართი",
-    "serviceUnavailable": "სერივის მიუწვდომელია. გთხოვთ, სცადოთ მოგვიანებით"
-  },
-  "FioSendRequest": {
-    "title": "FIO მოთხოვნის გაგზავნა",
-    "selectCoin": "ვალუტის არჩევა",
-    "from": "მოთხოვნის გაგზავნა მომხმარებლიდან",
-    "to": "მოთხოვნის გაგზავნა მომხმარებლისთვის",
-    "amount": "რაოდენობა",
-    "memo": "კომანტარები",
-    "btnText": "შექმნა",
-    "created": "FIO მოთხოვნა შექმნილია",
-    "fioSettings": "FIO პარამეტრები",
-    "registerFioAddress": " FIO მისამართის დარეგისტრირება",
-    "noCoinSelected": "შეარჩიეთ ვალუტა, რომლისთვისაც უნდა შეიქმნას მოთხოვნა",
-    "goToFioSettings": "გადადით FIO პარამეტრებში, FIO მისამართზე ვალუტის მისაბმელად",
-    "needRegisterFio": "ჯერ უნდა დაარეგისტრიროთ FIO მისამართი"
-  },
-  "FioRequestsList": {
-    "title": "FIO მოთხოვნების სია",
-    "pendingRequests": "მოთხოვნები ლოდინის რეჟიმში",
-    "sentRequests": "გაგზავნილი მოთხოვნები",
-    "RequestedTxt": "მოთხოვნილია"
-  },
   "FioRequestDetails": {
-    "title": " FIO მოთხოვნის დეტალები",
-    "reqCreated": "მოთხოვნა შექმნილია",
-    "sentTitle": "მიღება ჩემს",
-    "pendingTitle": "გაგზავნა ჩემი",
-    "balance": "ბალანსი",
-    "fee": "საკომისიო",
-    "to": " to ",
-    "from": " from ",
-    "memo": "FIO კომენტარები",
-    "amount": "რაოდენობა",
-    "btnTextReject": "უარყოფა",
-    "btnTextConfirm": "დადასტურება"
+    "balance": "ბალანსი"
   },
   "exchange": {
     "mainData": {
       "amount": "ჯამი"
     }
-  },
-  "card": {
-    "title": "ახალი ბარათი",
-    "description": "ახალი ბარათის დასამატებლად დაასკანერეთ ის, ან ჩაწერეთ მონაცემები ხელით ",
-    "instructions": "მოათავსეთ ბარათი \n მართკუთხედში.",
-    "attention": "გთხოვთ, იყოთ ყურადღებით. შეეცადეთ, არ დაუშვათ შეცდომები.",
-    "add": "დამატება",
-    "numberTitleInput": "ბარათის ნომერი",
-    "dateTitleInput": "თვე/წელი",
-    "cardCurrency": "აირჩიეთ ბარათის ქვეყანა...",
-    "cardName": "დაარქვით სახელი ბარათს",
-    "noName": "სახელის გარეშე",
-    "country": "ქვეყანა:"
   },
   "qrScanner": {
     "title": "QR-code სკანირება",
@@ -1046,10 +861,8 @@
     "sell": "გაყიდვა",
     "wallet": "საფულე",
     "exchange": "გაცვლა",
-    "earn": "შოვნა",
     "settings": "მეტი",
-    "support": "მხარდაჭერა",
-    "market": "Swap"
+    "support": "მხარდაჭერა"
   },
   "modal": {
     "titles": {
@@ -1592,16 +1405,6 @@
       "currencyCode": "UAH",
       "currency": "უკრაინული გრივნა"
     }
-  },
-  "streamSupport": {
-    "sendDocs": "Send docs",
-    "sendLogs": "Send logs",
-    "takePhoto": "Take photo",
-    "chooseFromLibrary": "Choose from gallery",
-    "noMessages": "No messages yet",
-    "sentFile": "File sent",
-    "getRoomError": "Load messages error",
-    "sendMessageError": "Unstable network connection when sending a message"
   },
   "support": {
     "title": "მხარდაჭერა",

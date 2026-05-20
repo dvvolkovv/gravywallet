@@ -40,7 +40,6 @@
   },
   "tradeScreen": {
     "modalError": {
-      "selectPhoto": "Please, select photo from gallery",
       "serviceUnavailable": "Service unavailable. Please, try again later",
       "qrNotFoundInFile": "QR-code not found, please, try to reload file"
     }
@@ -334,110 +333,9 @@
     "description": "Ethereum (ETH) and Tron (TRX) token/asset addresses are supported",
     "add": "Add"
   },
-  "nftMainScreen": {
-    "assets": "Assets",
-    "receiveText": "Send only {coin} to this address. Sending another coin may result in permanent lost",
-    "emptyNftText": "You don’t have any NFT yet. But you can get it now.",
-    "proof": "Proof of ownership",
-    "info": "Info",
-    "all": "All",
-    "collections": "Collections",
-    "receive": "Receive",
-    "title": "NFT",
-    "titleQR": "Scan QR-code with Trustee",
-    "signing": "Signature is creating, please wait - it only proofs that the current Address owns this NFT, so its secure to share with anyone",
-    "signed": "Signature only proofs that the current Address owns this NFT, so its secure to share with anyone",
-    "status": "Status",
-    "contract": "Collection contract",
-    "contractSchema": "Schema",
-    "tokenId": "Token ID",
-    "tokenQty": "Qty",
-    "blockchain": "Blockchain",
-    "address": "Owned by address",
-    "ownershipProved": "Ownership proved",
-    "ownershipNotProved": "Ownership not proved",
-    "checking": "Checking...",
-    "turnBasicAsset": "For NFT transfer you need add {asset} as it is used for transfer fee"
-  },
-  "nftAddAssetScreen": {
-    "title": "Add NFT Asset",
-    "addCustomLabel": "You can add a standard NFT token developed on Ethereum, BNB Smart Chain, Matic blockchains or on Ropsten, Rinkeby Testnet. Please enter or scan a new token / asset address.",
-    "addCustomLabelOpenSea": "Ethereum tokens could be added by OpenSea ",
-    "addCustomPlaceholder": "NFT Asset Address",
-    "addAssetButton": "Add asset"
-  },
   "cashback": {
-    "invited": "Invited:",
-    "cashback": "Cashback",
-    "cpa": "CPA",
-    "pageTitle": "Earn",
-    "pageSubtitle": "Earn to 30% from the commission with Trustee Wallet!",
-    "shareButton": "Share",
-    "promoButton": "Enter Promo Code",
-    "detailsButton": "Details",
-    "enterPromoPlaceholder": "Enter Promo Code",
-    "enterInviteLinkPlaceholder": "Enter invite link",
-    "applyButton": "Apply",
-    "wholeBalance": "Balance for the all time",
-    "availableCashBack": "Total balance",
     "balanceTitle": "Balance",
-    "toWithdraw": "Min. withdraw amount:",
-    "cpaTotal": "Total CPA",
-    "cpaLevel1": "CPA Level 1",
-    "cpaLevel2": "CPA Level 2",
-    "cpaLevel3": "CPA Level 3",
-    "cashbackToken": "Token",
-    "yourToken": "Your cashback link",
-    "cashbackMessage": "Get Cashback for your exchange transactions. Earn Crypto with Affiliate Program and CPA by recommending Trustee Wallet!",
-    "howItWorks": {
-      "title": "How does it work?",
-      "info1Title": "Does Trustee Wallet have a user rewards program?",
-      "info1Content": "The program consists of cashback and a two-tier affiliate program, which ultimately allows you to receive up to 30% of Trustee commissions for purchases and sales of cryptocurrencies by invited users",
-      "info2Title": "How do I activate cashback?",
-      "info2Content": "To activate, you need to invite one new user using your cashback link. After activation, you will receive 10% of the Trustee's commission from your exchanges. This feature is activated forever!",
-      "info3Title": "What are the conditions of the affiliate program?",
-      "info3Content": "Level 1 – 10% of the Trustee commission for purchases and sales of cryptocurrencies by invited users (activated from the first partner). The more friends install the wallet using your link, the more your income will be. Level 2 - activated when the structure's turnover exceeds 5000 USDT per week and will allow you to receive 10% of Trustee commissions from 2nd level users (partners of your partners).",
-      "info4Title": "How to withdraw cashback and affiliate rewards?",
-      "info4Content": "The minimum withdrawal amount is 2 USDT",
-      "info5Title": "Who can access the CPA program?",
-      "info5Content": "We value each user and are happy to reward them for effective actions to popularize Trustee Wallet. Each Trustee user automatically becomes a member of the CPA program.",
-      "info6Title": "How does the CPA program work?",
-      "info6Content": "For each new active installation of the application using your cashback link (when the invited user has made at least one purchase of cryptocurrencies from any bank card), the program participant receives a one-time reward.",
-      "info7Title": "What are the awards for the CPA program?",
-      "info7Content": "Level 1\nThe first purchase is up to $100. Reward - $2\n\nLevel 2\nThe amount of the first purchase is $100-$500. Reward - $5\n\nLevel 3\nThe first purchase is over $500. Reward - $10",
-      "info8Title": "How can invite users to Trustee?",
-      "info8Content": "Recommend Trustee Wallet to your friends and colleagues using your cashback link. You can use all types of traffic for inviting users: Contextual advertising, Email-mailing, advertising in social networks, Teaser networks, YouTube channels. More information on the link.",
-      "info9Title": "How can I withdraw CPA rewards?",
-      "info9Content": "The minimum withdrawal amount is 100 USDT"
-    },
-    "invitedBy": "Invited by",
-    "mainTitle": "Invite your friends - earn cashback!",
-    "mainDescription": "Invite your friend and start earning 10% cashback from the commission of your exchanges! Trustee returns up to 30% commission to its users!",
-    "shareText": "Share",
-    "more": "More",
-    "shareTitle": "",
-    "shareMessage": "",
-    "friendsJoined": "Your friends",
-    "updated": "Updated at",
-    "transAmount": "Transaction amount",
-    "level2UsersAmount": "Friends of friends",
-    "cashbackError": {
-      "title": "Failed to get data",
-      "UI_ERROR_CASHBACK_NETWORK_ERROR": "Bad internet access",
-      "UI_ERROR_CASHBACK_SIGN_ERROR": "Incorrect signature in keystore - please, relogin in cashback",
-      "UI_ERROR_CASHBACK_TIME_ERROR": "Outdated device date or time",
-      "UI_ERROR_CASHBACK_TIME_ERROR_LONG": "The service may not work as a result of unstable Internet or incorrect date and time settings on your mobile device",
-      "UI_ERROR_CASHBACK_PROMO_DUPLICATE": "Promocode already used",
-      "UI_ERROR_CASHBACK_PROMO_NOT_FOUND": "Promocode not found"
-    },
-    "cashbackAmount": "Cashback amount",
-    "setParentToken": "Link in to your friend structure",
-    "hasParentToken": "Invited by {cashbackParentToken}",
-    "inputParentCashbackLink": "https://trusteeglobal.com/link/example",
-    "withdraw": "Withdraw",
-    "minWithdraw": "Minimal amount to withdraw",
-    "performWithdraw": "To withdraw your reward, contact our support and provide your cashback link and Tron (TRX) address from the app",
-    "withdrawSupport": "Support"
+    "updated": "Updated at"
   },
   "account": {
     "staking": "Staking",
@@ -626,96 +524,13 @@
       "transactionAmount": "{currencyCode} amount"
     }
   },
-  "fioMainSettings": {
-    "title": "FIO Settings",
-    "description": "Control all available FIO options",
-    "sendFioRequest": "Send FIO Request",
-    "sendFioRequestDesc": "you can send FIO request",
-    "fioRequest": "FIO Requests",
-    "fioRequestDesc": "list of all active Pending/Sent FIO requests",
-    "fioAddresses": "FIO Addresses",
-    "fioAddressesDesc": "all registered FIO addresses and their options",
-    "registerFioAddress": "Register FIO Address",
-    "registerFioAddressDesc": "register your FIO address"
-  },
-  "FioChooseRecipient": {
-    "title": "Choose Fio Recipient",
-    "description": "Enter Recipient FIO, ENS, or Public Address",
-    "btnText": "Select FIO"
-  },
-  "FioChooseAddress": {
-    "title": "Choose FIO Address",
-    "description": "Enter address to request payment from",
-    "btnText": "Select FIO Address"
-  },
-  "FioAddresses": {
-    "title": "FIO Addresses",
-    "btnText": "Register address",
-    "WebViewTitle": "Register address"
-  },
-  "FioSettings": {
-    "title": "FIO Settings",
-    "description": "Choose wallets to connect to your FIO address",
-    "Expire": "Expires",
-    "connectAllWallets": "Connect all wallets",
-    "btnText": "Save",
-    "noFioTitle": "You need to register FIO address",
-    "noFioDescription": "FIO address not registered",
-    "noFioBtn": "Register FIO Address",
-    "serviceUnavailable": "Service unavailable. Please, try again later"
-  },
-  "FioSendRequest": {
-    "title": "Send FIO Request",
-    "selectCoin": "Select Coin",
-    "from": "Send Request From",
-    "to": "Send Request To",
-    "amount": "Amount",
-    "memo": "Memo",
-    "btnText": "Create",
-    "created": "FIO request created",
-    "fioSettings": "FIO Settings",
-    "registerFioAddress": "Register FIO Address",
-    "noCoinSelected": "You need to choose coin in which you make request",
-    "goToFioSettings": "You need go to FIO Settings and associate coins with your FIO address",
-    "needRegisterFio": "You need to register your FIO Address first "
-  },
-  "FioRequestsList": {
-    "title": "FIO Requests list",
-    "pendingRequests": "Pending Requests",
-    "sentRequests": "Sent Requests",
-    "RequestedTxt": "Requested"
-  },
   "FioRequestDetails": {
-    "title": "FIO Request Details",
-    "reqCreated": "Request created",
-    "sentTitle": "Recieve to My",
-    "pendingTitle": "Send from My",
-    "balance": "Balance",
-    "fee": "Fee",
-    "to": "To",
-    "from": "From",
-    "memo": "FIO Memo",
-    "amount": "Amount",
-    "btnTextReject": "Reject",
-    "btnTextConfirm": "Confirm"
+    "balance": "Balance"
   },
   "exchange": {
     "mainData": {
       "amount": "Enter amount"
     }
-  },
-  "card": {
-    "title": "Add new card",
-    "description": "To add new card, please, scan it or enter number manually",
-    "instructions": "Hold card here. It will scan automatically.",
-    "attention": "Please, be attentive and try to avoid errors.",
-    "add": "Add",
-    "numberTitleInput": "Card number",
-    "dateTitleInput": "MM/YY",
-    "cardCurrency": "Select card country...",
-    "cardName": "Set a name to the card",
-    "noName": "NO NAME",
-    "country": "Country:"
   },
   "qrScanner": {
     "title": "Scanning QR-code",
@@ -1048,10 +863,8 @@
     "sell": "Sell",
     "wallet": "Wallet",
     "exchange": "Exchange",
-    "earn": "Earn",
     "settings": "More",
-    "support": "Support",
-    "market": "Swap"
+    "support": "Support"
   },
   "modal": {
     "titles": {
@@ -1604,16 +1417,6 @@
       "currencyCode": "UAH",
       "currency": "Ukrainian Hryvnia"
     }
-  },
-  "streamSupport": {
-    "sendDocs": "Send docs",
-    "sendLogs": "Send logs",
-    "takePhoto": "Take photo",
-    "chooseFromLibrary": "Choose from gallery",
-    "noMessages": "No messages yet",
-    "sentFile": "File sent",
-    "getRoomError": "Load messages error",
-    "sendMessageError": "Unstable network connection when sending a message"
   },
   "support": {
     "title": "Contact Support",

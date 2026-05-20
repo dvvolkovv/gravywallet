@@ -40,7 +40,6 @@
   },
   "tradeScreen": {
     "modalError": {
-      "selectPhoto": "SVP, choisissez une photo de la galerie",
       "serviceUnavailable": "Service non disponible. Veuillez réessayer plus tard",
       "qrNotFoundInFile": "Qr-code non trouvé, SVP, essayez de recharger le fichier"
     }
@@ -333,110 +332,9 @@
     "description": "Les adresses de token/d'actif Ethereum (ETH) et Tron (TRX) sont prises en charge",
     "add": "Ajouter"
   },
-  "nftMainScreen": {
-    "assets": "Actifs",
-    "receiveText": "Envoyer uniquement {coin} à cette adresse. L'envoi d'une autre pièce de monnaie peut entraîner une perte permanente",
-    "emptyNftText": "Vous n'avez pas encore de NFT. Mais vous pouvez l'obtenir maintenant.",
-    "proof": "Preuve de propriété",
-    "info": "Info",
-    "all": "Tout",
-    "collections": "Collections",
-    "receive": "Recevoir",
-    "title": "NFT",
-    "titleQR": "Scanner le QR avec l'appli",
-    "signing": "La signature est en cours de création, veuillez patienter - cela ne fait que prouver que l'adresse actuelle possède ce NFT, il est donc sécurisé de le partager avec n'importe qui",
-    "signed": "La signature prouve uniquement que l'adresse actuelle possède ce NFT, il est donc sécurisé de le partager avec n'importe qui",
-    "status": "Statut",
-    "contract": "Collection contract",
-    "contractSchema": "Schéma",
-    "tokenId": "ID de token",
-    "tokenQty": "Qty",
-    "blockchain": "Blockchain",
-    "address": "Appartenant à l'adresse",
-    "ownershipProved": "Propriétaire prouvé",
-    "ownershipNotProved": "Propriétaire non prouvé",
-    "checking": "Vérification...",
-    "turnBasicAsset": "Pour le transfert NFT, vous devez ajouter {asset} car il est utilisé pour les frais de transfert"
-  },
-  "nftAddAssetScreen": {
-    "title": "Ajouter un actif NFT",
-    "addCustomLabel": "Vous pouvez ajouter un token NFT standard développé sur la blockchain Matic ou Ropsten Testnet. Veuillez saisir ou scanner un nouveau token/adresse d'actif.",
-    "addCustomLabelOpenSea": "Des jetons Ethereum pourraient être ajoutés par OpenSea",
-    "addCustomPlaceholder": "Adresse d'actif NFT",
-    "addAssetButton": "Ajouter un actif"
-  },
   "cashback": {
-    "invited": "Invité:",
-    "cashback": "Cashback",
-    "cpa": "CPA",
-    "pageTitle": "Inviter tes amis",
-    "pageSubtitle": "Gagnez de la commission avec Trustee Wallet!",
-    "shareButton": "Partager",
-    "promoButton": "Promocode",
-    "detailsButton": "Détails",
-    "enterPromoPlaceholder": "Entrer code promo",
-    "enterInviteLinkPlaceholder": "Entrer le lien d'invité",
-    "applyButton": "Appliquer",
-    "wholeBalance": "Tout solde",
-    "availableCashBack": "équilibre global",
     "balanceTitle": "Solde",
-    "toWithdraw": "Min. retirer le montant:",
-    "cpaTotal": "Total CPA",
-    "cpaLevel1": "CPA Niveau 1",
-    "cpaLevel2": "CPA Niveau 2",
-    "cpaLevel3": "CPA Niveau 3",
-    "cashbackToken": "Token",
-    "yourToken": "Votre lien de cashback",
-    "cashbackMessage": "Obtenez du cashback pour vos transactions d'échange. Gagnez des crypto-monnaies grâce au programme d'affiliation et au CPA en recommandant Trustee Wallet!",
-    "howItWorks": {
-      "title": "Comment ça fonctionne?",
-      "info1Title": "Est-ce que Trustee Wallet propose un programme de récompenses pour les utilisateurs?",
-      "info1Content": "Le programme consiste en un cashback et un programme d'affiliation à deux niveaux, qui vous permet finalement de recevoir jusqu'à 30 % de commissions de fiduciaire pour les achats et les ventes de crypto-monnaies par les utilisateurs invités",
-      "info2Title": "Comment activer le cashback?",
-      "info2Content": "Pour activer, vous devez inviter un nouvel utilisateur en utilisant votre lien de cashback. Après l'activation, vous recevrez 10% de la commission du fiduciaire sur vos échanges. Cette fonctionnalité est activée pour toujours !",
-      "info3Title": "Quelles sont les conditions du programme d'affiliation?",
-      "info3Content": "Niveau 1 - 10% de la commission de la fiduciaire pour les achats et ventes de crypto-monnaies par les utilisateurs invités (activé dès le premier partenaire). Plus les amis installent le portefeuille en utilisant votre lien, plus vos revenus seront élevés. Niveau 2 - activé lorsque le chiffre d'affaires de la structure dépasse 5000 USDT par semaine et vous permettra de recevoir 10% des commissions Trustee des utilisateurs de 2ème niveau (partenaires de vos partenaires)",
-      "info4Title": "Comment retirer le cashback et les récompenses des affiliés?",
-      "info4Content": "Le montant minimum de retrait est de 2 USDT",
-      "info5Title": "Qui peut accéder au programme CPA?",
-      "info5Content": "Nous apprécions chaque utilisateur et sommes heureux de les récompenser pour leurs actions efficaces visant à populariser Trustee Wallet. Chaque utilisateur de Trustee devient automatiquement membre du programme CPA.",
-      "info6Title": "Comment fonctionne le programme CPA?",
-      "info6Content": "Pour chaque nouvelle installation active de l'application utilisant votre lien de cashback (lorsque l'utilisateur invité a effectué au moins un achat de cryptocurrences à partir de n'importe quelle carte bancaire), le participant au programme reçoit une récompense unique.",
-      "info7Title": "Quelles sont les récompenses du programme CPA?",
-      "info7Content": "Niveau 1\nLe premier achat est jusqu'à 100 $. Récompense - 2 $\n\nNiveau 2\nLe montant du premier achat est de 100 $ à 500 $. Récompense - 5 $\n\nNiveau 3\nLe premier achat est terminé 500 $. Récompense - 10 $",
-      "info8Title": "Comment inviter des utilisateurs à Trustee?",
-      "info8Content": "Recommandez Trustee Wallet à vos amis et collègues grâce à votre lien de cashback. Vous pouvez utiliser tous les types de trafic pour inviter des utilisateurs : publicité contextuelle, e-mailing, publicité sur les réseaux sociaux, réseaux Teaser, chaînes YouTube. Plus d'informations sur le lien.",
-      "info9Title": "Comment puis-je retirer des récompenses CPA?",
-      "info9Content": "Le montant minimum de retrait est de 100 USDT"
-    },
-    "invitedBy": "Invité par",
-    "mainTitle": "Invitez vos amis - gagnez du cashback !",
-    "mainDescription": "Invitez votre ami et commencez à gagner 10 % de cashback sur la commission de vos échanges ! Trustee reverse jusqu'à 30% de commission à ses utilisateurs!",
-    "shareText": "Partager",
-    "more": "Plus",
-    "shareTitle": "",
-    "shareMessage": "",
-    "friendsJoined": "Tes amis",
-    "updated": "Mis à jour",
-    "transAmount": "Montant de la transaction",
-    "level2UsersAmount": "Amis de mes amis",
-    "cashbackError": {
-      "title": "Échec de l'obtention des données",
-      "UI_ERROR_CASHBACK_NETWORK_ERROR": "Mauvais accès internet",
-      "UI_ERROR_CASHBACK_SIGN_ERROR": "Signature incorrecte dans le magasin de clés - veuillez vous reconnecter au cashback",
-      "UI_ERROR_CASHBACK_TIME_ERROR": "Date ou heure de l'appareil obsolète",
-      "UI_ERROR_CASHBACK_TIME_ERROR_LONG": "Le service peut ne pas fonctionner en raison d'Internet instable ou de paramètres de date et d'heure incorrects sur votre appareil mobile",
-      "UI_ERROR_CASHBACK_PROMO_DUPLICATE": "Code Promo déjà utilisé",
-      "UI_ERROR_CASHBACK_PROMO_NOT_FOUND": "Code promo non trouvé"
-    },
-    "cashbackAmount": "Montant du cashback",
-    "setParentToken": "Connectez-vous à votre structure d'amis",
-    "hasParentToken": "Invité par {cashbackParentToken}",
-    "inputParentCashbackLink": "https://trusteeglobal.com/link/example",
-    "withdraw": "Retrait",
-    "minWithdraw": "Montant minimum du retrait",
-    "performWithdraw": "Pour retirer votre récompense, contactez notre support et fournissez votre lien de cashback et votre adresse Tron (TRX) depuis l'application",
-    "retirerSupport": "Soutenir"
+    "updated": "Mis à jour"
   },
   "account": {
     "staking": "Staking",
@@ -625,96 +523,13 @@
       "transactionAmount": "{currencyCode} montant"
     }
   },
-  "fioMainSettings": {
-    "title": "FIO Paramètres",
-    "description": "Contrôlez toutes les options FIO disponibles",
-    "sendFioRequest": "Envoyer une requête FIO",
-    "sendFioRequestDesc": "vous pouvez envoyer une requête FIO",
-    "fioRequest": "Requêtes FIO",
-    "fioRequestDesc": "liste de toutes les requêtes actives FIO en attente/envoyées",
-    "fioAddresses": "FIO Adresses",
-    "fioAddressesDesc": "toutes les adresses FIO enregistrées et leurs options",
-    "registerFioAddress": "Enregistrer l'adresse FIO",
-    "registerFioAddressDesc": "Enregistrer votre adresse FIO"
-  },
-  "FioChooseRecipient": {
-    "title": "Choisissez le destinataire FIO",
-    "description": "Entrez le destinataire FIO, ENS ou l'adresse publique",
-    "btnText": "Sélectionner FIO"
-  },
-  "FioChooseAddress": {
-    "title": "Choisissez l'adresse FIO",
-    "description": "Entrez l'adresse à partir de laquelle demander le paiement",
-    "btnText": "Sélectionnez l'adresse FIO"
-  },
-  "FioAddresses": {
-    "title": "FIO Adresses",
-    "btnText": "Adresse d'enregistrement",
-    "WebViewTitle": "Adresse d'enregistrement"
-  },
-  "FioSettings": {
-    "title": "Paramètres FIO",
-    "description": "Choisissez des portefeuilles pour vous connecter à votre adresse FIO",
-    "Expire": "Expire",
-    "connectAllWallets": "Connectez tous les portefeuilles",
-    "btnText": "Sauvegarder",
-    "noFioTitle": "Vous devez enregistrer l'adresse FIO",
-    "noFioDescription": "Adresse FIO non enregistrée",
-    "noFioBtn": "Enregistrement de l'adresse FIO",
-    "serviceUnavailable": "Service non disponible. Veuillez réessayer plus tard"
-  },
-  "FioSendRequest": {
-    "title": "Envoyer une requete de FIO",
-    "selectCoin": "Choisir pièce de monnaie",
-    "from": "Envoyer la demande depuis",
-    "to": "Envoyer la demande à",
-    "amount": "Montant",
-    "memo": "Memo",
-    "btnText": "Créer",
-    "created": "Requete de FIO créée",
-    "fioSettings": "FIO Paramètres",
-    "registerFioAddress": "Enregistrer l'adresse FIO",
-    "noCoinSelected": "Vous devez choisir la pièce de monnaie dans laquelle vous faites la demande",
-    "goToFioSettings": "Vous devez accéder aux paramètres FIO et associer des pièces à votre adresse FIO",
-    "needRegisterFio": "Vous devez d'abord enregistrer votre adresse FIO"
-  },
-  "FioRequestsList": {
-    "title": "Liste des requêtes FIO",
-    "pendingRequests": "Requêtes en cours",
-    "sentRequests": "Requêtes envoyées",
-    "RequestedTxt": "Demandé"
-  },
   "FioRequestDetails": {
-    "title": "FIO Détails de la demande",
-    "reqCreated": "Demande créée",
-    "sentTitle": "Recevoir sur mon",
-    "pendingTitle": "Envoyer de mon",
-    "balance": "Solde",
-    "fee": "Frais",
-    "to": "à",
-    "from": "Depuis",
-    "memo": "FIO Memo",
-    "amount": "Montant",
-    "btnTextReject": "Rejeter",
-    "btnTextConfirm": "Confirmer"
+    "balance": "Solde"
   },
   "exchange": {
     "mainData": {
       "amount": "Entrer le montant"
     }
-  },
-  "card": {
-    "title": "Ajouter une nouvelle carte",
-    "description": "Pour ajouter une nouvelle carte, veuillez la scanner ou saisir le numéro manuellement",
-    "instructions": "Tenez la carte ici. L'analyse sera automatique.",
-    "attention": "S'il vous plaît, soyez attentif et essayez d'éviter les erreurs.",
-    "add": "Ajouter",
-    "numberTitleInput": "Numéro de la carte",
-    "dateTitleInput": "MM/YY",
-    "cardCurrency": "Sélectionnez le pays de la carte...",
-    "cardName": "Donnez un nom à la carte",
-    "noName": "SANS NOM",
-    "country": "Pays:"
   },
   "qrScanner": {
     "title": "Scannage du QR",
@@ -1047,10 +862,8 @@
     "sell": "Vendre",
     "wallet": "Portefeuille",
     "exchange": "Echanger",
-    "earn": "Gagner",
     "settings": "Paramètres",
-    "support": "Support",
-    "market": "Swap"
+    "support": "Support"
   },
   "modal": {
     "titles": {
