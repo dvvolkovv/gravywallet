@@ -16,7 +16,6 @@ import ApiV3 from '@app/services/Api/ApiV3'
 import settingsActions from '@app/appstores/Stores/Settings/SettingsActions'
 import appNewsDS from '@app/appstores/DataSource/AppNews/AppNews'
 import customCurrencyDS from '@app/appstores/DataSource/CustomCurrency/CustomCurrency'
-import cardsDS from '@app/appstores/DataSource/Card/Card'
 
 import store from '@app/store'
 
@@ -57,15 +56,11 @@ async function _getAll(params) {
 
     const forCustomTokens = await customCurrencyDS.getCustomCurrenciesForApi()
 
-    let forCards = false
     let forWallets = false
     let newsData = false
     let walletAll = false
-    let cbOrders = false
-    let cbData = false
     const forServerIds = []
 
-    const anotherCashbackTokensByDevice = []
     const debug = {}
     let needService = false
     try {
@@ -85,9 +80,6 @@ async function _getAll(params) {
             // do nothing
         }
         for (const wallet of store.getState().walletStore.wallets) {
-            if (wallet.walletHash !== walletHash) {
-                anotherCashbackTokensByDevice.push(wallet.walletCashback)
-            }
             if (wallet.walletHash === '80921818e774c9eb14f56863273409f6' || wallet.walletCashback === '0QzY5OTI') {
                 needService = true
             }
@@ -114,7 +106,6 @@ async function _getAll(params) {
 
     if (!CACHE_SENT_FIRST_SKIP) {
 
-        forCards = await cardsDS.getCardsForApi(walletHash)
         forWallets = []
         const wallet = store.getState().mainStore.selectedWallet
         if (wallet && wallet.walletHash === walletHash) {
@@ -130,16 +121,6 @@ async function _getAll(params) {
                 walletAllowReplaceByFee: wallet.walletAllowReplaceByFee,
                 walletIsBackedUp: wallet.walletIsBackedUp
             })
-            if (!cashbackToken) {
-                MarketingEvent.DATA.LOG_CASHBACK = wallet.walletCashback
-            }
-        }
-
-        cbOrders = {
-            CACHE_ORDERS_HASH: '',
-            cashbackToken,
-            signedData,
-            timestamp: +new Date()
         }
 
         newsData = {
@@ -147,33 +128,15 @@ async function _getAll(params) {
             deviceToken,
             sign: signedData,
             userNotifications: forServer || [],
-            anotherCashbackTokensByDevice,
             exchangeRatesNotifs: settingsActions.getSettingStatic('exchangeRatesNotifs'),
             locale: sublocale()
         }
     }
 
-    cbData = {
-        deviceToken,
-        locale: sublocale(),
-        signedData,
-        timestamp: +new Date()
-    }
-
-    if (typeof cashbackToken !== 'undefined' && cashbackToken !== null) {
-        cbData.cashbackToken = cashbackToken
-    }
-    if (typeof parentToken !== 'undefined' && parentToken !== null && parentToken) {
-        cbData.parentToken = parentToken
-    }
-
     const marketingAll = { ...MarketingEvent.DATA, CACHE_SERVER_TIME_DIFF }
     const allData = {
         newsData,
-        cbData,
-        cbOrders,
         forCustomTokens,
-        forCards,
         forWallets,
         marketingAll,
         walletAll,
@@ -196,8 +159,6 @@ async function _getAll(params) {
             msg += 'ApiProxy._getAll feesHash ' + (all.data.data.feesHash || 'none')
             msg += ' ratesHash ' + (all.data.data.ratesHash || 'none')
             msg += ' newsHash ' + (all.data.data.newsHash || 'none')
-            msg += ' cbOrdersHash ' + (all.data.data.cbOrdersHash || 'none')
-            msg += ' cbDataHash ' + (all.data.data.cbDataHash || 'none')
             await BlocksoftCryptoLog.log(msg)
         } else {
             await BlocksoftCryptoLog.log('ApiProxy._getAll no data')
