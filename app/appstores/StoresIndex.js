@@ -18,7 +18,6 @@ import cashBackStoreReducer from './Stores/CashBack/CashBackStore'
 import appNewsStoreReducer from './Stores/AppNews/AppNewsReducer'
 import sendScreenStoreReducer from './Stores/Send/SendScreenStore'
 import walletConnectStoreReducer from '@app/appstores/Stores/WalletConnect/WalletConnectStore'
-import walletDappStoreReducer from '@app/appstores/Stores/WalletDapp/WalletDappStore'
 
 export default combineReducers({
     mainStore: mainStoreReducer,
@@ -36,5 +35,4 @@ export default combineReducers({
     appNewsStore : appNewsStoreReducer,
     sendScreenStore: sendScreenStoreReducer,
     walletConnectStore : walletConnectStoreReducer,
-    walletDappStore : walletDappStoreReducer,
 })
