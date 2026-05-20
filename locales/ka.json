@@ -97,7 +97,7 @@
       "activated": "Activated",
       "disabled": "Disabled",
       "changeNetwork": "Change Network",
-      "turnBasicAsset" : "For WalletConnect you need add {asset} as it is used in this transaction"
+      "turnBasicAsset": "For WalletConnect you need add {asset} as it is used in this transaction"
     },
     "walletManagement": {
       "title": "საფულეების მართვა",
@@ -139,7 +139,7 @@
       "darkModeEnabledSubtitle": "ჩართვა",
       "darkModeDisabledSubtitle": "გამორთვა",
       "support": "მხარდაჭერა",
-      "supportSubtitle": "ჩვენი ბოტი telegram-ში",
+      "supportSubtitle": "მოგვწერეთ ელფოსტაზე ან ეწვიეთ ვებსაიტს",
       "lock": "ეკრანის ბლოკირება",
       "bio": "Biometrics",
       "about": "Trustee-ს საფულის შესახებ",
@@ -231,7 +231,7 @@
       "unfrozenTRX": "Розморожено",
       "frozenBalanceTRX": "გამტარობა: {prettyFrozen} TRX / ენერგია{prettyFrozenEnergy} TRX",
       "enterToFreezeTRX": "შეიყვანეთ TRX-ის  რაოდენობა",
-      "enterToUnfreezeTRX" : "შეიყვანეთ გაყინვის თანხა TRX",
+      "enterToUnfreezeTRX": "შეიყვანეთ გაყინვის თანხა TRX",
       "freezeForBandTRX": "Застейкать",
       "freezeForEnergyTRX": "ენერგიისთვის",
       "unfreezeTRX": "Разморозить",
@@ -242,27 +242,27 @@
       "rewardBalanceTRX": "ხელმისაწვდომია {prettyReward} TRX",
       "claimTRX": "ჯილდოს მიღება",
       "refreshTRX": "გადატვირთვა",
-      "waitToClaimTRX" : "Last claim was done less then 24 hours ago",
-      "waitToUnfreezeTRX" : "Under the terms of the Tron protocol, unfreezing is possible after {TRX_STAKE_DAYS} days from the moment of the last freezing",
-      "minimalFreezeBalanceTRX" : "For freezing use more than 1 TRX",
+      "waitToClaimTRX": "Last claim was done less then 24 hours ago",
+      "waitToUnfreezeTRX": "Under the terms of the Tron protocol, unfreezing is possible after {TRX_STAKE_DAYS} days from the moment of the last freezing",
+      "minimalFreezeBalanceTRX": "For freezing use more than 1 TRX",
       "allowLongQueryETH": "Allow pending transactions queue",
       "allowBlockedBalanceETH": "Allow reuse of pending transactions balance",
-      "enterToStakeSOL" : "Enter stake amount SOL",
-      "stakeSOL" : "Stake",
-      "unstakeSOL" : "Unstake",
-      "selectAddress" : "Select Address to use",
+      "enterToStakeSOL": "Enter stake amount SOL",
+      "stakeSOL": "Stake",
+      "unstakeSOL": "Unstake",
+      "selectAddress": "Select Address to use",
       "stakeBalance": "Stake Balance",
       "address": "Address",
       "stake": "Stake",
       "rentReserve": "Rent reserve",
-      "withdrawSOL" : "Withdraw",
-      "withdrawAllSOL" : "Withdraw All",
+      "withdrawSOL": "Withdraw",
+      "withdrawAllSOL": "Withdraw All",
       "deactivateSOL": "Deactivate",
-      "stakeHistorySOL" : "History",
+      "stakeHistorySOL": "History",
       "selectValidatorSOL": "Select validator",
-      "selectValidatorSOLCommission" : "Fee :",
+      "selectValidatorSOLCommission": "Fee :",
       "validatorSOL": "Validator",
-      "rewards" : "Rewards",
+      "rewards": "Rewards",
       "useCustomValidator": "Use this validator ",
       "successUnfreeze": "TRX unfrozen",
       "successUnfreezeV2": "TRX-ის ამოღება შესაძლებელი იქნება {TRX_STAKE_DAYS}-დღიანი განთავისუფლების პერიოდის შემდეგ",
@@ -286,7 +286,7 @@
       "contactSupportSubtitle": "ოფიციალური telegram არხი",
       "contactSupportEmail": "or send Email",
       "contactSupportEmailSubtitle": "Official email",
-      "contactSupportLoadingText" : "If you have not opened the support chat, please contact us at",
+      "contactSupportLoadingText": "If you have not opened the support chat, please contact us at",
       "contactSupportLoadingTextEmail": "or write to",
       "information": "ინფორმაცია",
       "copyright": "© BlockSoftLab Inc, {currentYear}"
@@ -344,27 +344,27 @@
     "collections": "Collections",
     "receive": "Receive",
     "title": "NFT",
-    "titleQR" : "Scan QR-code with Trustee",
+    "titleQR": "Scan QR-code with Trustee",
     "signing": "Signature is creating, please wait - it only proofs that the current Address owns this NFT, so its secure to share with anyone",
     "signed": "Signature only proofs that the current Address owns this NFT, so its secure to share with anyone",
     "status": "Status",
     "contract": "Collection contract",
-    "contractSchema" : "Schema",
+    "contractSchema": "Schema",
     "tokenId": "Token ID",
-    "tokenQty" : "Qty",
+    "tokenQty": "Qty",
     "blockchain": "Blockchain",
     "address": "Owned by address",
     "ownershipProved": "Ownership proved",
     "ownershipNotProved": "Ownership not proved",
     "checking": "Checking...",
-    "turnBasicAsset" : "For NFT transfer you need add {asset} as it is used for transfer fee"
+    "turnBasicAsset": "For NFT transfer you need add {asset} as it is used for transfer fee"
   },
-  "nftAddAssetScreen" : {
-    "title" : "Add NFT Asset",
+  "nftAddAssetScreen": {
+    "title": "Add NFT Asset",
     "addCustomLabel": "You can add a standard NFT token developed on Ethereum, BNB Smart Chain, Matic blockchains or on Ropsten, Rinkeby Testnet. Please enter or scan a new token / asset address.",
-    "addCustomLabelOpenSea" : "Ethereum tokens could be added by OpenSea ",
-    "addCustomPlaceholder" : "NFT Asset Address",
-    "addAssetButton" : "Add asset"
+    "addCustomLabelOpenSea": "Ethereum tokens could be added by OpenSea ",
+    "addCustomPlaceholder": "NFT Asset Address",
+    "addAssetButton": "Add asset"
   },
   "cashback": {
     "invite": "Invite:",
@@ -447,8 +447,8 @@
     "receive": "{receive}",
     "send": "გაგზავნა",
     "history": "ტრანზაქციები",
-    "balanceBadNetwork" : "Bad internet access",
-    "balanceBadBlock" : "Block number error",
+    "balanceBadNetwork": "Bad internet access",
+    "balanceBadBlock": "Block number error",
     "scan": "დასკანერებულია {time} წუთის წინ",
     "justScan": "დასკანერდა ახლახან",
     "soLong": "დასკანერებულია დიდი ხნის წინ",
@@ -502,14 +502,14 @@
       "income": "შემოსული",
       "self": "სელფი",
       "freeze": "გაყინვა",
-      "unfreeze" : "UnFreeze",
+      "unfreeze": "UnFreeze",
       "withdraw_unfrozen": "Withdraw UnFrozen",
-      "stake" : "Stake",
+      "stake": "Stake",
       "vote": "Vote",
-      "wallet_connect" : "WalletConnect",
+      "wallet_connect": "WalletConnect",
       "claim": "ჯილდო",
-      "swap_income" : "Contract Income",
-      "swap_outcome" : "Contract Outcome",
+      "swap_income": "Contract Income",
+      "swap_outcome": "Contract Outcome",
       "exchange": "გაცვლა",
       "buy": "ყიდვა",
       "sell": "გაყიდვა",
@@ -547,10 +547,10 @@
         "replaceByFeeBtn": "საკომისიოს გაზრდა",
         "willReplaceWithNewFee": "მიმდინარე ტრანზაქცია შეიცვლება ახლით, ახალი ჰაშით და უფრო მაღალი საკომისიოთი",
         "notAllowed": "ტრანზაქცია შექმნილია შეცვლის შესაძლებლობის გარეშე ან უკვე დადასტურებულია",
-        "alreadyRemovedByFee" : "You have used “return” {min} minutes ago",
-        "alreadyReplacedByFee" : "You have used “booster” {min} minutes ago",
-        "alreadyRemovedByFeeLessThen2Minutes" : "You have used “return” now",
-        "alreadyReplacedByFeeLessThen2Minutes" : "You have used “booster” now"
+        "alreadyRemovedByFee": "You have used “return” {min} minutes ago",
+        "alreadyReplacedByFee": "You have used “booster” {min} minutes ago",
+        "alreadyRemovedByFeeLessThen2Minutes": "You have used “return” now",
+        "alreadyReplacedByFeeLessThen2Minutes": "You have used “booster” now"
       },
       "CPFP": {
         "willSpeedUp": "თქვენ შეგიძლიათ დააჩქაროთ შემომავალი ტრანზაქცია თქვენივე თავისთვის დამატებითი ტრანზაქციის შექმნით  უფრო მაღალი საკომისიოს გადახდის გზით. საკომისიოს ოდენობა გამოითვლება ავტომატურად ორივე ტრანზაქციის თავისებურებების გათვალისწინებით. გაითვალისწინეთ, რომ მოცემულ შემთხვვაში ახალი ტრანზაქციის გადახდა მოგიწევთ თქვენივე ხარჯებით. "
@@ -569,7 +569,7 @@
       "fail": "წარუმატებლად",
       "missing": "არ მოიძებნა",
       "replaced": "შეცვლილია",
-      "out_of_energy" : "No energy",
+      "out_of_energy": "No energy",
       "internal_success": "წარმატებულია ხელშეკრულებიდან",
       "internal_new": "ახალი ხელშეკრულებიდან",
       "internal_fail": "შეცდომა ხელშეკრულებიდან"
@@ -611,7 +611,7 @@
           "canceled": "გაუქმებულია",
           "fail": "წარუმატებლად",
           "missing": "არ მოიძებნა",
-          "out_of_energy" : "No energy"
+          "out_of_energy": "No energy"
         }
       },
       "transactionHash": "ტრანზაქციის ჰაში: ",
@@ -699,7 +699,6 @@
     "btnTextReject": "უარყოფა",
     "btnTextConfirm": "დადასტურება"
   },
-
   "exchange": {
     "mainData": {
       "amount": "ჯამი"
@@ -818,7 +817,7 @@
         "ltc_speed_blocks_2": "ჩქარი",
         "xrp_speed_one": "ჩქარი"
       },
-      "getRaw" : "Build transaction hex only (no send)",
+      "getRaw": "Build transaction hex only (no send)",
       "customFee": {
         "title": "Ручная",
         "fixedFeeTitle": "ფიქსირებული\nსაკომისიო",
@@ -852,9 +851,9 @@
       "nonce": "Nonce",
       "trusteeInfo": "Trustee does not charge any fees for cryptocurrency transactions",
       "send": "გაგზავნა",
-      "build" : "Build",
+      "build": "Build",
       "sending": "იგზავნება",
-      "rawTransactionResult" : "Click to Copy"
+      "rawTransactionResult": "Click to Copy"
     },
     "errors": {
       "UI_CONFIRM_DOUBLE_SEND": "აღნიშნულ მისამართზე ტრანზაქცია უკვე გაგზავნილია. დარწმუნებული ხართ, რომ გინდათ ხელახლა გაგზავნა?",
@@ -862,17 +861,17 @@
       "UI_CONFIRM_ADDRESS_TO_EMPTY_BALANCE": "This address has no funds. Are you sure it's correct?",
       "UI_CALCULATE_CUSTOM_FEE": "გთხოვთ, დაითვალეთ სრული ღირებულება ბაიტის არჩეული ფასზე ",
       "SERVER_RESPONSE_CONTRACT_DESTINATION_INVALID": "გთხოვთ, შეამოწმოთ მიმღების მისამართი. ტრანზაქციების პირდაპირ სმარტ კონტრაქტის მისამართზე გაგზავნა შეუძლებელია",
-      "SERVER_RESPONSE_CLOUDFLARE" : "Please, try again - no access to cloudflare protected server",
+      "SERVER_RESPONSE_CLOUDFLARE": "Please, try again - no access to cloudflare protected server",
       "SERVER_RESPONSE_BAD_CODE": "დაფიქსირდა შეცდომა. გთხოვთ, დაუკავშირდეთ მხარდაჭერის სამსახურს",
       "SERVER_RESPONSE_BAD_INTERNET": "არ არის კავშირი ინტერნეტთან",
       "SERVER_RESPONSE_BAD_TX_TO_REPLACE": "ტრანზაქცია ვერ მოიძებნა, გთხოვთ, შეამოწმოთ კავშირი ინტერნეტთან. შესაძლოა ადგილი ჰქონდეს დაყოვნებას ინფორმაციის გამოსახულების მიღების თვალსაზრისით ",
       "SERVER_RESPONSE_NOT_ENOUGH_FEE": "ქსელის საკომისიოს დასაფარად ანგარიშზე არ ფიქსირდება საკმარისი რაოდენობის ადგილობრივი მონეტა {symbol}",
-      "SERVER_RESPONSE_NOT_ENOUGH_FEE_JUST_DUST" : "Your wallet has accumulated many incoming transactions with small amounts. Please use the \"Send All\" button to send the transaction correctly",
+      "SERVER_RESPONSE_NOT_ENOUGH_FEE_JUST_DUST": "Your wallet has accumulated many incoming transactions with small amounts. Please use the \"Send All\" button to send the transaction correctly",
       "SERVER_RESPONSE_NOT_ENOUGH_FEE_OR_BAD_INTERNET": "ვერ მოხერხდა ადგილობრივი მონეტის ({symbol}) ბალანსის შემოწმება. გთხოვთ, შეამოწმოთ ინტერნეტკავშირი!",
       "SERVER_RESPONSE_NOT_ENOUGH_AMOUNT_AS_DUST": "ძალიან მცირე თანხაა ტრანზაქციისთვის",
       "SERVER_RESPONSE_NOTHING_TO_TRANSFER": "ტრანზაქციის განსახორციელებლად თანხა არასაკმარისია",
-      "SERVER_RESPONSE_NOTHING_TO_TRANSFER_FROM_ACTUAL_NODE" : "ტრანზაქციის განსახორციელებლად თანხა არასაკმარისია (server validation)",
-      "UI_CORRECTED_AMOUNT" : "Balance of your {symbol} wallet is different then sending amount, please confirm sending {amount} {symbol}",
+      "SERVER_RESPONSE_NOTHING_TO_TRANSFER_FROM_ACTUAL_NODE": "ტრანზაქციის განსახორციელებლად თანხა არასაკმარისია (server validation)",
+      "UI_CORRECTED_AMOUNT": "Balance of your {symbol} wallet is different then sending amount, please confirm sending {amount} {symbol}",
       "UI_CORRECTED_AMOUNT_BSE": "თქვენი {symbol} საფულის ბალანსი ნაკლებია გასაგზავნი თანხაზე. გთხოვთ, განაახლოთ თქვენი {symbol} ბალანსი და გაიმეოროთ გაცვლის ოპერაცია.",
       "SERVER_RESPONSE_NOTHING_LEFT_FOR_FEE": "ბალანსზე არ არის საკმარისი თანხა ქსელის საკომისიოს დასაფარად - გთხოვთ, გამოიყენეთ ფუნქცია \"ყველას გაგზავნა\" ",
       "SERVER_RESPONSE_NOTHING_LEFT_FOR_DELEGATED_FEE": "ბალანსზე არაა საკმარისი თანხა დელეგირებული ტრანზაქციის განსახორციელებლად - გთხოვთ, გამოიყენეთ ჩვეულებრივი გადარიცხვა ERC20",
@@ -885,7 +884,7 @@
       "SERVER_RESPONSE_NOT_ENOUGH_AMOUNT_AS_FEE_FOR_REPLACEMENT": "ძალიან მცირეა საკომისიო ტრანზაქციის ცვლილებისთვის",
       "SERVER_RESPONSE_TRANSACTION_ALREADY_MINED": "ტრანზაქცია უკვე დადასტურებულია",
       "SERVER_RESPONSE_NONCE_ALREADY_MINED": "Nonce {nonce} უკვე გამოყენებულია დადასტურებულ ტრანზაქციაში",
-      "SERVER_RESPONSE_REVERTED_BY_EVM" : "Transaction reverted by EVM - please check contract code",
+      "SERVER_RESPONSE_REVERTED_BY_EVM": "Transaction reverted by EVM - please check contract code",
       "SERVER_RESPONSE_NOT_CONNECTED": "ქსელში კვანძთან კავშირი არ არის. გთხოვთ, შეცვალოთ თქვენი ინტერნეტ კავშირი ან გამოიყენოთ VPN აპის გამოყენებისას",
       "SERVER_RESPONSE_NOT_ENOUGH_AMOUNT_FOR_ANY_FEE": "არასაკმარისია თანხა ტრანზაქციების განსახორციელებლად და მინიმალური საკომისიოსთვის",
       "SERVER_RESPONSE_WAIT_FOR_CONFIRM": "გთხოვთ, დაელოდოთ სხვა ტრანზაქციების დადასტურებას ან ჩართეთ ფუნქცია \"დაუდასტურებელი ტრანზაქციების გამოყენება\" ",
@@ -907,12 +906,12 @@
       "SERVER_RESPONSE_BAD_SEND_NODE": "არა არის წვდომა გაგზავნის სერვერთან",
       "SERVER_RESPONSE_DOUBLE_SPEND": "გთხოვთ, თავიდან შექმნათ ტრანზაქცია, რადგან მიმდინარე იყენებს შესვლის მოძველებულ მეთოდებს ან დაელოდეთ სხვა ტრანზაქციების დადასტურებას ",
       "SERVER_RESPONSE_NO_TX_TO_SPEEDUP": "დასაჩქარებელი ტრანზაქცია ვერ მოიძებნა",
-      "SERVER_RESPONSE_BANDWITH_ERROR_TRX" : "Insufficient TRX balance for fee / bandwidth limit is over",
-      "SERVER_RESPONSE_ENERGY_ERROR_VET" : "Insufficient VeChain Thor Token (VTHO) balance for fee",
+      "SERVER_RESPONSE_BANDWITH_ERROR_TRX": "Insufficient TRX balance for fee / bandwidth limit is over",
+      "SERVER_RESPONSE_ENERGY_ERROR_VET": "Insufficient VeChain Thor Token (VTHO) balance for fee",
       "SERVER_RESPONSE_PLEASE_CHECK_SYSTEM_TIME": "Please check your phone system time - it need to be synchronized for correct transaction creation",
-      "SERVER_RESPONSE_NOT_ENOUGH_BALANCE_SOL" : "Insufficient balance to make the transaction",
-      "SERVER_RESPONSE_NOT_ENOUGH_AMOUNT_STAKE_SOL" : "Insufficient amount to stake in the transaction",
-      "SERVER_RESPONSE_NOT_VALIDATOR_STAKE_SOL" : "Selected address is not validator",
+      "SERVER_RESPONSE_NOT_ENOUGH_BALANCE_SOL": "Insufficient balance to make the transaction",
+      "SERVER_RESPONSE_NOT_ENOUGH_AMOUNT_STAKE_SOL": "Insufficient amount to stake in the transaction",
+      "SERVER_RESPONSE_NOT_VALIDATOR_STAKE_SOL": "Selected address is not validator",
       "SERVER_RESPONSE_RECEIVER_EMPTY_BALANCE": "Η διεύθυνση του παραλήπτη είναι κενή. Στο blockchain Solana, δεν είναι δυνατή η αποστολή διακριτικών σε μια διεύθυνση με μηδενικό υπόλοιπο SOL",
       "SERVER_RESPONSE_SPAM_ADDRESS": "Destination address is tagged by the platform as suspected fraud or spam."
     }
@@ -936,8 +935,8 @@
       "showButton": "დააწკაპუნეთ და გააჩერეთ აქ ფრაზის სანახავად",
       "showQrButton": "Press and hold here to see the QR-code",
       "next": "შემდეგი",
-      "showQR" : "Get QR-code for import to another device",
-      "hideQR" : "Get words for backup",
+      "showQR": "Get QR-code for import to another device",
+      "hideQR": "Get words for backup",
       "infoQR": "QR-code reveals recovery phrase. Please dont send it to other people and dont store in Gallery!"
     },
     "step1Screen": {
@@ -1294,7 +1293,7 @@
     },
     "lastScan": "თქვენი ბალანსების ასლები შენახულია:",
     "helper": "თქვენ შეგიძლიათ შეარჩიოთ სიხშირე დამოუკიდებლად",
-    "clean" : "Rescan selected wallet again"
+    "clean": "Rescan selected wallet again"
   },
   "loggingSettings": {
     "title": "Logging",
@@ -1302,7 +1301,7 @@
       "none": "No logging",
       "all": "To local files"
     },
-    "clean" : "Clean all files",
+    "clean": "Clean all files",
     "helper": "You can choose logging yourself"
   },
   "repeat": {
@@ -1603,7 +1602,11 @@
     "chooseFromLibrary": "Choose from gallery",
     "noMessages": "No messages yet",
     "sentFile": "File sent",
-    "getRoomError" : "Load messages error",
-    "sendMessageError" : "Unstable network connection when sending a message"
+    "getRoomError": "Load messages error",
+    "sendMessageError": "Unstable network connection when sending a message"
+  },
+  "support": {
+    "title": "მხარდაჭერა",
+    "body": "თუ დახმარება გჭირდებათ — მოგვწერეთ ელფოსტაზე ან ეწვიეთ ვებსაიტს."
   }
 }

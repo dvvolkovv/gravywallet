@@ -138,7 +138,7 @@
       "darkModeEnabledSubtitle": "Activé",
       "darkModeDisabledSubtitle": "Désactivé",
       "support": "Service-client",
-      "supportSubtitle": "Notre robot de support de Telegram",
+      "supportSubtitle": "Contactez-nous par e-mail ou via notre site",
       "lock": "Écran verrouillé",
       "bio": "Biometrique",
       "about": "À propos de Trustee",
@@ -232,7 +232,7 @@
       "unfrozenTRX": "UnFrozen",
       "frozenBalanceTRX": " Bande passante: {prettyFrozen} TRX / Énergie {prettyFrozenEnergy} TRX",
       "enterToFreezeTRX": "entrer le montant des TRX gelés",
-      "enterToUnfreezeTRX" : "entrez le montant de dégel TRX",
+      "enterToUnfreezeTRX": "entrez le montant de dégel TRX",
       "freezeForBandTRX": "Geler pour BAND",
       "freezeForEnergyTRX": "Geler pour ENERGIE",
       "unfreezeTRX": "Dégeler",
@@ -627,7 +627,6 @@
       "transactionAmount": "{currencyCode} montant"
     }
   },
-
   "fioMainSettings": {
     "title": "FIO Paramètres",
     "description": "Contrôlez toutes les options FIO disponibles",
@@ -640,13 +639,11 @@
     "registerFioAddress": "Enregistrer l'adresse FIO",
     "registerFioAddressDesc": "Enregistrer votre adresse FIO"
   },
-
   "FioChooseRecipient": {
     "title": "Choisissez le destinataire FIO",
     "description": "Entrez le destinataire FIO, ENS ou l'adresse publique",
     "btnText": "Sélectionner FIO"
   },
-
   "FioChooseAddress": {
     "title": "Choisissez l'adresse FIO",
     "description": "Entrez l'adresse à partir de laquelle demander le paiement",
@@ -668,7 +665,6 @@
     "noFioBtn": "Enregistrement de l'adresse FIO",
     "serviceUnavailable": "Service non disponible. Veuillez réessayer plus tard"
   },
-
   "FioSendRequest": {
     "title": "Envoyer une requete de FIO",
     "selectCoin": "Choisir pièce de monnaie",
@@ -684,14 +680,12 @@
     "goToFioSettings": "Vous devez accéder aux paramètres FIO et associer des pièces à votre adresse FIO",
     "needRegisterFio": "Vous devez d'abord enregistrer votre adresse FIO"
   },
-
   "FioRequestsList": {
     "title": "Liste des requêtes FIO",
     "pendingRequests": "Requêtes en cours",
     "sentRequests": "Requêtes envoyées",
     "RequestedTxt": "Demandé"
   },
-
   "FioRequestDetails": {
     "title": "FIO Détails de la demande",
     "reqCreated": "Demande créée",
@@ -706,7 +700,6 @@
     "btnTextReject": "Rejeter",
     "btnTextConfirm": "Confirmer"
   },
-
   "exchange": {
     "mainData": {
       "amount": "Entrer le montant"
@@ -1622,5 +1615,9 @@
     "sentFile": "Fichier envoyé",
     "getRoomError": "Erreur de chargement des messages",
     "sendMessageError": "Connexion réseau instable lors de l'envoi d'un message"
+  },
+  "support": {
+    "title": "Contacter le support",
+    "body": "Pour toute aide, contactez-nous par e-mail ou visitez notre site."
   }
 }

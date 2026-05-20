@@ -62,7 +62,6 @@ import LoggingSettingsScreen from '@app/modules/Settings/Subsettings/LoggingSett
 import NotificationsSettingScreen from '@app/modules/Settings/Subsettings/NotificationsScreen'
 
 import BotSupportScreen from '@app/modules/Support/botSupport'
-import StreamSupportScreen from '@app/modules/Support/streamSupport'
 
 import CustomIcon from '@app/components/elements/CustomIcon'
 import { useTheme } from '@app/theme/ThemeProvider'
@@ -115,7 +114,6 @@ const HomeStackScreen = () => {
                 <HomeStack.Screen name='AddAssetScreen' component={AddAssetScreen} />
 
                 <HomeStack.Screen name='NotificationsScreen' component={NotificationsScreen} />
-                <HomeStack.Screen name='StreamSupportScreen' component={StreamSupportScreen} />
                 <HomeStack.Screen name='BotSupportScreen' component={BotSupportScreen} />
 
                 <HomeStack.Screen name='WalletConnectScreen' component={WalletConnectScreen} />
@@ -165,9 +163,9 @@ const HomeStackScreen = () => {
 
 const SupportStackScreen = () => {
     return (
-        <SupportStack.Navigator initialRouteName='StreamSupportScreen' screenOptions={{ headerShown: false }}>
+        <SupportStack.Navigator initialRouteName='BotSupportScreen' screenOptions={{ headerShown: false }}>
             <SupportStack.Group screenOptions={{ transitionSpec, cardStyleInterpolator }}>
-                <SupportStack.Screen name='StreamSupportScreen' component={StreamSupportScreen} />
+                <SupportStack.Screen name='BotSupportScreen' component={BotSupportScreen} />
                 <SupportStack.Screen name='SupportAboutScreen' component={AboutScreen} />
             </SupportStack.Group>
         </SupportStack.Navigator>

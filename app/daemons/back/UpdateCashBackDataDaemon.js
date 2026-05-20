@@ -8,7 +8,6 @@ import CashBackUtils from '@app/appstores/Stores/CashBack/CashBackUtils'
 import ApiProxy from '@app/services/Api/ApiProxy'
 
 import config from '@app/config/config'
-import { StreamSupportActions } from '@app/appstores/Stores/StreamSupport/StreamSupportStoreActions'
 
 class UpdateCashBackDataDaemon {
 
@@ -45,10 +44,6 @@ class UpdateCashBackDataDaemon {
             }
         } else {
             data = dataUpdate
-        }
-
-        if (typeof data.cbChatToken !== 'undefined' && data.cbChatToken ) {
-           StreamSupportActions.setData(data.cbChatToken)
         }
 
         let customToken = CashBackUtils.getWalletToken()
