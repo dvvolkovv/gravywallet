@@ -50,7 +50,7 @@ class WalletName extends PureComponent {
             try {
                 tmpWalletName = tmpWalletName.length > SIZE ? tmpWalletName.slice(0, SIZE) + '...' : tmpWalletName
             } catch (e) {
-                tmpWalletName = 'TRUSTEE WALLET'
+                tmpWalletName = 'GRAVY WALLET'
             }
         }
         return tmpWalletName
