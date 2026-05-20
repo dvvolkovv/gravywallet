@@ -181,10 +181,10 @@ class AccountReceiveScreen extends React.PureComponent {
                     title: strings('modal.marketModal.title'),
                     description: strings('modal.marketModal.description'),
                 }, () => {
-                    NavStore.goNext('MarketScreen', { side: 'IN', currencyCode })
+                    NavStore.goNext('HomeScreen')
                 })
             } else {
-                NavStore.goNext('MarketScreen', { side: 'IN', currencyCode })
+                NavStore.goNext('HomeScreen')
             }
             // }
         } catch (e) {

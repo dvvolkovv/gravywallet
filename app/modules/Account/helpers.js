@@ -82,25 +82,8 @@ const handleBuy = async (props) => {
     try {
         await Netinfo.isInternetReachable()
 
-        const showMsg = trusteeAsyncStorage.getSmartSwapMsg() === '1'
-        if (!showMsg) {
-            showModal({
-                type: 'MARKET_MODAL',
-                icon: 'INFO',
-                title: strings('modal.marketModal.title'),
-                description: strings('modal.marketModal.description'),
-            }, () => {
-                NavStore.reset('MarketScreen', {screen: 'MarketScreen', params: {
-                    inCurrencyCode: basicCurrencyCode,
-                    outCurrencyCode: currencyCode
-                }})
-            })
-        } else {
-            NavStore.reset('MarketScreen', {screen: 'MarketScreen', params: {
-                inCurrencyCode: basicCurrencyCode,
-                outCurrencyCode: currencyCode
-            }})
-        }
+        // Market module removed (Plan B Task 4) - fallback to HomeScreen
+        NavStore.reset('HomeScreen')
 
         // }
     } catch (e) {

@@ -30,9 +30,6 @@ import WalletConnectScreen from '@app/modules/WalletConnect/WalletConnectScreen'
 import WalletConnectChangeNetworkScreen from '@app/modules/WalletConnect/WalletConnectChangeNetworkScreen'
 
 
-import SMSV3CodeScreen from '@app/modules/Market/SMSV3CodeScreen'
-import MarketScreen from '@app/modules/Market/MainScreen'
-
 import SendScreen from '@app/modules/Send/SendScreen'
 import SendScreenWithoutAmount from '@app/modules/Send/SendScreenWithoutAmount'
 import SendAdvancedSettingsScreen from '@app/modules/Send/SendAdvancedSettings'
@@ -82,7 +79,6 @@ import { strings } from '@app/services/i18n'
 import config from '@app/config/config'
 
 
-import SellCodeScreen from '@app/modules/Market/SellCodeScreen'
 import GlobalCoinSettings from '@app/modules/Settings/CoinSettings/GlobalCoinSettings'
 import BlocksoftExternalSettings from '@crypto/common/BlocksoftExternalSettings'
 import HomeDragScreen from '@app/modules/WalletList/HomeFilter/HomeDragScreen'
@@ -97,7 +93,7 @@ const Stack = createStackNavigator()
 
 const HomeStack = createStackNavigator()
 
-const MarketStack = createStackNavigator()
+const SupportStack = createStackNavigator()
 
 const Tab = createBottomTabNavigator()
 
@@ -185,28 +181,14 @@ const HomeStackScreen = () => {
     )
 }
 
-const MarketStackScreen = () => {
-    return (
-        <MarketStack.Navigator initialRouteName='MarketScreen' screenOptions={{ headerShown: false }}>
-            <MarketStack.Group screenOptions={{ transitionSpec, cardStyleInterpolator }}>
-                <MarketStack.Screen name='MarketScreen' component={MarketScreen} />
-                <MarketStack.Screen name='SMSV3CodeScreen' component={SMSV3CodeScreen} />
-                <MarketStack.Screen name='SellCodeScreen' component={SellCodeScreen} />
-                <MarketStack.Screen name='MarketReceiptScreen' component={ReceiptScreen} />
-                <MarketStack.Screen name='MarketAdvancedScreen' component={SendAdvancedSettingsScreen} />
-            </MarketStack.Group>
-        </MarketStack.Navigator>
-    )
-}
-
 const SupportStackScreen = () => {
     return (
-        <MarketStack.Navigator initialRouteName='StreamSupportScreen' screenOptions={{ headerShown: false }}>
-            <MarketStack.Group screenOptions={{ transitionSpec, cardStyleInterpolator }}>
-                <MarketStack.Screen name='StreamSupportScreen' component={StreamSupportScreen} />
-                <MarketStack.Screen name='SupportAboutScreen' component={AboutScreen} />
-            </MarketStack.Group>
-        </MarketStack.Navigator>
+        <SupportStack.Navigator initialRouteName='StreamSupportScreen' screenOptions={{ headerShown: false }}>
+            <SupportStack.Group screenOptions={{ transitionSpec, cardStyleInterpolator }}>
+                <SupportStack.Screen name='StreamSupportScreen' component={StreamSupportScreen} />
+                <SupportStack.Screen name='SupportAboutScreen' component={AboutScreen} />
+            </SupportStack.Group>
+        </SupportStack.Navigator>
     )
 }
 
@@ -259,19 +241,6 @@ const TabBar = () => {
                 options={{
                     tabBarLabel: strings('dashboardStack.wallet'),
                     tabBarIcon: ({ color }) => <CustomIcon name='wallet' color={color} size={22} style={{ marginBottom: 3 }} />
-                }}
-            />
-            <Tab.Screen
-                name='MarketScreen'
-                component={MarketStackScreen}
-                options={{
-                    tabBarLabel: strings('dashboardStack.market'),
-                    tabBarIcon: ({ color }) => <CustomIcon name='exchange' color={color} size={22} style={{ marginBottom: 3 }} />,
-                    tabBarOnPress: ({ navigation }) => {
-                        if (config.debug.appErrors) {
-                            console.log('pressed')
-                        }
-                    }
                 }}
             />
             {BlocksoftExternalSettings.getStatic('ROCKET_CHAT_USE') * 1 > 0 ? (

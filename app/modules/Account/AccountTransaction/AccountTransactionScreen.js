@@ -298,7 +298,8 @@ class AccountTransactionScreen extends PureComponent {
     }
 
     handlerOrderDetails = () => {
-        NavStore.reset('MarketScreen', { screen: 'MarketScreen', params: { orderHash: this.state.orderIdToView.description } })
+        // Market module removed (Plan B Task 4) - fallback to HomeScreen
+        NavStore.reset('HomeScreen')
     }
 
     render() {

@@ -121,7 +121,7 @@ export namespace SendActionsStart {
             await SendActionsBlockchainWrapper.getFeeRate(ui)
             if (uiType === 'TRADE_LIKE_WALLET_CONNECT') {
                 setLoaderFromBse(false)
-                NavStore.goNext('MarketReceiptScreen')
+                NavStore.goNext('ReceiptScreen')
             } else {
                 NavStore.goNext('ReceiptScreen')
             }
@@ -208,7 +208,7 @@ export namespace SendActionsStart {
         })
         setLoaderFromBse(true)
         await SendActionsBlockchainWrapper.getFeeRate(ui)
-        NavStore.goNext('MarketReceiptScreen')
+        NavStore.goNext('ReceiptScreen')
     }
 
     export const getTransferAllBalanceFromBSE = async (data : {
@@ -285,7 +285,7 @@ export namespace SendActionsStart {
         })
         setLoaderFromBse(true)
         await SendActionsBlockchainWrapper.getFeeRate(ui, selectedFee)
-        NavStore.goNext('MarketReceiptScreen')
+        NavStore.goNext('ReceiptScreen')
     }
 
 
