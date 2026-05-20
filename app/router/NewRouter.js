@@ -29,7 +29,6 @@ import QRCodeScannerScreen from '@app/modules/QRCodeScanner/QRCodeScannerScreen'
 import WalletConnectScreen from '@app/modules/WalletConnect/WalletConnectScreen'
 import WalletConnectChangeNetworkScreen from '@app/modules/WalletConnect/WalletConnectChangeNetworkScreen'
 
-import WalletDappWebViewScreen from '@app/modules/WalletDapp/WalletDappWebViewScreen'
 
 import SMSV3CodeScreen from '@app/modules/Market/SMSV3CodeScreen'
 import MarketScreen from '@app/modules/Market/MainScreen'
@@ -135,7 +134,6 @@ const HomeStackScreen = () => {
                 <HomeStack.Screen name='WalletConnectScreen' component={WalletConnectScreen} />
                 <HomeStack.Screen name='WalletConnectChangeNetworkScreen' component={WalletConnectChangeNetworkScreen} />
 
-                <HomeStack.Screen name='WalletDappWebViewScreen' component={WalletDappWebViewScreen} />
 
                 <HomeStack.Screen name='SendScreen' component={SendScreen} />
                 <HomeStack.Screen name='SendScreenWithoutAmount' component={SendScreenWithoutAmount} />
