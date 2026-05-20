@@ -30,10 +30,6 @@ export const finishProcess = async (_param, qrCodeScannerConfig) => {
         data: _param?.value || _param?.data
     }
 
-    if (param.data.indexOf('trusteenft:') === 0) {
-        NavStore.goNext('NftDetailedInfoQRCheck', { jsonData: param.data.substring(11) })
-        return
-    }
     if (param.data.indexOf('tg://resolve?domain=trustee_support_bot&start=app') === 0) {
         NavStore.goNext('SupportScreen')
     }

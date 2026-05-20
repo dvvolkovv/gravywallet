@@ -163,65 +163,6 @@ class CryptoCurrency extends React.PureComponent {
         );
     }
 
-    renderHiddenNFTLayer = (item) => {
-        return (
-            <View style={styles.hiddenLayer__container}>
-                <View style={styles.hiddenLayer__leftButtons__wrapper}>
-                    <RoundButton
-                        type="receive"
-                        containerStyle={styles.hiddenLayer__roundButton}
-                        onPress={() => handleCurrencySelect(this.props, 'NftReceive', this.bottomSheetRef)}
-                        noTitle
-                    />
-                    <RoundButton
-                        type="edit"
-                        containerStyle={styles.hiddenLayer__roundButton}
-                        onPress={() => handleCurrencySelect(this.props, 'NftAddAssetScreen', this.bottomSheetRef)}
-                        noTitle
-                    />
-                </View>
-                <RoundButton
-                    type="hide"
-                    containerStyle={styles.hiddenLayer__roundButton}
-                    onPress={() => this.props.handleHide(item)}
-                    noTitle
-                />
-            </View>
-        );
-    }
-
-    renderNFTLayer = (props) => {
-        const { colors } = this.context
-        const cryptoCurrency = props.cryptoCurrency
-
-        const currencyCode = cryptoCurrency.currencyCode || 'BTC'
-
-
-        return (
-            <View style={styles.container}>
-                <View style={styles.shadow__container}>
-                    <View style={styles.shadow__item} />
-                </View>
-                <View style={[styles.shadow__item__background, { backgroundColor: colors.homeScreen.listItemShadowBg }]} />
-                <TouchableDebounce
-                    activeOpacity={0.7}
-                    style={styles.cryptoList__item}
-                    onPress={() => handleCurrencySelect(this.props, false, this.bottomSheetRef)}
-                    onLongPress={() => this.props.constructorMode ? handleCurrencySelect(this.props, false, this.bottomSheetRef) : null}
-                    delayLongPress={this.props.constructorMode ? 100 : null}
-                >
-                    <CryptoCurrencyContent
-                        type='NFT'
-                        currencyCode={currencyCode}
-                        cryptoCurrency={cryptoCurrency}
-                        constructorMode={this.props.constructorMode}
-                        onDrag={this.props.onDrag}
-                    />
-                </TouchableDebounce>
-            </View>
-        )
-    };
-
     renderBottomSheet = () => {
         if (!this.props.constructorMode) return null
 
@@ -261,27 +202,7 @@ class CryptoCurrency extends React.PureComponent {
         // TODO: change condition - still need?
         if (typeof this.props === 'undefined') return <View />
 
-        if (this.props.cryptoCurrency.currencyCode === 'NFT') {
-            return (
-                <>
-                    <SwipeRow
-                        disableLeftSwipe={this.props.constructorMode}
-                        disableRightSwipe={this.props.constructorMode}
-                        leftOpenValue={140}
-                        rightOpenValue={-70}
-                        stopLeftSwipe={160}
-                        stopRightSwipe={-90}
-                        swipeToOpenPercent={5}
-                        swipeToClosePercent={5}
-                        setScrollEnabled={this.props.setScrollEnabled}
-                    >
-                        {this.renderHiddenNFTLayer(this.props.cryptoCurrency)}
-                        {this.renderNFTLayer(this.props)}
-                    </SwipeRow>
-                    {this.renderBottomSheet()}
-                </>
-            );
-        } else if (this.props.cryptoCurrency.currencyCode === 'CASHBACK') {
+        if (this.props.cryptoCurrency.currencyCode === 'CASHBACK') {
             return (
                 <>
                     <SwipeRow

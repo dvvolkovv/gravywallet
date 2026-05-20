@@ -82,13 +82,6 @@ import { useTheme } from '@app/theme/ThemeProvider'
 import { strings } from '@app/services/i18n'
 import config from '@app/config/config'
 
-import NftMainScreen from '@app/modules/NFT/NftMainScreen'
-import NftDetailedInfo from '@app/modules/NFT/NftDetailedInfo'
-import NftDetailedInfoQR from '@app/modules/NFT/NftDetailedInfoQR'
-import NftDetailedInfoQRCheck from '@app/modules/NFT/NftDetailedInfoQRCheck'
-import NftReceive from '@app/modules/NFT/NftReceive'
-import NftCollectionView from '@app/modules/NFT/NftCollectionView'
-import NftAddAssetScreen from '@app/modules/NFT/NftAddAssetScreen'
 
 import SellCodeScreen from '@app/modules/Market/SellCodeScreen'
 import GlobalCoinSettings from '@app/modules/Settings/CoinSettings/GlobalCoinSettings'
@@ -189,13 +182,6 @@ const HomeStackScreen = () => {
                 <HomeStack.Screen name='FioMainSettings' component={FioMainSettings} />
                 <HomeStack.Screen name='FioSettings' component={FioSettings} />
 
-                <HomeStack.Screen name='NftMainScreen' component={NftMainScreen} />
-                <HomeStack.Screen name='NftReceive' component={NftReceive} />
-                <HomeStack.Screen name='NftDetailedInfo' component={NftDetailedInfo} />
-                <HomeStack.Screen name='NftDetailedInfoQR' component={NftDetailedInfoQR} />
-                <HomeStack.Screen name='NftDetailedInfoQRCheck' component={NftDetailedInfoQRCheck} />
-                <HomeStack.Screen name='NftCollectionView' component={NftCollectionView} />
-                <HomeStack.Screen name='NftAddAssetScreen' component={NftAddAssetScreen} />
             </HomeStack.Group>
         </HomeStack.Navigator>
     )
