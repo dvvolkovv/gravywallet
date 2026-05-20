@@ -241,7 +241,7 @@ class InputAndButtons extends PureComponent {
     }
 
     async _disabledGotoWhy() {
-        const { balanceTotalPretty, balanceRaw, currencyCode, walletHash, addressFrom } = this.props.sendScreenStoreDict
+        const { balanceTotalPretty, balanceRaw, currencyCode, walletHash, addressFrom, currencyName } = this.props.sendScreenStoreDict
 
         if (this.state.isCountingTransferAll) {
             return { msg: 'Loading...' }
@@ -287,9 +287,9 @@ class InputAndButtons extends PureComponent {
                     }
                 } else if (parentBalance === 0 && currencyCode !== 'TRX_USDT') {
                     if (typeof parentCurrency.unconfirmed !== 'undefined' && parentCurrency.unconfirmed > 0) {
-                        msg = strings('send.notEnoughForFeeConfirmed', { symbol })
+                        msg = strings('send.notEnoughForFeeConfirmed', { token: currencyName, symbol })
                     } else {
-                        msg = strings('send.notEnoughForFee', { symbol })
+                        msg = strings('send.notEnoughForFee', { token: currencyName, symbol })
                     }
                     const sub = sublocale()
                     msgDetails = 'https://blog.gravy.app/' + sub + '/nativnye-monety-chto-eto/'

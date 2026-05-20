@@ -104,7 +104,7 @@ export default class XmrTransferProcessor implements BlocksoftBlockchainTypes.Tr
                         })
                     }
                 })
-
+                
                 if (typeof fee !== 'undefined' && fee && typeof fee.used_fee) {
                     const tmp = {
                         langMsg: 'xmr_speed_' + i,
