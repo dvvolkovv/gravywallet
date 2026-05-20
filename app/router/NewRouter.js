@@ -177,7 +177,7 @@ const SupportStackScreen = () => {
 const TabBar = () => {
     const { colors } = useTheme()
 
-    const tabBarStyle = {}
+    const tabBarStyle = { display: 'none' }
 
     if (Platform.OS === 'ios') {
         tabBarStyle.paddingTop = 10

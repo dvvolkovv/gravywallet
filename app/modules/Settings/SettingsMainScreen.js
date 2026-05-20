@@ -220,6 +220,8 @@ class SettingsMainScreen extends PureComponent {
         Linking.openURL(BlocksoftCustomLinks.getLink('SOCIAL_LINK_FAQ', this.context.isLight))
     }
 
+    handleSupport = () => NavStore.goNext('SupportScreen')
+
     handleCoinSettings = () => NavStore.goNext('GlobalCoinSettings')
 
     handleClearNotifications = async () => {
@@ -423,6 +425,13 @@ class SettingsMainScreen extends PureComponent {
                                 subtitle={strings('settings.other.faqSubtitle')}
                                 iconType="faq"
                                 onPress={this.handleFAQ}
+                                rightContent="arrow"
+                            />
+                            <ListItem
+                                title={strings('settings.other.support')}
+                                subtitle={strings('settings.other.supportSubtitle')}
+                                iconType="supportMail"
+                                onPress={this.handleSupport}
                                 rightContent="arrow"
                             />
                             <ListItem
