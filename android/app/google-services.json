@@ -1,34 +1,63 @@
 {
   "project_info": {
-    "project_number": "1000360526097",
-    "firebase_url": "https://api-7762265605376467090-814112.firebaseio.com",
-    "project_id": "api-7762265605376467090-814112",
-    "storage_bucket": "api-7762265605376467090-814112.appspot.com"
+    "project_number": "000000000000",
+    "firebase_url": "https://gravy-wallet-placeholder.firebaseio.com",
+    "project_id": "gravy-wallet-placeholder",
+    "storage_bucket": "gravy-wallet-placeholder.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1000360526097:android:c679be150b04db26",
+        "mobilesdk_app_id": "1:000000000000:android:0000000000000001",
         "android_client_info": {
-          "package_name": "com.trusteewallet"
+          "package_name": "app.gravywallet"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1000360526097-rcmmmsm0rbvk6q6v3qnu6johhke39fc7.apps.googleusercontent.com",
+          "client_id": "000000000000-placeholder.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "***REMOVED***"
+          "current_key": "PLACEHOLDER_DO_NOT_USE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1000360526097-rcmmmsm0rbvk6q6v3qnu6johhke39fc7.apps.googleusercontent.com",
+              "client_id": "000000000000-placeholder.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:000000000000:android:0000000000000002",
+        "android_client_info": {
+          "package_name": "app.gravywallet.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "000000000000-placeholder.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "PLACEHOLDER_DO_NOT_USE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "000000000000-placeholder.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

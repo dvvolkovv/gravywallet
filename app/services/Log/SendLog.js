@@ -24,7 +24,7 @@ class SendLog {
 
         const logs = `
 
-                ↑↑↑ Send to: contact@trustee.deals ↑↑↑
+                ↑↑↑ Send to: support@gravy.app ↑↑↑
 
                 GENERATED: ${new Date().toISOString()}
                 ${JSON.stringify(deviceToken)}
@@ -52,9 +52,9 @@ class SendLog {
             // @ts-ignore
             Log.errFS(FilePermissions.getError())
             return {
-                title: 'Trustee. Support',
-                subject: 'Trustee. Support',
-                email: 'contact@trustee.deals',
+                title: 'Gravy. Support',
+                subject: 'Gravy. Support',
+                email: 'support@gravy.app',
                 message: logs
             }
         }
@@ -113,10 +113,10 @@ class SendLog {
         }
 
         const shareOptions = {
-            title: 'Trustee. Support',
-            subject: 'Trustee. Support',
-            email: 'contact@trustee.deals',
-            message: '↑↑↑ Send to: contact@trustee.deals ↑↑↑',
+            title: 'Gravy. Support',
+            subject: 'Gravy. Support',
+            email: 'support@gravy.app',
+            message: '↑↑↑ Send to: support@gravy.app ↑↑↑',
             urls
         }
         return shareOptions

@@ -6,7 +6,9 @@ import Log from '@app/services/Log/Log'
 import { decodeTransactionQrCode } from '@app/services/UI/Qr/QrScan'
 import { SendActionsStart } from './SendActionsStart'
 
-import branch from 'react-native-branch'
+// Branch.io removed — using Linking for gravy:// deep links
+import { Linking } from 'react-native'
+const branch = { subscribe: (cb: any) => { Linking.addEventListener('url', (e) => cb({ error: null, params: { '$desktop_url': e.url } })); return () => {} } }
 
 
 let CACHE_ALREADY_INITED = false

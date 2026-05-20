@@ -121,10 +121,10 @@ const walletConnectService = {
         web3wallet = await Web3Wallet.init({
             core,
             metadata: {
-                description: 'Trustee Wallet',
+                description: 'Gravy Wallet',
                 url: 'https://trustee.deals',
                 icons: ['https://trusteeglobal.com/wp-content/uploads/2023/03/icon_wallet.png'],
-                name: 'Trustee Wallet'
+                name: 'Gravy Wallet'
             }
         })
 

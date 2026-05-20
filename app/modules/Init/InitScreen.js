@@ -151,7 +151,7 @@ class InitScreen extends React.PureComponent {
                 <View style={{ flex: 1, justifyContent: 'flex-end', marginBottom: GRID_SIZE * 5 }}>
                     <View>
                         <Text style={[styles.appName__text, { color: colors.initScreen.appName }]} numberOfLines={1}>
-                            TRUSTEE WALLET
+                            GRAVY WALLET
                         </Text>
                         <View>
                             <Text style={[styles.appVersion__text, { color: colors.common.text1, marginTop: GRID_SIZE / 2 }]} >

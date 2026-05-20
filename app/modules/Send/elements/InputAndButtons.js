@@ -292,7 +292,7 @@ class InputAndButtons extends PureComponent {
                         msg = strings('send.notEnoughForFee', { token: currencyName, symbol })
                     }
                     const sub = sublocale()
-                    msgDetails = 'https://blog.trusteeglobal.com/' + sub + '/nativnye-monety-chto-eto/'
+                    msgDetails = 'https://blog.gravy.app/' + sub + '/nativnye-monety-chto-eto/'
                 }
                 if (msg) {
                     Log.log('Send.SendScreen.handleSendTransaction ' + currencyCode + ' from ' + addressFrom + ' parentBalance ' + extend.feesCurrencyCode + ' ' + symbol + ' not ok ' + parentBalance, parentCurrency)

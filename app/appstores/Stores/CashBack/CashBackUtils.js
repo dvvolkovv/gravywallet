@@ -1,7 +1,8 @@
 /**
  * @version 0.42
  */
-import branch from 'react-native-branch'
+// Branch.io removed — gravy:// deep links via Android scheme
+const branch = { getFirstReferringParams: async () => ({}) }
 import { Linking } from 'react-native'
 import dynamicLinks from '@react-native-firebase/dynamic-links'
 

@@ -126,7 +126,7 @@ class WalletInfo extends React.Component {
 
     handleMoreInfo = () => {
         const sub = sublocale()
-        const linkUrl = 'https://blog.trusteeglobal.com/' + sub + '/yak-ne-staty-zhertvoyu-shahrayiv-u-kryptovalyutah/'
+        const linkUrl = 'https://blog.gravy.app/' + sub + '/yak-ne-staty-zhertvoyu-shahrayiv-u-kryptovalyutah/'
         try {
             Linking.openURL(linkUrl)
         } catch (e) {
