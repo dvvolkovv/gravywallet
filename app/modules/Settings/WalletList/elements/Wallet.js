@@ -16,7 +16,6 @@ import BlocksoftPrettyNumbers from '@crypto/common/BlocksoftPrettyNumbers'
 
 import { ThemeContext } from '@app/theme/ThemeProvider'
 import { setBseLink } from '@app/appstores/Stores/Main/MainStoreActions'
-import { NftActions } from '@app/appstores/Stores/Nfts/NftsActions'
 
 class Wallet extends Component {
 
@@ -33,7 +32,6 @@ class Wallet extends Component {
         if (this.props.source === 'HomeScreen') {
             NavStore.goBack()
         }
-        await NftActions.init(false, this.props.wallet.walletHash) // wallet hash here helps as address else used from old wallet sometimes
     }
 
     handleOpenAdvanced = () => {

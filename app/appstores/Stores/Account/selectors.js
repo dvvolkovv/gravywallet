@@ -1,10 +1,6 @@
 import { createSelectorCreator, defaultMemoize } from 'reselect'
 import _isEqual from 'lodash/isEqual'
 import _values from 'lodash/values'
-import store from '@app/store'
-import DaemonCache from '@app/daemons/DaemonCache'
-import RateEquivalent from '@app/services/UI/RateEquivalent/RateEquivalent'
-import BlocksoftPrettyNumbers from '@crypto/common/BlocksoftPrettyNumbers'
 import config from '@app/config/config'
 import Log from '@app/services/Log/Log'
 
@@ -21,32 +17,13 @@ const createDeepEqualSelector = createSelectorCreator(
     _isEqual
 )
 
-const getCashbackData = () => {
-    const cashbackStore = store.getState().cashBackStore
-    if (typeof cashbackStore.dataFromApi !== 'undefined') {
-        const accountRates = DaemonCache.getCacheRates('USDT')
-        const value = (cashbackStore.dataFromApi.cashbackBalance * 1 + cashbackStore.dataFromApi.cpaBalance * 1) || 0
-        const basicCurrencyBalanceNorm = RateEquivalent.mul({ value, currencyCode: 'USDT', basicCurrencyRate: accountRates.basicCurrencyRate })
-        const basicCurrencyBalance = BlocksoftPrettyNumbers.makeCut(basicCurrencyBalanceNorm, 2).separated
-        return {
-            basicCurrencySymbol: accountRates.basicCurrencySymbol,
-            basicCurrencyRate: '',
-            basicCurrencyBalance,
-            balanceScanTime: cashbackStore.dataFromApi.time || false,
-            balancePretty: value,
-            basicCurrencyBalanceNorm
-        }
-    }
-}
-
-
 const selectAccountCurrency = (state, props) => {
     try {
         const currencyCode = props.cryptoCurrency.currencyCode
         const selectedWallet = state.mainStore.selectedWallet.walletHash
 
         if (currencyCode === 'CASHBACK') {
-            return getCashbackData()
+            return DEFAULT_ACCOUNT
         }
         if (currencyCode === 'NFT') {
             return DEFAULT_ACCOUNT
@@ -86,11 +63,7 @@ export function getAccountList(state) {
             // throw new Error('Undefined selectedWallet ' + selectedWallet + ' in Account.selectors.selectAccountCurrency')
         }
 
-        const cashbackData = getCashbackData()
-        cashbackData.currencyCode = 'CASHBACK'
-
         const account = _values(state.accountStore.accountList[selectedWallet])
-        account.push(cashbackData)
         return account
 
     } catch (e) {

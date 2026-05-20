@@ -42,9 +42,6 @@ import TouchableDebounce from '@app/components/elements/new/TouchableDebounce'
 import SheetBottom from '@app/components/elements/SheetBottom/SheetBottom'
 import Button from '@app/components/elements/new/buttons/Button'
 
-import { setWalletDapp } from '@app/appstores/Stores/WalletDapp/WalletDappStoreActions'
-import dappsBlocksoftDict from '@crypto/assets/dappsBlocksoftDict.json'
-
 class HeaderBlocks extends React.Component {
 
     shouldComponentUpdate(nextProps) {
@@ -331,11 +328,7 @@ class HeaderBlocks extends React.Component {
     }
 
     accountSetting = (currencyCode) => {
-        if (currencyCode === 'FIO') {
-            NavStore.goNext('FioMainSettings')
-        } else {
-            NavStore.goNext('AccountSettings', { account: currencyCode })
-        }
+        NavStore.goNext('AccountSettings', { account: currencyCode })
     }
 
     settings = (currencyCode) => {
@@ -359,7 +352,6 @@ class HeaderBlocks extends React.Component {
 
     renderStakingBtn = (currencyCode) => {
         switch (currencyCode) {
-            case 'ETH':
             case 'TRX':
             case 'SOL':
                 return this.handleStakingAccount(currencyCode)
@@ -370,14 +362,6 @@ class HeaderBlocks extends React.Component {
 
     accountStaking = (currencyCode) => {
         switch (currencyCode) {
-            case 'ETH':
-                setWalletDapp(dappsBlocksoftDict['ETH_LIDO'])
-                MarketingEvent.logEvent('wallet_dapps_eth_stacking')
-                return NavStore.goNext('WalletDappWebViewScreen')
-            case 'ETH_MATIC':
-                setWalletDapp(dappsBlocksoftDict['MATIC_LIDO'])
-                MarketingEvent.logEvent('wallet_dapps_matic_stacking')
-                return NavStore.goNext('WalletDappWebViewScreen')
             case 'TRX':
                 return NavStore.goNext('AccountStakingTRX')
             case 'SOL':

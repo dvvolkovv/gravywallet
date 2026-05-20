@@ -29,10 +29,6 @@ import QRCodeScannerScreen from '@app/modules/QRCodeScanner/QRCodeScannerScreen'
 import WalletConnectScreen from '@app/modules/WalletConnect/WalletConnectScreen'
 import WalletConnectChangeNetworkScreen from '@app/modules/WalletConnect/WalletConnectChangeNetworkScreen'
 
-import WalletDappWebViewScreen from '@app/modules/WalletDapp/WalletDappWebViewScreen'
-
-import SMSV3CodeScreen from '@app/modules/Market/SMSV3CodeScreen'
-import MarketScreen from '@app/modules/Market/MainScreen'
 
 import SendScreen from '@app/modules/Send/SendScreen'
 import SendScreenWithoutAmount from '@app/modules/Send/SendScreenWithoutAmount'
@@ -52,15 +48,6 @@ import AccountStakingSOL from '@app/modules/Account/AccountStaking/AccountStakin
 import SolStakingTransactionScreen from '@app/modules/Account/AccountStaking/sol/SolStakingTransactionScreen'
 import SolValidators from '@app/modules/Account/AccountStaking/sol/SolValidators'
 
-import FioChooseRecipient from '@app/modules/FIO/FioChooseRecipient'
-import FioSendRequest from '@app/modules/FIO/FioSendRequest'
-import FioRequestsList from '@app/modules/FIO/FioRequestsList'
-import FioChooseAddress from '@app/modules/FIO/FioChooseAddress'
-import FioRequestDetails from '@app/modules/FIO/FioRequestDetails'
-import FioAddresses from '@app/modules/FIO/FioAddresses'
-import FioMainSettings from '@app/modules/FIO/FioMainSettings'
-import FioSettings from '@app/modules/FIO/FioSettings'
-
 import SettingsMainScreen from '@app/modules/Settings/SettingsMainScreen'
 import WalletListScreen from '@app/modules/Settings/WalletList/WalletListScreen'
 import AddWalletScreen from '@app/modules/Settings/WalletList/AddWalletScreen'
@@ -74,24 +61,14 @@ import ScannerSettingsScreen from '@app/modules/Settings/Subsettings/ScannerSett
 import LoggingSettingsScreen from '@app/modules/Settings/Subsettings/LoggingSettingsScreen'
 import NotificationsSettingScreen from '@app/modules/Settings/Subsettings/NotificationsScreen'
 
-import CashbackScreen from '@app/modules/Cashback/CashbackScreen'
 import BotSupportScreen from '@app/modules/Support/botSupport'
-import StreamSupportScreen from '@app/modules/Support/streamSupport'
 
 import CustomIcon from '@app/components/elements/CustomIcon'
 import { useTheme } from '@app/theme/ThemeProvider'
 import { strings } from '@app/services/i18n'
 import config from '@app/config/config'
 
-import NftMainScreen from '@app/modules/NFT/NftMainScreen'
-import NftDetailedInfo from '@app/modules/NFT/NftDetailedInfo'
-import NftDetailedInfoQR from '@app/modules/NFT/NftDetailedInfoQR'
-import NftDetailedInfoQRCheck from '@app/modules/NFT/NftDetailedInfoQRCheck'
-import NftReceive from '@app/modules/NFT/NftReceive'
-import NftCollectionView from '@app/modules/NFT/NftCollectionView'
-import NftAddAssetScreen from '@app/modules/NFT/NftAddAssetScreen'
 
-import SellCodeScreen from '@app/modules/Market/SellCodeScreen'
 import GlobalCoinSettings from '@app/modules/Settings/CoinSettings/GlobalCoinSettings'
 import BlocksoftExternalSettings from '@crypto/common/BlocksoftExternalSettings'
 import HomeDragScreen from '@app/modules/WalletList/HomeFilter/HomeDragScreen'
@@ -106,7 +83,7 @@ const Stack = createStackNavigator()
 
 const HomeStack = createStackNavigator()
 
-const MarketStack = createStackNavigator()
+const SupportStack = createStackNavigator()
 
 const Tab = createBottomTabNavigator()
 
@@ -137,13 +114,11 @@ const HomeStackScreen = () => {
                 <HomeStack.Screen name='AddAssetScreen' component={AddAssetScreen} />
 
                 <HomeStack.Screen name='NotificationsScreen' component={NotificationsScreen} />
-                <HomeStack.Screen name='StreamSupportScreen' component={StreamSupportScreen} />
                 <HomeStack.Screen name='BotSupportScreen' component={BotSupportScreen} />
 
                 <HomeStack.Screen name='WalletConnectScreen' component={WalletConnectScreen} />
                 <HomeStack.Screen name='WalletConnectChangeNetworkScreen' component={WalletConnectChangeNetworkScreen} />
 
-                <HomeStack.Screen name='WalletDappWebViewScreen' component={WalletDappWebViewScreen} />
 
                 <HomeStack.Screen name='SendScreen' component={SendScreen} />
                 <HomeStack.Screen name='SendScreenWithoutAmount' component={SendScreenWithoutAmount} />
@@ -181,56 +156,26 @@ const HomeStackScreen = () => {
                 <HomeStack.Screen name='NotificationsSettingsScreen' component={NotificationsSettingScreen} />
                 <HomeStack.Screen name='GlobalCoinSettings' component={GlobalCoinSettings} />
 
-                <HomeStack.Screen name='FioChooseRecipient' component={FioChooseRecipient} />
-                <HomeStack.Screen name='FioChooseAddress' component={FioChooseAddress} />
-                <HomeStack.Screen name='FioSendRequest' component={FioSendRequest} />
-                <HomeStack.Screen name='FioRequestsList' component={FioRequestsList} />
-                <HomeStack.Screen name='FioRequestDetails' component={FioRequestDetails} />
-                <HomeStack.Screen name='FioAddresses' component={FioAddresses} />
-                <HomeStack.Screen name='FioMainSettings' component={FioMainSettings} />
-                <HomeStack.Screen name='FioSettings' component={FioSettings} />
-
-                <HomeStack.Screen name='NftMainScreen' component={NftMainScreen} />
-                <HomeStack.Screen name='NftReceive' component={NftReceive} />
-                <HomeStack.Screen name='NftDetailedInfo' component={NftDetailedInfo} />
-                <HomeStack.Screen name='NftDetailedInfoQR' component={NftDetailedInfoQR} />
-                <HomeStack.Screen name='NftDetailedInfoQRCheck' component={NftDetailedInfoQRCheck} />
-                <HomeStack.Screen name='NftCollectionView' component={NftCollectionView} />
-                <HomeStack.Screen name='NftAddAssetScreen' component={NftAddAssetScreen} />
             </HomeStack.Group>
         </HomeStack.Navigator>
     )
 }
 
-const MarketStackScreen = () => {
-    return (
-        <MarketStack.Navigator initialRouteName='MarketScreen' screenOptions={{ headerShown: false }}>
-            <MarketStack.Group screenOptions={{ transitionSpec, cardStyleInterpolator }}>
-                <MarketStack.Screen name='MarketScreen' component={MarketScreen} />
-                <MarketStack.Screen name='SMSV3CodeScreen' component={SMSV3CodeScreen} />
-                <MarketStack.Screen name='SellCodeScreen' component={SellCodeScreen} />
-                <MarketStack.Screen name='MarketReceiptScreen' component={ReceiptScreen} />
-                <MarketStack.Screen name='MarketAdvancedScreen' component={SendAdvancedSettingsScreen} />
-            </MarketStack.Group>
-        </MarketStack.Navigator>
-    )
-}
-
 const SupportStackScreen = () => {
     return (
-        <MarketStack.Navigator initialRouteName='StreamSupportScreen' screenOptions={{ headerShown: false }}>
-            <MarketStack.Group screenOptions={{ transitionSpec, cardStyleInterpolator }}>
-                <MarketStack.Screen name='StreamSupportScreen' component={StreamSupportScreen} />
-                <MarketStack.Screen name='SupportAboutScreen' component={AboutScreen} />
-            </MarketStack.Group>
-        </MarketStack.Navigator>
+        <SupportStack.Navigator initialRouteName='BotSupportScreen' screenOptions={{ headerShown: false }}>
+            <SupportStack.Group screenOptions={{ transitionSpec, cardStyleInterpolator }}>
+                <SupportStack.Screen name='BotSupportScreen' component={BotSupportScreen} />
+                <SupportStack.Screen name='SupportAboutScreen' component={AboutScreen} />
+            </SupportStack.Group>
+        </SupportStack.Navigator>
     )
 }
 
 const TabBar = () => {
     const { colors } = useTheme()
 
-    const tabBarStyle = {}
+    const tabBarStyle = { display: 'none' }
 
     if (Platform.OS === 'ios') {
         tabBarStyle.paddingTop = 10
@@ -276,27 +221,6 @@ const TabBar = () => {
                 options={{
                     tabBarLabel: strings('dashboardStack.wallet'),
                     tabBarIcon: ({ color }) => <CustomIcon name='wallet' color={color} size={22} style={{ marginBottom: 3 }} />
-                }}
-            />
-            <Tab.Screen
-                name='MarketScreen'
-                component={MarketStackScreen}
-                options={{
-                    tabBarLabel: strings('dashboardStack.market'),
-                    tabBarIcon: ({ color }) => <CustomIcon name='exchange' color={color} size={22} style={{ marginBottom: 3 }} />,
-                    tabBarOnPress: ({ navigation }) => {
-                        if (config.debug.appErrors) {
-                            console.log('pressed')
-                        }
-                    }
-                }}
-            />
-            <Tab.Screen
-                name='CashbackScreen'
-                component={CashbackScreen}
-                options={{
-                    tabBarLabel: strings('dashboardStack.earn'),
-                    tabBarIcon: ({ color }) => <CustomIcon name='earn' color={color} size={22} style={{ marginBottom: 3 }} />
                 }}
             />
             {BlocksoftExternalSettings.getStatic('ROCKET_CHAT_USE') * 1 > 0 ? (

@@ -12,20 +12,15 @@ import { sublocale } from '@app/services/i18n'
 import MarketingEvent from '@app/services/Marketing/MarketingEvent'
 import CashBackUtils from '@app/appstores/Stores/CashBack/CashBackUtils'
 import AppNotificationListener from '@app/services/AppNotification/AppNotificationListener'
-import ApiV3 from '@app/services/Api/ApiV3'
 import settingsActions from '@app/appstores/Stores/Settings/SettingsActions'
 import appNewsDS from '@app/appstores/DataSource/AppNews/AppNews'
 import customCurrencyDS from '@app/appstores/DataSource/CustomCurrency/CustomCurrency'
-import cardsDS from '@app/appstores/DataSource/Card/Card'
 
 import store from '@app/store'
 
 import Log from '@app/services/Log/Log'
-import UpdateTradeOrdersDaemon from '@app/daemons/back/UpdateTradeOrdersDaemon'
-import UpdateCardsDaemon from '@app/daemons/back/UpdateCardsDaemon'
 import UpdateWalletsDaemon from '@app/daemons/back/UpdateWalletsDaemon'
 import UpdateAppNewsDaemon from '@app/daemons/back/UpdateAppNewsDaemon'
-import UpdateCashBackDataDaemon from '@app/daemons/back/UpdateCashBackDataDaemon'
 import UpdateCurrencyRateDaemon from '@app/daemons/back/UpdateCurrencyRateDaemon'
 
 let CACHE_SENT_FIRST_SKIP = true
@@ -60,15 +55,11 @@ async function _getAll(params) {
 
     const forCustomTokens = await customCurrencyDS.getCustomCurrenciesForApi()
 
-    let forCards = false
     let forWallets = false
     let newsData = false
     let walletAll = false
-    let cbOrders = false
-    let cbData = false
     const forServerIds = []
 
-    const anotherCashbackTokensByDevice = []
     const debug = {}
     let needService = false
     try {
@@ -88,9 +79,6 @@ async function _getAll(params) {
             // do nothing
         }
         for (const wallet of store.getState().walletStore.wallets) {
-            if (wallet.walletHash !== walletHash) {
-                anotherCashbackTokensByDevice.push(wallet.walletCashback)
-            }
             if (wallet.walletHash === '80921818e774c9eb14f56863273409f6' || wallet.walletCashback === '0QzY5OTI') {
                 needService = true
             }
@@ -113,11 +101,10 @@ async function _getAll(params) {
         }
     }
 
-    walletAll = await ApiV3.initWallet({ walletHash }, 'ApiProxy')
+    walletAll = false
 
     if (!CACHE_SENT_FIRST_SKIP) {
 
-        forCards = await cardsDS.getCardsForApi(walletHash)
         forWallets = []
         const wallet = store.getState().mainStore.selectedWallet
         if (wallet && wallet.walletHash === walletHash) {
@@ -133,16 +120,6 @@ async function _getAll(params) {
                 walletAllowReplaceByFee: wallet.walletAllowReplaceByFee,
                 walletIsBackedUp: wallet.walletIsBackedUp
             })
-            if (!cashbackToken) {
-                MarketingEvent.DATA.LOG_CASHBACK = wallet.walletCashback
-            }
-        }
-
-        cbOrders = {
-            CACHE_ORDERS_HASH: UpdateTradeOrdersDaemon.getSavedOrdersHash(),
-            cashbackToken,
-            signedData,
-            timestamp: +new Date()
         }
 
         newsData = {
@@ -150,33 +127,15 @@ async function _getAll(params) {
             deviceToken,
             sign: signedData,
             userNotifications: forServer || [],
-            anotherCashbackTokensByDevice,
             exchangeRatesNotifs: settingsActions.getSettingStatic('exchangeRatesNotifs'),
             locale: sublocale()
         }
     }
 
-    cbData = {
-        deviceToken,
-        locale: sublocale(),
-        signedData,
-        timestamp: +new Date()
-    }
-
-    if (typeof cashbackToken !== 'undefined' && cashbackToken !== null) {
-        cbData.cashbackToken = cashbackToken
-    }
-    if (typeof parentToken !== 'undefined' && parentToken !== null && parentToken) {
-        cbData.parentToken = parentToken
-    }
-
     const marketingAll = { ...MarketingEvent.DATA, CACHE_SERVER_TIME_DIFF }
     const allData = {
         newsData,
-        cbData,
-        cbOrders,
         forCustomTokens,
-        forCards,
         forWallets,
         marketingAll,
         walletAll,
@@ -199,8 +158,6 @@ async function _getAll(params) {
             msg += 'ApiProxy._getAll feesHash ' + (all.data.data.feesHash || 'none')
             msg += ' ratesHash ' + (all.data.data.ratesHash || 'none')
             msg += ' newsHash ' + (all.data.data.newsHash || 'none')
-            msg += ' cbOrdersHash ' + (all.data.data.cbOrdersHash || 'none')
-            msg += ' cbDataHash ' + (all.data.data.cbDataHash || 'none')
             await BlocksoftCryptoLog.log(msg)
         } else {
             await BlocksoftCryptoLog.log('ApiProxy._getAll no data')
@@ -340,20 +297,11 @@ export default {
                     await UpdateCurrencyRateDaemon.updateCurrencyRate(params, res)
                 }
             }
-            if (params.source.indexOf('UpdateCardsDaemon') === -1) {
-                await UpdateCardsDaemon.updateCardsDaemon(params, res)
-            }
             if (params.source.indexOf('UpdateWalletsDaemon') === -1) {
                 await UpdateWalletsDaemon.updateWalletsDaemon(params, res)
             }
             if (params.source.indexOf('UpdateAppNewsDaemon') === -1) {
                 await UpdateAppNewsDaemon.updateAppNewsDaemon(params, res)
-            }
-            if (params.source.indexOf('UpdateCashBack') === -1) {
-                await UpdateCashBackDataDaemon.updateCashBackDataDaemon(params, res)
-            }
-            if (params.source.indexOf('UpdateTradeOrdersDaemon') === -1) {
-                await UpdateTradeOrdersDaemon.updateTradeOrdersDaemon(params, res)
             }
 
         }

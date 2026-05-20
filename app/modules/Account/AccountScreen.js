@@ -29,7 +29,6 @@ import MarketingEvent from '@app/services/Marketing/MarketingEvent'
 import MarketingAnalytics from '@app/services/Marketing/MarketingAnalytics'
 import trusteeAsyncStorage from '@appV2/services/trusteeAsyncStorage/trusteeAsyncStorage'
 
-import UpdateTradeOrdersDaemon from '@app/daemons/back/UpdateTradeOrdersDaemon'
 import UpdateAccountBalanceAndTransactions from '@app/daemons/back/UpdateAccountBalanceAndTransactions'
 import UpdateAccountListDaemon from '@app/daemons/view/UpdateAccountListDaemon'
 import UpdateAccountBalanceAndTransactionsHD from '@app/daemons/back/UpdateAccountBalanceAndTransactionsHD'
@@ -37,7 +36,6 @@ import UpdateOneByOneDaemon from '@app/daemons/back/UpdateOneByOneDaemon'
 
 import { strings, sublocale } from '@app/services/i18n'
 
-import { getAccountFioName } from '@crypto/blockchains/fio/FioUtils'
 
 import { ThemeContext } from '@app/theme/ThemeProvider'
 
@@ -90,19 +88,6 @@ class Account extends React.PureComponent {
     }
 
     async componentDidMount() {
-        const { currencyCode } = this.props.selectedCryptoCurrencyData
-        if (currencyCode === 'FIO') {
-            const fioAccount = await getAccountFioName()
-            if (!fioAccount) {
-                showModal({
-                    type: 'YES_NO_MODAL',
-                    title: strings('account.fioAccount.title'),
-                    icon: 'INFO',
-                    description: strings('account.fioAccount.description')
-                }, this.handleRegisterFIOAddress)
-            }
-        }
-
         this._onLoad()
     }
 
@@ -128,12 +113,6 @@ class Account extends React.PureComponent {
         if (this.state.hasStickyHeader && newOffset < 260) this.setState(() => ({ hasStickyHeader: false }))
     }
 
-    handleRegisterFIOAddress = async () => {
-        const { address } = this.props.selectedAccountData
-        const link = BlocksoftExternalSettings.getStatic('FIO_REGISTRATION_URL')
-        NavStore.goNext('WebViewScreen', { url: link + address, title: strings('fioMainSettings.registerFioAddress') })
-    }
-
     handleRefresh = async (click = false) => {
         const { walletIsHd } = this.props.selectedWalletData
         const { currencyCode } = this.props.selectedCryptoCurrencyData
@@ -145,16 +124,6 @@ class Account extends React.PureComponent {
         UpdateOneByOneDaemon._canUpdate = false
 
         let needRefresh = false
-        if (currencyCode !== 'ETH_ROPSTEN' && currencyCode !== 'ETH_RINKEBY') {
-            try {
-                if (await UpdateTradeOrdersDaemon.updateTradeOrdersDaemon({ force: true, source: 'ACCOUNT_REFRESH' })) {
-                    needRefresh = true
-                }
-            } catch (e) {
-                Log.errDaemon('AccountScreen handleRefresh error updateTradeOrdersDaemon ' + e.message)
-            }
-        }
-
         try {
             if (await UpdateAccountBalanceAndTransactions.updateAccountBalanceAndTransactions({
                 force: true,

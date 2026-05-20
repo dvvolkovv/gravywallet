@@ -4,10 +4,9 @@
  */
 import React from 'react'
 import { connect } from 'react-redux'
-import { View, Text, TouchableOpacity, Linking, StyleSheet, StatusBar } from 'react-native'
+import { View, Text, TouchableOpacity, Linking, StyleSheet, StatusBar, Image, ActivityIndicator } from 'react-native'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons'
-import LottieView from 'lottie-react-native'
 
 import NavStore from '@app/components/navigation/NavStore'
 
@@ -40,12 +39,10 @@ class InitScreen extends React.PureComponent {
     }
 
     componentDidMount() {
-        this.initAnimationRef.play()
         this.init()
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
-        this.initAnimationRef.play()
         this.init()
     }
 
@@ -139,14 +136,14 @@ class InitScreen extends React.PureComponent {
                     </Text>
                 </View>
 
-                <LottieView
-                    ref={ref => this.initAnimationRef = ref}
-                    style={{ marginBottom: GRID_SIZE * 2, flex: 1, ...StyleSheet.absoluteFill }}
-                    source={isLight ? require('@assets/jsons/animations/LoaderTrusteeLight.json') : require('@assets/jsons/animations/LoaderTrusteeDark.json')}
-                    useNativeDriver
-                    autoPlay
-                    loop
-                />
+                <View style={styles.loaderContainer}>
+                    <Image
+                        source={require('@assets/images/logo.png')}
+                        style={{ width: 96, height: 96, marginBottom: 24 }}
+                        resizeMode='contain'
+                    />
+                    <ActivityIndicator size='large' color='#6B4EFF' />
+                </View>
 
                 <View style={{ flex: 1, justifyContent: 'flex-end', marginBottom: GRID_SIZE * 5 }}>
                     <View>
@@ -212,6 +209,11 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         paddingLeft: 30,
         paddingRight: 30
+    },
+    loaderContainer: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
     },
     image: {
         alignSelf: 'center',

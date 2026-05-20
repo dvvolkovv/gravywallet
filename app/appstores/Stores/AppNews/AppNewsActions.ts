@@ -90,7 +90,8 @@ export namespace AppNewsActions {
                     rates: true,
                     textRatesBtn: strings('account.transactionScreen.order'),
                     noCallback: () => {
-                        NavStore.reset('MarketScreen', { screen: 'MarketScreen', params: { orderHash } })
+                        // Market module removed (Plan B Task 4) - fallback to HomeScreen
+                        NavStore.reset('HomeScreen')
                     }
                 })
                 return false

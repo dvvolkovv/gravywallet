@@ -35,14 +35,11 @@
     "termsTitle": "გამოყენების პირობები",
     "agreement3": "and consent to the processing of the Personal Data that I have provided",
     "privacyPolicyTitle": "კონფიდენციალურობის პოლიტიკა",
-    "slider1": "უსაფრთხოებისა და ანონიმურობის ინოვაციური ტექნოლოგიები",
-    "slider2": "უსაზღვრო შესაძლებლობები ინტუიტიურად გასაგებ დიზაინში",
-    "slider3": "გაცვლითი პუნქტების ჩაშენებული მონიტორინგი",
-    "slider4": "Зависшие и дорогие транзакции"
+    "welcomeTitle": "კეთილი იყოს თქვენი მობრძანება Gravy-ში",
+    "welcomeSubtitle": "მრავალქსელიანი არაკუსტოდიური საფულე ჩაშენებული სვაპით."
   },
   "tradeScreen": {
     "modalError": {
-      "selectPhoto": "აირჩიეთ ბარათის ფოტო გალერეადან",
       "serviceUnavailable": "სერვისი მიუწვდომელია. გთხოვთ, სცადოთ მოგვიანებით",
       "qrNotFoundInFile": "QR-კოდი არ მოიძებნა, გთხოვთ, გადატვირთოთ ფაილი."
     }
@@ -97,7 +94,7 @@
       "activated": "Activated",
       "disabled": "Disabled",
       "changeNetwork": "Change Network",
-      "turnBasicAsset" : "For WalletConnect you need add {asset} as it is used in this transaction"
+      "turnBasicAsset": "For WalletConnect you need add {asset} as it is used in this transaction"
     },
     "walletManagement": {
       "title": "საფულეების მართვა",
@@ -139,7 +136,7 @@
       "darkModeEnabledSubtitle": "ჩართვა",
       "darkModeDisabledSubtitle": "გამორთვა",
       "support": "მხარდაჭერა",
-      "supportSubtitle": "ჩვენი ბოტი telegram-ში",
+      "supportSubtitle": "მოგვწერეთ ელფოსტაზე ან ეწვიეთ ვებსაიტს",
       "lock": "ეკრანის ბლოკირება",
       "bio": "Biometrics",
       "about": "Trustee-ს საფულის შესახებ",
@@ -231,7 +228,7 @@
       "unfrozenTRX": "Розморожено",
       "frozenBalanceTRX": "გამტარობა: {prettyFrozen} TRX / ენერგია{prettyFrozenEnergy} TRX",
       "enterToFreezeTRX": "შეიყვანეთ TRX-ის  რაოდენობა",
-      "enterToUnfreezeTRX" : "შეიყვანეთ გაყინვის თანხა TRX",
+      "enterToUnfreezeTRX": "შეიყვანეთ გაყინვის თანხა TRX",
       "freezeForBandTRX": "Застейкать",
       "freezeForEnergyTRX": "ენერგიისთვის",
       "unfreezeTRX": "Разморозить",
@@ -242,27 +239,27 @@
       "rewardBalanceTRX": "ხელმისაწვდომია {prettyReward} TRX",
       "claimTRX": "ჯილდოს მიღება",
       "refreshTRX": "გადატვირთვა",
-      "waitToClaimTRX" : "Last claim was done less then 24 hours ago",
-      "waitToUnfreezeTRX" : "Under the terms of the Tron protocol, unfreezing is possible after {TRX_STAKE_DAYS} days from the moment of the last freezing",
-      "minimalFreezeBalanceTRX" : "For freezing use more than 1 TRX",
+      "waitToClaimTRX": "Last claim was done less then 24 hours ago",
+      "waitToUnfreezeTRX": "Under the terms of the Tron protocol, unfreezing is possible after {TRX_STAKE_DAYS} days from the moment of the last freezing",
+      "minimalFreezeBalanceTRX": "For freezing use more than 1 TRX",
       "allowLongQueryETH": "Allow pending transactions queue",
       "allowBlockedBalanceETH": "Allow reuse of pending transactions balance",
-      "enterToStakeSOL" : "Enter stake amount SOL",
-      "stakeSOL" : "Stake",
-      "unstakeSOL" : "Unstake",
-      "selectAddress" : "Select Address to use",
+      "enterToStakeSOL": "Enter stake amount SOL",
+      "stakeSOL": "Stake",
+      "unstakeSOL": "Unstake",
+      "selectAddress": "Select Address to use",
       "stakeBalance": "Stake Balance",
       "address": "Address",
       "stake": "Stake",
       "rentReserve": "Rent reserve",
-      "withdrawSOL" : "Withdraw",
-      "withdrawAllSOL" : "Withdraw All",
+      "withdrawSOL": "Withdraw",
+      "withdrawAllSOL": "Withdraw All",
       "deactivateSOL": "Deactivate",
-      "stakeHistorySOL" : "History",
+      "stakeHistorySOL": "History",
       "selectValidatorSOL": "Select validator",
-      "selectValidatorSOLCommission" : "Fee :",
+      "selectValidatorSOLCommission": "Fee :",
       "validatorSOL": "Validator",
-      "rewards" : "Rewards",
+      "rewards": "Rewards",
       "useCustomValidator": "Use this validator ",
       "successUnfreeze": "TRX unfrozen",
       "successUnfreezeV2": "TRX-ის ამოღება შესაძლებელი იქნება {TRX_STAKE_DAYS}-დღიანი განთავისუფლების პერიოდის შემდეგ",
@@ -286,7 +283,7 @@
       "contactSupportSubtitle": "ოფიციალური telegram არხი",
       "contactSupportEmail": "or send Email",
       "contactSupportEmailSubtitle": "Official email",
-      "contactSupportLoadingText" : "If you have not opened the support chat, please contact us at",
+      "contactSupportLoadingText": "If you have not opened the support chat, please contact us at",
       "contactSupportLoadingTextEmail": "or write to",
       "information": "ინფორმაცია",
       "copyright": "© BlockSoftLab Inc, {currentYear}"
@@ -334,110 +331,9 @@
     "description": "მხარდაჭერილია Ethereum-ისა (ETH) და Tron-ის (TRX)  ტოკენების / აქტივების მისამართები",
     "add": "დამატება"
   },
-  "nftMainScreen": {
-    "assets": "Assets",
-    "receiveText": "Send only {coin} to this address. Sending another coin may result in permanent lost",
-    "emptyNftText": "You don’t have any NFT yet. But you can get it now.",
-    "proof": "Proof ownership",
-    "info": "Info",
-    "all": "All",
-    "collections": "Collections",
-    "receive": "Receive",
-    "title": "NFT",
-    "titleQR" : "Scan QR-code with Trustee",
-    "signing": "Signature is creating, please wait - it only proofs that the current Address owns this NFT, so its secure to share with anyone",
-    "signed": "Signature only proofs that the current Address owns this NFT, so its secure to share with anyone",
-    "status": "Status",
-    "contract": "Collection contract",
-    "contractSchema" : "Schema",
-    "tokenId": "Token ID",
-    "tokenQty" : "Qty",
-    "blockchain": "Blockchain",
-    "address": "Owned by address",
-    "ownershipProved": "Ownership proved",
-    "ownershipNotProved": "Ownership not proved",
-    "checking": "Checking...",
-    "turnBasicAsset" : "For NFT transfer you need add {asset} as it is used for transfer fee"
-  },
-  "nftAddAssetScreen" : {
-    "title" : "Add NFT Asset",
-    "addCustomLabel": "You can add a standard NFT token developed on Ethereum, BNB Smart Chain, Matic blockchains or on Ropsten, Rinkeby Testnet. Please enter or scan a new token / asset address.",
-    "addCustomLabelOpenSea" : "Ethereum tokens could be added by OpenSea ",
-    "addCustomPlaceholder" : "NFT Asset Address",
-    "addAssetButton" : "Add asset"
-  },
   "cashback": {
-    "invite": "Invite:",
-    "cashback": "Cashback",
-    "cpa": "CPA",
-    "pageTitle": "Earn",
-    "pageSubtitle": "Earn to 30% from the commission with Trustee Wallet!",
-    "shareButton": "გაზიარება",
-    "promoButton": "შეიყვანეთ პრომო კოდი",
-    "detailsButton": "დეტალები",
-    "enterPromoPlaceholder": "შეიყვანეთ პრომო კოდი",
-    "enterInviteLinkPlaceholder": "შეიყვანე მოსაწვევი ბმული",
-    "applyButton": "დადასტურება",
-    "wholeBalance": "Balance for the whole time",
-    "availableCashBack": "საერთო ბალანსი",
     "balanceTitle": "Balance",
-    "toWithdraw": "Min. withdraw amount:",
-    "cpaTotal": "Total CPA",
-    "cpaLevel1": "CPA Level 1",
-    "cpaLevel2": "CPA Level 2",
-    "cpaLevel3": "CPA Level 3",
-    "cashbackToken": "ტოკენი",
-    "yourToken": "Your cashback link",
-    "cashbackMessage": "Get Cashback for your exchange transactions. Earn Crypto with Affiliate Program and CPA by recommending Trustee Wallet!",
-    "howItWorks": {
-      "title": "როგორ მუშაობს?",
-      "info1Title": "არსებობს Trustee Wallet-ში მომხმარებელთა დაჯილდოების პროგრამა?",
-      "info1Content": "პროგრამა შედგება ქეშბექისგან და ორდონიანი პარტნიორული პროგრამისგან, რაც, საბოლოო ჯამში, იძლევა მოწვეული მოხმარებელების მიერ  კრიპტოვალუტების ყიდვა-გაყიდვიდან გამომდინარე Trustee-ს საკომისიოდან 30%-ის მიღების საშუალებას.",
-      "info2Title": "როგორ გავააქტიურო ქეშბექი?",
-      "info2Content": "გასააქტიურებლად, თქვენ უნდა მოიწვიოთ ერთი ახალი მომხმარებელი თქვენი ბრუნვის ბმულის გამოყენებით. გააქტიურების შემდეგ, თქვენ მიიღებთ მეურვის კომისიის 10% -ს თქვენი ბირჟებიდან. ეს ფუნქცია გააქტიურებულია სამუდამოდ!",
-      "info3Title": "როგორია პარტნიორული პროგრამების პირობები?",
-      "info3Content": "დონე №1 – 10% Trustee-ს საკომისიოდან, რომელიც მიიღება მოწვეული მომხმარებელების მიერ კრიპტოვალუტების ყიდვა-გაყიდვიდან გამომდინარე (აქტიურდება პირველი პარტნიორიდან). რაც მეტი ადამიანი დააყენებს საფულეს თქვენი ბმულის საშუალებით, მით მეტი იქნება თქვენი შემოსავალი. დონე №2 – აქტიურდება კვირაში სტრუქტურის 5000 USDT -იანი ბრუნვის გადაჭარბების შემთხვევაში და იძლევა Trustee -ს საკომოსიოდან 10%-ის მიღების საშუალებას 2-ე დონის მომხმარებლებიდან (თქვენი პარტნიორების პარტნიორები).",
-      "info4Title": "როგორ გავიტანოთ ქეშბექი და პარტნიორული ანაზღაურება?",
-      "info4Content": "გატანის მინიმალური ოდენობა- 2 USDT",
-      "info5Title": "Who can access the CPA program?",
-      "info5Content": "We value each user and are happy to reward them for effective actions to popularize Trustee Wallet. Each Trustee user automatically becomes a member of the CPA program.",
-      "info6Title": "How does the CPA program work?",
-      "info6Content": "For each new active installation of the application using your cashback link (when the invited user has made at least one purchase of cryptocurrencies from any bank card), the program participant receives a one-time reward.",
-      "info7Title": "What are the awards for the CPA program?",
-      "info7Content": "Level 1\nThe first purchase is up to $100. Reward - $2\n\nLevel 2\nThe amount of the first purchase is $100-$500. Reward - $5\n\nLevel 3\nThe first purchase is over $500. Reward - $10",
-      "info8Title": "How can invite users to Trustee?",
-      "info8Content": "Recommend Trustee Wallet to your friends and colleagues using your cashback link. You can use all types of traffic for inviting users: Contextual advertising, Email-mailing, advertising in social networks, Teaser networks, YouTube channels. More information on the link.",
-      "info9Title": "How can I withdraw CPA rewards?",
-      "info9Content": "The minimum withdrawal amount is 100 USDT"
-    },
-    "invitedBy": "მოწვეულია",
-    "mainTitle": "მოიწვიე შენი მეგობრები - მიიღეთ ფულადი თანხა!",
-    "mainDescription": "მოიწვიე მეგობარი შენი ბმულის გამოყენებით და დაიწყე 10% ფულადი სახსრების მიღება თქვენი გაცვლის საკომისიოდან! რწმუნებული უბრუნებს 30% –მდე საკომისიოს თავის მომხმარებლებს!",
-    "shareText": "გაზიარება",
-    "more": "მეტი",
-    "shareTitle": "",
-    "shareMessage": "",
-    "friendsJoined": "თქვენი მეგობრები",
-    "updated": "Updated at",
-    "transAmount": "ტრანზაქციების რაოდენობა",
-    "level2UsersAmount": "მეგობრების მეგობრები",
-    "cashbackError": {
-      "title": "ვერ მოხერდა მონაცემთა მიღება",
-      "UI_ERROR_CASHBACK_NETWORK_ERROR": "არ არის კავშირი ინტერნეტთან",
-      "UI_ERROR_CASHBACK_SIGN_ERROR": "არასწორი ხელმოწერა საცავში - გთხოვთ, კიდევ ერთხელ შეხვიდეთ ქეშბექის განყოფილებაში",
-      "UI_ERROR_CASHBACK_TIME_ERROR": "მოწყობილობის არასწორი თარიღი და დრო",
-      "UI_ERROR_CASHBACK_TIME_ERROR_LOG": "სერვისმა შესაძლოა, არ იმუშაოს არასტაბილური ინტერნეტის არსებობის შედეგად ან თქვენს მობილურ მოწყობილობაზე არასწორი თარიღის და დროის დაფიქსირების შემთხვევაში. ",
-      "UI_ERROR_CASHBACK_PROMO_DUPLICATE": "პრომოკოდი უკვე გამოყენებულია",
-      "UI_ERROR_CASHBACK_PROMO_NOT_FOUND": "პრომოკოდი არ მოიძებნა"
-    },
-    "cashbackAmount": "ქეშბექის რაოდენობა",
-    "setParentToken": "მოსაწვევი ბმულის დაყენება",
-    "hasParentToken": "მოწვეულია {cashbackParentToken}",
-    "inputParentCashbackLink": "https://trustee.deals/link/example",
-    "withdraw": "თანხის გატანა",
-    "minWithdraw": "მინიმალური თანხა გასატანად",
-    "performWithdraw": "To withdraw your reward, contact our support and provide your cashback link and Tron (TRX) address from the app",
-    "withdrawSupport": "Support"
+    "updated": "Updated at"
   },
   "account": {
     "staking": "Staking",
@@ -447,8 +343,8 @@
     "receive": "{receive}",
     "send": "გაგზავნა",
     "history": "ტრანზაქციები",
-    "balanceBadNetwork" : "Bad internet access",
-    "balanceBadBlock" : "Block number error",
+    "balanceBadNetwork": "Bad internet access",
+    "balanceBadBlock": "Block number error",
     "scan": "დასკანერებულია {time} წუთის წინ",
     "justScan": "დასკანერდა ახლახან",
     "soLong": "დასკანერებულია დიდი ხნის წინ",
@@ -502,14 +398,14 @@
       "income": "შემოსული",
       "self": "სელფი",
       "freeze": "გაყინვა",
-      "unfreeze" : "UnFreeze",
+      "unfreeze": "UnFreeze",
       "withdraw_unfrozen": "Withdraw UnFrozen",
-      "stake" : "Stake",
+      "stake": "Stake",
       "vote": "Vote",
-      "wallet_connect" : "WalletConnect",
+      "wallet_connect": "WalletConnect",
       "claim": "ჯილდო",
-      "swap_income" : "Contract Income",
-      "swap_outcome" : "Contract Outcome",
+      "swap_income": "Contract Income",
+      "swap_outcome": "Contract Outcome",
       "exchange": "გაცვლა",
       "buy": "ყიდვა",
       "sell": "გაყიდვა",
@@ -547,10 +443,10 @@
         "replaceByFeeBtn": "საკომისიოს გაზრდა",
         "willReplaceWithNewFee": "მიმდინარე ტრანზაქცია შეიცვლება ახლით, ახალი ჰაშით და უფრო მაღალი საკომისიოთი",
         "notAllowed": "ტრანზაქცია შექმნილია შეცვლის შესაძლებლობის გარეშე ან უკვე დადასტურებულია",
-        "alreadyRemovedByFee" : "You have used “return” {min} minutes ago",
-        "alreadyReplacedByFee" : "You have used “booster” {min} minutes ago",
-        "alreadyRemovedByFeeLessThen2Minutes" : "You have used “return” now",
-        "alreadyReplacedByFeeLessThen2Minutes" : "You have used “booster” now"
+        "alreadyRemovedByFee": "You have used “return” {min} minutes ago",
+        "alreadyReplacedByFee": "You have used “booster” {min} minutes ago",
+        "alreadyRemovedByFeeLessThen2Minutes": "You have used “return” now",
+        "alreadyReplacedByFeeLessThen2Minutes": "You have used “booster” now"
       },
       "CPFP": {
         "willSpeedUp": "თქვენ შეგიძლიათ დააჩქაროთ შემომავალი ტრანზაქცია თქვენივე თავისთვის დამატებითი ტრანზაქციის შექმნით  უფრო მაღალი საკომისიოს გადახდის გზით. საკომისიოს ოდენობა გამოითვლება ავტომატურად ორივე ტრანზაქციის თავისებურებების გათვალისწინებით. გაითვალისწინეთ, რომ მოცემულ შემთხვვაში ახალი ტრანზაქციის გადახდა მოგიწევთ თქვენივე ხარჯებით. "
@@ -569,7 +465,7 @@
       "fail": "წარუმატებლად",
       "missing": "არ მოიძებნა",
       "replaced": "შეცვლილია",
-      "out_of_energy" : "No energy",
+      "out_of_energy": "No energy",
       "internal_success": "წარმატებულია ხელშეკრულებიდან",
       "internal_new": "ახალი ხელშეკრულებიდან",
       "internal_fail": "შეცდომა ხელშეკრულებიდან"
@@ -611,7 +507,7 @@
           "canceled": "გაუქმებულია",
           "fail": "წარუმატებლად",
           "missing": "არ მოიძებნა",
-          "out_of_energy" : "No energy"
+          "out_of_energy": "No energy"
         }
       },
       "transactionHash": "ტრანზაქციის ჰაში: ",
@@ -626,97 +522,13 @@
       "transactionAmount": "{currencyCode} amount"
     }
   },
-  "fioMainSettings": {
-    "title": "FIO პარამეტრები",
-    "description": "გააკონტროლეთ ყველა შესაძლო FIO პარამეტრი",
-    "sendFioRequest": "FIO მოთხოვნის გაგზავნა",
-    "sendFioRequestDesc": "FIO მოთხოვნების გაგზავნა",
-    "fioRequest": "FIO მოთხოვნები",
-    "fioRequestDesc": "ყველა აქტიური ლოდინის რეჟმში მყოფი/გაგზავნილი FIO მოთხოვნების სია",
-    "fioAddresses": "FIO მისამართები",
-    "fioAddressesDesc": "ყველა დარეგისტრირებული FIO მისამართები და მათი ოფციები",
-    "registerFioAddress": "FIO მისამართის დარეგისტრირება",
-    "registerFioAddressDesc": "დაარეგისტრირეთ FIO მისამართი"
-  },
-  "FioChooseRecipient": {
-    "title": "აირჩიეთ FIO მიმღები",
-    "description": "შეიყვანეთ მიმღების FIO, ENS ან საჯარო მისამართი",
-    "btnText": "აირჩიე FIO"
-  },
-  "FioChooseAddress": {
-    "title": "აირჩიე FIO მისამართი",
-    "description": "შეიყვანე მისამართი, რომ მოითხოვო გადახდა მომხმარებლიდან",
-    "btnText": "აირჩიე FIO მისამართი"
-  },
-  "FioAddresses": {
-    "title": "FIO მისამართები",
-    "btnText": "დაარეგისტრირეთ მისამართი",
-    "WebViewTitle": "დაარეგისტრირეთ მისამართი"
-  },
-  "FioSettings": {
-    "title": "FIO პარამეტრები",
-    "description": "აირჩიეთ საფულე, რომელიც გინდათ მიაბათ საკუთარ FIO მისამართს",
-    "Expire": "დრო იწურება",
-    "connectAllWallets": "ყველა საფულის მიბმა",
-    "btnText": "შენახვა",
-    "noFioTitle": "თქვენ უნდა დაარეგისტრიროთ FIO მისამართი",
-    "noFioDescription": "FIO მისამართი დარეგისტრირებული არაა",
-    "noFioBtn": "დაარეგისტრირეთ FIO მისამართი",
-    "serviceUnavailable": "სერივის მიუწვდომელია. გთხოვთ, სცადოთ მოგვიანებით"
-  },
-  "FioSendRequest": {
-    "title": "FIO მოთხოვნის გაგზავნა",
-    "selectCoin": "ვალუტის არჩევა",
-    "from": "მოთხოვნის გაგზავნა მომხმარებლიდან",
-    "to": "მოთხოვნის გაგზავნა მომხმარებლისთვის",
-    "amount": "რაოდენობა",
-    "memo": "კომანტარები",
-    "btnText": "შექმნა",
-    "created": "FIO მოთხოვნა შექმნილია",
-    "fioSettings": "FIO პარამეტრები",
-    "registerFioAddress": " FIO მისამართის დარეგისტრირება",
-    "noCoinSelected": "შეარჩიეთ ვალუტა, რომლისთვისაც უნდა შეიქმნას მოთხოვნა",
-    "goToFioSettings": "გადადით FIO პარამეტრებში, FIO მისამართზე ვალუტის მისაბმელად",
-    "needRegisterFio": "ჯერ უნდა დაარეგისტრიროთ FIO მისამართი"
-  },
-  "FioRequestsList": {
-    "title": "FIO მოთხოვნების სია",
-    "pendingRequests": "მოთხოვნები ლოდინის რეჟიმში",
-    "sentRequests": "გაგზავნილი მოთხოვნები",
-    "RequestedTxt": "მოთხოვნილია"
-  },
   "FioRequestDetails": {
-    "title": " FIO მოთხოვნის დეტალები",
-    "reqCreated": "მოთხოვნა შექმნილია",
-    "sentTitle": "მიღება ჩემს",
-    "pendingTitle": "გაგზავნა ჩემი",
-    "balance": "ბალანსი",
-    "fee": "საკომისიო",
-    "to": " to ",
-    "from": " from ",
-    "memo": "FIO კომენტარები",
-    "amount": "რაოდენობა",
-    "btnTextReject": "უარყოფა",
-    "btnTextConfirm": "დადასტურება"
+    "balance": "ბალანსი"
   },
-
   "exchange": {
     "mainData": {
       "amount": "ჯამი"
     }
-  },
-  "card": {
-    "title": "ახალი ბარათი",
-    "description": "ახალი ბარათის დასამატებლად დაასკანერეთ ის, ან ჩაწერეთ მონაცემები ხელით ",
-    "instructions": "მოათავსეთ ბარათი \n მართკუთხედში.",
-    "attention": "გთხოვთ, იყოთ ყურადღებით. შეეცადეთ, არ დაუშვათ შეცდომები.",
-    "add": "დამატება",
-    "numberTitleInput": "ბარათის ნომერი",
-    "dateTitleInput": "თვე/წელი",
-    "cardCurrency": "აირჩიეთ ბარათის ქვეყანა...",
-    "cardName": "დაარქვით სახელი ბარათს",
-    "noName": "სახელის გარეშე",
-    "country": "ქვეყანა:"
   },
   "qrScanner": {
     "title": "QR-code სკანირება",
@@ -818,7 +630,7 @@
         "ltc_speed_blocks_2": "ჩქარი",
         "xrp_speed_one": "ჩქარი"
       },
-      "getRaw" : "Build transaction hex only (no send)",
+      "getRaw": "Build transaction hex only (no send)",
       "customFee": {
         "title": "Ручная",
         "fixedFeeTitle": "ფიქსირებული\nსაკომისიო",
@@ -852,9 +664,9 @@
       "nonce": "Nonce",
       "trusteeInfo": "Trustee does not charge any fees for cryptocurrency transactions",
       "send": "გაგზავნა",
-      "build" : "Build",
+      "build": "Build",
       "sending": "იგზავნება",
-      "rawTransactionResult" : "Click to Copy"
+      "rawTransactionResult": "Click to Copy"
     },
     "errors": {
       "UI_CONFIRM_DOUBLE_SEND": "აღნიშნულ მისამართზე ტრანზაქცია უკვე გაგზავნილია. დარწმუნებული ხართ, რომ გინდათ ხელახლა გაგზავნა?",
@@ -862,17 +674,17 @@
       "UI_CONFIRM_ADDRESS_TO_EMPTY_BALANCE": "This address has no funds. Are you sure it's correct?",
       "UI_CALCULATE_CUSTOM_FEE": "გთხოვთ, დაითვალეთ სრული ღირებულება ბაიტის არჩეული ფასზე ",
       "SERVER_RESPONSE_CONTRACT_DESTINATION_INVALID": "გთხოვთ, შეამოწმოთ მიმღების მისამართი. ტრანზაქციების პირდაპირ სმარტ კონტრაქტის მისამართზე გაგზავნა შეუძლებელია",
-      "SERVER_RESPONSE_CLOUDFLARE" : "Please, try again - no access to cloudflare protected server",
+      "SERVER_RESPONSE_CLOUDFLARE": "Please, try again - no access to cloudflare protected server",
       "SERVER_RESPONSE_BAD_CODE": "დაფიქსირდა შეცდომა. გთხოვთ, დაუკავშირდეთ მხარდაჭერის სამსახურს",
       "SERVER_RESPONSE_BAD_INTERNET": "არ არის კავშირი ინტერნეტთან",
       "SERVER_RESPONSE_BAD_TX_TO_REPLACE": "ტრანზაქცია ვერ მოიძებნა, გთხოვთ, შეამოწმოთ კავშირი ინტერნეტთან. შესაძლოა ადგილი ჰქონდეს დაყოვნებას ინფორმაციის გამოსახულების მიღების თვალსაზრისით ",
       "SERVER_RESPONSE_NOT_ENOUGH_FEE": "ქსელის საკომისიოს დასაფარად ანგარიშზე არ ფიქსირდება საკმარისი რაოდენობის ადგილობრივი მონეტა {symbol}",
-      "SERVER_RESPONSE_NOT_ENOUGH_FEE_JUST_DUST" : "Your wallet has accumulated many incoming transactions with small amounts. Please use the \"Send All\" button to send the transaction correctly",
+      "SERVER_RESPONSE_NOT_ENOUGH_FEE_JUST_DUST": "Your wallet has accumulated many incoming transactions with small amounts. Please use the \"Send All\" button to send the transaction correctly",
       "SERVER_RESPONSE_NOT_ENOUGH_FEE_OR_BAD_INTERNET": "ვერ მოხერხდა ადგილობრივი მონეტის ({symbol}) ბალანსის შემოწმება. გთხოვთ, შეამოწმოთ ინტერნეტკავშირი!",
       "SERVER_RESPONSE_NOT_ENOUGH_AMOUNT_AS_DUST": "ძალიან მცირე თანხაა ტრანზაქციისთვის",
       "SERVER_RESPONSE_NOTHING_TO_TRANSFER": "ტრანზაქციის განსახორციელებლად თანხა არასაკმარისია",
-      "SERVER_RESPONSE_NOTHING_TO_TRANSFER_FROM_ACTUAL_NODE" : "ტრანზაქციის განსახორციელებლად თანხა არასაკმარისია (server validation)",
-      "UI_CORRECTED_AMOUNT" : "Balance of your {symbol} wallet is different then sending amount, please confirm sending {amount} {symbol}",
+      "SERVER_RESPONSE_NOTHING_TO_TRANSFER_FROM_ACTUAL_NODE": "ტრანზაქციის განსახორციელებლად თანხა არასაკმარისია (server validation)",
+      "UI_CORRECTED_AMOUNT": "Balance of your {symbol} wallet is different then sending amount, please confirm sending {amount} {symbol}",
       "UI_CORRECTED_AMOUNT_BSE": "თქვენი {symbol} საფულის ბალანსი ნაკლებია გასაგზავნი თანხაზე. გთხოვთ, განაახლოთ თქვენი {symbol} ბალანსი და გაიმეოროთ გაცვლის ოპერაცია.",
       "SERVER_RESPONSE_NOTHING_LEFT_FOR_FEE": "ბალანსზე არ არის საკმარისი თანხა ქსელის საკომისიოს დასაფარად - გთხოვთ, გამოიყენეთ ფუნქცია \"ყველას გაგზავნა\" ",
       "SERVER_RESPONSE_NOTHING_LEFT_FOR_DELEGATED_FEE": "ბალანსზე არაა საკმარისი თანხა დელეგირებული ტრანზაქციის განსახორციელებლად - გთხოვთ, გამოიყენეთ ჩვეულებრივი გადარიცხვა ERC20",
@@ -885,7 +697,7 @@
       "SERVER_RESPONSE_NOT_ENOUGH_AMOUNT_AS_FEE_FOR_REPLACEMENT": "ძალიან მცირეა საკომისიო ტრანზაქციის ცვლილებისთვის",
       "SERVER_RESPONSE_TRANSACTION_ALREADY_MINED": "ტრანზაქცია უკვე დადასტურებულია",
       "SERVER_RESPONSE_NONCE_ALREADY_MINED": "Nonce {nonce} უკვე გამოყენებულია დადასტურებულ ტრანზაქციაში",
-      "SERVER_RESPONSE_REVERTED_BY_EVM" : "Transaction reverted by EVM - please check contract code",
+      "SERVER_RESPONSE_REVERTED_BY_EVM": "Transaction reverted by EVM - please check contract code",
       "SERVER_RESPONSE_NOT_CONNECTED": "ქსელში კვანძთან კავშირი არ არის. გთხოვთ, შეცვალოთ თქვენი ინტერნეტ კავშირი ან გამოიყენოთ VPN აპის გამოყენებისას",
       "SERVER_RESPONSE_NOT_ENOUGH_AMOUNT_FOR_ANY_FEE": "არასაკმარისია თანხა ტრანზაქციების განსახორციელებლად და მინიმალური საკომისიოსთვის",
       "SERVER_RESPONSE_WAIT_FOR_CONFIRM": "გთხოვთ, დაელოდოთ სხვა ტრანზაქციების დადასტურებას ან ჩართეთ ფუნქცია \"დაუდასტურებელი ტრანზაქციების გამოყენება\" ",
@@ -907,12 +719,12 @@
       "SERVER_RESPONSE_BAD_SEND_NODE": "არა არის წვდომა გაგზავნის სერვერთან",
       "SERVER_RESPONSE_DOUBLE_SPEND": "გთხოვთ, თავიდან შექმნათ ტრანზაქცია, რადგან მიმდინარე იყენებს შესვლის მოძველებულ მეთოდებს ან დაელოდეთ სხვა ტრანზაქციების დადასტურებას ",
       "SERVER_RESPONSE_NO_TX_TO_SPEEDUP": "დასაჩქარებელი ტრანზაქცია ვერ მოიძებნა",
-      "SERVER_RESPONSE_BANDWITH_ERROR_TRX" : "Insufficient TRX balance for fee / bandwidth limit is over",
-      "SERVER_RESPONSE_ENERGY_ERROR_VET" : "Insufficient VeChain Thor Token (VTHO) balance for fee",
+      "SERVER_RESPONSE_BANDWITH_ERROR_TRX": "Insufficient TRX balance for fee / bandwidth limit is over",
+      "SERVER_RESPONSE_ENERGY_ERROR_VET": "Insufficient VeChain Thor Token (VTHO) balance for fee",
       "SERVER_RESPONSE_PLEASE_CHECK_SYSTEM_TIME": "Please check your phone system time - it need to be synchronized for correct transaction creation",
-      "SERVER_RESPONSE_NOT_ENOUGH_BALANCE_SOL" : "Insufficient balance to make the transaction",
-      "SERVER_RESPONSE_NOT_ENOUGH_AMOUNT_STAKE_SOL" : "Insufficient amount to stake in the transaction",
-      "SERVER_RESPONSE_NOT_VALIDATOR_STAKE_SOL" : "Selected address is not validator",
+      "SERVER_RESPONSE_NOT_ENOUGH_BALANCE_SOL": "Insufficient balance to make the transaction",
+      "SERVER_RESPONSE_NOT_ENOUGH_AMOUNT_STAKE_SOL": "Insufficient amount to stake in the transaction",
+      "SERVER_RESPONSE_NOT_VALIDATOR_STAKE_SOL": "Selected address is not validator",
       "SERVER_RESPONSE_RECEIVER_EMPTY_BALANCE": "Η διεύθυνση του παραλήπτη είναι κενή. Στο blockchain Solana, δεν είναι δυνατή η αποστολή διακριτικών σε μια διεύθυνση με μηδενικό υπόλοιπο SOL",
       "SERVER_RESPONSE_SPAM_ADDRESS": "Destination address is tagged by the platform as suspected fraud or spam."
     }
@@ -936,8 +748,8 @@
       "showButton": "დააწკაპუნეთ და გააჩერეთ აქ ფრაზის სანახავად",
       "showQrButton": "Press and hold here to see the QR-code",
       "next": "შემდეგი",
-      "showQR" : "Get QR-code for import to another device",
-      "hideQR" : "Get words for backup",
+      "showQR": "Get QR-code for import to another device",
+      "hideQR": "Get words for backup",
       "infoQR": "QR-code reveals recovery phrase. Please dont send it to other people and dont store in Gallery!"
     },
     "step1Screen": {
@@ -1049,10 +861,8 @@
     "sell": "გაყიდვა",
     "wallet": "საფულე",
     "exchange": "გაცვლა",
-    "earn": "შოვნა",
     "settings": "მეტი",
-    "support": "მხარდაჭერა",
-    "market": "Swap"
+    "support": "მხარდაჭერა"
   },
   "modal": {
     "titles": {
@@ -1294,7 +1104,7 @@
     },
     "lastScan": "თქვენი ბალანსების ასლები შენახულია:",
     "helper": "თქვენ შეგიძლიათ შეარჩიოთ სიხშირე დამოუკიდებლად",
-    "clean" : "Rescan selected wallet again"
+    "clean": "Rescan selected wallet again"
   },
   "loggingSettings": {
     "title": "Logging",
@@ -1302,7 +1112,7 @@
       "none": "No logging",
       "all": "To local files"
     },
-    "clean" : "Clean all files",
+    "clean": "Clean all files",
     "helper": "You can choose logging yourself"
   },
   "repeat": {
@@ -1596,14 +1406,8 @@
       "currency": "უკრაინული გრივნა"
     }
   },
-  "streamSupport": {
-    "sendDocs": "Send docs",
-    "sendLogs": "Send logs",
-    "takePhoto": "Take photo",
-    "chooseFromLibrary": "Choose from gallery",
-    "noMessages": "No messages yet",
-    "sentFile": "File sent",
-    "getRoomError" : "Load messages error",
-    "sendMessageError" : "Unstable network connection when sending a message"
+  "support": {
+    "title": "მხარდაჭერა",
+    "body": "თუ დახმარება გჭირდებათ — მოგვწერეთ ელფოსტაზე ან ეწვიეთ ვებსაიტს."
   }
 }

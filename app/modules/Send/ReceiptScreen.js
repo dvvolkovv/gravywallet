@@ -79,7 +79,7 @@ class ReceiptScreen extends PureComponent {
             setLoaderStatus(false)
             CACHE_IS_COUNTING = false
             if (uiType === 'TRADE_SEND' || uiType === 'TRADE_LIKE_WALLET_CONNECT') {
-                NavStore.goNext('MarketAdvancedScreen')
+                NavStore.goNext('SendAdvancedScreen')
             } else {
                 NavStore.goNext('SendAdvancedScreen')
             }

@@ -15,7 +15,6 @@ import { showModal } from '@app/appstores/Stores/Modal/ModalActions'
 
 import store from '@app/store'
 
-import UpdateTradeOrdersDaemon from '@app/daemons/back/UpdateTradeOrdersDaemon'
 import UpdateAccountBalanceAndTransactions from '@app/daemons/back/UpdateAccountBalanceAndTransactions'
 import DaemonCache from '@app/daemons/DaemonCache'
 
@@ -23,7 +22,6 @@ import NavStore from '@app/components/navigation/NavStore'
 
 import Log from '@app/services/Log/Log'
 import { strings } from '@app/services/i18n'
-import ApiV3 from '@app/services/Api/ApiV3'
 import trusteeAsyncStorage from '@appV2/services/trusteeAsyncStorage/trusteeAsyncStorage'
 import prettyShare from '@app/services/UI/PrettyShare/PrettyShare'
 
@@ -96,7 +94,7 @@ export async function _onLoad() {
                         account = account[currencyCode]
                         tx = transactionActions.preformatWithBSEforShow(transactionActions.preformat(tmp[0], { account }), tmp[0].bseOrderData, currencyCode)
                     } else {
-                        const exchangeOrder = await UpdateTradeOrdersDaemon.fromApi(walletHash, orderHash)
+                        const exchangeOrder = null
                         if (exchangeOrder) {
                             // basic object for order without transaction
                             tx = transactionActions.preformatWithBSEforShow(false, exchangeOrder, currencyCode)
@@ -303,17 +301,6 @@ export function renderReplaceByFee(array) {
             }
             try {
                 setLoaderStatus(true)
-                const disable = await ApiV3.getTBKDisable(transaction.transactionHash)
-                if (disable) {
-                    showModal({
-                        type: 'INFO_MODAL',
-                        icon: null,
-                        title: strings('modal.titles.attention'),
-                        description: strings('modal.send.noTBKprovider')
-                    })
-                    setLoaderStatus(false)
-                    return false
-                }
                 try {
                     await SendActionsStart.startFromTransactionScreenBoost(account, transaction)
                 } catch (e) {

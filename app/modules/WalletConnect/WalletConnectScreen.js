@@ -6,9 +6,7 @@ import React, { PureComponent } from 'react'
 import { Image, ScrollView, Text, View, Platform } from 'react-native'
 
 import { connect } from 'react-redux'
-import { TabView } from 'react-native-tab-view'
 
-import ListItem from '@app/components/elements/new/list/ListItem/Setting'
 import NavStore from '@app/components/navigation/NavStore'
 import MarketingAnalytics from '@app/services/Marketing/MarketingAnalytics'
 
@@ -26,16 +24,12 @@ import { getWalletConnectData } from '@app/appstores/Stores/WalletConnect/select
 
 import InfoNotification from '@app/components/elements/new/InfoNotification'
 import Button from '@app/components/elements/new/buttons/Button'
-import Tabs from '@app/components/elements/new/cashbackTabs'
 import Message from '@app/components/elements/new/Message'
 import CustomIcon from '@app/components/elements/CustomIcon'
 import GradientView from '@app/components/elements/GradientView'
 
-import WalletDappFastLinksScreen from '@app/modules/WalletDapp/WalletDappFastLinksScreen'
-
 import { NETWORKS_SETTINGS } from '@app/appstores/Stores/WalletConnect/settings'
 import { getSelectedAccountData } from '@app/appstores/Stores/Main/selectors'
-import { getWalletDappData } from '@app/appstores/Stores/WalletDapp/selectors'
 import walletConnectActions from '@app/appstores/Stores/WalletConnect/WalletConnectStoreActions'
 import { QRCodeScannerFlowTypes, setQRConfig } from '@app/appstores/Stores/QRCodeScanner/QRCodeScannerActions'
 import Toast from 'react-native-root-toast'
@@ -46,18 +40,7 @@ class WalletConnectScreen extends PureComponent {
 
 
     state = {
-        inputFullLink : '',
-        routes: [
-            {
-                title: 'wc',
-                key: 'first'
-            },
-            {
-                title: 'dapps',
-                key: 'second'
-            }
-        ],
-        index: 0
+        inputFullLink : ''
     }
 
     linkInput = React.createRef()
@@ -105,10 +88,6 @@ class WalletConnectScreen extends PureComponent {
         NavStore.reset('HomeScreen')
     }
 
-    handleLastDapp = () => {
-        NavStore.goNext('WalletDappWebViewScreen')
-    }
-
     getNetwork = (currencyCode) => {
         for (const tmp of NETWORKS_SETTINGS) {
             if (tmp.currencyCode === currencyCode) {
@@ -118,31 +97,12 @@ class WalletConnectScreen extends PureComponent {
         return currencyCode
     }
 
-    handleTabChange = index => {
-        this.setState({ index })
-    }
-
-    renderTabs = () => <Tabs active={this.state.index} tabs={this.state.routes} changeTab={this.handleTabChange} />
-
-    renderScene = ({ route }) => {
-        switch (route.key) {
-            case 'first':
-                return this.renderFirstRoute()
-            case 'second':
-                return this.renderSecondRoute()
-            default:
-                return null
-        }
-    }
-
-    renderFirstRoute = () => {
+    renderWalletConnect = () => {
 
         const {
             GRID_SIZE,
             colors,
         } = this.context
-
-        const { dappCode, dappName } = this.props.walletDappData
 
         const { walletConnectLink, walletConnectLinkError, walletConnections, isConnected } = this.props.walletConnectData
 
@@ -212,19 +172,6 @@ class WalletConnectScreen extends PureComponent {
                             }
                         </View>
 
-                        {dappCode && isConnected &&
-                            <View style={{ marginHorizontal: GRID_SIZE }}>
-                                <ListItem
-                                    title={strings('settings.walletConnect.returnDapp')}
-                                    subtitle={dappName}
-                                    iconType='scanning'
-                                    onPress={this.handleLastDapp}
-                                    rightContent='arrow'
-                                    last
-                                />
-                            </View>
-                        }
-
 
                         {isConnected && walletConnections && typeof walletConnections[0] !== 'undefined' &&
                             <View style={{ paddingHorizontal: GRID_SIZE }}>
@@ -253,25 +200,6 @@ class WalletConnectScreen extends PureComponent {
         )
     }
 
-    renderSecondRoute = () => {
-
-        const {
-            colors
-        } = this.context
-
-        return (
-            <>
-                <WalletDappFastLinksScreen />
-                <GradientView
-                    style={styles.bottomButtons}
-                    array={colors.accountScreen.bottomGradient}
-                    start={styles.containerBG.start}
-                    end={styles.containerBG.end}
-                />
-            </>
-        )
-    }
-
     render() {
 
         MarketingAnalytics.setCurrentScreen('WalletConnect')
@@ -285,16 +213,8 @@ class WalletConnectScreen extends PureComponent {
                 rightType='close'
                 rightAction={this.handleClose}
                 title={strings('settings.walletConnect.title')}
-                ExtraView={this.renderTabs}
             >
-                <TabView
-                    renderScene={this.renderScene}
-                    onIndexChange={this.handleTabChange}
-                    navigationState={this.state}
-                    renderTabBar={() => null}
-                    renderHeader={null}
-                    useNativeDriver
-                />
+                {this.renderWalletConnect()}
             </ScreenWrapper>
         )
     }
@@ -304,8 +224,7 @@ class WalletConnectScreen extends PureComponent {
 const mapStateToProps = (state) => {
     return {
         selectedAccountData: getSelectedAccountData(state),
-        walletConnectData: getWalletConnectData(state),
-        walletDappData: getWalletDappData(state)
+        walletConnectData: getWalletConnectData(state)
     }
 }
 

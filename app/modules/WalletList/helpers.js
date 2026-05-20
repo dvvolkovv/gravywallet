@@ -197,9 +197,9 @@ const handleCurrencySelect = async (props, screen, ref) => {
     }
 
     CACHE_CLICK = currencyCode
-    if (typeof cryptoCurrency.currencyCode !== 'undefined' && (cryptoCurrency.currencyCode === 'NFT' || cryptoCurrency.currencyCode === 'CASHBACK')) {
+    if (typeof cryptoCurrency.currencyCode !== 'undefined' && (cryptoCurrency.currencyCode === 'CASHBACK')) {
 
-        const defaultScreen = cryptoCurrency.currencyCode === 'CASHBACK' ? 'CashbackScreen' : 'NftMainScreen'
+        const defaultScreen = 'HomeScreen'
 
         try {
             setSelectedCryptoCurrency(cryptoCurrency)

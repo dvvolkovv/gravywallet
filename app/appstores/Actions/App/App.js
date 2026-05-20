@@ -111,7 +111,7 @@ class App {
             
             this.initStatus = 'await settingsActions.getSettings()'
             
-            await this.refreshWalletsStore({ firstTimeCall: 'first', source: 'ACT/App init', noRatesApi: true, noCashbackApi: true })
+            await this.refreshWalletsStore({ firstTimeCall: 'first', source: 'ACT/App init', noRatesApi: true })
 
             this.initStatus = 'await this.refreshWalletsStore(true)'
 
@@ -182,7 +182,7 @@ class App {
 
 
             // first step of init
-            await Daemon.forceAll({ ...params, noCashbackApi: true })
+            await Daemon.forceAll({ ...params })
 
             await setStakingCoins()
 
@@ -192,7 +192,6 @@ class App {
 
             await UpdateAccountListDaemon.forceDaemonUpdate(params)
 
-            // await UpdateCashBackDataDaemon.updateCashBackDataDaemon({source : 'UpdateCashBackDataDaemon.AppHomeScreen'})
 
         } else {
             await Daemon.forceAll(params)

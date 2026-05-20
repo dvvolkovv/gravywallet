@@ -41,13 +41,10 @@ import MarketingAnalytics from '@app/services/Marketing/MarketingAnalytics'
 import { getHomeFilterWithBalance, getIsBlurVisible, getSelectedWalletData, getSortValue } from '@app/appstores/Stores/Main/selectors'
 import { getWalletsGeneralData } from '@app/appstores/Stores/Wallet/selectors'
 
-import { NftActions } from '@app/appstores/Stores/Nfts/NftsActions'
-import { getNftsData } from '@app/appstores/Stores/Nfts/selectors'
 import { handleReceive, handleSend, handleHide, handleLateRefresh, getBalanceData, getSortedData, getDerivedState, getSectionsData } from './helpers'
 import trusteeAsyncStorage from '@appV2/services/trusteeAsyncStorage/trusteeAsyncStorage'
 import { getAccountList } from '@app/appstores/Stores/Account/selectors'
 import { strings } from '@app/services/i18n'
-import { getCashBackData } from '@app/appstores/Stores/CashBack/selectors'
 
 import SheetBottom from '@app/components/elements/SheetBottom/SheetBottom'
 import walletConnectActions from '@app/appstores/Stores/WalletConnect/WalletConnectStoreActions'
@@ -98,7 +95,6 @@ class HomeScreen extends React.PureComponent {
 
             setLoaderStatus(false)
             this.getBalanceVisibility()
-            NftActions.init(false)
         } catch (e) {
             Log.log('WalletList.HomeScreen componentDidMount error ' + e.message)
         }
@@ -150,12 +146,6 @@ class HomeScreen extends React.PureComponent {
                 await UpdateAccountListDaemon.forceDaemonUpdate()
             } catch (e) {
                 Log.errDaemon('WalletList.HomeScreen handleRefresh error updateAccountListDaemon ' + e.message)
-            }
-
-            try {
-                await NftActions.getDataByAddress(this.props.nftsData.address, true)
-            } catch (e) {
-                Log.err('WalletList.HomeScreen handleRefresh error NftActions ' + e.message)
             }
 
             this.setState({ refreshing: false })
@@ -338,9 +328,7 @@ const mapStateToProps = (state) => {
         isBlurVisible: getIsBlurVisible(state),
         currencies: getVisibleCurrencies(state),
         isBalanceVisible: getIsBalanceVisible(state.settingsStore),
-        nftsData: getNftsData(state),
         sortValue: getSortValue(state),
-        cashbackStore: getCashBackData(state),
         accountList: getAccountList(state),
         homeFilterWithBalance: getHomeFilterWithBalance(state)
     }

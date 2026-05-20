@@ -36,7 +36,6 @@ import CustomIcon from '@app/components/elements/CustomIcon'
 import HeaderTx from './elements/Header'
 
 import { getSelectedAccountData, getSelectedCryptoCurrencyData, getSelectedWalletData } from '@app/appstores/Stores/Main/selectors'
-import { getCashBackLinkFromDataAPi } from '@app/appstores/Stores/CashBack/selectors'
 import { getVisibleCurrencies } from '@app/appstores/Stores/Currency/selectors'
 import { HIT_SLOP } from '@app/theme/HitSlop'
 
@@ -298,7 +297,8 @@ class AccountTransactionScreen extends PureComponent {
     }
 
     handlerOrderDetails = () => {
-        NavStore.reset('MarketScreen', { screen: 'MarketScreen', params: { orderHash: this.state.orderIdToView.description } })
+        // Market module removed (Plan B Task 4) - fallback to HomeScreen
+        NavStore.reset('HomeScreen')
     }
 
     render() {
@@ -516,7 +516,6 @@ const mapStateToProps = (state) => {
         selectedWallet: getSelectedWalletData(state),
         cryptoCurrency: getSelectedCryptoCurrencyData(state),
         account: getSelectedAccountData(state),
-        cashBackData: getCashBackLinkFromDataAPi(state),
         cryptoCurrencies: getVisibleCurrencies(state),
     }
 }

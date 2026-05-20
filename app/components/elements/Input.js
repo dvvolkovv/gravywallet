@@ -336,12 +336,6 @@ class Input extends Component {
                 }
                 <View style={styles.actions}>
                     {
-                        typeof fio !== 'undefined' && fio ?
-                            <TouchableDebounce onPress={() => NavStore.goNext('FioChooseRecipient')} style={styles.actionBtn}>
-                                <MaterialCommunityIcons style={styles.actionBtn__icon} name="contacts" size={25} color="#855eab"/>
-                            </TouchableDebounce> : null
-                    }
-                    {
                         typeof copy !== 'undefined' && copy ?
                             <TouchableDebounce onPress={this.handleCopyToClipboard} style={[styles.actionBtn]}>
                                 <MaterialCommunityIcons style={styles.actionBtn__icon} name="content-copy" size={25} color="#855eab"/>

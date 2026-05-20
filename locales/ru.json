@@ -2,7 +2,7 @@
   "appName": "Trustee",
   "homeScreen": {
     "balance": "Баланс",
-    "unconfirmed" : "Неподтвержденный",
+    "unconfirmed": "Неподтвержденный",
     "today": "Сегодня",
     "changedLastDay": "За последние 24 часа",
     "synchronizing": "Синхронизация",
@@ -35,16 +35,13 @@
     "agreement3": "и даю согласие на обработку предоставленных мной Персональных Данных",
     "termsTitle": "Условия использования",
     "privacyPolicyTitle": "Политика конфиденциальности",
-    "slider1": "Инновационные технологии безопасности и анонимности",
-    "slider2": "Безграничные возможности в интуитивно понятном дизайне",
-    "slider3": "Встроенный мониторинг обменных пунктов",
-    "slider4": "Зависшие и дорогие транзакции"
+    "welcomeTitle": "Добро пожаловать в Gravy",
+    "welcomeSubtitle": "Некастодиальный мультичейн кошелёк со встроенным свапом."
   },
   "tradeScreen": {
     "modalError": {
-      "selectPhoto" : "Выберите фото карты из галереи",
       "serviceUnavailable": "Сервис недоступен. Пожалуйста, попробуйте позже",
-      "qrNotFoundInFile" : "QR-код не найден, пожалуйста, попробуйте перезагрузить файл"
+      "qrNotFoundInFile": "QR-код не найден, пожалуйста, попробуйте перезагрузить файл"
     }
   },
   "notifications": {
@@ -97,7 +94,7 @@
       "activated": "Активировано",
       "disabled": "Отключено",
       "changeNetwork": "Изменить Сеть",
-      "turnBasicAsset" : "Для WalletConnect Вам необходимо добавить {asset}, так как он используется для этой транзакции"
+      "turnBasicAsset": "Для WalletConnect Вам необходимо добавить {asset}, так как он используется для этой транзакции"
     },
     "walletManagement": {
       "title": "Управление кошельками",
@@ -139,7 +136,7 @@
       "darkModeEnabledSubtitle": "Включен",
       "darkModeDisabledSubtitle": "Выключен",
       "support": "Поддержка",
-      "supportSubtitle": "Наш бот в telegram",
+      "supportSubtitle": "Напишите нам на почту или зайдите на сайт",
       "lock": "Блокирование экрана",
       "bio": "Biometrics",
       "about": "О кошельке Trustee",
@@ -152,7 +149,7 @@
       },
       "notifications": "Уведомления",
       "localCurrency": "Локальная валюта",
-      "scannerSettings" : "Сканирование",
+      "scannerSettings": "Сканирование",
       "scannerSubtitle": "Частота обновления балансов",
       "scannerSubtitleSmall": "Скорость обновления балансов",
       "loggingSettings": "Логирование",
@@ -179,7 +176,7 @@
       "on": "Включён",
       "totalBalance": "Общий баланс",
       "useUnconfirmed": "Использовать неподтвержденные транзакции",
-      "allowReplaceByFee" : "Редактирование транзакции до подтверждения майнерами",
+      "allowReplaceByFee": "Редактирование транзакции до подтверждения майнерами",
       "showLegacy": "Legacy",
       "showSegWit": "SegWit",
       "showAll": "Показать все",
@@ -188,11 +185,11 @@
       "hd": "Повышение конфиденциальности",
       "hdDescription": "Создание нового адреса, каждый раз, после входящей BTC транзакции",
       "hideCommissionTrans": "Скрыть транзакции оплаты за комиссию",
-      "manualAddressFromHD" : "Вставить адрес HD",
-      "scanAddressesFromHD" : "Сканировать адреса HD",
-      "setAddressesFromHD" : {
+      "manualAddressFromHD": "Вставить адрес HD",
+      "scanAddressesFromHD": "Сканировать адреса HD",
+      "setAddressesFromHD": {
         "title": "Главный адрес будет изменен",
-        "description" : "Вы будете использовать баланс адреса {newAddress}"
+        "description": "Вы будете использовать баланс адреса {newAddress}"
       },
       "backupModal": {
         "title": "Ваша фраза восстановления не сохранена!",
@@ -220,51 +217,51 @@
       "solValidator": "Комиссия валидатора:",
       "bandwidthTRX": "Bandwidth",
       "energyTRX": "Energy",
-      "serverInputXMR" : "Сервер с данными (например, api.mymonero.com)",
-      "serverInputTitleXMR" : "api.mymonero.com:8443",
-      "serverSendInputXMR" : "Сервер для отправки транзакций (например, api.mymonero.com)",
-      "serverSendInputTitleXMR" : "или node.moneroworld.com:18089",
-      "needReinstallXMR"  : "Системная ошибка адреса XMR - пожалуйста, сохраните мнемоническую фразу и переустановите приложение, или свяжитесь со службой поддержки для подробных инструкций",
-      "saveSettings" : "Сохранить",
-      "getMnemonicXMR" : "Посмотреть секретный ключ",
-      "available" : "Доступно",
+      "serverInputXMR": "Сервер с данными (например, api.mymonero.com)",
+      "serverInputTitleXMR": "api.mymonero.com:8443",
+      "serverSendInputXMR": "Сервер для отправки транзакций (например, api.mymonero.com)",
+      "serverSendInputTitleXMR": "или node.moneroworld.com:18089",
+      "needReinstallXMR": "Системная ошибка адреса XMR - пожалуйста, сохраните мнемоническую фразу и переустановите приложение, или свяжитесь со службой поддержки для подробных инструкций",
+      "saveSettings": "Сохранить",
+      "getMnemonicXMR": "Посмотреть секретный ключ",
+      "available": "Доступно",
       "availableSOL": "Доступный баланс",
-      "frozenTRX" : "Застейкано",
+      "frozenTRX": "Застейкано",
       "unfrozenTRX": "Разморожено",
-      "frozenBalanceTRX" : "Пропускная способность: {prettyFrozen} TRX / Энергия {prettyFrozenEnergy} TRX",
-      "enterToFreezeTRX" : "введите количество TRX",
-      "enterToUnfreezeTRX" : "введите количество TRX",
-      "freezeForBandTRX" : "Застейкать",
-      "freezeForEnergyTRX" : "Для энергии",
-      "unfreezeTRX" : "Разморозить",
-      "votedTRX" : "Голоса",
-      "votedBalanceTRX" : "Использовано {voteTotal} / Всего {prettyVote}",
-      "voteTRX" : "Проголосовать",
-      "rewardTRX" : "Награда за голосование",
-      "rewardBalanceTRX" : "Доступно {prettyReward} TRX",
-      "claimTRX" : "Забрать награду",
-      "refreshTRX" : "Перегрузить",
-      "waitToClaimTRX" : "Последний раз Вы снимали награду менее чем 24 часа назад",
-      "waitToUnfreezeTRX" : "По условиям протокола Tron разморозка возможна по истечению {TRX_STAKE_DAYS} дней с момента последней заморозки",
-      "minimalFreezeBalanceTRX" : "Для заморозки нужно более 1 TRX",
-      "allowLongQueryETH" : "Разрешить создавать очередь из неподтвержденных транзакций",
-      "allowBlockedBalanceETH" : "Разрешить повторное использование баланса неподтвержденных транзакций",
-      "enterToStakeSOL" : "Введите количество SOL",
-      "stakeSOL" : "В стейк",
-      "unstakeSOL" : "Забрать",
-      "selectAddress" : "Выбор адреса для использования",
+      "frozenBalanceTRX": "Пропускная способность: {prettyFrozen} TRX / Энергия {prettyFrozenEnergy} TRX",
+      "enterToFreezeTRX": "введите количество TRX",
+      "enterToUnfreezeTRX": "введите количество TRX",
+      "freezeForBandTRX": "Застейкать",
+      "freezeForEnergyTRX": "Для энергии",
+      "unfreezeTRX": "Разморозить",
+      "votedTRX": "Голоса",
+      "votedBalanceTRX": "Использовано {voteTotal} / Всего {prettyVote}",
+      "voteTRX": "Проголосовать",
+      "rewardTRX": "Награда за голосование",
+      "rewardBalanceTRX": "Доступно {prettyReward} TRX",
+      "claimTRX": "Забрать награду",
+      "refreshTRX": "Перегрузить",
+      "waitToClaimTRX": "Последний раз Вы снимали награду менее чем 24 часа назад",
+      "waitToUnfreezeTRX": "По условиям протокола Tron разморозка возможна по истечению {TRX_STAKE_DAYS} дней с момента последней заморозки",
+      "minimalFreezeBalanceTRX": "Для заморозки нужно более 1 TRX",
+      "allowLongQueryETH": "Разрешить создавать очередь из неподтвержденных транзакций",
+      "allowBlockedBalanceETH": "Разрешить повторное использование баланса неподтвержденных транзакций",
+      "enterToStakeSOL": "Введите количество SOL",
+      "stakeSOL": "В стейк",
+      "unstakeSOL": "Забрать",
+      "selectAddress": "Выбор адреса для использования",
       "stakeBalance": "Стейк баланса",
       "address": "Адреса",
       "stake": "Стейк",
       "rentReserve": "Резерв аренды",
-      "withdrawSOL" : "Забрать",
-      "withdrawAllSOL" : "Забрать все",
+      "withdrawSOL": "Забрать",
+      "withdrawAllSOL": "Забрать все",
       "deactivateSOL": "Деактивировать",
-      "stakeHistorySOL" : "История",
+      "stakeHistorySOL": "История",
       "selectValidatorSOL": "Выберите валидатора",
-      "selectValidatorSOLCommission" : "Сбор :",
+      "selectValidatorSOLCommission": "Сбор :",
       "validatorSOL": "Валидатор",
-      "rewards" : "Награда",
+      "rewards": "Награда",
       "useCustomValidator": "Использовать этот валидатор ",
       "successUnfreeze": "TRX разморожено",
       "successUnfreezeV2": "TRX можно будет снять по истечении {TRX_STAKE_DAYS}-дневного периода",
@@ -288,7 +285,7 @@
       "contactSupportSubtitle": "Официальный telegram канал",
       "contactSupportEmail": "или отправить Email",
       "contactSupportEmailSubtitle": "Официальный Email",
-      "contactSupportLoadingText" : "Если у Вас не открылся чат службы поддержки, пожалуйста, свяжитесь с нами на сайте",
+      "contactSupportLoadingText": "Если у Вас не открылся чат службы поддержки, пожалуйста, свяжитесь с нами на сайте",
       "contactSupportLoadingTextEmail": "или напишите на почту",
       "information": "Информация",
       "copyright": "© BlockSoftLab Inc, {currentYear}"
@@ -336,111 +333,9 @@
     "description": "Поддерживаются адреса токенов / активов Ethereum (ETH) и Tron (TRX)",
     "add": "Добавить"
   },
-  "nftMainScreen": {
-    "assets": "Активов",
-    "receiveText": "Отправляйте только {coin} на этот адрес. Отправка другой монеты может привести к её безвозвратной потере",
-    "emptyNftText": "У вас еще нет NFT. Но Вы можете получить его сейчас.",
-    "proof": "Доказательство владения",
-    "info": "Информация",
-    "all": "Все",
-    "collections": "Коллекции",
-    "receive": "Получить",
-    "title": "NFT",
-    "titleQR" : "Сканируй QR-код из Trustee",
-    "signing": "Подпись создается, пожалуйста, подождите - эта подпись только подтверждает, что Адрес владеет данным NFT, поэтому Вы смело можете делиться этим экраном",
-    "signed": "Подпись только подтверждает, что Адрес владеет данным NFT, поэтому Вы смело можете делиться этим экраном",
-    "status": "Статус",
-    "contract": "Контракт коллекции",
-    "contractSchema" : "Тип",
-    "tokenId": "Токен ID",
-    "tokenQty" : "Количество",
-    "blockchain": "Блокчейн",
-    "address": "Адрес владельца",
-    "ownershipProved": "Право собственности доказано",
-    "ownershipNotProved": "Право собственности не доказано",
-    "checking": "Проверяется...",
-    "turnBasicAsset" : "Для перевода NFT Вам необходимо добавить {asset}, так как он используется для оплаты комиссии за перевод"
-  },
-  "nftAddAssetScreen" : {
-    "title" : "Добавить NFT актив",
-    "addCustomLabel": "Вы можете добавить стандартный токен NFT, разработанный на блокчейнах Ethereum, BNB Smart Chain, Matic или на Ropsten, Rinkeby Testnet. Пожалуйста, введите или отсканируйте новый адрес токена / актива.",
-    "addCustomLabelOpenSea" : "Токены Ethereum могут быть добавлены с OpenSea ",
-    "addCustomPlaceholder" : "Адрес актива NFT",
-    "addAssetButton" : "Добавить актив"
-  },
   "cashback": {
-    "invited": "Приглашен:",
-    "cashback": "Cashback",
-    "cpa": "CPA",
-    "pageTitle": "Заработать",
-    "pageSubtitle": "Зарабатывай до 30% от комиссии с Trustee Wallet!",
-    "shareButton": "Поделиться",
-    "promoButton": "Ввести Промо Код",
-    "detailsButton": "Детали",
-    "enterPromoPlaceholder": "Введите Промо Код",
-    "enterInviteLinkPlaceholder": "Введите ссылку-приглашение",
-    "applyButton": "Применить",
-    "wholeBalance": "Баланс за все время",
-    "availableCashBack": "Общий баланс",
     "balanceTitle": "Баланс",
-    "toWithdraw": "Мин. сумма вывода:",
-    "cpaTotal": "Всего CPA",
-    "cpaLevel1": "CPA Уровень №1",
-    "cpaLevel2": "CPA Уровень №2",
-    "cpaLevel3": "CPA Уровень №3",
-    "cashbackBalance": "Баланс кешбэка",
-    "cashbackToken": "Токен",
-    "yourToken": "Ваша кэшбек cсылка",
-    "cashbackMessage": "Получай Cashback за свои обменные операции. Зарабатывай крипту по Партнерской программе и CPA, рекомендуя Trustee Wallet!",
-    "howItWorks": {
-      "title": "Как это работает?",
-      "info1Title": "Есть ли в Trustee Wallet программа наград для пользователей?",
-      "info1Content": "Программа состоит из кешбэка и двухуровневой партнерской программы, что в итоге позволяет получать до 30% от комиссий Trustee за покупки и продажи криптовалют приглашенными пользователями",
-      "info2Title": "Как активировать кешбэк?",
-      "info2Content": "Для активации необходимо пригласить одного нового пользователя по своей кешбэк ссылке. После активации Вы будете получать 10% от комиссии Trustee со своих обменов. Данная функция активируется навсегда!",
-      "info3Title": "Какие условия партнерской программы?",
-      "info3Content": "Уровень №1 – 10% от комиссии Trustee за покупки и продажи криптовалют приглашенными пользователями (активируется с первого партнера). Чем больше друзей установят кошелек по Вашей ссылке, тем больше будет Ваш доход. Уровень №2 – активируется при превышении оборота структуры в 5000 USDT в неделю и позволит получать 10% от комиссий Trustee с пользователей 2-го уровня (партнеры Ваших партнеров).",
-      "info4Title": "Как вывести кешбэк и партнерское вознаграждение?",
-      "info4Content": "Минимальная сумма для вывода - 2 USDT",
-      "info5Title": "Кому доступна CPA программа?",
-      "info5Content": "Мы ценим каждого пользователя и рады вознаграждать его за результативные действия по популяризации Trustee Wallet. Каждый пользователь Trustee автоматически становится участником CPA программы.",
-      "info6Title": "Как устроена CPA программа?",
-      "info6Content": "За каждую новую активную установку приложения по Вашей кешбэк-ссылке (когда приглашенный пользователь совершил хотя бы одну покупку криптовалют с любой банковской карты) участник программы единоразово получает вознаграждение.",
-      "info7Title": "Какие награды CPA программы?",
-      "info7Content": "Уровень 1\nСумма первой покупки - до $100. Награда - $2\n\nУровень 2\nСумма первой покупки - $100-$500. Награда - $5\n\nУровень 3\nСумма первой покупки - более $500. Награда - $10",
-      "info8Title": "Как можно привлекать пользователей в Trustee?",
-      "info8Content": "Рекомендуйте Trustee Wallet своим друзьям и коллегам по своей кешбэк-ссылке. Вы можете использовать все виды трафика для привлечения пользователей: Контекстная реклама, Email-рассылки, реклама в соц. сетях, Тизерные сети, YouTube-каналы. Больше информации по ссылке.",
-      "info9Title": "Как вывести CPA вознаграждение?",
-      "info9Content": "Минимальная сумма для вывода - 100 USDT"
-    },
-    "invitedBy": "Приглашен",
-    "mainTitle": "Пригласи друзей - заработай кешбэк!",
-    "mainDescription": "Пригласи друга по своей ссылке и начни зарабатывать 10% кешбэка с комиссии своих обменов! Trustee возвращает до 30% комиссии своим пользователям!",
-    "shareText": "Поделиться",
-    "more": "Еще",
-    "shareTitle": "",
-    "shareMessage": "",
-    "friendsJoined": "Ваши друзья",
-    "updated" : "Обновлено в",
-    "transAmount": "Сумма транзакций",
-    "level2UsersAmount": "Друзья друзей",
-    "cashbackError" : {
-      "title" : "Не удалось получить данные",
-      "UI_ERROR_CASHBACK_NETWORK_ERROR": "Нет доступа к интернету",
-      "UI_ERROR_CASHBACK_SIGN_ERROR" : "Некорректная подпись в хранилище - пожалуйста, зайдите в раздел кешбэк еще раз",
-      "UI_ERROR_CASHBACK_TIME_ERROR" : "Неактуальная дата или время устройства",
-      "UI_ERROR_CASHBACK_TIME_ERROR_LOG" : "Сервис может не работать в результате нестабильного интернета или некорректных настроек даты и времени на Вашем мобильном устройстве",
-      "UI_ERROR_CASHBACK_PROMO_DUPLICATE" : "Промокод уже использован",
-      "UI_ERROR_CASHBACK_PROMO_NOT_FOUND" : "Промокод не найден"
-    },
-    "cashbackAmount": "Сумма кешбэка",
-    "setParentToken": "Задать ссылку-приглашение Вашего друга",
-    "hasParentToken": "Приглашен {cashbackParentToken}",
-    "inputParentCashbackLink": "https://trusteeglobal.com/link/example",
-    "withdraw": "Вывести",
-    "minWithdraw": "Минимальная сумма для вывода",
-    "performWithdraw": "Чтобы вывести награду, свяжитесь с нашей службой поддержки и предоставьте Вашу кешбэк ссылку и адрес Tron (TRX) из приложения",
-    "withdrawSupport": "Поддержка"
+    "updated": "Обновлено в"
   },
   "account": {
     "staking": "Стейкинг",
@@ -450,8 +345,8 @@
     "receive": "{receive}",
     "send": "Отправить",
     "history": "Транзакции",
-    "balanceBadNetwork" : "Нестабильный доступ к интернету",
-    "balanceBadBlock" : "Устаревший номер блока",
+    "balanceBadNetwork": "Нестабильный доступ к интернету",
+    "balanceBadBlock": "Устаревший номер блока",
     "scan": "Отсканировано {time} мин назад",
     "justScan": "Только что отсканировано",
     "soLong": "Сканирование было  давно",
@@ -487,8 +382,8 @@
     "transaction": {
       "spam": "No Spam",
       "pay": "Оплатить",
-      "remove" : "Скрыть",
-      "removeRBF" : "Вернуть средства",
+      "remove": "Скрыть",
+      "removeRBF": "Вернуть средства",
       "destinationTag": "Тег назначения",
       "paymentId": "Идентификатор платежа",
       "nonce": "Nonce",
@@ -503,16 +398,16 @@
       "status": "Статус",
       "outcome": "Исходящая",
       "income": "Входящая",
-      "self" : "Себе",
-      "freeze" : "Заморожено",
-      "unfreeze" : "Разморожено",
+      "self": "Себе",
+      "freeze": "Заморожено",
+      "unfreeze": "Разморожено",
       "withdraw_unfrozen": "Вывод размороженого",
-      "claim" : "Награда",
-      "swap_income" : "Contract Входящая",
-      "swap_outcome" : "Contract Исходящая",
-      "stake" : "Стейк",
+      "claim": "Награда",
+      "swap_income": "Contract Входящая",
+      "swap_outcome": "Contract Исходящая",
+      "stake": "Стейк",
       "vote": "Голосование",
-      "wallet_connect" : "WalletConnect",
+      "wallet_connect": "WalletConnect",
       "exchange": "Обмен",
       "buy": "Покупка",
       "sell": "Продажа",
@@ -550,13 +445,13 @@
         "replaceByFeeBtn": "Увеличить комиссию",
         "willReplaceWithNewFee": "Текущая транзакция будет заменена новой, с новым хэшем и более высокой комиссией",
         "notAllowed": "Транзакция создана без возможности замены или уже подтверждена",
-        "alreadyRemovedByFee" : "Вы использовали “возврат” {min} минут назад",
-        "alreadyReplacedByFee" : "Вы использовали “ускорение” {min} минут назад",
-        "alreadyRemovedByFeeLessThen2Minutes" : "Вы использовали “возврат” только что",
-        "alreadyReplacedByFeeLessThen2Minutes" : "Вы использовали “ускорение” только что"
+        "alreadyRemovedByFee": "Вы использовали “возврат” {min} минут назад",
+        "alreadyReplacedByFee": "Вы использовали “ускорение” {min} минут назад",
+        "alreadyRemovedByFeeLessThen2Minutes": "Вы использовали “возврат” только что",
+        "alreadyReplacedByFeeLessThen2Minutes": "Вы использовали “ускорение” только что"
       },
-      "CPFP" : {
-        "willSpeedUp" : "Вы можете ускорить входящую транзакцию, создав дополнительную транзакцию самому себе, с более высокой комиссией. Размер комиссии будет рассчитан автоматически, учитывая особенности обеих транзакций. Обратите внимание, что в данном случае оплата новой транзакции будет за Ваш счет"
+      "CPFP": {
+        "willSpeedUp": "Вы можете ускорить входящую транзакцию, создав дополнительную транзакцию самому себе, с более высокой комиссией. Размер комиссии будет рассчитан автоматически, учитывая особенности обеих транзакций. Обратите внимание, что в данном случае оплата новой транзакции будет за Ваш счет"
       }
     },
     "transactionStatuses": {
@@ -567,12 +462,12 @@
       "pending": "В ожидании",
       "new": "НОВАЯ",
       "process": "Обрабатывается",
-      "delegated" : "делегированная",
+      "delegated": "делегированная",
       "confirming": "Подтверждается",
       "fail": "Неудачно",
-      "missing" : "Не найдена",
-      "replaced" : "Заменена",
-      "out_of_energy" : "Нет энергии",
+      "missing": "Не найдена",
+      "replaced": "Заменена",
+      "out_of_energy": "Нет энергии",
       "internal_success": "Успешная от контракта",
       "internal_new": "Новая от контракта",
       "internal_fail": "Ошибка от контракта"
@@ -614,118 +509,28 @@
           "canceled": "Отменено",
           "fail": "Неудачно",
           "missing": "Не найдена",
-          "out_of_energy" : "Нет энергии"
+          "out_of_energy": "Нет энергии"
         }
       },
-    "transactionHash": "Хэш транзакции: ",
-    "cashbackLink": "Я использую кошелек Trustee Wallet! Вот моя личная ссылка ",
-    "website": "Сайт: ",
-    "self": "Данная транзакция была отправлена ​​на Ваш собственный адрес",
-    "order": "К ордеру",
-    "transactionSum": "Сумма отправки: ",
-    "addressTo": "Получатель: ",
-    "addressFrom": "Отправитель: ",
-    "blockConfirmations": "Текущее количество подтверждений: ",
-    "transactionAmount": "{currencyCode} сумма"
+      "transactionHash": "Хэш транзакции: ",
+      "cashbackLink": "Я использую кошелек Trustee Wallet! Вот моя личная ссылка ",
+      "website": "Сайт: ",
+      "self": "Данная транзакция была отправлена ​​на Ваш собственный адрес",
+      "order": "К ордеру",
+      "transactionSum": "Сумма отправки: ",
+      "addressTo": "Получатель: ",
+      "addressFrom": "Отправитель: ",
+      "blockConfirmations": "Текущее количество подтверждений: ",
+      "transactionAmount": "{currencyCode} сумма"
     }
   },
-
-  "fioMainSettings": {
-    "title": "FIO настройки",
-    "description": "Контролируйте все доступные FIO настройки",
-    "sendFioRequest": "Отправить FIO запрос",
-    "sendFioRequestDesc": "отправляйте FIO запросы",
-    "fioRequest": "FIO запросы",
-    "fioRequestDesc": "список всех активных Ожидающих/Отправленых FIO запросов",
-    "fioAddresses": "FIO адреса",
-    "fioAddressesDesc": "все зарегистрированные FIO адреса и их опции",
-    "registerFioAddress": "Зарегистрировать FIO адрес",
-    "registerFioAddressDesc": "зарегистрируйте FIO адрес"
-  },
-
-  "FioChooseRecipient": {
-    "title": "Выбрать FIO получателя",
-    "description": "Введите FIO, ENS или публичный адрес получателя",
-    "btnText": "Выбрать FIO"
-  },
-
-  "FioChooseAddress": {
-    "title": "Выберите FIO адрес",
-    "description": "Введите адрес, чтоб запросить платёж от",
-    "btnText": "Выберите FIO адрес"
-  },
-  "FioAddresses": {
-    "title": "FIO адреса",
-    "btnText": "Зарегистрируйте адрес",
-    "WebViewTitle": "Зарегистрируйте адрес"
-  },
-  "FioSettings": {
-    "title": "FIO настройки",
-    "description": "Выберите кошелёк, который хотите связать со своим FIO адресом",
-    "Expire": "Истекает",
-    "connectAllWallets": "Связать все кошельки",
-    "btnText": "Сохранить",
-    "noFioTitle": "Вам нужно зарегистрировать FIO адрес",
-    "noFioDescription": "FIO адрес не зарегистрирован",
-    "noFioBtn": "Зарегистрировать FIO адрес",
-    "serviceUnavailable": "Сервис недоступен. Пожалуйста, попробуйте позже"
-  },
-
-  "FioSendRequest": {
-    "title": "Отправить FIO запрос",
-    "selectCoin": "Выбрать валюту",
-    "from": "Отправить запрос от",
-    "to": "Отправить запрос к",
-    "amount": "Количество",
-    "memo": "Комментарий",
-    "btnText": "Создать",
-    "created": "FIO запрос создан",
-    "fioSettings": "FIO настройки",
-    "registerFioAddress": "Зарегистрировать FIO адрес",
-    "noCoinSelected": "Вам нужно выбрать валюту, для которой нужно сделать запрос",
-    "goToFioSettings": "Вам нужно перейти в FIO настройки, чтобы связать валюты с Вашим FIO адресом",
-    "needRegisterFio": "Сначала Вам нужно зарегистрировать FIO адрес"
-  },
-
-  "FioRequestsList": {
-    "title": "Список запросов FIO",
-    "pendingRequests": "Ожидающие запросы",
-    "sentRequests": "Отправленные запросы",
-    "RequestedTxt": "Запрошено"
-  },
-
   "FioRequestDetails": {
-    "title": "Детали FIO запроса",
-    "reqCreated": "Запрос создан",
-    "sentTitle": "Получить на мой",
-    "pendingTitle": "Отправить из моего",
-    "balance": "Баланс",
-    "fee": "Комиссия",
-    "to": "К",
-    "from": "От",
-    "memo": "FIO комментарий",
-    "amount": "Количество",
-    "btnTextReject": "Отклонить",
-    "btnTextConfirm": "Подтвердить"
+    "balance": "Баланс"
   },
-
   "exchange": {
     "mainData": {
       "amount": "Сумма"
     }
-  },
-  "card": {
-    "title": "Новая карта",
-    "description": "Чтобы добавить новую карту, сканируйте её или введите номер карты вручную",
-    "instructions": "Разместите карту \n внутри прямоугольника.",
-    "attention": "Пожалуйста, будьте внимательны, старайтесь избегать ошибок.",
-    "add": "Добавить",
-    "numberTitleInput": "Номер карты",
-    "dateTitleInput": "ММ/ГГ",
-    "cardCurrency": "Выберите страну карты...",
-    "cardName": "Назовите карту",
-    "noName": "Без названия",
-    "country": "Страна:"
   },
   "qrScanner": {
     "title": "Сканирование QR-кода",
@@ -770,7 +575,7 @@
       "descriptionInput": "По умолчанию",
       "optionalSettings": "Необязательно",
       "note": "Комментарий",
-      "optional" : "Необязательно",
+      "optional": "Необязательно",
       "notAddress": "Пожалуйста, введите адрес, чтобы продолжить"
     },
     "infoModal": {
@@ -787,11 +592,11 @@
       "titleReplaceByFee": "Подтверждение замены транзакции {hash}",
       "amount": "",
       "recipient": "Получатель",
-      "multiRecipient" : "Мультиотправка на {total} адресов",
-      "change" : "Сдача {amount} {currencySymbol} пойдет на",
+      "multiRecipient": "Мультиотправка на {total} адресов",
+      "change": "Сдача {amount} {currencySymbol} пойдет на",
       "edit": "Назад",
       "confirm": "Отправить",
-      "force" : "Отправить принудительно?"
+      "force": "Отправить принудительно?"
     },
     "feeModal": {
       "description": "Комиссия сети - это плата, которую получают майнеры за подтверждение Вашей транзакции. Комиссию сети (майнеров) оплачивает отправитель  за перевод криптоактивов на адрес получателя. Данная комиссия не зависит от суммы перевода и рассчитывается на основании данных сети в момент создания транзакции.\n\nВажно!\nСкорость подтверждения Вашей транзакции майнерами напрямую зависит от величины комиссии сети. Пожалуйста, учитывайте эту информацию при ручном изменении комиссии."
@@ -827,7 +632,7 @@
         "ltc_speed_blocks_2": "Быстро",
         "xrp_speed_one": "Быстро"
       },
-      "getRaw" : "Построить hex для транзакции (без отправки)",
+      "getRaw": "Построить hex для транзакции (без отправки)",
       "customFee": {
         "title": "Вручную",
         "fixedFeeTitle": "ФИКСИРОВАННАЯ\nКОМИССИЯ",
@@ -847,81 +652,81 @@
       }
     },
     "receiptScreen": {
-        "title": "Квитанция",
-        "totalSend": "Сумма отправки",
-        "rate": "Цена за 1 {currencyCode}",
-        "replaceTransactionHash" : "Замена транзакции",
-        "removeTransactionHash" : "Удаление транзакции",
-        "speedUpTransactionHash" : "Ускорение транзакции",
-        "recepient": "Получатель",
-        "destinationAddress": "Адрес получателя",
-        "minerFee": "Комиссия сети",
-        "totalMinerFee": "Общая комиссия сети",
-        "customNonce": "Custom nonce",
-        "nonce": "Nonce",
-        "trusteeInfo": "Trustee не берет комиссию за криптовалютные транзакции",
-        "send": "Отправить",
-        "build" : "Построить",
-        "sending": "Отправка",
-        "rawTransactionResult" : "Кликните чтобы скопировать"
+      "title": "Квитанция",
+      "totalSend": "Сумма отправки",
+      "rate": "Цена за 1 {currencyCode}",
+      "replaceTransactionHash": "Замена транзакции",
+      "removeTransactionHash": "Удаление транзакции",
+      "speedUpTransactionHash": "Ускорение транзакции",
+      "recepient": "Получатель",
+      "destinationAddress": "Адрес получателя",
+      "minerFee": "Комиссия сети",
+      "totalMinerFee": "Общая комиссия сети",
+      "customNonce": "Custom nonce",
+      "nonce": "Nonce",
+      "trusteeInfo": "Trustee не берет комиссию за криптовалютные транзакции",
+      "send": "Отправить",
+      "build": "Построить",
+      "sending": "Отправка",
+      "rawTransactionResult": "Кликните чтобы скопировать"
     },
     "errors": {
-      "UI_CONFIRM_DOUBLE_SEND" : "Транзакция на этот адрес уже отправлена, Вы уверены, что хотите повторить транзакцию?",
-      "UI_CONFIRM_DOUBLE_BSE_SEND" : "Транзакция на заявку уже отправлена, Вы уверены, что хотите создать новую транзакцию?",
+      "UI_CONFIRM_DOUBLE_SEND": "Транзакция на этот адрес уже отправлена, Вы уверены, что хотите повторить транзакцию?",
+      "UI_CONFIRM_DOUBLE_BSE_SEND": "Транзакция на заявку уже отправлена, Вы уверены, что хотите создать новую транзакцию?",
       "UI_CONFIRM_ADDRESS_TO_EMPTY_BALANCE": "Этот адрес еще не имеет баланса. Вы уверены, что он введен правильно?",
-      "UI_CALCULATE_CUSTOM_FEE" : "Пожалуйста, просчитайте полную стоимость для выбранной цены за байт",
+      "UI_CALCULATE_CUSTOM_FEE": "Пожалуйста, просчитайте полную стоимость для выбранной цены за байт",
       "SERVER_RESPONSE_CONTRACT_DESTINATION_INVALID": "Пожалуйста, проверьте адрес получателя. Отправка транзакций напрямую на адрес смарт-контракта невозможна",
-      "SERVER_RESPONSE_CLOUDFLARE" : "Пожалуйста, попробуйте еще раз - доступ к сети защищен cloudflare",
-      "SERVER_RESPONSE_BAD_CODE" : "Что-то пошло не так, пожалуйста, свяжитесь со службой поддержки",
-      "SERVER_RESPONSE_BAD_INTERNET" : "Нет доступа к интернету",
-      "SERVER_RESPONSE_BAD_TX_TO_REPLACE" : "Транзакция не найдена, пожалуйста, проверьте доступ к интернету. Возможны задержки в отображении информации",
+      "SERVER_RESPONSE_CLOUDFLARE": "Пожалуйста, попробуйте еще раз - доступ к сети защищен cloudflare",
+      "SERVER_RESPONSE_BAD_CODE": "Что-то пошло не так, пожалуйста, свяжитесь со службой поддержки",
+      "SERVER_RESPONSE_BAD_INTERNET": "Нет доступа к интернету",
+      "SERVER_RESPONSE_BAD_TX_TO_REPLACE": "Транзакция не найдена, пожалуйста, проверьте доступ к интернету. Возможны задержки в отображении информации",
       "SERVER_RESPONSE_NOT_ENOUGH_FEE": "Недостаточно средств нативной монеты {symbol} для оплаты комиссии сети",
-      "SERVER_RESPONSE_NOT_ENOUGH_FEE_JUST_DUST" : "Ваш кошелек накопил много входящих транзакций с маленькими суммами. Пожалуйста, используйте кнопку \"Send All\" для корректной отправки транзакции",
+      "SERVER_RESPONSE_NOT_ENOUGH_FEE_JUST_DUST": "Ваш кошелек накопил много входящих транзакций с маленькими суммами. Пожалуйста, используйте кнопку \"Send All\" для корректной отправки транзакции",
       "SERVER_RESPONSE_NOT_ENOUGH_FEE_OR_BAD_INTERNET": "Не удалось проверить баланс нативной монеты ({symbol}). Пожалуйста, проверьте доступ к интернету!",
       "SERVER_RESPONSE_NOT_ENOUGH_AMOUNT_AS_DUST": "Слишком маленькая сумма для транзакции",
       "SERVER_RESPONSE_NOTHING_TO_TRANSFER": "Недостаточно средств для отправки транзакции",
-      "SERVER_RESPONSE_NOTHING_TO_TRANSFER_FROM_ACTUAL_NODE" : "Баланс Вашего {symbol} кошелька меньше отправляемой суммы. Пожалуйста, обновите баланс {symbol} и повторите отправку.",
-      "UI_CORRECTED_AMOUNT" : "Баланс Вашего {symbol} кошелька отличается от отправляемой суммы. Пожалуйста, подтвердите отправку {amount} {symbol}",
+      "SERVER_RESPONSE_NOTHING_TO_TRANSFER_FROM_ACTUAL_NODE": "Баланс Вашего {symbol} кошелька меньше отправляемой суммы. Пожалуйста, обновите баланс {symbol} и повторите отправку.",
+      "UI_CORRECTED_AMOUNT": "Баланс Вашего {symbol} кошелька отличается от отправляемой суммы. Пожалуйста, подтвердите отправку {amount} {symbol}",
       "UI_CORRECTED_AMOUNT_BSE": "Баланс Вашего {symbol} кошелька меньше отправляемой суммы. Пожалуйста, обновите баланс {symbol} и повторите обменную операцию.",
-      "SERVER_RESPONSE_NOTHING_LEFT_FOR_FEE" : "Недостаточно средств на балансе для оплаты комиссии сети - пожалуйста, используйте опцию \"Отправить Все\" ",
-      "SERVER_RESPONSE_NOTHING_LEFT_FOR_DELEGATED_FEE" : "Недостаточно средств на балансе для оплаты делегированной транзакции - пожалуйста, используйте обычную отправку ERC20",
+      "SERVER_RESPONSE_NOTHING_LEFT_FOR_FEE": "Недостаточно средств на балансе для оплаты комиссии сети - пожалуйста, используйте опцию \"Отправить Все\" ",
+      "SERVER_RESPONSE_NOTHING_LEFT_FOR_DELEGATED_FEE": "Недостаточно средств на балансе для оплаты делегированной транзакции - пожалуйста, используйте обычную отправку ERC20",
       "SERVER_RESPONSE_NO_RESPONSE": "Сеть не принимает транзакцию - пожалуйста, подождите пока другие транзакции будут подтверждены",
       "SERVER_RESPONSE_NO_RESPONSE_XMR": "По условиям протокола Monero, каждая входящая транзакция перед отправкой должна набрать не менее 50 подтверждений сети (~1.5 часа). Пожалуйста, подождите пока последняя входящая транзакция наберет 50 подтверждений сети и повторите отправку.",
       "SERVER_RESPONSE_NO_RESPONSE_OR_MORE_FEE": "Сеть не принимает транзакцию - пожалуйста, подождите пока другие транзакции будут подтверждены или используйте большую комиссию",
       "SERVER_RESPONSE_NOT_ENOUGH_CONFIRMED_FEE": "Недостаточно средств нативной монеты {symbol} для оплаты комиссии - пожалуйста, подождите пока другие транзакции будут подтверждены",
       "SERVER_RESPONSE_NOT_ENOUGH_AMOUNT_AS_FEE": "Слишком маленькая комиссия за транзакцию",
-      "UI_CONFIRM_CHANGE_AMOUNT_FOR_REPLACEMENT" : "Слишком маленькая комиссия за транзакцию для замены - если Вы подтвердите, что комиссию можно взять из суммы получателя - то на следующем шаге увидите пересчитанные данные транзакции",
+      "UI_CONFIRM_CHANGE_AMOUNT_FOR_REPLACEMENT": "Слишком маленькая комиссия за транзакцию для замены - если Вы подтвердите, что комиссию можно взять из суммы получателя - то на следующем шаге увидите пересчитанные данные транзакции",
       "SERVER_RESPONSE_NOT_ENOUGH_AMOUNT_AS_FEE_FOR_REPLACEMENT": "Слишком маленькая комиссия за транзакцию для замены",
-      "SERVER_RESPONSE_TRANSACTION_ALREADY_MINED" : "Транзакция уже подтверждена",
-      "SERVER_RESPONSE_NONCE_ALREADY_MINED" : "Nonce {nonce} уже использован в подтвержденной транзакции",
-      "SERVER_RESPONSE_REVERTED_BY_EVM" : "Транзакция отменена EVM - пожалуйста, проверьте код контракта",
+      "SERVER_RESPONSE_TRANSACTION_ALREADY_MINED": "Транзакция уже подтверждена",
+      "SERVER_RESPONSE_NONCE_ALREADY_MINED": "Nonce {nonce} уже использован в подтвержденной транзакции",
+      "SERVER_RESPONSE_REVERTED_BY_EVM": "Транзакция отменена EVM - пожалуйста, проверьте код контракта",
       "SERVER_RESPONSE_NOT_CONNECTED": "Нет поключения к узлу в сети. Пожалуйста, смените подключение к сети Интернет или используйте VPN при работе с приложением",
-      "SERVER_RESPONSE_NOT_ENOUGH_AMOUNT_FOR_ANY_FEE" : "Недостаточно средств для транзакции и оплаты минимальной комиссии",
-      "SERVER_RESPONSE_WAIT_FOR_CONFIRM" : "Пожалуйста, подождите пока другие транзакции будут подтверждены или включите функцию \"Использовать неподтвержденные транзакции\" ",
+      "SERVER_RESPONSE_NOT_ENOUGH_AMOUNT_FOR_ANY_FEE": "Недостаточно средств для транзакции и оплаты минимальной комиссии",
+      "SERVER_RESPONSE_WAIT_FOR_CONFIRM": "Пожалуйста, подождите пока другие транзакции будут подтверждены или включите функцию \"Использовать неподтвержденные транзакции\" ",
       "SERVER_RESPONSE_TOO_BIG_FEE_FOR_TRANSACTION": "Слишком большая комиссия за транзакцию - пожалуйста, выберите размер комиссии вручную или задайте большую сумму перевода",
       "SERVER_RESPONSE_TOO_BIG_FEE_PER_BYTE_FOR_TRANSACTION": "Слишком большая комиссия за байт за транзакцию - пожалуйста, выберите размер комиссии вручную",
-      "SERVER_RESPONSE_SELF_TX_FORBIDDEN" : "Транзакции на тот же адрес запрещены",
-      "SERVER_RESPONSE_NOT_ENOUGH_BALANCE_XRP" : "Недостаточно средств для отправки (Оставьте не менее 10 XRP на балансе)",
-      "SERVER_RESPONSE_NOT_ENOUGH_BALANCE_DEST_XRP" : "Недостаточная сумма - отправьте не менее 10 XRP для активации адреса получателя",
-      "SERVER_RESPONSE_TAG_NEEDED_XRP" : "Неверный тег назначения - пожалуйста, введите правильный тег назначения для отправки транзакции",
-      "SERVER_RESPONSE_LEGACY_BALANCE_NEEDED_USDT" : "Недостаточный баланс BTC на связанном с USDT биткоин адресе - пожалуйста, переведите на него немного сатоши",
-      "SERVER_RESPONSE_LEGACY_BALANCE_NEEDED_USDT_WAIT_FOR_CONFIRM" : "Недостаточный или неподтвержденный баланс на связанном с USDT биткоин адресе - пожалуйста, подождите или включите функцию \"Использовать неподтвержденные транзакции\" ",
-      "SERVER_RESPONSE_NO_RESPONSE_UAX_USE_ETH" : "Сеть не приняла транзакцию - пожалуйста, подождите пока другие транзакции будут подтверждены или используйте обычную отправку ERC20",
-      "SERVER_RESPONSE_NO_SSL" : "SSL библиотека не найдена - пожалуйста, попробуйте обновить систему",
+      "SERVER_RESPONSE_SELF_TX_FORBIDDEN": "Транзакции на тот же адрес запрещены",
+      "SERVER_RESPONSE_NOT_ENOUGH_BALANCE_XRP": "Недостаточно средств для отправки (Оставьте не менее 10 XRP на балансе)",
+      "SERVER_RESPONSE_NOT_ENOUGH_BALANCE_DEST_XRP": "Недостаточная сумма - отправьте не менее 10 XRP для активации адреса получателя",
+      "SERVER_RESPONSE_TAG_NEEDED_XRP": "Неверный тег назначения - пожалуйста, введите правильный тег назначения для отправки транзакции",
+      "SERVER_RESPONSE_LEGACY_BALANCE_NEEDED_USDT": "Недостаточный баланс BTC на связанном с USDT биткоин адресе - пожалуйста, переведите на него немного сатоши",
+      "SERVER_RESPONSE_LEGACY_BALANCE_NEEDED_USDT_WAIT_FOR_CONFIRM": "Недостаточный или неподтвержденный баланс на связанном с USDT биткоин адресе - пожалуйста, подождите или включите функцию \"Использовать неподтвержденные транзакции\" ",
+      "SERVER_RESPONSE_NO_RESPONSE_UAX_USE_ETH": "Сеть не приняла транзакцию - пожалуйста, подождите пока другие транзакции будут подтверждены или используйте обычную отправку ERC20",
+      "SERVER_RESPONSE_NO_SSL": "SSL библиотека не найдена - пожалуйста, попробуйте обновить систему",
       "SERVER_RESPONSE_PLEASE_SELECT_FEE": "Пожалуйста, выберите стоимость комиссии из списка",
-      "SERVER_RESPONSE_MIN_GAS_ETH" : "Минимальный лимит газа равен 21000",
+      "SERVER_RESPONSE_MIN_GAS_ETH": "Минимальный лимит газа равен 21000",
       "SERVER_RESPONSE_TOO_MUCH_GAS_ETH": "Для транзакции требуется слишком много газа - пожалуйста, проверьте адрес получателя, возможно это смартконтракт",
       "SERVER_RESPONSE_TOO_MUCH_GAS_ETH_ERC20": "Для транзакции токенов требуется слишком много газа - пожалуйтса, проверьте смартконтракт - возможно, Ваш баланс заморожен",
-      "SERVER_RESPONSE_BAD_DESTINATION" : "Адрес получателя невалиден",
-      "SERVER_RESPONSE_BAD_SEND_NODE" : "Нет доступа к серверу отправки или ошибка соединения - пожалуйста, попробуйте еще раз",
-      "SERVER_RESPONSE_DOUBLE_SPEND" : "Пожалуйста, пересоздайте транзакцию, так как текущая использует уже устаревшие входы или подождите пока другие транзакции будут подтверждены",
-      "SERVER_RESPONSE_NO_TX_TO_SPEEDUP" : "Транзакция для ускорения не найдена",
-      "SERVER_RESPONSE_BANDWITH_ERROR_TRX" : "Пропускной способности (ПС) вашего адреса недостаточно для совершения транзакции. Подождите сутки для восполнения ПС либо переведите на адрес кошелька 1-2 TRX для компенсации ПС.",
-      "SERVER_RESPONSE_ENERGY_ERROR_VET" : "Недостаточно средств VeChain Thor Token (VTHO) для оплаты сетевой комиссии",
+      "SERVER_RESPONSE_BAD_DESTINATION": "Адрес получателя невалиден",
+      "SERVER_RESPONSE_BAD_SEND_NODE": "Нет доступа к серверу отправки или ошибка соединения - пожалуйста, попробуйте еще раз",
+      "SERVER_RESPONSE_DOUBLE_SPEND": "Пожалуйста, пересоздайте транзакцию, так как текущая использует уже устаревшие входы или подождите пока другие транзакции будут подтверждены",
+      "SERVER_RESPONSE_NO_TX_TO_SPEEDUP": "Транзакция для ускорения не найдена",
+      "SERVER_RESPONSE_BANDWITH_ERROR_TRX": "Пропускной способности (ПС) вашего адреса недостаточно для совершения транзакции. Подождите сутки для восполнения ПС либо переведите на адрес кошелька 1-2 TRX для компенсации ПС.",
+      "SERVER_RESPONSE_ENERGY_ERROR_VET": "Недостаточно средств VeChain Thor Token (VTHO) для оплаты сетевой комиссии",
       "SERVER_RESPONSE_PLEASE_CHECK_SYSTEM_TIME": "Пожалуйста, проверьте системное время устройства - необходимо синхронизировать время для создания транзакции",
-      "SERVER_RESPONSE_NOT_ENOUGH_BALANCE_SOL" : "Недостаточно средств для отправки",
-      "SERVER_RESPONSE_NOT_ENOUGH_AMOUNT_STAKE_SOL" : "Недостаточная сумма для отправки в стейк",
-      "SERVER_RESPONSE_NOT_VALIDATOR_STAKE_SOL" : "Выбранный адрес - не является валидатором",
+      "SERVER_RESPONSE_NOT_ENOUGH_BALANCE_SOL": "Недостаточно средств для отправки",
+      "SERVER_RESPONSE_NOT_ENOUGH_AMOUNT_STAKE_SOL": "Недостаточная сумма для отправки в стейк",
+      "SERVER_RESPONSE_NOT_VALIDATOR_STAKE_SOL": "Выбранный адрес - не является валидатором",
       "SERVER_RESPONSE_RECEIVER_EMPTY_BALANCE": "Адрес получателя пустой. В блокчейне Solana невозможно отправить токены на адрес с нулевым балансом SOL",
       "SERVER_RESPONSE_SPAM_ADDRESS": "Адрес получателя помечен как мошеннический или spam."
     }
@@ -945,8 +750,8 @@
       "showButton": "Нажмите и удерживайте здесь, чтобы посмотреть фразу",
       "showQrButton": "Нажмите и удерживайте здесь, чтобы посмотреть QR-код",
       "next": "Дальше",
-      "showQR" : "Показать QR-код для импорта на другое устройство",
-      "hideQR" : "Показать фразу восстановления",
+      "showQR": "Показать QR-код для импорта на другое устройство",
+      "hideQR": "Показать фразу восстановления",
       "infoQR": "QR-код раскрывает фразу восстановления. Пожалуйста, не отправляйте его никому и не сохраняйте в галерею!"
     },
     "step1Screen": {
@@ -1008,20 +813,20 @@
       "wordDoesNotExist": "Такого слова нет в словаре"
     },
     "importGoogleError": {
-      "title" : "Не подключен",
-      "description" : "Пожалуйста, попробуйте еще раз или проверьте права доступа"
+      "title": "Не подключен",
+      "description": "Пожалуйста, попробуйте еще раз или проверьте права доступа"
     },
     "importGoogleNoWallet": {
-      "title" : "Нет файла резервной копии",
-      "description" : "Зашифрованный файл резервной копии не найден"
+      "title": "Нет файла резервной копии",
+      "description": "Зашифрованный файл резервной копии не найден"
     },
-    "backupGoogleHasWallet" : {
-      "title" : "Файл резервной копии уже создан",
-      "description" : "Удалите файл резервной копии для воссоздания"
+    "backupGoogleHasWallet": {
+      "title": "Файл резервной копии уже создан",
+      "description": "Удалите файл резервной копии для воссоздания"
     },
-    "backupGoogleSuccess" : {
-      "title" : "Создан файл резервной копии",
-      "description" : "Не удаляйте файл резервной копии для восстановления после установки приложения"
+    "backupGoogleSuccess": {
+      "title": "Создан файл резервной копии",
+      "description": "Не удаляйте файл резервной копии для восстановления после установки приложения"
     },
     "name": "Назовите кошелек",
     "submit": "Дальше",
@@ -1058,10 +863,8 @@
     "sell": "Продать",
     "wallet": "Кошелек",
     "exchange": "Обмен",
-    "earn": "Заработать",
     "settings": "Больше",
-    "support": "Поддержка",
-    "market": "Обменник"
+    "support": "Поддержка"
   },
   "modal": {
     "titles": {
@@ -1224,20 +1027,20 @@
       "fail": "Внимание!",
       "feeChangeAmount": "Сумма отправки изменилась после изменения комиссии",
       "bseMinCrypto": "Минимальная сумма отправки для обмена {limit}",
-      "bseMinCryptoNoFee" : "Вашего баланса недостаточно для минимальной суммы отправки обмена и платы за транзакцию",
-      "bigGas" : "Вы отправляете в направлении, которое требует нетипично высокий  газ : {gasLimit}. В целях сохранности Ваших средств транзакция остановлена!",
-      "bigGasForceQuitOff" : "Вы отправляете транзакцию, которая имеет высокий параметр газа: {gasLimit}. Данная величина не является стандартной, поэтому в целях сохранности Ваших средств транзакция приостановлена.\n\nЕсли Вы уверены в корректности данной транзакции, то для ее отправки нажмите \"Продолжить\".\n",
-      "blockedBalance" : "Ваш баланс использован в предыдущей(их) неподтвержденных транзакциях, доступно {free}",
-      "feeSmallAmount" :  "{feesCurrencySymbol} недостаточно на балансе для оплаты более быстрой комиссии",
-      "longQuery" : "Предыдущая(ие) транзакция ещё не имеет подтверждения. Текущая транзакция не будет подтверждена, пока не подтвердится предыдущая(ие)",
-      "longQuerySettingOff" : "Возможность отправки второй транзакции, пока предыдущая не  подтвердилась, отключена",
-      "noTBKprovider" : "Извините, функция отключена, так как обменный оператор не умеет обрабатывать ускоренные транзакции",
+      "bseMinCryptoNoFee": "Вашего баланса недостаточно для минимальной суммы отправки обмена и платы за транзакцию",
+      "bigGas": "Вы отправляете в направлении, которое требует нетипично высокий  газ : {gasLimit}. В целях сохранности Ваших средств транзакция остановлена!",
+      "bigGasForceQuitOff": "Вы отправляете транзакцию, которая имеет высокий параметр газа: {gasLimit}. Данная величина не является стандартной, поэтому в целях сохранности Ваших средств транзакция приостановлена.\n\nЕсли Вы уверены в корректности данной транзакции, то для ее отправки нажмите \"Продолжить\".\n",
+      "blockedBalance": "Ваш баланс использован в предыдущей(их) неподтвержденных транзакциях, доступно {free}",
+      "feeSmallAmount": "{feesCurrencySymbol} недостаточно на балансе для оплаты более быстрой комиссии",
+      "longQuery": "Предыдущая(ие) транзакция ещё не имеет подтверждения. Текущая транзакция не будет подтверждена, пока не подтвердится предыдущая(ие)",
+      "longQuerySettingOff": "Возможность отправки второй транзакции, пока предыдущая не  подтвердилась, отключена",
+      "noTBKprovider": "Извините, функция отключена, так как обменный оператор не умеет обрабатывать ускоренные транзакции",
       "noChangeFee": "Для транзакций с фиксированным курсом обмена, изменение комиссии сети невозможно"
     },
-    "walletLog" : {
-      "sorry" : "Внимание!",
-      "noMailApp" : "Нет доступного приложения для отправки Email",
-      "notComplited" : "Пожалуйста, выберите какой либо канал для отправки"
+    "walletLog": {
+      "sorry": "Внимание!",
+      "noMailApp": "Нет доступного приложения для отправки Email",
+      "notComplited": "Пожалуйста, выберите какой либо канал для отправки"
     },
     "walletBackup": {
       "success": "Успех!",
@@ -1298,10 +1101,10 @@
       "en-US": "English",
       "uk-UA": "Українська",
       "ru-UA": "Українська",
-      "ka-GE" : "Georgian",
-      "de-DE" : "German",
-      "es-ES" : "Spanish",
-      "fr-FR" : "French"
+      "ka-GE": "Georgian",
+      "de-DE": "German",
+      "es-ES": "Spanish",
+      "fr-FR": "French"
     }
   },
   "scannerSettings": {
@@ -1313,7 +1116,7 @@
     },
     "lastScan": "Ваши балансы отсканированы в:",
     "helper": "Вы можете выбрать частоту самостоятельно",
-    "clean" : "Сканировать избранный кошелек еще раз"
+    "clean": "Сканировать избранный кошелек еще раз"
   },
   "loggingSettings": {
     "title": "Логирование",
@@ -1321,7 +1124,7 @@
       "none": "без логирования",
       "all": "в локальную файловую систему"
     },
-    "clean" : "Очистить файлы",
+    "clean": "Очистить файлы",
     "helper": "Вы можете выбрать уровень самостоятельно"
   },
   "repeat": {
@@ -1341,9 +1144,9 @@
     "copied": "Скопировано в буфер",
     "noInternet": "Нет доступа к интернету",
     "badInternet": "Нестабильный доступ к интернету, пожалуйста, попробуйте другого провайдера или точку доступа",
-    "saved" : "Сохранено"
+    "saved": "Сохранено"
   },
-  "pushNotifications":  {
+  "pushNotifications": {
     "FOUND_OUT_TX_STATUS_NEW": {
       "title": "{currencyName} исходящая транзакция создана",
       "description": "{walletName} транзакция {amountPretty} {currencySymbol}"
@@ -1392,13 +1195,13 @@
       "title": "Курсы валют сканируются",
       "description": "но кешированные значения такие же, поэтому никаких изменений"
     },
-    "TXS_SCANNED_LAST_TIME" : {
-      "title" : "{currencyName} транзакции сканируются",
-      "description" : "{walletName} log {log}"
+    "TXS_SCANNED_LAST_TIME": {
+      "title": "{currencyName} транзакции сканируются",
+      "description": "{walletName} log {log}"
     },
-    "HD_SCANNED_LAST_TIME" : {
-      "title" : "Сканируются транзакции HD",
-      "description" : "{walletName} log {log}"
+    "HD_SCANNED_LAST_TIME": {
+      "title": "Сканируются транзакции HD",
+      "description": "{walletName} log {log}"
     }
   },
   "currencyList": {
@@ -1615,14 +1418,8 @@
       "currency": "Украинская гривна"
     }
   },
-  "streamSupport": {
-    "sendDocs": "Отправить документы",
-    "sendLogs": "Отправить логи",
-    "takePhoto": "Сделать фото",
-    "chooseFromLibrary": "Выбрать из галереи",
-    "noMessages": "Сообщений пока нет",
-    "sentFile": "Файл отправлен",
-    "getRoomError" : "Ошибка загрузки",
-    "sendMessageError" : "Нестабильное подключение к сети при отправке сообщения"
+  "support": {
+    "title": "Поддержка",
+    "body": "Если вам нужна помощь — напишите нам на почту или зайдите на сайт."
   }
 }
