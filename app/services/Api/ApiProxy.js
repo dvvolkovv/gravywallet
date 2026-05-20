@@ -21,11 +21,8 @@ import cardsDS from '@app/appstores/DataSource/Card/Card'
 import store from '@app/store'
 
 import Log from '@app/services/Log/Log'
-import UpdateTradeOrdersDaemon from '@app/daemons/back/UpdateTradeOrdersDaemon'
-import UpdateCardsDaemon from '@app/daemons/back/UpdateCardsDaemon'
 import UpdateWalletsDaemon from '@app/daemons/back/UpdateWalletsDaemon'
 import UpdateAppNewsDaemon from '@app/daemons/back/UpdateAppNewsDaemon'
-import UpdateCashBackDataDaemon from '@app/daemons/back/UpdateCashBackDataDaemon'
 import UpdateCurrencyRateDaemon from '@app/daemons/back/UpdateCurrencyRateDaemon'
 
 let CACHE_SENT_FIRST_SKIP = true
@@ -139,7 +136,7 @@ async function _getAll(params) {
         }
 
         cbOrders = {
-            CACHE_ORDERS_HASH: UpdateTradeOrdersDaemon.getSavedOrdersHash(),
+            CACHE_ORDERS_HASH: '',
             cashbackToken,
             signedData,
             timestamp: +new Date()
@@ -340,20 +337,11 @@ export default {
                     await UpdateCurrencyRateDaemon.updateCurrencyRate(params, res)
                 }
             }
-            if (params.source.indexOf('UpdateCardsDaemon') === -1) {
-                await UpdateCardsDaemon.updateCardsDaemon(params, res)
-            }
             if (params.source.indexOf('UpdateWalletsDaemon') === -1) {
                 await UpdateWalletsDaemon.updateWalletsDaemon(params, res)
             }
             if (params.source.indexOf('UpdateAppNewsDaemon') === -1) {
                 await UpdateAppNewsDaemon.updateAppNewsDaemon(params, res)
-            }
-            if (params.source.indexOf('UpdateCashBack') === -1) {
-                await UpdateCashBackDataDaemon.updateCashBackDataDaemon(params, res)
-            }
-            if (params.source.indexOf('UpdateTradeOrdersDaemon') === -1) {
-                await UpdateTradeOrdersDaemon.updateTradeOrdersDaemon(params, res)
             }
 
         }

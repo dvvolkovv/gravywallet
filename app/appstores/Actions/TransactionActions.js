@@ -9,7 +9,6 @@ import Log from '@app/services/Log/Log'
 import BlocksoftPrettyNumbers from '@crypto/common/BlocksoftPrettyNumbers'
 import BlocksoftDict from '@crypto/common/BlocksoftDict'
 import DaemonCache from '@app/daemons/DaemonCache'
-import UpdateTradeOrdersDaemon from '@app/daemons/back/UpdateTradeOrdersDaemon'
 import BlocksoftUtils from '@crypto/common/BlocksoftUtils'
 import config from '@app/config/config'
 import EthTmpDS from '@crypto/blockchains/eth/stores/EthTmpDS'
@@ -77,10 +76,6 @@ const transactionActions = {
             }
 
             await setSelectedAccountTransactions('TransactionActions.saveTransaction')
-
-            if (typeof transaction.bseOrderId !== 'undefined') {
-                UpdateTradeOrdersDaemon.updateTradeOrdersDaemon({ force: true })
-            }
 
             DaemonCache.cleanCacheTxsCount(transaction)
 

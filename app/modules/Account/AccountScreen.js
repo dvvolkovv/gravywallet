@@ -29,7 +29,6 @@ import MarketingEvent from '@app/services/Marketing/MarketingEvent'
 import MarketingAnalytics from '@app/services/Marketing/MarketingAnalytics'
 import trusteeAsyncStorage from '@appV2/services/trusteeAsyncStorage/trusteeAsyncStorage'
 
-import UpdateTradeOrdersDaemon from '@app/daemons/back/UpdateTradeOrdersDaemon'
 import UpdateAccountBalanceAndTransactions from '@app/daemons/back/UpdateAccountBalanceAndTransactions'
 import UpdateAccountListDaemon from '@app/daemons/view/UpdateAccountListDaemon'
 import UpdateAccountBalanceAndTransactionsHD from '@app/daemons/back/UpdateAccountBalanceAndTransactionsHD'
@@ -125,16 +124,6 @@ class Account extends React.PureComponent {
         UpdateOneByOneDaemon._canUpdate = false
 
         let needRefresh = false
-        if (currencyCode !== 'ETH_ROPSTEN' && currencyCode !== 'ETH_RINKEBY') {
-            try {
-                if (await UpdateTradeOrdersDaemon.updateTradeOrdersDaemon({ force: true, source: 'ACCOUNT_REFRESH' })) {
-                    needRefresh = true
-                }
-            } catch (e) {
-                Log.errDaemon('AccountScreen handleRefresh error updateTradeOrdersDaemon ' + e.message)
-            }
-        }
-
         try {
             if (await UpdateAccountBalanceAndTransactions.updateAccountBalanceAndTransactions({
                 force: true,

@@ -15,7 +15,6 @@ import accountBalanceActions from '@app/appstores/Stores/Account/AccountBalances
 import WalletHDActions from '@app/appstores/Actions/WalletHDActions'
 import walletActions from '@app/appstores/Stores/Wallet/WalletActions'
 import ApiProxyLoad from '@app/services/Api/ApiProxyLoad'
-import UpdateCardsDaemon from '@app/daemons/back/UpdateCardsDaemon'
 import CashBackUtils from '@app/appstores/Stores/CashBack/CashBackUtils'
 import settingsActions from '@app/appstores/Stores/Settings/SettingsActions'
 import config from '@app/config/config'
@@ -118,7 +117,6 @@ export async function proceedSaveGeneratedWallet(wallet, source = 'GENERATION') 
                 await walletDS.saveWallet(fullWallet)
                 fromSaved = true
 
-                await UpdateCardsDaemon.updateCardsDaemon({force : true}, res)
             }
         }
         if (!fromSaved) {

@@ -15,7 +15,6 @@ import { showModal } from '@app/appstores/Stores/Modal/ModalActions'
 
 import store from '@app/store'
 
-import UpdateTradeOrdersDaemon from '@app/daemons/back/UpdateTradeOrdersDaemon'
 import UpdateAccountBalanceAndTransactions from '@app/daemons/back/UpdateAccountBalanceAndTransactions'
 import DaemonCache from '@app/daemons/DaemonCache'
 
@@ -96,7 +95,7 @@ export async function _onLoad() {
                         account = account[currencyCode]
                         tx = transactionActions.preformatWithBSEforShow(transactionActions.preformat(tmp[0], { account }), tmp[0].bseOrderData, currencyCode)
                     } else {
-                        const exchangeOrder = await UpdateTradeOrdersDaemon.fromApi(walletHash, orderHash)
+                        const exchangeOrder = null
                         if (exchangeOrder) {
                             // basic object for order without transaction
                             tx = transactionActions.preformatWithBSEforShow(false, exchangeOrder, currencyCode)
