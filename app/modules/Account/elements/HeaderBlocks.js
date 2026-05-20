@@ -328,11 +328,7 @@ class HeaderBlocks extends React.Component {
     }
 
     accountSetting = (currencyCode) => {
-        if (currencyCode === 'FIO') {
-            NavStore.goNext('FioMainSettings')
-        } else {
-            NavStore.goNext('AccountSettings', { account: currencyCode })
-        }
+        NavStore.goNext('AccountSettings', { account: currencyCode })
     }
 
     settings = (currencyCode) => {

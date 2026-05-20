@@ -37,7 +37,6 @@ import UpdateOneByOneDaemon from '@app/daemons/back/UpdateOneByOneDaemon'
 
 import { strings, sublocale } from '@app/services/i18n'
 
-import { getAccountFioName } from '@crypto/blockchains/fio/FioUtils'
 
 import { ThemeContext } from '@app/theme/ThemeProvider'
 
@@ -90,19 +89,6 @@ class Account extends React.PureComponent {
     }
 
     async componentDidMount() {
-        const { currencyCode } = this.props.selectedCryptoCurrencyData
-        if (currencyCode === 'FIO') {
-            const fioAccount = await getAccountFioName()
-            if (!fioAccount) {
-                showModal({
-                    type: 'YES_NO_MODAL',
-                    title: strings('account.fioAccount.title'),
-                    icon: 'INFO',
-                    description: strings('account.fioAccount.description')
-                }, this.handleRegisterFIOAddress)
-            }
-        }
-
         this._onLoad()
     }
 
@@ -126,12 +112,6 @@ class Account extends React.PureComponent {
         const newOffset = Math.round(offset)
         if (!this.state.hasStickyHeader && newOffset > 260) this.setState(() => ({ hasStickyHeader: true }))
         if (this.state.hasStickyHeader && newOffset < 260) this.setState(() => ({ hasStickyHeader: false }))
-    }
-
-    handleRegisterFIOAddress = async () => {
-        const { address } = this.props.selectedAccountData
-        const link = BlocksoftExternalSettings.getStatic('FIO_REGISTRATION_URL')
-        NavStore.goNext('WebViewScreen', { url: link + address, title: strings('fioMainSettings.registerFioAddress') })
     }
 
     handleRefresh = async (click = false) => {

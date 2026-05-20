@@ -41,7 +41,6 @@ import BlocksoftDict from '@crypto/common/BlocksoftDict'
 import QrCodeBox from '@app/components/elements/QrCodeBox'
 import prettyShare from '@app/services/UI/PrettyShare/PrettyShare'
 import BlocksoftPrettyNumbers from '@crypto/common/BlocksoftPrettyNumbers'
-import { resolveChainCode } from '@crypto/blockchains/fio/FioUtils'
 
 import { ThemeContext } from '@app/theme/ThemeProvider'
 
@@ -194,22 +193,6 @@ class AccountReceiveScreen extends React.PureComponent {
                 Log.err('AccountReceiveScreen.handleExchange error ' + e.message)
             }
         }
-    }
-
-    handleFioRequestCreate = () => {
-        const { currencyCode, currencySymbol } = this.props.selectedCryptoCurrencyData
-        const { fioName } = this.state
-        const address = getAddress.call(this)
-        const chainCode = resolveChainCode(currencyCode, currencySymbol)
-
-        NavStore.goNext('FioSendRequest', {
-            fioRequestDetails: {
-                fioName,
-                address,
-                chainCode,
-                currencySymbol
-            }
-        })
     }
 
     shareData = () => {
@@ -791,17 +774,6 @@ class AccountReceiveScreen extends React.PureComponent {
                                 }
                             </View>
                             {!customAmount && <View>
-                                { fioName ? (
-                                    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                                        <TouchableDebounce style={{ marginTop: 20 }}
-                                            onPress={this.handleFioRequestCreate}>
-                                            <LightButton color={color} Icon={(props) => <Feather color={color} size={10}
-                                                name={'edit'} {...props} />}
-                                                title={strings('account.receiveScreen.FIORequest')}
-                                                iconStyle={{ marginHorizontal: 3 }} />
-                                        </TouchableDebounce>
-                                    </View>
-                                ) : null }
                                 {currencyCode === 'BTC' && walletIsHd && <View style={{ alignSelf: 'center', flexDirection: 'row', paddingTop: GRID_SIZE * 1.5 }}>
                                     {this.renderButton(buttonsArray)}
                                 </View>}

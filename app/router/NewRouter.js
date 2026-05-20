@@ -48,15 +48,6 @@ import AccountStakingSOL from '@app/modules/Account/AccountStaking/AccountStakin
 import SolStakingTransactionScreen from '@app/modules/Account/AccountStaking/sol/SolStakingTransactionScreen'
 import SolValidators from '@app/modules/Account/AccountStaking/sol/SolValidators'
 
-import FioChooseRecipient from '@app/modules/FIO/FioChooseRecipient'
-import FioSendRequest from '@app/modules/FIO/FioSendRequest'
-import FioRequestsList from '@app/modules/FIO/FioRequestsList'
-import FioChooseAddress from '@app/modules/FIO/FioChooseAddress'
-import FioRequestDetails from '@app/modules/FIO/FioRequestDetails'
-import FioAddresses from '@app/modules/FIO/FioAddresses'
-import FioMainSettings from '@app/modules/FIO/FioMainSettings'
-import FioSettings from '@app/modules/FIO/FioSettings'
-
 import SettingsMainScreen from '@app/modules/Settings/SettingsMainScreen'
 import WalletListScreen from '@app/modules/Settings/WalletList/WalletListScreen'
 import AddWalletScreen from '@app/modules/Settings/WalletList/AddWalletScreen'
@@ -166,15 +157,6 @@ const HomeStackScreen = () => {
                 <HomeStack.Screen name='LoggingSettingsScreen' component={LoggingSettingsScreen} />
                 <HomeStack.Screen name='NotificationsSettingsScreen' component={NotificationsSettingScreen} />
                 <HomeStack.Screen name='GlobalCoinSettings' component={GlobalCoinSettings} />
-
-                <HomeStack.Screen name='FioChooseRecipient' component={FioChooseRecipient} />
-                <HomeStack.Screen name='FioChooseAddress' component={FioChooseAddress} />
-                <HomeStack.Screen name='FioSendRequest' component={FioSendRequest} />
-                <HomeStack.Screen name='FioRequestsList' component={FioRequestsList} />
-                <HomeStack.Screen name='FioRequestDetails' component={FioRequestDetails} />
-                <HomeStack.Screen name='FioAddresses' component={FioAddresses} />
-                <HomeStack.Screen name='FioMainSettings' component={FioMainSettings} />
-                <HomeStack.Screen name='FioSettings' component={FioSettings} />
 
             </HomeStack.Group>
         </HomeStack.Navigator>

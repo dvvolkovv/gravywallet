@@ -257,16 +257,6 @@ class Input extends Component {
                     />
                 </View>
                 <View style={{ ...styles.actions }}>
-                    {typeof fio !== 'undefined' && fio ? (
-                        <TouchableDebounce onPress={() => NavStore.goNext('FioChooseRecipient')} style={styles.actionBtn}>
-                            <MaterialCommunityIcons
-                                style={{ ...styles.actionBtn__icon, paddingTop: 2 }}
-                                name='contacts'
-                                size={25}
-                                color={addressError && error ? '#864DD9' : colors.common.text1}
-                            />
-                        </TouchableDebounce>
-                    ) : null}
                     {typeof text !== 'undefined' && text ? (
                         <Text styles={[styles.text, styles.actionBtn__icon, { paddingTop: 2, flex: 1, color: colors.common.text3 }]}>{text}</Text>
                     ) : null}
