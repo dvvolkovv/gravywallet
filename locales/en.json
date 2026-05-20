@@ -35,10 +35,8 @@
     "agreement3": "and consent to the processing of the Personal Data that I have provided",
     "termsTitle": "Terms of use",
     "privacyPolicyTitle": "Privacy Policy",
-    "slider1": "Innovative security and anonymity technologies",
-    "slider2": "Endless possibilities in an intuitive design",
-    "slider3": "Built-in monitoring of exchange offices",
-    "slider4": "Hanging and expensive transactions"
+    "welcomeTitle": "Welcome to Gravy",
+    "welcomeSubtitle": "A self-custody multi-chain wallet with built-in swap."
   },
   "tradeScreen": {
     "modalError": {

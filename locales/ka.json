@@ -35,10 +35,8 @@
     "termsTitle": "გამოყენების პირობები",
     "agreement3": "and consent to the processing of the Personal Data that I have provided",
     "privacyPolicyTitle": "კონფიდენციალურობის პოლიტიკა",
-    "slider1": "უსაფრთხოებისა და ანონიმურობის ინოვაციური ტექნოლოგიები",
-    "slider2": "უსაზღვრო შესაძლებლობები ინტუიტიურად გასაგებ დიზაინში",
-    "slider3": "გაცვლითი პუნქტების ჩაშენებული მონიტორინგი",
-    "slider4": "Зависшие и дорогие транзакции"
+    "welcomeTitle": "კეთილი იყოს თქვენი მობრძანება Gravy-ში",
+    "welcomeSubtitle": "მრავალქსელიანი არაკუსტოდიური საფულე ჩაშენებული სვაპით."
   },
   "tradeScreen": {
     "modalError": {

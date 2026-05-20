@@ -35,10 +35,8 @@
     "agreement3": "et consentez au traitement des données personnelles que j'ai fournies",
     "termsTitle": "Conditions d'utilisation",
     "privacyPolicyTitle": "Politique de confidentialité",
-    "slider1": "Technologies innovantes de sécurité et d'anonymat",
-    "slider2": "Des possibilités infinies dans un design intuitif",
-    "slider3": "Surveillance intégrée des bureaux de change",
-    "slider4": "Transactions suspendues et coûteuses"
+    "welcomeTitle": "Bienvenue sur Gravy",
+    "welcomeSubtitle": "Un wallet multi-chaîne non custodial avec swap intégré."
   },
   "tradeScreen": {
     "modalError": {

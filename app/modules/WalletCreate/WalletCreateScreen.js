@@ -2,8 +2,7 @@
  * @version 0.41
  */
 import React, { PureComponent } from 'react'
-import { View, Image, Text, Dimensions, StatusBar, StyleSheet } from 'react-native'
-import { Pages } from 'react-native-pages'
+import { View, Image, Text, StatusBar, StyleSheet } from 'react-native'
 
 import Agreement from './elements/Agreement'
 import Button from '@app/components/elements/new/buttons/Button'
@@ -21,54 +20,9 @@ import { ThemeContext } from '@app/theme/ThemeProvider'
 import MarketingAnalytics from '@app/services/Marketing/MarketingAnalytics'
 import MarketingEvent from '@app/services/Marketing/MarketingEvent'
 
-const screenWidth = Dimensions.get('window').width
-
-const getSliderData = () => [
-    {
-        id: 'slide_1',
-        image: require('@assets/images/slider/1.png'),
-        text: strings('walletCreateScreen.slider1')
-    },
-    {
-        id: 'slide_2',
-        image: require('@assets/images/slider/2.png'),
-        text: strings('walletCreateScreen.slider2')
-    },
-    {
-        id: 'slide_3',
-        image: require('@assets/images/slider/3.png'),
-        text: strings('walletCreateScreen.slider3')
-    },
-    {
-        id: 'slide_4',
-        image: require('@assets/images/slider/4.png'),
-        text: strings('walletCreateScreen.slider4'),
-        textStyle: { textDecorationLine: 'line-through' }
-    }
-]
-
-const SLIDER_SCROLL_TIMEOUT = 4000
-
 class WalletCreateScreen extends PureComponent {
     state = {
         checked: false
-    }
-
-    sliderData = getSliderData()
-    sliderTimer
-    sliderRef = React.createRef
-
-    componentDidMount() {
-        this.runSliderTimer()
-    }
-
-    runSliderTimer = () => {
-        this.sliderTimer = setInterval(() => {
-            if (typeof this.sliderRef !== 'undefined' && this.sliderRef) {
-                const index = this.sliderRef.activeIndex < this.sliderData.length - 1 ? this.sliderRef.activeIndex + 1 : 0
-                this.sliderRef.scrollToPage?.(index)
-            }
-        }, SLIDER_SCROLL_TIMEOUT)
     }
 
     handleSelect = (data) => {
@@ -131,28 +85,6 @@ class WalletCreateScreen extends PureComponent {
         NavStore.goNext('WebViewScreen', { url, title: strings('walletCreateScreen.privacyPolicyTitle'), backOnClose: true })
     }
 
-    renderSliderPage = ({ id, image, text, textStyle }) => {
-        const { colors, GRID_SIZE } = this.context
-        return (
-            <View style={styles.sliderItem} key={id}>
-                <Image
-                    source={image}
-                    style={[
-                        styles.sliderImage,
-                        {
-                            width: GRID_SIZE === 16 ? styles.sliderImage.width : styles.sliderImage.width - 50,
-                            height: GRID_SIZE === 16 ? styles.sliderImage.height : styles.sliderImage.height - 50
-                        }
-                    ]}
-                    resizeMode='contain'
-                />
-                <Text style={[styles.sliderText, textStyle, { color: colors.createWalletScreen.sliderText, marginHorizontal: GRID_SIZE * 3 }]}>
-                    {text}
-                </Text>
-            </View>
-        )
-    }
-
     render() {
         const { colors, GRID_SIZE } = this.context
 
@@ -162,13 +94,14 @@ class WalletCreateScreen extends PureComponent {
         return (
             <View style={styles.container}>
                 <StatusBar barStyle='light-content' />
-                <View style={[styles.topContent, { backgroundColor: colors.createWalletScreen.sliderBg }]}>
-                    <Pages
-                        ref={(ref) => {
-                            this.sliderRef = ref
-                        }}>
-                        {this.sliderData.map(this.renderSliderPage)}
-                    </Pages>
+                <View style={styles.welcomeContainer}>
+                    <Image
+                        source={require('@assets/images/gravy-logo.png')}
+                        style={styles.welcomeLogo}
+                        resizeMode='contain'
+                    />
+                    <Text style={[styles.welcomeTitle, { color: colors.common.text1 }]}>{strings('walletCreateScreen.welcomeTitle')}</Text>
+                    <Text style={[styles.welcomeSubtitle, { color: colors.common.text2 }]}>{strings('walletCreateScreen.welcomeSubtitle')}</Text>
                 </View>
                 <View style={[styles.bottomContent, { paddingHorizontal: GRID_SIZE, backgroundColor: colors.common.background }]}>
                     <View style={[styles.agreementContainer, { marginHorizontal: GRID_SIZE }]}>
@@ -201,34 +134,32 @@ const styles = StyleSheet.create({
     container: {
         flex: 1
     },
-    topContent: {
-        flex: 3,
-        paddingVertical: 20
-    },
     bottomContent: {
         flex: 2,
         justifyContent: 'center',
         paddingBottom: 16
     },
-    sliderItem: {
-        flex: 1,
+    welcomeContainer: {
+        flex: 3,
         alignItems: 'center',
-        justifyContent: 'flex-end',
-        paddingBottom: 35
+        justifyContent: 'center',
+        paddingHorizontal: 32
     },
-    sliderImage: {
-        width: screenWidth - 100,
-        height: screenWidth - 100,
-        maxWidth: 450,
-        maxHeight: 450
+    welcomeLogo: {
+        width: 120,
+        height: 120,
+        marginBottom: 32
     },
-    sliderText: {
-        fontFamily: 'SFUIDisplay-Regular',
+    welcomeTitle: {
+        fontSize: 28,
+        fontWeight: '700',
+        marginBottom: 12,
+        textAlign: 'center'
+    },
+    welcomeSubtitle: {
         fontSize: 16,
-        lineHeight: 20,
-        letterSpacing: 0.5,
-        textAlign: 'center',
-        marginTop: 15
+        opacity: 0.7,
+        textAlign: 'center'
     },
     agreementContainer: {
         marginBottom: 20
