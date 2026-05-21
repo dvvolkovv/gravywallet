@@ -4,7 +4,6 @@
 #import <React/RCTBundleURLProvider.h>
 
 #import <React/RCTLinkingManager.h>
-#import <RNBranch/RNBranch.h>
 
 #import <UserNotifications/UserNotifications.h>
 #import <Firebase.h>
@@ -14,12 +13,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   [FIRApp configure];
-  [RNBranch initSessionWithLaunchOptions:launchOptions isReferrable:YES];
 
   // Define UNUserNotificationCenter
   UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
 
-  self.moduleName = @"trusteeWallet";
+  self.moduleName = @"Gravy Wallet";
   // You can add your custom initial props in the dictionary below.
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
@@ -44,14 +42,11 @@ fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 }
 
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler {
-  return [RNBranch continueUserActivity:userActivity];
+  return [RCTLinkingManager application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-    if ([RNBranch application:app openURL:url options:options])  {
-        // do other deep link routing for other SDKs
-    }
-    return YES;
+    return [RCTLinkingManager application:app openURL:url options:options];
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
