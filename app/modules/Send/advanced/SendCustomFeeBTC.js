@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
         }
     },
     customFee: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         paddingBottom: 4
     }

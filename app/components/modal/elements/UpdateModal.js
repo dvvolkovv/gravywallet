@@ -79,7 +79,7 @@ export default UpdateModal
 
 const styles = {
     title: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontStyle: 'normal',
         fontWeight: 'bold',
         fontSize: 18,
@@ -89,7 +89,7 @@ const styles = {
         marginBottom: -2
     },
     text: {
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontStyle: 'normal',
         fontWeight: 'normal',
         fontSize: 14,

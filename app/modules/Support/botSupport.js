@@ -79,14 +79,14 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     title: {
-        fontFamily: 'SFUIDisplay-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 22,
         lineHeight: 26,
         textAlign: 'center',
         marginBottom: 16
     },
     body: {
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 16,
         lineHeight: 22,
         textAlign: 'center',
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
         marginTop: 12
     },
     link: {
-        fontFamily: 'SFUIDisplay-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 16,
         lineHeight: 22,
         textDecorationLine: 'underline'

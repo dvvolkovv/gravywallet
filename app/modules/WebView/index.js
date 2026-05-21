@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     errorText: {
-        fontFamily: 'SFUIDisplay-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 18,
         lineHeight: 20,
     }

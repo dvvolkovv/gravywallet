@@ -15,10 +15,10 @@ const styles = {
         marginTop: -8,
         color: '#404040',
         fontSize: 12,
-        fontFamily: 'Montserrat-Bold'
+        fontFamily: 'Manrope', fontWeight: '700'
     },
     settings__title: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 12,
     },
     settings__row: {
@@ -80,7 +80,7 @@ const styles = {
         marginLeft: 10
     },
     publicKey: {
-        fontFamily: 'Montserrat-Medium',
+        fontFamily: 'Manrope', fontWeight: '500',
         fontSize: 14
     },
 
@@ -120,7 +120,7 @@ const styles = {
     },
     texts__item: {
         fontSize: 14,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         letterSpacing: 1
     },
     texts__icon: {
@@ -139,7 +139,7 @@ const styles = {
     },
     transaction_title: {
         fontSize: 17,
-        fontFamily: 'Montserrat-Bold'
+        fontFamily: 'Manrope', fontWeight: '700'
     },
 }
 

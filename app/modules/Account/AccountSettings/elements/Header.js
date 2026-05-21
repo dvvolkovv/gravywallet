@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     },
     topContent__subtitle: {
         marginTop: -10,
-        fontFamily: 'SFUIDisplay-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         textAlign: 'center'
     },
@@ -126,11 +126,11 @@ const styles = StyleSheet.create({
         fontSize: 24,
         lineHeight: 28,
 
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
     },
     topContent__title_last: {
         fontSize: 20,
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         lineHeight: 24,
         opacity: 1,
     }

@@ -228,7 +228,7 @@ const styles = {
         height: 60
     },
     fontFamily: {
-        fontFamily: 'Montserrat-Medium',
+        fontFamily: 'Manrope', fontWeight: '500',
         height: 72
     },
     errorColor: '#e77ca3',

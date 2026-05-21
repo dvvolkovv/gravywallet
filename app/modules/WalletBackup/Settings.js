@@ -279,7 +279,7 @@ const styles = StyleSheet.create({
     },
     phraseSetting: {},
     phraseSettingLabel: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 16,
         lineHeight: 21,
         marginBottom: 12

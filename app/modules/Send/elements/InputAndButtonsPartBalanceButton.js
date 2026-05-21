@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     text: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 16,
         color: '#5C5C5C'
     }

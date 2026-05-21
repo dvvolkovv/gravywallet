@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         fontSize: 14,
         textAlign: 'center',
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         color: '#252742'
     }
 })

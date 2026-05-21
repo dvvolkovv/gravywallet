@@ -233,7 +233,7 @@ const style = StyleSheet.create({
     },
     texts__item: {
         fontSize: 14,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         letterSpacing: 1
     },
     texts__icon: {

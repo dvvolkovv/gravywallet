@@ -160,20 +160,20 @@ const styles = StyleSheet.create({
         borderBottomWidth: 0
     },
     title: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 17,
         lineHeight: 17
     },
     subtitle: {
         marginTop: 7,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 13,
         lineHeight: 13,
         letterSpacing: 1.75
     },
     subtitleFirst: {
         marginTop: 5,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 13,
         lineHeight: 18,
         letterSpacing: 1.75
@@ -188,7 +188,7 @@ const styles = StyleSheet.create({
     },
     text: {
         marginTop: -4,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 13,
         lineHeight: 17,
         letterSpacing: 0.5,

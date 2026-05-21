@@ -45,7 +45,7 @@ export default class TextView extends Component {
         }
 
         return (
-            <Text style={{ fontFamily: 'SFUIDisplay-Regular', color: '#999', fontSize: 16, textAlign: 'justify', marginBottom: 5 }}>
+            <Text style={{ fontFamily: 'Manrope', fontWeight: '400', color: '#999', fontSize: 16, textAlign: 'justify', marginBottom: 5 }}>
                 {this.props.children}
             </Text>
         )

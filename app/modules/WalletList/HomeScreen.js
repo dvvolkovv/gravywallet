@@ -365,7 +365,7 @@ const styles = StyleSheet.create({
         paddingTop: 10
     },
     blockTitle: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 12,
         lineHeight: 14,
         letterSpacing: 1.5,

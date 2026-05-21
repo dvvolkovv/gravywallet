@@ -94,19 +94,19 @@ const styles = StyleSheet.create({
     },
     topContent__title_first: {
         fontSize: 30,
-        fontFamily: 'Montserrat-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         lineHeight: 38,
         paddingTop: Platform.OS === 'android' ? 5 : 0
     },
     topContent__title_last: {
         height: 32,
         fontSize: 24,
-        fontFamily: 'Montserrat-Medium',
+        fontFamily: 'Manrope', fontWeight: '500',
         lineHeight: 28,
         opacity: 1,
     },
     topContent__subtitle: {
-        fontFamily: 'SFUIDisplay-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         textAlign: 'center'
     },

@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     text: {
         position: 'absolute',
         marginTop: 10,
-        fontFamily: 'SFUIDisplay-Semibold', // TODO: use medium
+        fontFamily: 'Manrope', fontWeight: '600', // TODO: use medium
         fontSize: 12,
         lineHeight: 14,
         letterSpacing: 1.5,

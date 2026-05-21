@@ -174,7 +174,8 @@ const styles = StyleSheet.create({
         alignItems: 'flex-end'
     },
     cryptoList__title: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope',
+        fontWeight: '600',
         fontSize: 17,
         lineHeight: 17
     },
@@ -190,8 +191,9 @@ const styles = StyleSheet.create({
     cryptoList__text: {
         fontSize: 14,
         lineHeight: 18,
-        fontFamily: 'SFUIDisplay-Semibold',
-        letterSpacing: 1
+        fontFamily: 'Manrope',
+        fontWeight: '500',
+        letterSpacing: 0.2
     },
     cryptoList__currency__changes: {
         flexDirection: 'row',

@@ -267,7 +267,7 @@ const styles = {
     },
     placeholder: {
         width: '100%',
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 1,
@@ -292,14 +292,14 @@ const styles = {
         justifyContent: 'center'
     },
     peerMetaName: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 17,
         lineHeight: 21,
         textAlign: 'center',
         marginBottom: 3
     },
     peerMetaUrl: {
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 1,
@@ -316,7 +316,7 @@ const styles = {
     networkText: {
         textAlign: 'center',
         color: '#999999',
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 11,
         lineHeight: 14,
         textTransform: 'uppercase',

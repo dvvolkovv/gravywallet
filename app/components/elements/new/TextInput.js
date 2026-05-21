@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
         flex: 1,
         borderRadius: 10,
         padding: 16,
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 0.3,
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
         paddingRight: 90
     },
     label: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 16,
         lineHeight: 21,
         marginLeft: 16,

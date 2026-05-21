@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
         borderWidth: 1
     },
     text: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         marginLeft: 12,

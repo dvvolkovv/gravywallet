@@ -173,13 +173,13 @@ const styles = {
         justifyContent: 'center',
     },
     title: {
-        fontFamily: 'Montserrat-Medium',
+        fontFamily: 'Manrope', fontWeight: '500',
         fontSize: 14,
         lineHeight: 14
     },
     subtitle: {
         marginTop: 5,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 15,
         lineHeight: 19,
         letterSpacing: 1.5,
@@ -207,7 +207,7 @@ const styles = {
         paddingRight: 6
     },
     buttonText: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 1,

@@ -601,14 +601,14 @@ const styles = {
         paddingBottom: 10,
         paddingTop: 20,
 
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 12,
     },
     input: {
         flex: 1,
         borderRadius: 10,
         padding: 16,
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 16,
         lineHeight: 20,
         letterSpacing: 0.3,
@@ -647,7 +647,7 @@ const styles = {
         paddingBottom: 6
     },
     textButton: {
-        fontFamily: 'Montserrat',
+        fontFamily: 'Manrope',
         fontWeight: 'bold',
         fontSize: 10,
         lineHeight: 10,
@@ -664,7 +664,7 @@ const styles = {
         paddingTop: 20,
     },
     viewShowMore: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 12,
         paddingRight: 8,
     },
@@ -673,7 +673,7 @@ const styles = {
         marginTop: 16
     },
     title: {
-        fontFamily: 'Montserrat-Medium',
+        fontFamily: 'Manrope', fontWeight: '500',
         fontSize: 14,
         lineHeight: 14,
         marginTop: 2,

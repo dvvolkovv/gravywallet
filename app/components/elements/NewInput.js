@@ -343,7 +343,7 @@ const styles = {
     },
     label: {
         fontSize: 30,
-        fontFamily: 'SFUIDisplay-Regular'
+        fontFamily: 'Manrope', fontWeight: '400'
     },
     input: {
         padding: 0,
@@ -358,11 +358,11 @@ const styles = {
     error: {
         marginTop: 5,
         fontSize: 14,
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         color: '#e77ca3'
     },
     fontFamily: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 19,
         lineHeight: 22,
         marginLeft: 16,
@@ -371,7 +371,7 @@ const styles = {
     mark: {
         right: 0,
         bottom: 0,
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 12,
         color: '#808080'
     },
@@ -387,7 +387,7 @@ const styles = {
     },
     action__title__text: {
         fontSize: 10,
-        fontFamily: 'SFUIDisplay-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         color: '#864dd9'
     },
     actions: {
@@ -411,7 +411,7 @@ const styles = {
     subTitle: {
         marginTop: -5,
         fontSize: 14,
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         color: '#808080'
     },
     bottomLeftText: {
@@ -435,7 +435,7 @@ const styles = {
 
         color: '#0D0D0D',
         fontSize: 19,
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
 
         overflow: 'hidden',
         backgroundColor: 'red'
@@ -461,7 +461,7 @@ const styles = {
         marginLeft: 4,
 
         fontSize: 12,
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         color: '#7127ac'
     },
     tap__content_disabled: {
@@ -532,7 +532,7 @@ const styles = {
         }
     },
     text: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         letterSpacing: 0.5,
         fontSize: 16
     }

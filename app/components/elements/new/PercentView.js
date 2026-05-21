@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
 
     },
     text: {
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 11,
         lineHeight: 13,
         letterSpacing: 0.5

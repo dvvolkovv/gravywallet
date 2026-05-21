@@ -61,7 +61,7 @@ const styles = {
     },
     btn__text: {
         fontSize: 19,
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         textAlign: 'center',
         color: '#fff'
     }

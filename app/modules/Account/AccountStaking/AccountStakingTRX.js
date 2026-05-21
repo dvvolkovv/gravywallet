@@ -545,20 +545,20 @@ export default connect(mapStateToProps)(AccountStakingTRX)
 
 const styles = {
     rewardText: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 17,
         lineHeight: 21
     },
     updateTime: {
         color: '#999999',
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 10,
         lineHeight: 14,
         letterSpacing: 0.5,
         textTransform: 'uppercase'
     },
     reward: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 16,
         lineHeight: 20
     },
@@ -583,20 +583,20 @@ const styles = {
         justifyContent: 'flex-end'
     },
     progressText: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 1,
         color: '#999999'
     },
     description: {
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 16,
         lineHeight: 20,
         letterSpacing: 0.5
     },
     linkText: {
-        fontFamily: 'SFUIDisplay-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 14,
         lineHeight: 18,
         textTransform: 'uppercase',
@@ -604,7 +604,7 @@ const styles = {
         textDecorationLine: 'underline'
     },
     availableText: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 1,
@@ -613,19 +613,19 @@ const styles = {
     topContent__title_first: {
         height: 40,
         fontSize: 32,
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         lineHeight: 36
     },
     topContent__title_last: {
         height: 40,
         fontSize: 18,
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         lineHeight: 42,
         opacity: 1
     },
     topContent__subtitle: {
         marginTop: -10,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         textAlign: 'center',
@@ -633,7 +633,7 @@ const styles = {
     },
     scan__text: {
         letterSpacing: 1,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18
     },
@@ -642,7 +642,7 @@ const styles = {
         marginLeft: 16,
         fontSize: 15,
         lineHeight: 19,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         letterSpacing: 1.5
     },
     scan: {
@@ -676,7 +676,7 @@ const styles = {
     },
     texts__item: {
         fontSize: 14,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         letterSpacing: 1
     },
     texts__icon: {

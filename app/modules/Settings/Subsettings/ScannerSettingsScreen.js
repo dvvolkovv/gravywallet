@@ -139,14 +139,14 @@ const styles = StyleSheet.create({
         alignItems: 'flex-start',
     },
     text: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 15,
         lineHeight: 19,
         letterSpacing: 1.5,
         flex: 2,
     },
     timeText: {
-        fontFamily: 'SFUIDisplay-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 15,
         lineHeight: 19,
         letterSpacing: 1.5,

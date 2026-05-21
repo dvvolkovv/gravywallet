@@ -529,7 +529,7 @@ const styles = StyleSheet.create({
     },
     infoText: {
         marginLeft: 12,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 1,
@@ -562,20 +562,20 @@ const styles = StyleSheet.create({
         borderRadius: 6
     },
     wordIndex: {
-        fontFamily: 'Montserrat-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 10,
         lineHeight: 13
     },
     word: {
         textAlign: 'center',
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 15,
         lineHeight: 19,
         letterSpacing: 1.3
     },
     showMnemonicButton: {
         textAlign: 'center',
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 12,
         lineHeight: 15,
         letterSpacing: 1.5,

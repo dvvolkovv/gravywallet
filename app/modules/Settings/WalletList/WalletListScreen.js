@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
     },
     addAsset__text: {
         fontSize: 10,
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         textTransform: 'uppercase'
     },
     addAsset__icon: {
@@ -183,12 +183,12 @@ const styles = StyleSheet.create({
         marginTop: 1
     },
     balanceTitle: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 18,
         lineHeight: 22
     },
     balanceValue: {
-        fontFamily: 'SFUIDisplay-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 20,
     },

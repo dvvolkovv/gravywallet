@@ -194,7 +194,7 @@ const TabBar = () => {
                 tabBarInactiveTintColor: colors.common.text1,
                 tabBarLabelStyle: {
                     fontSize: 12,
-                    fontFamily: 'SFUIDisplay-Regular'
+                    fontFamily: 'Manrope', fontWeight: '400'
                 },
                 tabBarStyle,
                 tabBarBackground: () => (

@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     text: {
         marginTop: 5,
         textAlign: 'center',
-        fontFamily: 'Montserrat-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontStyle: 'normal',
         fontWeight: '600',
         fontSize: 16,

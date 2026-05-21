@@ -434,7 +434,7 @@ const globalStyles = {
         transaction__top__title: {
             marginRight: 8,
 
-            fontFamily: 'Montserrat-Bold',
+            fontFamily: 'Manrope', fontWeight: '700',
             fontSize: 14,
         },
         transaction__top__type__icon: {
@@ -444,7 +444,7 @@ const globalStyles = {
         transaction__top__type: {
             marginTop: Platform.OS === 'android' ? 2.5 : 0.5,
 
-            fontFamily: 'SFUIDisplay-Bold',
+            fontFamily: 'Manrope', fontWeight: '700',
             fontSize: 14,
         },
         transaction__top__confirmation: {},
@@ -473,18 +473,18 @@ const globalStyles = {
         transaction__item__title: {
             marginRight: 5,
 
-            fontFamily: 'Montserrat-SemiBold',
+            fontFamily: 'Manrope', fontWeight: '600',
             fontSize: 18
         },
         transaction__item__title__subtitle: {
 
-            fontFamily: 'Montserrat-SemiBold',
+            fontFamily: 'Manrope', fontWeight: '600',
             fontSize: 14,
             color: '#1EB3E4',
             paddingBottom: Platform.OS === 'ios' ? 0 : 1
         },
         transaction__item__subtitle: {
-            fontFamily: 'Montserrat-SemiBold',
+            fontFamily: 'Manrope', fontWeight: '600',
             fontSize: 12,
         },
         circle: {},
@@ -547,7 +547,7 @@ const globalStyles = {
             }
         },
         transaction__data: {
-            fontFamily: 'SFUIDisplay-Semibold',
+            fontFamily: 'Manrope', fontWeight: '600',
             fontSize: 14,
             lineHeight: 18,
         },

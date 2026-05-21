@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
     },
     title: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 14,
         lineHeight: 16,
         letterSpacing: 1,

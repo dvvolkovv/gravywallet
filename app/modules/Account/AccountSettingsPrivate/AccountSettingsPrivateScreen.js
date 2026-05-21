@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
         flexGrow: 1,
     },
     blockTitle: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 12,
         lineHeight: 14,
         letterSpacing: 1.5,

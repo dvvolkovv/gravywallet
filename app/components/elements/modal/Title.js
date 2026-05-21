@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
         width: 250,
         fontSize: 18,
         textAlign: 'center',
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         color: '#252742'
     }
 })

@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
         borderRadius: 7.5,
     },
     label: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 19,
         marginLeft: 12,

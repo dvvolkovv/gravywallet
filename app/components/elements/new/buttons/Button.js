@@ -122,12 +122,12 @@ const styles = StyleSheet.create({
         elevation: 6
     },
     text: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 16,
         lineHeight: 18,
         letterSpacing: 0.5,
     },
     transparentButtonText: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
     }
 })

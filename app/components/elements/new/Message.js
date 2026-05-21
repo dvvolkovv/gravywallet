@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     },
     infoText: {
         marginLeft: 12,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 1,

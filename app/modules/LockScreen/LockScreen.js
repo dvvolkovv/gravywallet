@@ -168,7 +168,7 @@ class LockScreen extends React.PureComponent {
                             }}
                             stylePinCodeViewTitle={{ height: 10 }}
                             stylePinCodeTextTitle={{
-                                fontFamily: 'Montserrat-SemiBold',
+                                fontFamily: 'Manrope', fontWeight: '600',
                                 fontSize: 17,
                                 marginBottom: -10
                             }}
@@ -192,7 +192,7 @@ class LockScreen extends React.PureComponent {
                             stylePinCodeHiddenPasswordSizeFull={15}
                             stylePinCodeTextButtonCircle={{
                                 fontSize: 28,
-                                fontFamily: 'Montserrat-SemiBold'
+                                fontFamily: 'Manrope', fontWeight: '600'
                             }}
                             numbersButtonOverlayColor={'#864dd9'}
                             stylePinCodeDeleteButtonColorShowUnderlay={''}
@@ -208,7 +208,7 @@ class LockScreen extends React.PureComponent {
                             stylePinCodeChooseContainer={{}}
                             styleLockScreenTitle={{
                                 marginBottom: 25,
-                                fontFamily: 'Montserrat-SemiBold',
+                                fontFamily: 'Manrope', fontWeight: '600',
                                 fontSize: 17,
                                 textAlign: 'center',
                                 color: colors.common.text1
@@ -236,7 +236,7 @@ class LockScreen extends React.PureComponent {
                             buttonComponentLockedPage={() => <View></View>}
                             /*handleResultEnterPin={this.updateLastStatus}*/
                             styleLockScreenTextTimer={{
-                                fontFamily: 'Montserrat-SemiBold',
+                                fontFamily: 'Manrope', fontWeight: '600',
                                 color: colors.common.text3
                             }}
                             styleLockScreenViewTimer={{
@@ -321,7 +321,7 @@ const styles = StyleSheet.create({
         position: 'relative',
         top: -35,
         fontSize: 16,
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         color: '#404040',
         backgroundColor: '#fff'
     },
@@ -333,7 +333,7 @@ const styles = StyleSheet.create({
     },
     quitBtn__text: {
         color: '#000',
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 16
     },
     icon: {

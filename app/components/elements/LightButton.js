@@ -20,7 +20,7 @@ export default class LightButton extends Component {
     // eslint-disable-next-line camelcase
     async UNSAFE_componentWillMount() {
         try {
-            const size = await rnTextSize.measure({ text: this.props.title, fontSize: 10, fontFamily: 'Montserrat-Bold' })
+            const size = await rnTextSize.measure({ text: this.props.title, fontSize: 10, fontFamily: 'Manrope', fontWeight: '700' })
 
             this.setState({
                 width: size.width.toFixed()
@@ -93,7 +93,7 @@ const styles = {
     button__text: {
         fontSize: 10,
         color: '#864DD9',
-        fontFamily: 'Montserrat-Bold'
+        fontFamily: 'Manrope', fontWeight: '700'
     },
     button_icon: {
         marginTop: 1,

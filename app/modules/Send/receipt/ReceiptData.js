@@ -146,7 +146,7 @@ export default ReceiptData
 const styles = StyleSheet.create({
     info: {
         paddingHorizontal: 12,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 1,
@@ -158,13 +158,13 @@ const styles = StyleSheet.create({
         width: '70%'
     },
     name: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 0.5
     },
     valueComment: {
-        fontFamily: 'SFUIDisplay-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 14,
         lineHeight: 14,
         letterSpacing: 1,

@@ -2134,7 +2134,7 @@
         "currencyName": "Cashback",
         "currencyCode": "CASHBACK",
         "currencySymbol": "USDT",
-        "isHidden": false
+        "isHidden": true
 	},
 	"METIS": {
 		"currencyType": "coin",

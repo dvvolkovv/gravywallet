@@ -145,7 +145,7 @@ class SettingsBTC extends Component {
             //         marginTop: 10,
             //         marginBottom: 5,
             //         fontSize: 14,
-            //         fontFamily: 'Montserrat-Bold'
+            //         fontFamily: 'Manrope', fontWeight: '700'
             //     }]}>
             //         {strings('settings.walletList.accountSetting')}
             //     </Text>

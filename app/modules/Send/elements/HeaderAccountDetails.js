@@ -82,13 +82,13 @@ const styles = StyleSheet.create({
         marginLeft: 16
     },
     accountDetail__title: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 18
     },
     accountDetail__text: {
         fontSize: 14,
         height: Platform.OS === 'ios' ? 15 : 18,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         color: '#939393'
     }
 })

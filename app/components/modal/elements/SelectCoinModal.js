@@ -156,14 +156,14 @@ const styles = {
     },
     title: {
         marginBottom: 5,
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 18,
         color: '#f4f4f4'
     },
     subtitle: {
         marginBottom: 15,
         marginHorizontal: 20,
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 15,
         color: '#f4f4f4'
     },
@@ -172,7 +172,7 @@ const styles = {
         paddingLeft: 15,
         paddingRight: 15,
         marginBottom: 10,
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 14,
         textAlign: 'left',
         color: '#000'
@@ -181,7 +181,7 @@ const styles = {
         width: '100%',
         padding: 10,
         paddingHorizontal: 20,
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 14,
         textAlign: 'left',
         color: '#fff'

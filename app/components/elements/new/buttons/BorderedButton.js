@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     addAsset__text: {
         fontSize: 10,
         lineHeight: 14,
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         textTransform: 'uppercase',
     },
     addAsset__icon: {

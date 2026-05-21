@@ -60,19 +60,19 @@ export default CheckData
 
 const styles  = StyleSheet.create({
     name: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 0.5
     },
     value: {
-        fontFamily: 'SFUIDisplay-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 14,
         lineHeight: 18,
 
     },
     subValue: {
-        fontFamily: 'SFUIDisplay-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 12,
         lineHeight: 12,
         color: '#999999',

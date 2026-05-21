@@ -452,19 +452,19 @@ export default connect(mapStateToProps)(ReceiptScreen)
 
 const styles = StyleSheet.create({
     title: {
-        fontFamily: 'Montserrat-Medium',
+        fontFamily: 'Manrope', fontWeight: '500',
         fontSize: 18,
         lineHeight: 24
     },
     value: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 20,
         lineHeight: 24,
         paddingBottom: 4,
         paddingTop: 8
     },
     notEquivalent: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18
     },
@@ -474,13 +474,13 @@ const styles = StyleSheet.create({
         width: '70%'
     },
     name: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 0.5
     },
     valueComment: {
-        fontFamily: 'SFUIDisplay-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 14,
         lineHeight: 14,
         letterSpacing: 1,

@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
         flex: 1
     },
     guideText: {
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 16,
         lineHeight: 20,
         textAlign: 'center'
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 30,
         lineHeight: 34,
-        fontFamily: 'Montserrat-SemiBold'
+        fontFamily: 'Manrope', fontWeight: '600'
     },
     textAndBtn: {
         flex: 1,

@@ -283,7 +283,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         paddingBottom: 10,
 
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 12,
     },
     wrapper: {
@@ -292,7 +292,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     txDirection: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 17,
         lineHeight: 17,
         paddingRight: 4
@@ -306,11 +306,11 @@ const styles = StyleSheet.create({
     },
     amount: {
         fontSize: 32,
-        fontFamily: 'Montserrat-Medium'
+        fontFamily: 'Manrope', fontWeight: '500'
     },
     code: {
         fontSize: 20,
-        fontFamily: 'Montserrat-Medium',
+        fontFamily: 'Manrope', fontWeight: '500',
         marginBottom: -8,
         paddingLeft: 6
     },
@@ -336,7 +336,7 @@ const styles = StyleSheet.create({
     },
     text: {
         textAlign: 'center',
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 12,
         lineHeight: 16,
         letterSpacing: 1.5

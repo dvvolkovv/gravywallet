@@ -518,19 +518,19 @@ const styles = StyleSheet.create({
     topContent__title_first: {
         height: 40,
         fontSize: 32,
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         lineHeight: 36
     },
     topContent__title_last: {
         height: 40,
         fontSize: 18,
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         lineHeight: 42,
         opacity: 1
     },
     topContent__subtitle: {
         marginTop: -10,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         textAlign: 'center',
@@ -538,11 +538,11 @@ const styles = StyleSheet.create({
     },
     transaction_title: {
         fontSize: 17,
-        fontFamily: 'Montserrat-Bold'
+        fontFamily: 'Manrope', fontWeight: '700'
     },
     scan__text: {
         letterSpacing: 1,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18
     },
@@ -551,20 +551,20 @@ const styles = StyleSheet.create({
         marginLeft: 16,
         fontSize: 15,
         lineHeight: 19,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         letterSpacing: 1.5
     },
     scan: {
         flexDirection: 'row'
     },
     description: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 16,
         lineHeight: 20,
         letterSpacing: 0.5
     },
     availableText: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 1,

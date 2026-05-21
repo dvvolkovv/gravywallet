@@ -523,7 +523,7 @@ export default connect(null, null, null, { forwardRef: true })(InputAndButtons)
 
 const style = StyleSheet.create({
     ticker: {
-        fontFamily: 'Montserrat-Medium',
+        fontFamily: 'Manrope', fontWeight: '500',
         fontSize: 15,
         lineHeight: 19,
 
@@ -538,7 +538,7 @@ const style = StyleSheet.create({
         marginVertical: 6
     },
     notEquivalentValue: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 15,
         lineHeight: 19
     },
@@ -549,7 +549,7 @@ const style = StyleSheet.create({
     },
     texts__item: {
         fontSize: 14,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         letterSpacing: 1
     },
     texts__icon: {

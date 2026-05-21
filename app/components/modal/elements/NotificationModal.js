@@ -64,7 +64,7 @@ export default NotificationModal
 
 const styles = {
     text: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 18,
         lineHeight: 25,
         textAlign: 'center',

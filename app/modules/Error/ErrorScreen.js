@@ -200,7 +200,7 @@ const styles = StyleSheet.create({
         // marginTop: hp('5.86%'),
     },
     header__title: {
-        fontFamily: 'Montserrat-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontStyle: 'normal',
         fontWeight: 'bold',
         fontSize: hp('2.78%'),
@@ -217,7 +217,7 @@ const styles = StyleSheet.create({
         position: 'relative',
         width: wp('85%'),
         height: hp('13%'),
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontStyle: 'normal',
         fontWeight: '500',
         fontSize: hp('2.25%'),
@@ -265,7 +265,7 @@ const styles = StyleSheet.create({
     block__text: {
         alignSelf: 'center',
         textAlign: 'center',
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         // fontSize: hp('2.3%'),
         fontSize: 14,
         color: '#404040',
@@ -290,7 +290,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
     },
     footer__hash: {
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontStyle: 'normal',
         fontWeight: '600',
         fontSize: 14,
@@ -305,7 +305,7 @@ const styles = StyleSheet.create({
         // marginVertical: hp('0.59%')
     },
     footer__version: {
-        fontFamily: 'Montserrat-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontStyle: 'normal',
         fontWeight: 'bold',
         // fontSize: hp('2%'),
@@ -319,7 +319,7 @@ const styles = StyleSheet.create({
 
 const stylesTablet = StyleSheet.create({
     header__title__tablet: {
-        fontFamily: 'Montserrat-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontStyle: 'normal',
         fontWeight: 'bold',
         // fontSize: hp('2.78%'),
@@ -335,7 +335,7 @@ const stylesTablet = StyleSheet.create({
         position: 'relative',
         width: wp('60%'),
         height: hp('13%'),
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontStyle: 'normal',
         fontWeight: '500',
         // fontSize: hp('2.25%'),
@@ -368,7 +368,7 @@ const stylesTablet = StyleSheet.create({
     block__text__tablet: {
         alignSelf: 'center',
         textAlign: 'center',
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         // fontSize: hp('2.3%'),
         fontSize: 17,
         fontWeight: '600',

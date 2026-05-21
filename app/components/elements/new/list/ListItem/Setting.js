@@ -319,13 +319,13 @@ const styles = StyleSheet.create({
         borderBottomWidth: 0
     },
     title: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 16,
         lineHeight: 16
     },
     subtitle: {
         marginTop: 5,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 13,
         lineHeight: 15,
         letterSpacing: 1.75

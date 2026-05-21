@@ -215,14 +215,14 @@ const styles = StyleSheet.create({
         marginLeft: 16,
         marginBottom: 4,
         fontSize: 17,
-        fontFamily: 'Montserrat-Bold'
+        fontFamily: 'Manrope', fontWeight: '700'
     },
     scan: {
         flexDirection: 'row'
     },
     scan__text: {
         letterSpacing: 1,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18
     },
@@ -238,7 +238,7 @@ const styles = StyleSheet.create({
         marginTop: 0,
         fontSize: 15,
         lineHeight: 19,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         letterSpacing: 1.5
     },
     textInput: {

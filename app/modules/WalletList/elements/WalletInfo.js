@@ -341,14 +341,14 @@ const styles = StyleSheet.create({
         marginTop: 14,
         marginLeft: -1,
 
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 17
     },
     container__date: {
         marginTop: 2,
 
         fontSize: 10,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
     },
     walletInfo__content: {
         flexDirection: 'row',
@@ -361,7 +361,7 @@ const styles = StyleSheet.create({
     },
     walletInfo__text_small: {
         fontSize: 20,
-        fontFamily: 'Montserrat-Medium',
+        fontFamily: 'Manrope', fontWeight: '500',
 
         opacity: .8
     },
@@ -371,7 +371,7 @@ const styles = StyleSheet.create({
     walletInfo__text_middle: {
         height: 42,
         fontSize: 52,
-        fontFamily: 'Montserrat-Light',
+        fontFamily: 'Manrope', fontWeight: '300',
         lineHeight: 50
     },
     walletInfo__hiddenBalance: {

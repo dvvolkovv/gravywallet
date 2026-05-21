@@ -195,7 +195,7 @@ const styles = StyleSheet.create({
         flexGrow: 1
     },
     text: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 15,
         lineHeight: 19,
         letterSpacing: 1.5,

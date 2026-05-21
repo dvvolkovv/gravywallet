@@ -53,7 +53,7 @@ export default InfoProgressBar
 const styles = StyleSheet.create({
     updateTime: {
         color: '#999999',
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 10,
         lineHeight: 14,
         letterSpacing: 0.5,
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-end'
     },
     progressText: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 1,

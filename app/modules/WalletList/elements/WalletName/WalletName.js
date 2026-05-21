@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
         height: '100%'
     },
     input: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 14,
         lineHeight: 18,
         textAlign: 'center',

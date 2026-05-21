@@ -389,7 +389,7 @@ const styles = {
     },
     title: {
         fontSize: 16,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         color: '#404040',
         textAlign: 'center'
     },
@@ -397,7 +397,7 @@ const styles = {
         marginVertical: 5,
         marginBottom: 40,
         fontSize: 14,
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         color: '#404040',
         textAlign: 'center'
     },
@@ -421,7 +421,7 @@ const styles = {
     },
     input__text: {
         flex: 1,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         color: '#404040'
     },
     keyboard: {
@@ -439,7 +439,7 @@ const styles = {
         paddingVertical: 3,
 
         fontSize: 25,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         color: '#404040',
         textAlign: 'center'
     },

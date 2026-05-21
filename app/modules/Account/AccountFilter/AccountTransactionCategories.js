@@ -189,7 +189,7 @@ class TransactionCategories extends React.PureComponent {
                 isVisibleDone={false}
                 checked={!item.notActive}
                 customTextStyle={{
-                    fontFamily: 'Montserrat-SemiBold'
+                    fontFamily: 'Manrope', fontWeight: '600'
                 }}
             />
         )

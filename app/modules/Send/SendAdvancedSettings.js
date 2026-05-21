@@ -230,7 +230,7 @@ export default connect(mapStateToProps, {})(SendAdvancedSettings)
 
 const styles = StyleSheet.create({
     settings__title: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 12,
         marginLeft: 20
     },

@@ -186,7 +186,7 @@ const styles = StyleSheet.create({
         height: 60
     },
     fontFamily: {
-        fontFamily: 'Montserrat-Medium',
+        fontFamily: 'Manrope', fontWeight: '500',
         height: 72
     },
     labelHeight: 15

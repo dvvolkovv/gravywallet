@@ -257,15 +257,15 @@ const styles = StyleSheet.create({
     balanceText__small: {
         fontSize: 16,
         lineHeight: 27,
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
     },
     balanceText__middle: {
         fontSize: 26,
         lineHeight: 26,
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
     },
     balanceText__hidden: {
-        fontFamily: 'Montserrat-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 40,
         lineHeight: 50,
     },
@@ -317,7 +317,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 12
     },
     title: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 14,
         lineHeight: 17,
         letterSpacing: 1,

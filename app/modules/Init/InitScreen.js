@@ -228,7 +228,7 @@ const styles = StyleSheet.create({
         position: 'relative',
         fontSize: 26,
         lineHeight: 30,
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         textAlign: 'center',
         zIndex: 2,
         letterSpacing: 1
@@ -239,13 +239,13 @@ const styles = StyleSheet.create({
         left: 1,
         width: '100%',
         fontSize: 30,
-        fontFamily: 'SFUIDisplay-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         textAlign: 'center',
         zIndex: 1
     },
     appVersion__text: {
         textAlign: 'center',
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 12,
         lineHeight: 14,
         opacity: 0.5
@@ -277,11 +277,11 @@ const styles = StyleSheet.create({
         height: 42,
     },
     block__text: {
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 19,
     },
     header__title: {
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 22,
         textAlign: 'center'
     },

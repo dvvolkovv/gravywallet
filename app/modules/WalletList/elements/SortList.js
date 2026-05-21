@@ -132,7 +132,7 @@ class SortList extends PureComponent {
                     last
                     containerStyle={[styles.content, { backgroundColor: colors.backDropModal.buttonBg, paddingRight: GRID_SIZE * 1.5, marginBottom: GRID_SIZE, }]}
                     contentStyle={{ paddingVertical: 17 }}
-                    customTextStyle={{ fontFamily: 'Montserrat-SemiBold' }}
+                    customTextStyle={{ fontFamily: 'Manrope', fontWeight: '600' }}
                 />
                 <FlatList
                     contentContainerStyle={[styles.content, { backgroundColor: colors.backDropModal.buttonBg, paddingHorizontal: GRID_SIZE / 2 }]}
@@ -150,7 +150,7 @@ class SortList extends PureComponent {
                     last
                     containerStyle={[styles.content, { backgroundColor: colors.backDropModal.buttonBg, paddingRight: GRID_SIZE, marginTop: GRID_SIZE }]}
                     contentStyle={{ paddingVertical: 17 }}
-                    customTextStyle={{ fontFamily: 'Montserrat-SemiBold' }}
+                    customTextStyle={{ fontFamily: 'Manrope', fontWeight: '600' }}
                 />
                 <Button
                     title={strings('assets.hideAsset')}

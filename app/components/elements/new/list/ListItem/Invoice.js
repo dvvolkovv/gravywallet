@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     },
     text: {
         flex: 1,
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 16,
         lineHeight: 18,
         letterSpacing: 0.5,

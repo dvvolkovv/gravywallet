@@ -205,12 +205,12 @@ const styles = StyleSheet.create({
         paddingHorizontal: 13
     },
     walletNameLabel: {
-        fontFamily: 'Montserrat-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 16,
     },
     walletNameValue: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 15,
         lineHeight: 19,
         letterSpacing: 1.5,

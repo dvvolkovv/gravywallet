@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
         borderRadius: 8
     },
     title: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         lineHeight: 18,
         fontSize: 14,
         letterSpacing: 1,

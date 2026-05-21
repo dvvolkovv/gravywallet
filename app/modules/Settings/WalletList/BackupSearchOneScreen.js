@@ -220,7 +220,7 @@ const styles = StyleSheet.create({
         flexGrow: 1,
     },
     settings__title: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 12,
     },
     settings__row: {

@@ -432,7 +432,7 @@ const styles = {
         flexGrow: 1,
     },
     blockTitle: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 12,
         letterSpacing: 1.5,
         textTransform: 'uppercase'
@@ -460,7 +460,7 @@ const styles = {
         end: { x: 1, y: 1 }
     },
     discardButtonText: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 14,
         lineHeight: 18
     },

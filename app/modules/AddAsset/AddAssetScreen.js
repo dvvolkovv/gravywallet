@@ -524,14 +524,14 @@ const styles = StyleSheet.create({
         flex: 1
     },
     blockTitle: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 12,
         lineHeight: 14,
         letterSpacing: 1.5,
         textTransform: 'uppercase',
     },
     emptyText: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 15,
         lineHeight: 19,
         letterSpacing: 1.5,

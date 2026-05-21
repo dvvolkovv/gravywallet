@@ -149,31 +149,31 @@ const styles = StyleSheet.create({
         paddingRight: 5,
     },
     walletName: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 1,
         marginBottom: 5,
     },
     balanceCurrencySymbol: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 18,
         lineHeight: 20,
         marginBottom: 2,
         marginRight: 4
     },
     balanceBeforeDecimal: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 24,
         lineHeight: 24,
     },
     balanceAfterDecimal: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 16,
         lineHeight: 24,
     },
     balanceHidden: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 24,
         lineHeight: 24,
         marginTop: 4,

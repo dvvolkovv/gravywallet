@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
         paddingLeft: 10
     },
     backupDescription: {
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 16,
         lineHeight: 20,
         letterSpacing: 0.5,
@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
         paddingTop: 6
     },
     backupName: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 17,
         lineHeight: 17,
         paddingTop: 5

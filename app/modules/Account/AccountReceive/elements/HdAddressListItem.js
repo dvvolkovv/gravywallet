@@ -321,7 +321,7 @@ const styles = StyleSheet.create({
         height: 56
     },
     addressName: {
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 1,
@@ -333,17 +333,17 @@ const styles = StyleSheet.create({
     address: {
         fontSize: 14,
         lineHeight: 18,
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         letterSpacing: 1
     },
     mainAmount: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 16,
         lineHeight: 20,
         textAlign: 'right'
     },
     secondaryAmount: {
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 14,
         lineHeight: 18,
         color: '#999999',

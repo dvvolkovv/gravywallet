@@ -424,7 +424,7 @@ const styles = StyleSheet.create({
     },
     currencyName: {
         flexDirection: 'row',
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 17,
     },
     topBlock__top_bg: {
@@ -443,7 +443,7 @@ const styles = StyleSheet.create({
     },
     topContent__subtitle: {
         marginTop: -20,
-        fontFamily: 'SFUIDisplay-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         textAlign: 'center'
@@ -451,13 +451,13 @@ const styles = StyleSheet.create({
     topContent__title_first: {
         height: 36,
         fontSize: 32,
-        fontFamily: 'Montserrat-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         lineHeight: 36,
     },
     topContent__title_last: {
         height: 36,
         fontSize: 16,
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         lineHeight: 36,
         opacity: 1,
     },
@@ -473,12 +473,12 @@ const styles = StyleSheet.create({
     },
     topContent__address: {
         marginBottom: 3,
-        fontFamily: 'SFUIDisplay-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 14,
         color: '#999999'
     },
     headerTitle: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 18,
         lineHeight: 22
     },

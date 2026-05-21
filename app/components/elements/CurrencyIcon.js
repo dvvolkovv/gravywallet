@@ -1252,7 +1252,7 @@ const styles = {
         paddingRight: 2,
 
         fontSize: 10,
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         color: '#F79E1B',
     },
     icon__mark: {
@@ -1281,7 +1281,7 @@ const styles = {
     icon__mark__text: {
         paddingRight: 17,
         fontSize: 8,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         color: '#fff'
     },
     icons: {

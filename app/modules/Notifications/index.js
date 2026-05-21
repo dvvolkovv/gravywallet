@@ -267,7 +267,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(NotificationsScreen)
 
 const styles = StyleSheet.create({
     blockTitle: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 12,
         lineHeight: 14,
         letterSpacing: 1.5,

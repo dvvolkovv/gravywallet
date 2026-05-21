@@ -425,12 +425,12 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between'
     },
     reward: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 16,
         lineHeight: 20
     },
     rewardText: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 17,
         lineHeight: 21
     },
@@ -446,7 +446,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 6
     },
     inProcess: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         color: '#999999'
@@ -465,7 +465,7 @@ const styles = StyleSheet.create({
         elevation: 5
     },
     progressText: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 1,
@@ -473,11 +473,11 @@ const styles = StyleSheet.create({
     },
     transaction_title: {
         fontSize: 17,
-        fontFamily: 'Montserrat-Bold'
+        fontFamily: 'Manrope', fontWeight: '700'
     },
     scan__text: {
         letterSpacing: 1,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18
     },
@@ -485,14 +485,14 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     },
     description: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 16,
         lineHeight: 20,
         letterSpacing: 1,
         flex: 1
     },
     availableText: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 1,
@@ -505,7 +505,7 @@ const styles = StyleSheet.create({
     },
     texts__item: {
         fontSize: 14,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         letterSpacing: 1
     },
     texts__icon: {

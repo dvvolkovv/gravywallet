@@ -138,7 +138,7 @@ const styles = {
     icon__mark__text: {
         paddingRight: 20,
         fontSize: 7,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         color: '#fff'
     }
 }

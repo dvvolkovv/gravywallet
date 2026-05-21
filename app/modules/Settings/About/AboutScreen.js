@@ -277,7 +277,7 @@ const styles = StyleSheet.create({
         flexGrow: 1,
     },
     blockTitle: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 12,
         lineHeight: 14,
         letterSpacing: 1.5,
@@ -292,14 +292,14 @@ const styles = StyleSheet.create({
         marginBottom: 16
     },
     version: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 16,
         lineHeight: 21,
         textAlign: 'center',
         marginBottom: 4
     },
     commitHash: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 1,
@@ -325,7 +325,7 @@ const styles = StyleSheet.create({
         marginVertical: 8
     },
     copyright: {
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 12,
         lineHeight: 12,
         textAlign: 'center',

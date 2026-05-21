@@ -502,7 +502,7 @@ const styles = {
     },
     currencyName: {
         flexDirection: 'row',
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 17,
     },
     topBlock__top_bg: {
@@ -521,20 +521,20 @@ const styles = {
     },
     topContent__subtitle: {
         marginTop: -10,
-        fontFamily: 'SFUIDisplay-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         textAlign: 'center'
     },
     topContent__title_first: {
         height: 42,
         fontSize: 52,
-        fontFamily: 'Montserrat-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         lineHeight: 50
     },
     topContent__title_last: {
         height: 42,
         fontSize: 32,
-        fontFamily: 'Montserrat-Medium',
+        fontFamily: 'Manrope', fontWeight: '500',
         lineHeight: 50,
         opacity: 1,
     },
@@ -550,7 +550,7 @@ const styles = {
     },
     topContent__address: {
         marginBottom: 3,
-        fontFamily: 'SFUIDisplay-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 14,
         color: '#999999'
     },
@@ -571,7 +571,7 @@ const styles = {
     copyBtn__text: {
         marginTop: 6,
         marginRight: 7,
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 10,
         color: '#864dd9'
     },
@@ -629,7 +629,7 @@ const styles = {
         elevation: 5
     },
     topContent__tag__text: {
-        fontFamily: 'Montserrat-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 12,
         color: '#f4f4f4'
     },
@@ -731,7 +731,7 @@ const styles = {
         fontSize: 12,
         color: '#999',
         textAlign: 'center',
-        fontFamily: 'SFUIDisplay-Regular'
+        fontFamily: 'Manrope', fontWeight: '400'
     },
     icon: {
         position: 'absolute',
@@ -748,7 +748,7 @@ const styles = {
         // marginTop: 10
     },
     availableText: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         color: '#999999'

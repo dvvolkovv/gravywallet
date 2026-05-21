@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     categoriesText: {
-        fontFamily: 'Montserrat-Medium',
+        fontFamily: 'Manrope', fontWeight: '500',
         fontSize: 14,
         lineHeight: 18
     }

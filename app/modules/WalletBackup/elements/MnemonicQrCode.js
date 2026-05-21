@@ -164,7 +164,7 @@ const styles = StyleSheet.create({
     },
     showMnemonicButton: {
         textAlign: 'center',
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 12,
         lineHeight: 15,
         letterSpacing: 1.5,

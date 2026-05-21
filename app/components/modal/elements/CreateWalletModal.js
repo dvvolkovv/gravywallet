@@ -96,7 +96,7 @@ export default CreateWalletModal
 
 const styles = StyleSheet.create({
     title: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontStyle: 'normal',
         fontWeight: 'bold',
         fontSize: 18,
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
         marginBottom: -2
     },
     text: {
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 14,
         lineHeight: 20,
         textAlign: 'center',

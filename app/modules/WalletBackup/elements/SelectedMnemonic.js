@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
     },
     placeholder: {
-        fontFamily: 'SFUIDisplay-Regular',
+        fontFamily: 'Manrope', fontWeight: '400',
         fontSize: 18,
         lineHeight: 25,
         letterSpacing: 0.5,
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     },
     showButtonText: {
         textAlign: 'center',
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 12,
         lineHeight: 12,
         letterSpacing: 1.5,

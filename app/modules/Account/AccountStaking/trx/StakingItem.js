@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
     transaction__top__title: {
         marginRight: 8,
 
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 14
     },
     transaction__item: {
@@ -135,11 +135,11 @@ const styles = StyleSheet.create({
     transaction__item__title: {
         marginRight: 5,
 
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 18
     },
     transaction__item__title__subtitle: {
-        fontFamily: 'Montserrat-SemiBold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         color: '#1EB3E4'
     },
@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
         elevation: 10
     },
     willAvailable: {
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
         fontSize: 14,
         lineHeight: 18,
         letterSpacing: 1,

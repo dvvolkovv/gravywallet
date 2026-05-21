@@ -862,12 +862,12 @@ const styles = {
         marginLeft: 16
     },
     accountDetail__title: {
-        fontFamily: 'Montserrat-Bold',
+        fontFamily: 'Manrope', fontWeight: '700',
         fontSize: 18,
     },
     accountDetail__text: {
         fontSize: 15,
-        fontFamily: 'SFUIDisplay-Semibold',
+        fontFamily: 'Manrope', fontWeight: '600',
     },
     backgroundAddress: {
         alignItems: 'center',
@@ -878,7 +878,7 @@ const styles = {
         borderRadius: 16
     },
     ticker: {
-        fontFamily: 'Montserrat-Medium',
+        fontFamily: 'Manrope', fontWeight: '500',
         fontSize: 15,
         lineHeight: 19,
 
