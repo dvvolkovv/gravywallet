@@ -25,14 +25,16 @@ export const palette = {
     warning: '#F59E0B'
 }
 
+const FONT = 'Manrope'
+
 export const typography = {
-    display: { fontSize: 48, fontWeight: '800', letterSpacing: -1.2 },
-    title: { fontSize: 28, fontWeight: '700', letterSpacing: -0.3 },
-    heading: { fontSize: 20, fontWeight: '600', letterSpacing: -0.1 },
-    body: { fontSize: 16, fontWeight: '400', lineHeight: 24 },
-    bodyMedium: { fontSize: 16, fontWeight: '500', lineHeight: 24 },
-    caption: { fontSize: 13, fontWeight: '400', lineHeight: 18 },
-    small: { fontSize: 11, fontWeight: '500', letterSpacing: 0.4 }
+    display: { fontFamily: FONT, fontSize: 48, fontWeight: '800', letterSpacing: -1.2 },
+    title: { fontFamily: FONT, fontSize: 28, fontWeight: '700', letterSpacing: -0.3 },
+    heading: { fontFamily: FONT, fontSize: 20, fontWeight: '600', letterSpacing: -0.1 },
+    body: { fontFamily: FONT, fontSize: 16, fontWeight: '400', lineHeight: 24 },
+    bodyMedium: { fontFamily: FONT, fontSize: 16, fontWeight: '500', lineHeight: 24 },
+    caption: { fontFamily: FONT, fontSize: 13, fontWeight: '400', lineHeight: 18 },
+    small: { fontFamily: FONT, fontSize: 11, fontWeight: '500', letterSpacing: 0.4 }
 }
 
 export const spacing = {

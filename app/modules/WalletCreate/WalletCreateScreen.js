@@ -142,8 +142,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        paddingHorizontal: spacing.xl2,
-        paddingBottom: spacing.xl3
+        paddingHorizontal: spacing.xl2
     },
     brandRow: {
         flexDirection: 'row',
