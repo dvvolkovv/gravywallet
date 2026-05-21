@@ -253,11 +253,11 @@ const styles = {
         justifyContent: 'flex-end',
     },
     title: {
-        fontFamily: 'Montserrat-Bold',
-        fontSize: 14,
-        lineHeight: 17,
-        letterSpacing: 1,
-        textTransform: 'uppercase',
+        fontFamily: 'Manrope',
+        fontSize: 17,
+        fontWeight: '600',
+        lineHeight: 22,
+        letterSpacing: -0.2,
         textAlign: 'center'
     }
 }

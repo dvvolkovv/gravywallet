@@ -11,7 +11,7 @@ import { palette, typography, spacing, radius } from '@app/theme/designSystem'
 
 const ICON_MAP = {
     wallet: 'wallet-outline',
-    walletConnect: 'connection',
+    walletConnect: 'link-variant',
     pinCode: 'lock-outline',
     changePinCode: 'lock-reset',
     biometricLock: 'face-recognition',
@@ -53,8 +53,8 @@ const SettingsRowGravy = ({
             disabled={disabled}
             style={[styles.row, last && styles.rowLast, disabled && styles.rowDisabled]}
         >
-            <View style={styles.iconBubble}>
-                <MaterialCommunityIcon name={iconName} size={20} color={palette.primary} />
+            <View style={[styles.iconBubble, disabled && styles.iconBubbleDisabled]}>
+                <MaterialCommunityIcon name={iconName} size={20} color={disabled ? palette.text3 : palette.primary} />
             </View>
             <View style={styles.content}>
                 <Text style={styles.title} numberOfLines={1}>{title}</Text>
@@ -101,6 +101,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         marginRight: spacing.md
+    },
+    iconBubbleDisabled: {
+        backgroundColor: palette.surface
     },
     content: {
         flex: 1
