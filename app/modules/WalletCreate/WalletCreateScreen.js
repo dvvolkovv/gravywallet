@@ -110,7 +110,7 @@ class WalletCreateScreen extends PureComponent {
                         onPress={this.handleCreate}
                         disabled={!checked}
                     >
-                        <Text style={styles.primaryBtnText}>{strings('walletCreateScreen.createWallet')}</Text>
+                        <Text style={[styles.primaryBtnText, !checked && styles.primaryBtnTextDisabled]}>{strings('walletCreateScreen.createWallet')}</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
@@ -142,7 +142,8 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        paddingHorizontal: spacing.xl2
+        paddingHorizontal: spacing.xl2,
+        paddingBottom: spacing.xl3
     },
     brandRow: {
         flexDirection: 'row',
@@ -191,6 +192,10 @@ const styles = StyleSheet.create({
         ...typography.bodyMedium,
         color: palette.textInverse,
         fontWeight: '600'
+    },
+    primaryBtnTextDisabled: {
+        color: palette.primary,
+        opacity: 0.4
     },
     secondaryBtn: {
         height: 56,

@@ -1,79 +1,58 @@
 /**
- * @version 0.43
+ * @version 0.50
  */
 import React from 'react'
-import {
-    View,
-    Text,
-    StyleSheet
-} from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 
 import CheckBox from '@app/components/elements/new/CheckBox'
 import { ThemeContext } from '@app/theme/ThemeProvider'
 import { strings } from '@app/services/i18n'
+import { palette, typography } from '@app/theme/designSystem'
 
 export default class Agreement extends React.PureComponent {
 
-    getLink = (text, onPress) => {
-        const { colors } = this.context
-        return (<Text style={[styles.linkText, { color: colors.common.text1 }]} onPress={onPress}>&nbsp;&nbsp;{text}&nbsp;&nbsp;</Text>)
-    }
-
     getCheckboxTitle = () => {
-        const {
-            handleTerms,
-            handlePrivacyPolicy
-        } = this.props
-        const { colors } = this.context
+        const { handleTerms, handlePrivacyPolicy } = this.props
         return (
-            <View style={styles.titleContainer}>
-                <Text style={[styles.text, { color: colors.common.text3 }]}>
-                    {strings('walletCreateScreen.agreement1')}
-                    {this.getLink(strings('walletCreateScreen.terms'), handleTerms)}
-                    {strings('walletCreateScreen.agreement2')}
-                    {this.getLink(strings('walletCreateScreen.privacyPolicy'), handlePrivacyPolicy)}
-                    {strings('walletCreateScreen.agreement3')}
+            <View style={styles.row}>
+                <Text style={styles.text}>
+                    {strings('walletCreateScreen.agreement1') + ' '}
                 </Text>
+                <TouchableOpacity onPress={handleTerms}><Text style={styles.link}>{strings('walletCreateScreen.terms')}</Text></TouchableOpacity>
+                <Text style={styles.text}>{' ' + strings('walletCreateScreen.agreement2') + ' '}</Text>
+                <TouchableOpacity onPress={handlePrivacyPolicy}><Text style={styles.link}>{strings('walletCreateScreen.privacyPolicy')}</Text></TouchableOpacity>
             </View>
         )
     }
 
     render() {
-        const {
-            checked,
-            onPress,
-        } = this.props
-
+        const { checked, onPress } = this.props
         return (
             <CheckBox
                 checked={checked}
                 onPress={onPress}
                 title={this.getCheckboxTitle}
             />
-        );
+        )
     }
 }
 
 const styles = StyleSheet.create({
-    titleContainer: {
+    row: {
         marginLeft: 12,
-        paddingVertical: 4,
-        flexWrap: 'wrap',
         flexDirection: 'row',
+        flexWrap: 'wrap',
         flex: 1,
+        alignItems: 'center'
     },
     text: {
-        fontFamily: 'Montserrat-SemiBold',
-        fontSize: 14,
-        lineHeight: 18,
+        ...typography.caption,
+        color: palette.text2
     },
-    linkText: {
-        fontFamily: 'Montserrat-Bold',
-        fontSize: 12,
-        lineHeight: 22,
-        textTransform: 'uppercase',
-        letterSpacing: 1.2,
-        marginTop: 3
+    link: {
+        ...typography.caption,
+        color: palette.primary,
+        fontWeight: '600'
     }
 })
 
