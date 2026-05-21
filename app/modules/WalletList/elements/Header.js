@@ -28,6 +28,7 @@ import { HIT_SLOP } from '@app/theme/HitSlop'
 
 import { ThemeContext } from '@app/theme/ThemeProvider'
 import CustomIcon from '@app/components/elements/CustomIcon'
+import MaterialCommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons'
 import WalletName from './WalletName/WalletName'
 import { getWalletConnectIsConnected } from '@app/appstores/Stores/WalletConnect/selectors'
 import TouchableDebounce from '@app/components/elements/new/TouchableDebounce'
@@ -131,7 +132,7 @@ class WalletInfo extends React.PureComponent {
                                 onLongPress={this.props.handleSortView}
                                 delayLongPress={1000}
                             >
-                                <CustomIcon name='constructor' color={colors.common.text1} size={20} />
+                                <MaterialCommunityIcon name='sort-variant' color={colors.common.text1} size={22} />
                             </TouchableDebounce>
                             <TouchableDebounce
                                 style={[styles.settingsButton, { marginLeft: -8 }]}
@@ -141,10 +142,10 @@ class WalletInfo extends React.PureComponent {
                                 hitSlop={{ top: 15, right: 15, bottom: 15, left: 0 }}
                             >
                                 {walletConnected ?
-                                    <CustomIcon name='walletConnect' color={colors.common.text1} size={26} />
+                                    <MaterialCommunityIcon name='link-variant' color={colors.common.text1} size={22} />
                                     :
                                     <>
-                                        <CustomIcon name='notifications' color={colors.common.text1} size={20} />
+                                        <MaterialCommunityIcon name='bell-outline' color={colors.common.text1} size={22} />
                                         {hasNews && <View style={[styles.notificationIndicator, { backgroundColor: colors.notifications.newNotiesIndicator, borderColor: colors.common.background }]} />}
                                     </>
                                 }
@@ -158,12 +159,12 @@ class WalletInfo extends React.PureComponent {
                         <View style={styles.header__right}>
                             <TouchableDebounce style={styles.qrButton} onPress={this.handleScanQr}
                                 hitSlop={{ top: 15, right: 8, bottom: 15, left: 15 }}>
-                                <CustomIcon name='qr' color={colors.common.text1} size={20} />
+                                <MaterialCommunityIcon name='qrcode-scan' color={colors.common.text1} size={22} />
                             </TouchableDebounce>
 
                             <TouchableDebounce style={styles.settingsButton} onPress={this.handleOpenSettings}
                                 hitSlop={{ top: 15, right: 15, bottom: 15, left: 0 }}>
-                                <CustomIcon name='menu' color={colors.common.text1} size={20} />
+                                <MaterialCommunityIcon name='cog-outline' color={colors.common.text1} size={22} />
                             </TouchableDebounce>
                         </View>
                     </View>

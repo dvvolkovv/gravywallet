@@ -111,13 +111,9 @@ class CryptoCurrency extends React.PureComponent {
         const availableStaking = typeof this.props.stakingCoins[currencyCode] !== 'undefined' &&  this.props.stakingCoins[currencyCode]*1 > 0
         return (
             <View style={styles.container}>
-                <View style={styles.shadow__container}>
-                    <View style={styles.shadow__item} />
-                </View>
-                <View style={[styles.shadow__item__background, { backgroundColor: colors.homeScreen.listItemShadowBg }]} />
                 <TouchableDebounce
                     activeOpacity={0.7}
-                    style={styles.cryptoList__item}
+                    style={[styles.cryptoList__item, { backgroundColor: colors.homeScreen.listItemShadowBg }]}
                     onPress={() => handleCurrencySelect(this.props, false, this.bottomSheetRef)}
                     onLongPress={() => this.props.constructorMode ? handleCurrencySelect(this.props, false, this.bottomSheetRef) : null}
                     delayLongPress={this.props.constructorMode ? 100 : null}
@@ -307,6 +303,11 @@ const styles = StyleSheet.create({
     },
     cryptoList__item: {
         borderRadius: SIZE,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.04,
+        shadowRadius: 8,
+        elevation: 2
     },
     hiddenLayer__container: {
         flex: 1,
