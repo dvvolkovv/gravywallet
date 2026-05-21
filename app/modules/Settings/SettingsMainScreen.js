@@ -20,7 +20,8 @@ import AppNotificationListener from '@app/services/AppNotification/AppNotificati
 import store from '@app/store'
 
 import { ThemeContext } from '@app/theme/ThemeProvider'
-import ListItem from '@app/components/elements/new/list/ListItem/Setting'
+import ListItem from '@app/components/elements/new/SettingsRowGravy'
+import { palette, typography, spacing, radius, shadow } from '@app/theme/designSystem'
 
 import MarketingAnalytics from '@app/services/Marketing/MarketingAnalytics'
 import Log from '@app/services/Log/Log'
@@ -274,10 +275,11 @@ class SettingsMainScreen extends PureComponent {
                     showsVerticalScrollIndicator={false}
                     contentContainerStyle={styles.scrollViewContent}
                     keyboardShouldPersistTaps="handled"
+                    style={{ backgroundColor: palette.bg }}
                 >
-                    <View style={{ paddingHorizontal: GRID_SIZE }}>
+                    <View style={styles.page}>
 
-                        <View style={{ marginVertical: GRID_SIZE }}>
+                        <View style={styles.card}>
                             <ListItem
                                 title={strings('settings.wallets.listTitle')}
                                 subtitle={strings('settings.wallets.listSubtitle', { number: walletsNumber })}
@@ -306,8 +308,8 @@ class SettingsMainScreen extends PureComponent {
                         </View>
 
 
-                        <View style={{ marginVertical: GRID_SIZE }}>
-                            <Text style={[styles.blockTitle, { color: colors.common.text3, marginLeft: GRID_SIZE }]}>{strings('settings.security.title')}</Text>
+                        <Text style={styles.sectionHeader}>{strings('settings.security.title')}</Text>
+                        <View style={styles.card}>
                             <ListItem
                                 title={strings('settings.security.lock')}
                                 iconType="pinCode"
@@ -342,8 +344,8 @@ class SettingsMainScreen extends PureComponent {
                             />
                         </View>
 
-                        <View style={{ marginVertical: GRID_SIZE }}>
-                            <Text style={[styles.blockTitle, { color: colors.common.text3, marginLeft: GRID_SIZE }]}>{strings('settings.other.title')}</Text>
+                        <Text style={styles.sectionHeader}>{strings('settings.other.title')}</Text>
+                        <View style={styles.card}>
                             {devMode && (
                                 <ListItem
                                     title={strings('settings.other.configMode')}
@@ -465,12 +467,24 @@ export default connect(mapStateToProps)(SettingsMainScreen)
 const styles = StyleSheet.create({
     scrollViewContent: {
         flexGrow: 1,
+        paddingBottom: spacing.xl2
     },
-    blockTitle: {
-        fontFamily: 'Montserrat-Bold',
-        fontSize: 12,
-        lineHeight: 14,
-        letterSpacing: 1.5,
+    page: {
+        paddingHorizontal: spacing.lg
+    },
+    card: {
+        backgroundColor: palette.bg,
+        borderRadius: radius.lg,
+        marginBottom: spacing.lg,
+        marginTop: spacing.sm,
+        overflow: 'hidden',
+        ...shadow.sm
+    },
+    sectionHeader: {
+        ...typography.small,
         textTransform: 'uppercase',
-    },
+        color: palette.text3,
+        marginTop: spacing.lg,
+        marginLeft: spacing.lg
+    }
 })
