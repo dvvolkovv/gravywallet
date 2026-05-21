@@ -1,11 +1,10 @@
 /**
- * @version 0.41
+ * @version 0.50
  */
 import React, { PureComponent } from 'react'
-import { View, Image, Text, StatusBar, StyleSheet } from 'react-native'
+import { View, Text, StatusBar, StyleSheet, TouchableOpacity, SafeAreaView } from 'react-native'
 
 import Agreement from './elements/Agreement'
-import Button from '@app/components/elements/new/buttons/Button'
 
 import NavStore from '@app/components/navigation/NavStore'
 
@@ -16,6 +15,7 @@ import { strings, sublocale } from '@app/services/i18n'
 import BlocksoftCustomLinks from '@crypto/common/BlocksoftCustomLinks'
 
 import { ThemeContext } from '@app/theme/ThemeProvider'
+import { palette, typography, spacing, radius, shadow } from '@app/theme/designSystem'
 
 import MarketingAnalytics from '@app/services/Marketing/MarketingAnalytics'
 import MarketingEvent from '@app/services/Marketing/MarketingEvent'
@@ -56,15 +56,10 @@ class WalletCreateScreen extends PureComponent {
 
     handleTermsPress = () => {
         const locale = sublocale()
-
         let link = 'TERMS'
-        if (locale === 'uk') {
-            link += '_UK'
-        } else if (locale === 'ru') {
-            link += '_RU'
-        } else {
-            link += '_EN'
-        }
+        if (locale === 'uk') link += '_UK'
+        else if (locale === 'ru') link += '_RU'
+        else link += '_EN'
 
         const url = BlocksoftCustomLinks.getLink(link, this.context.isLight)
         NavStore.goNext('WebViewScreen', { url, title: strings('walletCreateScreen.termsTitle'), backOnClose: true })
@@ -72,56 +67,64 @@ class WalletCreateScreen extends PureComponent {
 
     handlePrivacyPolicyPress = () => {
         const locale = sublocale()
-
         let link = 'PRIVACY_POLICY'
-        if (locale === 'uk') {
-            link += '_UK'
-        } else if (locale === 'ru') {
-            link += '_RU'
-        } else {
-            link += '_EN'
-        }
+        if (locale === 'uk') link += '_UK'
+        else if (locale === 'ru') link += '_RU'
+        else link += '_EN'
+
         const url = BlocksoftCustomLinks.getLink(link, this.context.isLight)
         NavStore.goNext('WebViewScreen', { url, title: strings('walletCreateScreen.privacyPolicyTitle'), backOnClose: true })
     }
 
     render() {
-        const { colors, GRID_SIZE } = this.context
+        const { checked } = this.state
 
         MarketingAnalytics.setCurrentScreen('WalletCreate.WalletCreateScreen')
         MarketingEvent.logEvent('gx_view_create_import_screen', {}, 'GX')
 
         return (
-            <View style={styles.container}>
-                <StatusBar barStyle='light-content' />
-                <View style={styles.welcomeContainer}>
-                    <Image
-                        source={require('@assets/images/gravy-logo.png')}
-                        style={styles.welcomeLogo}
-                        resizeMode='contain'
-                    />
-                    <Text style={[styles.welcomeTitle, { color: colors.common.text1 }]}>{strings('walletCreateScreen.welcomeTitle')}</Text>
-                    <Text style={[styles.welcomeSubtitle, { color: colors.common.text2 }]}>{strings('walletCreateScreen.welcomeSubtitle')}</Text>
+            <SafeAreaView style={styles.container}>
+                <StatusBar barStyle='dark-content' backgroundColor={palette.bg} />
+
+                <View style={styles.hero}>
+                    <View style={styles.brandRow}>
+                        <Text style={styles.brandMark}>Gravy</Text>
+                        <View style={styles.brandDot} />
+                    </View>
+                    <Text style={styles.tagline}>{strings('walletCreateScreen.welcomeSubtitle')}</Text>
                 </View>
-                <View style={[styles.bottomContent, { paddingHorizontal: GRID_SIZE, backgroundColor: colors.common.background }]}>
-                    <View style={[styles.agreementContainer, { marginHorizontal: GRID_SIZE }]}>
+
+                <View style={styles.cta}>
+                    <View style={styles.agreementWrap}>
                         <Agreement
-                            checked={this.state.checked}
+                            checked={checked}
                             onPress={this.changeAgreementCallback}
                             handleTerms={this.handleTermsPress}
                             handlePrivacyPolicy={this.handlePrivacyPolicyPress}
                         />
                     </View>
-                    <Button title={strings('walletCreateScreen.createWallet')} disabled={!this.state.checked} onPress={this.handleCreate} />
-                    <Button
-                        type='transparent'
-                        title={strings('walletCreateScreen.importWallet')}
-                        disabled={!this.state.checked}
+
+                    <TouchableOpacity
+                        activeOpacity={0.85}
+                        style={[styles.primaryBtn, !checked && styles.primaryBtnDisabled]}
+                        onPress={this.handleCreate}
+                        disabled={!checked}
+                    >
+                        <Text style={styles.primaryBtnText}>{strings('walletCreateScreen.createWallet')}</Text>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        activeOpacity={0.7}
+                        style={styles.secondaryBtn}
                         onPress={this.handleImport}
-                        containerStyle={styles.importButton}
-                    />
+                        disabled={!checked}
+                    >
+                        <Text style={[styles.secondaryBtnText, !checked && styles.secondaryBtnTextDisabled]}>
+                            {strings('walletCreateScreen.importWallet')}
+                        </Text>
+                    </TouchableOpacity>
                 </View>
-            </View>
+            </SafeAreaView>
         )
     }
 }
@@ -132,39 +135,75 @@ export default WalletCreateScreen
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        backgroundColor: palette.bg
     },
-    bottomContent: {
-        flex: 2,
-        justifyContent: 'center',
-        paddingBottom: 16
-    },
-    welcomeContainer: {
-        flex: 3,
+    hero: {
+        flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        paddingHorizontal: 32
+        paddingHorizontal: spacing.xl2
     },
-    welcomeLogo: {
-        width: 120,
-        height: 120,
-        marginBottom: 32
+    brandRow: {
+        flexDirection: 'row',
+        alignItems: 'flex-end',
+        marginBottom: spacing.lg
     },
-    welcomeTitle: {
-        fontSize: 28,
-        fontWeight: '700',
-        marginBottom: 12,
-        textAlign: 'center'
+    brandMark: {
+        ...typography.display,
+        color: palette.text1
     },
-    welcomeSubtitle: {
-        fontSize: 16,
-        opacity: 0.7,
-        textAlign: 'center'
+    brandDot: {
+        width: 12,
+        height: 12,
+        borderRadius: radius.pill,
+        backgroundColor: palette.primary,
+        marginBottom: 10,
+        marginLeft: 4
     },
-    agreementContainer: {
-        marginBottom: 20
+    tagline: {
+        ...typography.body,
+        color: palette.text2,
+        textAlign: 'center',
+        maxWidth: 280
     },
-    importButton: {
-        marginTop: 8
+    cta: {
+        paddingHorizontal: spacing.xl,
+        paddingBottom: spacing.xl
+    },
+    agreementWrap: {
+        marginBottom: spacing.xl
+    },
+    primaryBtn: {
+        backgroundColor: palette.primary,
+        height: 56,
+        borderRadius: radius.pill,
+        alignItems: 'center',
+        justifyContent: 'center',
+        ...shadow.lg
+    },
+    primaryBtnDisabled: {
+        backgroundColor: palette.primarySubtle,
+        shadowOpacity: 0,
+        elevation: 0
+    },
+    primaryBtnText: {
+        ...typography.bodyMedium,
+        color: palette.textInverse,
+        fontWeight: '600'
+    },
+    secondaryBtn: {
+        height: 56,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: spacing.sm
+    },
+    secondaryBtnText: {
+        ...typography.bodyMedium,
+        color: palette.primary,
+        fontWeight: '600'
+    },
+    secondaryBtnTextDisabled: {
+        color: palette.text3
     }
 })
