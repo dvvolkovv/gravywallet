@@ -1,47 +1,46 @@
 /**
- * @version 0.53
- * @author yura
+ * @version 1.0
  */
 import React, { PureComponent } from 'react'
-import { View, StyleSheet, Platform, StatusBar, BackHandler } from 'react-native'
-import Video from 'react-native-video';
+import { View, Text, StyleSheet, StatusBar, BackHandler, ActivityIndicator, SafeAreaView } from 'react-native'
 
-import NavStore from '@app/components/navigation/NavStore';
+import NavStore from '@app/components/navigation/NavStore'
 
-import { ThemeContext } from '@app/theme/ThemeProvider';
+import { ThemeContext } from '@app/theme/ThemeProvider'
 
-import Log from '@app/services/Log/Log';
-import { strings } from '@app/services/i18n';
+import Log from '@app/services/Log/Log'
+import { strings } from '@app/services/i18n'
 import MarketingEvent from '@app/services/Marketing/MarketingEvent'
 
 import BlocksoftKeys from '@crypto/actions/BlocksoftKeys/BlocksoftKeys'
 
-import walletActions from '@app/appstores/Stores/Wallet/WalletActions';
-import { showModal } from '@app/appstores/Stores/Modal/ModalActions';
+import walletActions from '@app/appstores/Stores/Wallet/WalletActions'
+import { showModal } from '@app/appstores/Stores/Modal/ModalActions'
 import App from '@app/appstores/Actions/App/App'
 import { proceedSaveGeneratedWallet } from '@app/appstores/Stores/CreateWallet/CreateWalletActions'
 
-import walletCreateVideo from '@assets/videos/KeyAndSeed.mp4'
-
 import { deleteUserPinCode } from '@haskkor/react-native-pincode'
 import { SettingsKeystore } from '@app/appstores/Stores/Settings/SettingsKeystore'
+
+import { palette, typography, spacing, radius } from '@app/theme/designSystem'
 
 const MNEMONIC_PHRASE_LENGTH = 128
 
 class WalletCreateWithAnimation extends PureComponent {
 
     async componentDidMount() {
-        this.backButtonHandler = this.backButtonHandler.bind(this);
-        BackHandler.addEventListener('backPress', this.backButtonHandler);
-        this.createWallet()
+        this.backButtonHandler = this.backButtonHandler.bind(this)
+        BackHandler.addEventListener('backPress', this.backButtonHandler)
+        await this.createWallet()
+        this.handleGoHomeScreen()
     }
 
     componentWillUnmount() {
-        BackHandler.removeEventListener('backPress', this.backButtonHandler);
+        BackHandler.removeEventListener('backPress', this.backButtonHandler)
     }
 
     backButtonHandler() {
-        return true;
+        return true
     }
 
     createWallet = async () => {
@@ -54,7 +53,6 @@ class WalletCreateWithAnimation extends PureComponent {
         try {
             walletMnemonic = (await BlocksoftKeys.newMnemonic(MNEMONIC_PHRASE_LENGTH)).mnemonic
             walletName = await walletActions.getNewWalletName()
-
 
             try {
                 await proceedSaveGeneratedWallet({
@@ -73,7 +71,6 @@ class WalletCreateWithAnimation extends PureComponent {
                 e.message += ' while WalletCreateWithAnimation.createWallet'
                 throw e
             }
-
         } catch {
             Log.log('WalletCreateWithAnimation.createWallet error mnemonic generation')
         }
@@ -89,7 +86,6 @@ class WalletCreateWithAnimation extends PureComponent {
         }
 
         MarketingEvent.logEvent('gx_view_create_gif_screen_tap_create', { number: '1', source: 'WalletCreateWithAnimation' }, 'GX')
-
     }
 
     handleGoHomeScreen = () => {
@@ -98,18 +94,17 @@ class WalletCreateWithAnimation extends PureComponent {
 
     render() {
         return (
-            <View style={styles.container}>
-                <StatusBar barStyle='light-content' />
-                <Video
-                    source={walletCreateVideo}
-                    ref={ref => this.player = ref}
-                    style={styles.backgroundVideo}
-                    fullscreen={Platform.OS === 'ios'}
-                    resizeMode='contain'
-                    onEnd={this.handleGoHomeScreen}
-                    playWhenInactive
-                />
-            </View>
+            <SafeAreaView style={styles.container}>
+                <StatusBar barStyle='dark-content' backgroundColor={palette.bg} />
+                <View style={styles.center}>
+                    <View style={styles.brandRow}>
+                        <Text style={styles.brandMark}>Gravy</Text>
+                        <View style={styles.brandDot} />
+                    </View>
+                    <ActivityIndicator size='large' color={palette.primary} style={styles.spinner} />
+                    <Text style={styles.caption}>Generating your wallet…</Text>
+                </View>
+            </SafeAreaView>
         )
     }
 }
@@ -121,13 +116,37 @@ export default WalletCreateWithAnimation
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#262626'
+        backgroundColor: palette.bg
     },
-    backgroundVideo: {
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        bottom: 0,
-        right: 0
+    center: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingHorizontal: spacing.xl2
     },
+    brandRow: {
+        flexDirection: 'row',
+        alignItems: 'flex-end',
+        marginBottom: spacing.xl2
+    },
+    brandMark: {
+        ...typography.display,
+        color: palette.text1
+    },
+    brandDot: {
+        width: 12,
+        height: 12,
+        borderRadius: radius.pill,
+        backgroundColor: palette.primary,
+        marginBottom: 10,
+        marginLeft: 4
+    },
+    spinner: {
+        marginBottom: spacing.lg
+    },
+    caption: {
+        ...typography.body,
+        color: palette.text2,
+        textAlign: 'center'
+    }
 })
