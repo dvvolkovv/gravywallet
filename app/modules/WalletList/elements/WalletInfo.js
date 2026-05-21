@@ -14,6 +14,7 @@ import {
 import moment from 'moment'
 
 import CustomIcon from '@app/components/elements/CustomIcon'
+import MaterialCommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons'
 import NavStore from '@app/components/navigation/NavStore'
 import GradientView from '@app/components/elements/GradientView'
 import LetterSpacing from '@app/components/elements/LetterSpacing'
@@ -227,11 +228,11 @@ class WalletInfo extends React.Component {
                                 </TouchableDebounce>
 
                                 <TouchableDebounce onPress={changeBalanceVisibility} hitSlop={HIT_SLOP}>
-                                    {isBalanceVisible ? (
-                                        <CustomIcon name='eye' size={24} color={isViolet ? colors.homeScreen.visibilityIconViolet : colors.common.text1} />
-                                    ) : (
-                                        <CustomIcon name='eyeClosed' size={24} color={isViolet ? colors.homeScreen.visibilityIconViolet : colors.common.text1} />
-                                    )}
+                                    <MaterialCommunityIcon
+                                        name={isBalanceVisible ? 'eye-outline' : 'eye-off-outline'}
+                                        size={24}
+                                        color={isViolet ? colors.homeScreen.visibilityIconViolet : colors.common.text1}
+                                    />
                                 </TouchableDebounce>
                             </View>
                         </GradientView>

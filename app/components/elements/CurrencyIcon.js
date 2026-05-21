@@ -1213,9 +1213,6 @@ const styles = {
         height: 50,
         borderRadius: 50,
 
-        borderWidth: 2,
-        borderColor: '#000',
-
         overflow: 'visible'
     },
     icon__item: {
