@@ -899,7 +899,7 @@ export default function getTableUpdateQueries() {
 
             125: {
                 afterFunction: async (dbInterface) => {
-                    await dbInterface.query(`INSERT INTO currency (currency_code, is_hidden, currency_rate_json, currency_rate_scan_time) VALUES ('CASHBACK', '0', '', '')`)
+                    await dbInterface.query(`INSERT INTO currency (currency_code, is_hidden, currency_rate_json, currency_rate_scan_time) VALUES ('CASHBACK', '1', '', '')`)
                 }
             },
 
