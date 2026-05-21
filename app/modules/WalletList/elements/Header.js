@@ -164,7 +164,7 @@ class WalletInfo extends React.PureComponent {
 
                             <TouchableDebounce style={styles.settingsButton} onPress={this.handleOpenSettings}
                                 hitSlop={{ top: 15, right: 15, bottom: 15, left: 0 }}>
-                                <MaterialCommunityIcon name='cog-outline' color={colors.common.text1} size={22} />
+                                <MaterialCommunityIcon name='dots-vertical' color={colors.common.text1} size={24} />
                             </TouchableDebounce>
                         </View>
                     </View>
