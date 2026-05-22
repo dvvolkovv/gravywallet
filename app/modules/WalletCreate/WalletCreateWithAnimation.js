@@ -1,8 +1,9 @@
 /**
- * @version 1.0
+ * @version 1.1
  */
 import React, { PureComponent } from 'react'
-import { View, Text, StyleSheet, StatusBar, BackHandler, ActivityIndicator, SafeAreaView } from 'react-native'
+import { View, StyleSheet, StatusBar, BackHandler, SafeAreaView, Dimensions } from 'react-native'
+import Video from 'react-native-video'
 
 import NavStore from '@app/components/navigation/NavStore'
 
@@ -22,17 +23,30 @@ import { proceedSaveGeneratedWallet } from '@app/appstores/Stores/CreateWallet/C
 import { deleteUserPinCode } from '@haskkor/react-native-pincode'
 import { SettingsKeystore } from '@app/appstores/Stores/Settings/SettingsKeystore'
 
-import { palette, typography, spacing, radius } from '@app/theme/designSystem'
+import { palette } from '@app/theme/designSystem'
+
+import gravyVideo from '@assets/videos/gravy.mp4'
 
 const MNEMONIC_PHRASE_LENGTH = 128
+const MIN_VIDEO_MS = 5100
+
+const { width: SCREEN_WIDTH } = Dimensions.get('window')
+const VIDEO_SIZE = Math.min(SCREEN_WIDTH, 480)
 
 class WalletCreateWithAnimation extends PureComponent {
+
+    walletDone = false
+    videoDone = false
+    navigated = false
 
     async componentDidMount() {
         this.backButtonHandler = this.backButtonHandler.bind(this)
         BackHandler.addEventListener('backPress', this.backButtonHandler)
-        await this.createWallet()
-        this.handleGoHomeScreen()
+        this.createWallet()
+        setTimeout(() => {
+            this.videoDone = true
+            this.maybeNavigate()
+        }, MIN_VIDEO_MS)
     }
 
     componentWillUnmount() {
@@ -41,6 +55,18 @@ class WalletCreateWithAnimation extends PureComponent {
 
     backButtonHandler() {
         return true
+    }
+
+    maybeNavigate = () => {
+        if (this.navigated) return
+        if (!this.walletDone || !this.videoDone) return
+        this.navigated = true
+        NavStore.reset('TabBar')
+    }
+
+    onVideoEnd = () => {
+        this.videoDone = true
+        this.maybeNavigate()
     }
 
     createWallet = async () => {
@@ -86,10 +112,9 @@ class WalletCreateWithAnimation extends PureComponent {
         }
 
         MarketingEvent.logEvent('gx_view_create_gif_screen_tap_create', { number: '1', source: 'WalletCreateWithAnimation' }, 'GX')
-    }
 
-    handleGoHomeScreen = () => {
-        NavStore.reset('TabBar')
+        this.walletDone = true
+        this.maybeNavigate()
     }
 
     render() {
@@ -97,12 +122,17 @@ class WalletCreateWithAnimation extends PureComponent {
             <SafeAreaView style={styles.container}>
                 <StatusBar barStyle='dark-content' backgroundColor={palette.bg} />
                 <View style={styles.center}>
-                    <View style={styles.brandRow}>
-                        <Text style={styles.brandMark}>Gravy</Text>
-                        <View style={styles.brandDot} />
-                    </View>
-                    <ActivityIndicator size='large' color={palette.primary} style={styles.spinner} />
-                    <Text style={styles.caption}>Generating your wallet…</Text>
+                    <Video
+                        source={gravyVideo}
+                        style={{ width: VIDEO_SIZE, height: VIDEO_SIZE }}
+                        resizeMode='contain'
+                        muted
+                        repeat={false}
+                        playInBackground={false}
+                        playWhenInactive={false}
+                        ignoreSilentSwitch='ignore'
+                        onEnd={this.onVideoEnd}
+                    />
                 </View>
             </SafeAreaView>
         )
@@ -121,32 +151,6 @@ const styles = StyleSheet.create({
     center: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center',
-        paddingHorizontal: spacing.xl2
-    },
-    brandRow: {
-        flexDirection: 'row',
-        alignItems: 'flex-end',
-        marginBottom: spacing.xl2
-    },
-    brandMark: {
-        ...typography.display,
-        color: palette.text1
-    },
-    brandDot: {
-        width: 12,
-        height: 12,
-        borderRadius: radius.pill,
-        backgroundColor: palette.primary,
-        marginBottom: 10,
-        marginLeft: 4
-    },
-    spinner: {
-        marginBottom: spacing.lg
-    },
-    caption: {
-        ...typography.body,
-        color: palette.text2,
-        textAlign: 'center'
+        justifyContent: 'center'
     }
 })
