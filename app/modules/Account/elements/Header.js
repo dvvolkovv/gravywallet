@@ -14,7 +14,7 @@ import {
 
 import { HIT_SLOP } from '@app/theme/HitSlop'
 import { ThemeContext } from '@app/theme/ThemeProvider'
-import CustomIcon from '@app/components/elements/CustomIcon'
+import MaterialCommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons'
 import TouchableDebounce from '@app/components/elements/new/TouchableDebounce'
 
 const headerHeight = 44
@@ -47,7 +47,7 @@ export default class Header extends PureComponent {
 
         switch (leftType) {
             case 'back': {
-                Icon = (props) => <CustomIcon name="arrow_back" size={20} color={props.color} />
+                Icon = (props) => <MaterialCommunityIcon name='chevron-left' size={28} color={props.color} />
             }
         }
 
@@ -71,7 +71,7 @@ export default class Header extends PureComponent {
 
         switch (rightType) {
             case 'close': {
-                Icon = (props) => <CustomIcon name="close" size={18} color={props.color} />
+                Icon = (props) => <MaterialCommunityIcon name='close' size={22} color={props.color} />
             }
         }
 
@@ -130,7 +130,7 @@ export default class Header extends PureComponent {
                         </View>
 
                         <View style={styles.header__center}>
-                            {title && <Text style={[styles.title, { color: colors.common.text3 }]}>{title}</Text>}
+                            {title && <Text style={[styles.title, { color: colors.common.text1 }]}>{title}</Text>}
                         </View>
 
                         <View style={styles.header__right}>
@@ -215,10 +215,10 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-end',
     },
     title: {
-        fontFamily: 'Manrope', fontWeight: '700',
-        fontSize: 14,
-        lineHeight: 15,
-        letterSpacing: 1,
+        fontFamily: 'Manrope', fontWeight: '600',
+        fontSize: 17,
+        lineHeight: 22,
+        letterSpacing: -0.2,
         textAlign: 'center'
     },
 })

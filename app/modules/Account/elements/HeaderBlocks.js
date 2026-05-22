@@ -30,7 +30,6 @@ import BlocksoftPrettyNumbers from '@crypto/common/BlocksoftPrettyNumbers'
 import { strings } from '@app/services/i18n'
 
 import NavStore from '@app/components/navigation/NavStore'
-import CustomIcon from '@app/components/elements/CustomIcon'
 import { HIT_SLOP } from '@app/theme/HitSlop'
 
 import AccountGradientBlock from '@app/components/elements/new/AccountGradientBlock'
@@ -221,7 +220,7 @@ class HeaderBlocks extends React.Component {
                 {
                     canBeStaked &&
                     <TouchableDebounce style={{ paddingLeft: 23 }} onPress={() => this.accountStaking(currencyCode)} hitSlop={HIT_SLOP}>
-                        <CustomIcon name='staking' size={24} color={colors.common.text1} />
+                        <IconMaterial name='chart-line-variant' size={22} color={colors.common.text1} />
                     </TouchableDebounce>
                 }
             </View>
@@ -321,7 +320,7 @@ class HeaderBlocks extends React.Component {
         return (
             <TouchableDebounce style={{ paddingLeft: 23 }} onPress={() => this.accountSetting(currencyCode)} hitSlop={HIT_SLOP}>
                 <View style={{ paddingVertical: 12 }}>
-                    <CustomIcon name='coinSettings' size={20} color={colors.common.text1} />
+                    <IconMaterial name='tune-variant' size={20} color={colors.common.text1} />
                 </View>
             </TouchableDebounce>
         )

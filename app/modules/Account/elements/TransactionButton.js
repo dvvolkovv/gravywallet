@@ -1,46 +1,32 @@
 /**
- * @version 0.43
- * @author yura
+ * @version 1.0
  */
 
 import React from 'react'
 import { Text } from 'react-native'
-import FontistoIcon from 'react-native-vector-icons/Fontisto'
+import MaterialCommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons'
 
 import { useTheme } from '@app/theme/ThemeProvider'
-import CustomIcon from '@app/components/elements/CustomIcon'
 import TouchableDebounce from '@app/components/elements/new/TouchableDebounce'
 
-
-const iconButton = (type) => {
-
-    const { colors } = useTheme()
-
-    switch (type.toLowerCase()) {
-        case 'receive':
-            return <CustomIcon name={'receive'} color={colors.common.text1} size={18} />
-        case 'send':
-            return <CustomIcon name={'send'} color={colors.common.text1} size={18} />
-        case 'buy':
-            return <FontistoIcon size={18} name={'shopping-basket-add'} color={colors.common.text1} />
-        case 'rbf':
-            return <CustomIcon name={'rbf'} color={colors.common.text1} size={20} />
-        case 'canceled':
-            return <CustomIcon name={'return'} color={colors.common.text1} size={20} />
-    }
+const ICON_MAP = {
+    receive: 'arrow-down',
+    send: 'arrow-up',
+    buy: 'plus',
+    rbf: 'rocket-launch-outline',
+    canceled: 'undo-variant'
 }
 
-const TransactionButton = (props) => {
-
-    const { text, type, action, style, textStyle } = props
-
+const TransactionButton = ({ text, type, action, style, textStyle }) => {
     const { colors } = useTheme()
+    const iconName = ICON_MAP[type?.toLowerCase()] || 'help-circle-outline'
 
     return (
-        <TouchableDebounce style={style} onPress={action}>
-            {iconButton(type)}
-            {text &&
-                <Text style={{ ...textStyle, paddingTop: 4, color: colors.common.text1 }} >{text}</Text>}
+        <TouchableDebounce style={style} onPress={action} activeOpacity={0.7}>
+            <MaterialCommunityIcon name={iconName} size={20} color={colors.common.text1} />
+            {text && (
+                <Text style={{ ...textStyle, paddingTop: 4, color: colors.common.text1 }}>{text}</Text>
+            )}
         </TouchableDebounce>
     )
 }

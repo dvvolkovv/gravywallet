@@ -13,7 +13,7 @@ import { ThemeContext } from '@app/theme/ThemeProvider'
 import { HIT_SLOP } from '@app/theme/HitSlop'
 
 import Loader from '@app/components/elements/LoaderItem'
-import CustomIcon from '@app/components/elements/CustomIcon'
+import MaterialCommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons'
 import TextInput from '@app/components/elements/NewInput'
 import NavStore from '@app/components/navigation/NavStore'
 
@@ -170,14 +170,14 @@ class SynchronizedBlock extends React.PureComponent {
                                     source={isLight ? blackLoader : whiteLoader}
                                     autoPlay
                                     loop /> :
-                                <CustomIcon name={!isSeaching ? 'reloadTx' : 'cancelTxHistory'} size={20} color={colors.common.text1} />}
+                                <MaterialCommunityIcon name={!isSeaching ? 'refresh' : 'close'} size={22} color={colors.common.text1} />}
                         </TouchableDebounce>
                         <TouchableDebounce
                             style={[styles.activeFilter, { backgroundColor: activeFilter ? colors.common.checkbox.bgChecked + '26' : 'transparent', marginLeft: GRID_SIZE / 4 }]}
                             onPress={this.handleFilter}
                             hitSlop={HIT_SLOP}
                         >
-                            <CustomIcon name='filter' size={20} color={activeFilter ? colors.common.checkbox.bgChecked : colors.common.text1} style={{ marginTop: 2 }} />
+                            <MaterialCommunityIcon name='tune-variant' size={20} color={activeFilter ? colors.common.checkbox.bgChecked : colors.common.text1} />
                         </TouchableDebounce>
                     </View>
                 </View>
