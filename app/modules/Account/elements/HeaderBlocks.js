@@ -320,7 +320,7 @@ class HeaderBlocks extends React.Component {
         return (
             <TouchableDebounce style={{ paddingLeft: 23 }} onPress={() => this.accountSetting(currencyCode)} hitSlop={HIT_SLOP}>
                 <View style={{ paddingVertical: 12 }}>
-                    <IconMaterial name='tune-variant' size={20} color={colors.common.text1} />
+                    <IconMaterial name='tune' size={20} color={colors.common.text1} />
                 </View>
             </TouchableDebounce>
         )

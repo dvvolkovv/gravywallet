@@ -177,7 +177,7 @@ class SynchronizedBlock extends React.PureComponent {
                             onPress={this.handleFilter}
                             hitSlop={HIT_SLOP}
                         >
-                            <MaterialCommunityIcon name='tune-variant' size={20} color={activeFilter ? colors.common.checkbox.bgChecked : colors.common.text1} />
+                            <MaterialCommunityIcon name='filter-variant' size={20} color={activeFilter ? colors.common.checkbox.bgChecked : colors.common.text1} />
                         </TouchableDebounce>
                     </View>
                 </View>
