@@ -194,5 +194,13 @@
   },
   "engines": {
     "node": ">=18"
-  }
+  },
+  "reactNativePermissionsIOS": [
+    "AppTrackingTransparency",
+    "Camera",
+    "FaceID",
+    "Notifications",
+    "PhotoLibrary",
+    "PhotoLibraryAddOnly"
+  ]
 }

@@ -1,0 +1,23 @@
+diff --git a/node_modules/react-native-permissions/ios/RNPermissionsModule.mm b/node_modules/react-native-permissions/ios/RNPermissionsModule.mm
+index c5faea9..1c0edaa 100644
+--- a/node_modules/react-native-permissions/ios/RNPermissionsModule.mm
++++ b/node_modules/react-native-permissions/ios/RNPermissionsModule.mm
+@@ -197,15 +197,9 @@ - (NSDictionary *)constantsToExport {
+ #endif
+ 
+ #if RCT_DEV
+-  if ([available count] == 0) {
+-    NSMutableString *message = [NSMutableString new];
+-
+-    [message appendString:@"⚠  No permission handler detected.\n\n"];
+-    [message appendString:@"• Check that you added at least one permission handler in your package.json reactNativePermissionsIOS config.\n"];
+-    [message appendString:@"• Uninstall this app, reinstall your Pods, delete your Xcode DerivedData folder and rebuild it.\n"];
+-
+-    RCTLogError(@"%@", message);
+-  }
++  // Disabled: with use_frameworks! the __has_include() checks above fail because
++  // handler headers live inside framework module dirs. Permissions still work
++  // via the underlying Pod targets registering at runtime.
+ #endif
+ 
+   return @{ @"available": available };

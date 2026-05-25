@@ -10,7 +10,20 @@ import * as payment from '@mymonero/mymonero-paymentid-utils'
 import * as parser from './vendor/ResponseParser'
 import BlocksoftCryptoLog from '@crypto/common/BlocksoftCryptoLog'
 
-const MyMoneroCoreBridgeRN = require('react-native-mymonero-core/src/index')
+// Lazily load — native MyMoneroCore module isn't linked on iOS (see
+// react-native.config.js). Top-level require crashes during CppBridge construction
+// when NativeModules.MyMoneroCore is null. Defer until first XMR action.
+let MyMoneroCoreBridgeRN = null
+const loadBridge = () => {
+    if (MyMoneroCoreBridgeRN) return MyMoneroCoreBridgeRN
+    try {
+        MyMoneroCoreBridgeRN = require('react-native-mymonero-core/src/index')
+    } catch (e) {
+        BlocksoftCryptoLog.log('MoneroUtilsParser load failed: ' + e.message)
+        MyMoneroCoreBridgeRN = null
+    }
+    return MyMoneroCoreBridgeRN
+}
 const MY_MONERO = { core: false }
 
 export default {
@@ -24,7 +37,10 @@ export default {
         if (MY_MONERO.core) {
             return MY_MONERO.core
         }
-        MY_MONERO.core = MyMoneroCoreBridgeRN
+        MY_MONERO.core = loadBridge()
+        if (!MY_MONERO.core) {
+            throw new Error('Monero core unavailable on this platform')
+        }
         MY_MONERO.core.generate_key_image = async (txPublicKey, privateViewKey, publicSpendKey, privateSpendKey, outputIndex) => {
             if (!txPublicKey || !privateViewKey || !publicSpendKey || !privateSpendKey) {
                 throw new Error('no keys 1')

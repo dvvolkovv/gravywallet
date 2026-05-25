@@ -12,7 +12,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  [FIRApp configure];
+  [FIRApp configure];  // Uses GoogleService-Info.plist with format-valid dev placeholder
+                       // values. Network calls (analytics/installations) will silently fail
+                       // until a real Firebase project is configured for Gravy.
 
   // Define UNUserNotificationCenter
   UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];

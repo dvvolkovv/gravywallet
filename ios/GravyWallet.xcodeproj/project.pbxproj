@@ -16,10 +16,9 @@
 		20CC116364DF40A6A2430F75 /* SFUIDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30BD867DDA064FBCB2A81A37 /* SFUIDisplay-Regular.ttf */; };
 		39419CC6145A41BD94FF788A /* SFUIDisplay-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BF6EB254D054373ABE3C75F /* SFUIDisplay-Semibold.ttf */; };
 		3E96E23C6A9546689F1BC9E2 /* OCRA-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 911B65481F9044B58E1377CF /* OCRA-Regular.ttf */; };
-		476A2015ACE6EAD4C928045C /* libPods-trusteeWallet-trusteeWalletTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0469D590F423081DC973EC1 /* libPods-trusteeWallet-trusteeWalletTests.a */; };
 		692FB8F6C1644CC89A1D92B0 /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 964F20511AB74CF7964E4ECD /* icomoon.ttf */; };
+		6D9F68A4FE091EF55F972C72 /* Pods_trusteeWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C534C2241F92E50576DC0D /* Pods_trusteeWallet.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		82F82EAA2B43FC40E2EA5D48 /* libPods-trusteeWallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBD1167A92E914D27862BDD /* libPods-trusteeWallet.a */; };
 		A0AD513605034C729B6A5CD7 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59E2614FE75B4B0BAE115F41 /* Montserrat-Medium.ttf */; };
 		A2D6AB5B14074D5991358967 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CDF966875B545BFB91FF49C /* Roboto-Black.ttf */; };
 		B55ECBF8290B48F782FC29A2 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36F1B2E8232E46C8B056D9D4 /* Montserrat-Bold.ttf */; };
@@ -27,6 +26,7 @@
 		B74139EF5D8F47E8A92DE4E2 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAC6888C2AD34FD5BD6025B2 /* Montserrat-Light.ttf */; };
 		BC4D069413F34786A57525D6 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14B740E203994B649F9AD6F4 /* Montserrat-SemiBold.ttf */; };
 		C4A0C34D4292479A85D7A42C /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A0B3CC3E3EA452DB79FB128 /* Montserrat-Thin.ttf */; };
+		CB52995C53861D555354744A /* Pods_trusteeWallet_trusteeWalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7109EB88AE7F535C35F8CF5 /* Pods_trusteeWallet_trusteeWalletTests.framework */; };
 		E46C390687DA4AF1A56DA066 /* SFUIDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98F0824EFA0F4E16A6E0B25F /* SFUIDisplay-Bold.ttf */; };
 		F39434002BADD49200EA4D51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39433FF2BADD49200EA4D51 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -53,6 +53,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = trusteeWallet/main.m; sourceTree = "<group>"; };
 		14B740E203994B649F9AD6F4 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBold.ttf"; path = "../assets/fonts/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		1A0B3CC3E3EA452DB79FB128 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Thin.ttf"; path = "../assets/fonts/Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		29C534C2241F92E50576DC0D /* Pods_trusteeWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trusteeWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BD867DDA064FBCB2A81A37 /* SFUIDisplay-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIDisplay-Regular.ttf"; path = "../assets/fonts/SFUIDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		36F1B2E8232E46C8B056D9D4 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		3B1713B621774442A97BC53C /* CREDC___.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = CREDC___.ttf; path = ../assets/fonts/CREDC___.ttf; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		5709B34CF0A7D63546082F79 /* Pods-trusteeWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trusteeWallet.release.xcconfig"; path = "Target Support Files/Pods-trusteeWallet/Pods-trusteeWallet.release.xcconfig"; sourceTree = "<group>"; };
 		59E2614FE75B4B0BAE115F41 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../assets/fonts/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-trusteeWallet-trusteeWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trusteeWallet-trusteeWalletTests.debug.xcconfig"; path = "Target Support Files/Pods-trusteeWallet-trusteeWalletTests/Pods-trusteeWallet-trusteeWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5CBD1167A92E914D27862BDD /* libPods-trusteeWallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-trusteeWallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		779FACE92E114CEFB7F6128E /* OCR A Std Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OCR A Std Regular.ttf"; path = "../assets/fonts/OCR A Std Regular.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = trusteeWallet/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		894DDAD4C4174B67BE5DF1EC /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
@@ -70,12 +70,12 @@
 		964F20511AB74CF7964E4ECD /* icomoon.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = icomoon.ttf; path = ../assets/fonts/icomoon.ttf; sourceTree = "<group>"; };
 		98F0824EFA0F4E16A6E0B25F /* SFUIDisplay-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIDisplay-Bold.ttf"; path = "../assets/fonts/SFUIDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		9CDF966875B545BFB91FF49C /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
-		A0469D590F423081DC973EC1 /* libPods-trusteeWallet-trusteeWalletTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-trusteeWallet-trusteeWalletTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC6888C2AD34FD5BD6025B2 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Light.ttf"; path = "../assets/fonts/Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F3459C842BDC07D60025CD05 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = GravyWallet/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		F39433FF2BADD49200EA4D51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F39434022BB5B6EC00EA4D51 /* trusteeWallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = trusteeWallet.entitlements; path = trusteeWallet/trusteeWallet.entitlements; sourceTree = "<group>"; };
+		F7109EB88AE7F535C35F8CF5 /* Pods_trusteeWallet_trusteeWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trusteeWallet_trusteeWalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				476A2015ACE6EAD4C928045C /* libPods-trusteeWallet-trusteeWalletTests.a in Frameworks */,
+				CB52995C53861D555354744A /* Pods_trusteeWallet_trusteeWalletTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82F82EAA2B43FC40E2EA5D48 /* libPods-trusteeWallet.a in Frameworks */,
+				6D9F68A4FE091EF55F972C72 /* Pods_trusteeWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,8 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5CBD1167A92E914D27862BDD /* libPods-trusteeWallet.a */,
-				A0469D590F423081DC973EC1 /* libPods-trusteeWallet-trusteeWalletTests.a */,
+				29C534C2241F92E50576DC0D /* Pods_trusteeWallet.framework */,
+				F7109EB88AE7F535C35F8CF5 /* Pods_trusteeWallet_trusteeWalletTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

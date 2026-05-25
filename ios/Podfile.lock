@@ -1073,8 +1073,6 @@ PODS:
     - React-Core
   - react-native-image-resizer (1.4.5):
     - React-Core
-  - react-native-mymonero-core (0.3.1):
-    - React-Core
   - react-native-netinfo (11.3.1):
     - React-Core
   - react-native-pager-view (6.3.1):
@@ -1402,7 +1400,6 @@ DEPENDENCIES:
   - react-native-fast-crypto (from `../node_modules/react-native-fast-crypto`)
   - react-native-image-picker (from `../node_modules/react-native-image-picker`)
   - react-native-image-resizer (from `../node_modules/react-native-image-resizer`)
-  - react-native-mymonero-core (from `../node_modules/react-native-mymonero-core`)
   - "react-native-netinfo (from `../node_modules/@react-native-community/netinfo`)"
   - react-native-pager-view (from `../node_modules/react-native-pager-view`)
   - react-native-restart (from `../node_modules/react-native-restart`)
@@ -1573,8 +1570,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-image-picker"
   react-native-image-resizer:
     :path: "../node_modules/react-native-image-resizer"
-  react-native-mymonero-core:
-    :path: "../node_modules/react-native-mymonero-core"
   react-native-netinfo:
     :path: "../node_modules/@react-native-community/netinfo"
   react-native-pager-view:
@@ -1732,32 +1727,31 @@ SPEC CHECKSUMS:
   RCTTypeSafety: 678e344fb976ff98343ca61dc62e151f3a042292
   React: e296bcebb489deaad87326067204eb74145934ab
   React-callinvoker: d0b7015973fa6ccb592bb0363f6bc2164238ab8c
-  React-Codegen: a89833d9b3ccafeb8cc7b2e87800aad8903b8990
+  React-Codegen: 85d92b5c230a36aae8f4e33a36e0a3868afbf32f
   React-Core: 3c065b603637303cd150644b633e0b8980d258f1
   React-CoreModules: 069bdb1c6013215afe85fb9627569dc1f21b8f44
   React-cxxreact: a1ec4ab2c051f62ab752b86acb3ab1498d46d82f
-  React-debug: d444db402065cca460d9c5b072caab802a04f729
-  React-Fabric: 30d61b17f5ec61b8f69e074d359a942c8edb48ed
-  React-FabricImage: 52209c0a7828893788d89b342657747fff852e52
-  React-graphics: 2d3bb1c23fb71e7dc0f25e1c13f9cd8a0f331166
+  React-debug: f9c7f6877e2dad21448d12fe48d8192e0df918b4
+  React-Fabric: 8de1229b641ad30b7ed95ff65366096a8b9cd1af
+  React-FabricImage: 25f2af65256b43e2cce6226e81ebb01c7ac462c0
+  React-graphics: a6972da987434afb6466a5e737b48e0fdc89ac34
   React-hermes: 2b8dd8fa2082a7e219cd329ee1c5eec18b82b206
-  React-ImageManager: 37eeded59dc2bac8d76c9f78f421980c972215b6
-  React-jserrorhandler: 1ddd1e3e596bd3846ad81d2aa7ca3946c15b9ed0
+  React-ImageManager: 01382570d648ecc2ca380c48e9c7c300f34b0a0a
+  React-jserrorhandler: ac5f640370915806125eacefa428625217924d8e
   React-jsi: 84c4e48ed0a563c9e103514ea9572bac486a61a1
   React-jsiexecutor: 6206f71ec0fe8e0d5db321a7f7d91922d310fee9
   React-jsinspector: 85583ef014ce53d731a98c66a0e24496f7a83066
   React-logger: 55764cd993880c6f887505854581c9faf68feff2
-  React-Mapbuffer: 15dfcfeb4428d8799cce75e7fe85b18b706029e0
+  React-Mapbuffer: 0cc88310e28eba4f864893221b238ea3bdfd8a43
   react-native-background-timer: 4638ae3bee00320753647900b21260b10587b6f7
-  react-native-blur: 6944bf4ce4a12af7a4021aec5864bcbddd6269a3
+  react-native-blur: 9a5c1340fcedc9d9be1fad5afb308051663f7e8b
   react-native-cookies: d648ab7025833b977c0b19e142503034f5f29411
   react-native-date-picker: 5ddb34db03afc527bc07777952c2ac72fa384411
   react-native-fast-crypto: 6b448866f5310cf203714a21147ef67f735bea8e
-  react-native-image-picker: 16b817ac5df3f835fc9d187349e7d9ce8836a260
+  react-native-image-picker: 5b79bd2e4a022fe8a2565db4ab9359696af85d55
   react-native-image-resizer: 17b2d73c030975b6543395c7e7368bc8774c5efa
-  react-native-mymonero-core: d22cfc9d1107daf6aab7c1631071c760509c068c
   react-native-netinfo: 2e3c27627db7d49ba412bfab25834e679db41e21
-  react-native-pager-view: e51e09d0f8229b199b24a7b1a7122aae76bd577d
+  react-native-pager-view: 2ec8660ffa93773558da55ffe5cf43885c7e7f9f
   react-native-restart: 0bc732f4461709022a742bb29bcccf6bbc5b4863
   react-native-safe-area-context: 8c70551c8688cd584a53487aa1b9361e991a3b4a
   react-native-splash-screen: 95994222cc95c236bd3cdc59fe45ed5f27969594
@@ -1765,26 +1759,26 @@ SPEC CHECKSUMS:
   react-native-version-check: c7b4269cd18781b51009fa4b5a8ad9ab5131ce6f
   react-native-video: 2aad0d963bf3952bd9ebb2f53fab799338e8e202
   react-native-webview: ec195db71ebf55705d7b46a7da5f1b1746bb7efd
-  React-nativeconfig: b4d4e9901d4cabb57be63053fd2aa6086eb3c85f
-  React-NativeModulesApple: 541d64309a3037060cc416db5c8a63ee5884048e
+  React-nativeconfig: e700ac3ec3d66329076bd2c2787a204411815d43
+  React-NativeModulesApple: eca91542f6d31ae0a929ad5eada8c6175f49bc0d
   React-perflogger: 5f49905de275bac07ac7ea7f575a70611fa988f2
   React-RCTActionSheet: 37edf35aeb8e4f30e76c82aab61f12d1b75c04ec
   React-RCTAnimation: b49b2e3beffa553e2120ef0767ce99b4591893c4
   React-RCTAppDelegate: 95e826d48b372cb5c90947c72667f3ce86e77009
   React-RCTBlob: c88cdc50aa116f53353b82d2d394d49e1de47ad3
-  React-RCTFabric: b6f90f1bfd1f601e66f4deeb9b21e217c6fb6b69
+  React-RCTFabric: 2cab327b01775d14d1a3d39d34b334c74b1bd484
   React-RCTImage: 665aaf80481423b2e896dcc67afa72e5993a2a4c
   React-RCTLinking: a9321777212cf50b396983b4f3b3190fbfe53aa8
   React-RCTNetwork: 4726e738c784679902d8425bd02c78f7e69d2ebf
   React-RCTSettings: 4831390d89a911f10f154d5c440f6312f8aebe3d
   React-RCTText: 7b1451059ba1d2c40f057c58211864c5e81e90a4
   React-RCTVibration: d23654befc1d9eda8b69b0e9d4127800abcae76f
-  React-rendererdebug: ec22f2e3e545bd0ad15abc6e5710595ccfe45c94
-  React-rncore: b0a8e1d14dabb7115c7a5b4ec8b9b74d1727d382
+  React-rendererdebug: c9117b65219d9cd0c1c5fddf62babbeb6ba207d6
+  React-rncore: a975147d80ac4d920f85184b9147339514dc9ec7
   React-runtimeexecutor: bb328dbe2865f3a550df0240df8e2d8c3aaa4c57
-  React-runtimescheduler: a01dfb7ca980edebcc7d2d289ca900dea5d7e28b
-  React-utils: 288c9cb9a73bb150c273c84df7c2f8546f28e23f
-  ReactCommon: 2e5492a3e3a8e72d635c266405e49d12627e5bf0
+  React-runtimescheduler: 6373bc46f03b0e95454d939dea3f7048318fcedf
+  React-utils: 37c85694c95f61e9f860eab782d9d0e62384cd05
+  ReactCommon: 60bf23971eac7945401582de39e0171d32155d07
   ReactNativeExceptionHandler: a23922ca00122b050ae9412f960061791c232c47
   RecaptchaInterop: 7d1a4a01a6b2cb1610a47ef3f85f0c411434cb21
   RNBlocksoftRandom: 980ac469e0baed12c59eb7c3b22193e35d26cc04
@@ -1792,31 +1786,31 @@ SPEC CHECKSUMS:
   RNCClipboard: 4598dae0fe33e2aa130d9d213e2007be78310266
   RNCPushNotificationIOS: 6c4ca3388c7434e4a662b92e4dfeeee858e6f440
   RNDeviceInfo: ff9a4419a29d343280ea19a2e381bac25cb0e146
-  RNFBAnalytics: db14373920ac0770ed76af5b14548e931c3c7942
-  RNFBApp: 4aa408bf583e7f93d42cf3a3c6fa2138aba23502
-  RNFBAuth: 62445b330d329b94279908ac882ddb6ea84d148c
-  RNFBCrashlytics: 674d2e1013323b7f6f7b4cc80e2756a7b1c2190f
-  RNFBDatabase: 24bb633393f7496f746ad48a600af19b8ff84b6a
-  RNFBDynamicLinks: 20770499b62299a9c04fb35570fe6bf1fc937862
-  RNFBMessaging: fbc6e9e5e3ab123825bc294acc4f674b2ba84a2b
+  RNFBAnalytics: 0d269d5188d7b29bce4d2093a737c68e51eaff82
+  RNFBApp: 29acb95a67fe8b77fd6b51b73cfcc5fdaa60e6bd
+  RNFBAuth: e3a6d46201fef9a0c3c545b7101a950f0d01be41
+  RNFBCrashlytics: 2e659ad5d0b4601f4b64c74f8ab2263b6a625526
+  RNFBDatabase: 98d7d26b43d68253b765ca1312333d65876bd4fc
+  RNFBDynamicLinks: e5868b50e75f31c8ec787e7ce395304014d913be
+  RNFBMessaging: 0121fcc3e28c59082690d2c7275c5580c65cb819
   RNFS: 89de7d7f4c0f6bafa05343c578f61118c8282ed8
-  RNGestureHandler: e262eeb792addec0705a116456f210ee1be0dcd0
+  RNGestureHandler: 64056e4e49e826c00a2e1c2eb6e1b45084c1d096
   RNKeychain: bbe2f6d5cc008920324acb49ef86ccc03d3b38e4
   RNLocalize: 080849cb8a824d9f759b8a5ae00c8321d46dbed0
   RNNotifee: 8768d065bf1e2f9f8f347b4bd79147431c7eacd6
   RNPermissions: 9c398ee6c48ae73c3f8bc48f199e3bf0463ac7f7
-  RNReanimated: 1ef68beaad1a8f4cb2a9098d0d3c374a2e3fd51a
-  RNScreens: 321d9067091167f6255474ea0567f4b4ac09958a
+  RNReanimated: c3671055d336644ed6cffd24516a6e4e5bbd1446
+  RNScreens: f909fc25abf23d74d5363e222ae196e7924e41be
   RNShare: 51bbcdb91c6456dccf3999f8f85d952a6d6b55a8
   RNSVG: 0e7deccab0678200815104223aadd5ca734dd41d
   RNVectorIcons: 0e5d5028fb2fc7e5485f4d25dc04bce708f374a2
-  RNZipArchive: 2b0d34cfe303447f5b55ae5658ec62f1ebce4ab5
+  RNZipArchive: 8581cd6074a95f87f78dd5b98edfb377b700b139
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   TouchID: 6d9af299007675845fe9e23bd2701f4354613366
   VisionCamera: dce2e6522271c417fed0604ba2a6796e3beba5d9
   Yoga: 805bf71192903b20fc14babe48080582fee65a80
 
-PODFILE CHECKSUM: ef5a127ca08ff1969a506a0e4c6ddf97db65ff40
+PODFILE CHECKSUM: d64bb95d40c45f4012cfb0a52a3a6430e33f6593
 
 COCOAPODS: 1.16.2

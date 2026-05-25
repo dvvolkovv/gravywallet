@@ -8,42 +8,29 @@ require Pod::Executable.execute_command('node', ['-p',
 platform :ios, '13.4'
 prepare_react_native_project!
 
-# If you are using a `react-native-flipper` your iOS build will fail when `NO_FLIPPER=1` is set.
-# because `react-native-flipper` depends on (FlipperKit,...) that will be excluded
-#
-# To fix this you can also exclude `react-native-flipper` using a `react-native.config.js`
-# ```js
-# module.exports = {
-#   dependencies: {
-#     ...(process.env.NO_FLIPPER ? { 'react-native-flipper': { platforms: { ios: null } } } : {}),
-# ```
-flipper_config = ENV['NO_FLIPPER'] == "1" ? FlipperConfiguration.disabled : FlipperConfiguration.enabled
+# Required so RNFB ships Firebase as static frameworks under use_frameworks!
+$RNFirebaseAsStaticFramework = true
 
 target 'trusteeWallet' do
-  use_modular_headers!
+  use_frameworks! :linkage => :static
   config = use_native_modules!
 
   source 'https://cdn.cocoapods.org/'
 
   use_react_native!(
     :path => config[:reactNativePath],
-    # Enables Flipper.
-    #
-    # Note that if you have use_frameworks! enabled, Flipper will not work and
-    # you should disable the next line.
-    # :flipper_configuration => flipper_config,
-    # An absolute path to your application root.
+    # Flipper doesn't support use_frameworks! — keep disabled.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
- 
-  pod 'Permission-FaceID', :path => "../node_modules/react-native-permissions/ios/FaceID"
-  pod 'Permission-Camera', :path => "../node_modules/react-native-permissions/ios/Camera"
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons', :modular_headers => true
 
-  pod 'lottie-react-native', :path => '../node_modules/lottie-react-native'
+  pod 'Permission-FaceID', :path => "../node_modules/react-native-permissions/ios/FaceID", :modular_headers => true
+  pod 'Permission-Camera', :path => "../node_modules/react-native-permissions/ios/Camera", :modular_headers => true
 
-  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'lottie-react-native', :path => '../node_modules/lottie-react-native', :modular_headers => true
+
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec', :modular_headers => true
 
   target 'trusteeWalletTests' do
     inherit! :complete
@@ -51,7 +38,6 @@ target 'trusteeWallet' do
   end
 
   post_install do |installer|
-    # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
     react_native_post_install(
       installer,
       config[:reactNativePath],
@@ -60,9 +46,27 @@ target 'trusteeWallet' do
 
     installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|
-        config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = "arm64"
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.4'
+      end
+
+      # RNZipArchive's podspec injects a malformed -GCC_PREPROCESSOR_DEFINITIONS flag
+      # (missing space) that newer clang rejects as "unsupported option '-G'". Strip
+      # it and recreate the defines via the proper build setting.
+      if target.name == 'RNZipArchive'
+        target.build_configurations.each do |config|
+          flags = Array(config.build_settings['OTHER_CFLAGS'])
+          config.build_settings['OTHER_CFLAGS'] = flags.reject { |f| f.to_s.start_with?('-G') }
+          config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] = [
+            '$(inherited)',
+            'HAVE_INTTYPES_H=1',
+            'HAVE_PKCRYPT=1',
+            'HAVE_STDINT_H=1',
+            'HAVE_WZAES=1',
+            'HAVE_ZLIB=1',
+            'MZ_ZIP_NO_SIGNING=1'
+          ]
+        end
       end
     end
-
   end
 end
