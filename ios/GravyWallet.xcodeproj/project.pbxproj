@@ -514,6 +514,9 @@
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-gravyWallet-gravyWalletTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -541,6 +544,9 @@
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-gravyWallet-gravyWalletTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = gravyWalletTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
