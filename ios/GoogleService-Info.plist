@@ -5,7 +5,7 @@
 	<key>API_KEY</key>
 	<string>AIzaSyDevPlaceholderForGravyWallet_devv</string>
 	<key>BUNDLE_ID</key>
-	<string>app.gravywallet</string>
+	<string>com.gravywallet.app</string>
 	<key>CLIENT_ID</key>
 	<string>1000000000000-devplaceholder.apps.googleusercontent.com</string>
 	<key>DATABASE_URL</key>

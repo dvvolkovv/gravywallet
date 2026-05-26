@@ -1,0 +1,116 @@
+default_platform(:ios)
+
+# Mirror of trientes-ios release pipeline, adapted for the React Native
+# gravywallet workspace. Distribution cert for Trust Change (MU88T5DUW2)
+# must already be present in the login keychain.
+platform :ios do
+  desc "Archive Release with manual signing and upload to TestFlight via ASC API key."
+  lane :release_testflight do
+    # SSH-launched lanes run in a non-GUI security session, so the login
+    # keychain stays locked even though it has `no-timeout`. Without this
+    # codesign hits `errSecInternalComponent` because the private key ACL
+    # can't be unlocked without a UI prompt. Password lives outside the
+    # repo at ~/.config/trientes-ios/keychain.pw (chmod 600).
+    keychain_pw_file = File.expand_path("~/.config/trientes-ios/keychain.pw")
+    unless File.exist?(keychain_pw_file)
+      UI.user_error!("Keychain password file missing at #{keychain_pw_file}.")
+    end
+    unlock_keychain(
+      path: File.expand_path("~/Library/Keychains/login.keychain-db"),
+      password: File.read(keychain_pw_file).strip,
+      add_to_search_list: false
+    )
+
+    api_key = app_store_connect_api_key(
+      key_id: ENV.fetch("ASC_KEY_ID"),
+      issuer_id: ENV.fetch("ASC_ISSUER_ID"),
+      key_filepath: ENV.fetch("ASC_KEY_PATH"),
+      in_house: false
+    )
+
+    # Create the App Store Connect record if it doesn't exist. The Bundle
+    # ID is already registered in the Developer Portal — produce is a no-op
+    # if the ASC app already exists.
+    begin
+      produce(
+        api_key: api_key,
+        app_identifier: "com.gravywallet.app",
+        app_name: "Gravy Wallet",
+        language: "English",
+        app_version: "1.0",
+        sku: "com.gravywallet.app",
+        skip_itc: false,
+        skip_devcenter: true
+      )
+    rescue => e
+      UI.important("produce skipped or non-fatal: #{e.message}")
+    end
+
+    repo_root = File.expand_path("..", __dir__)
+    workspace = File.join(repo_root, "GravyWallet.xcworkspace")
+    xcodeproj = File.join(repo_root, "GravyWallet.xcodeproj")
+
+    latest = latest_testflight_build_number(
+      api_key: api_key,
+      app_identifier: "com.gravywallet.app",
+      initial_build_number: 0
+    )
+    next_build = latest + 1
+    UI.message("Setting CFBundleVersion to #{next_build} (Apple had #{latest})")
+    increment_build_number(
+      xcodeproj: xcodeproj,
+      build_number: next_build.to_s
+    )
+
+    # NOTE: get_certificates intentionally skipped — Apple's 2-cert limit
+    # blocks creation if you already have 2 distribution certs. The Trust
+    # Change Apple Distribution cert must be in the login Keychain manually.
+    get_provisioning_profile(
+      api_key: api_key,
+      app_identifier: "com.gravywallet.app",
+      readonly: false
+    )
+    profile_name = lane_context[SharedValues::SIGH_NAME]
+
+    build_app(
+      workspace: workspace,
+      scheme: "gravywallet",
+      configuration: "Release",
+      export_method: "app-store",
+      clean: false,
+      output_directory: File.join(repo_root, "build"),
+      output_name: "GravyWallet.ipa",
+      xcargs: "PROVISIONING_PROFILE_SPECIFIER='#{profile_name}' CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM=MU88T5DUW2",
+      export_options: {
+        provisioningProfiles: {
+          "com.gravywallet.app" => profile_name
+        },
+        signingStyle: "manual",
+        teamID: "MU88T5DUW2",
+        # Hermes ships a pre-built XCFramework without dSYM, so symbol upload
+        # would fail. Skip — Apple still accepts the build for TestFlight.
+        uploadSymbols: false,
+        uploadBitcode: false,
+        compileBitcode: false,
+        stripSwiftSymbols: true
+      }
+    )
+
+    upload_attempts = 0
+    begin
+      upload_attempts += 1
+      upload_to_testflight(
+        api_key: api_key,
+        skip_waiting_for_build_processing: true,
+        changelog: "Automated build via mac-ios pipeline (#{Time.now.utc.iso8601})"
+      )
+    rescue => e
+      raise if upload_attempts >= 2
+      UI.important("upload_to_testflight failed (attempt #{upload_attempts}): #{e.message}. Retrying once in 10s.")
+      sleep 10
+      retry
+    end
+
+    UI.success("release_testflight ✅ — uploaded; processing in App Store Connect")
+  end
+end
