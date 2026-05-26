@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* trusteeWalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* trusteeWalletTests.m */; };
+		00E356F31AD99517003FC87E /* gravyWalletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* gravyWalletTests.m */; };
 		0A685781DDE44211BD11D792 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 894DDAD4C4174B67BE5DF1EC /* Montserrat-Regular.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -17,7 +17,7 @@
 		39419CC6145A41BD94FF788A /* SFUIDisplay-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BF6EB254D054373ABE3C75F /* SFUIDisplay-Semibold.ttf */; };
 		3E96E23C6A9546689F1BC9E2 /* OCRA-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 911B65481F9044B58E1377CF /* OCRA-Regular.ttf */; };
 		692FB8F6C1644CC89A1D92B0 /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 964F20511AB74CF7964E4ECD /* icomoon.ttf */; };
-		6D9F68A4FE091EF55F972C72 /* Pods_trusteeWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C534C2241F92E50576DC0D /* Pods_trusteeWallet.framework */; };
+		6D9F68A4FE091EF55F972C72 /* Pods_gravyWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C534C2241F92E50576DC0D /* Pods_gravyWallet.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A0AD513605034C729B6A5CD7 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59E2614FE75B4B0BAE115F41 /* Montserrat-Medium.ttf */; };
 		A2D6AB5B14074D5991358967 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CDF966875B545BFB91FF49C /* Roboto-Black.ttf */; };
@@ -26,7 +26,7 @@
 		B74139EF5D8F47E8A92DE4E2 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAC6888C2AD34FD5BD6025B2 /* Montserrat-Light.ttf */; };
 		BC4D069413F34786A57525D6 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14B740E203994B649F9AD6F4 /* Montserrat-SemiBold.ttf */; };
 		C4A0C34D4292479A85D7A42C /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A0B3CC3E3EA452DB79FB128 /* Montserrat-Thin.ttf */; };
-		CB52995C53861D555354744A /* Pods_trusteeWallet_trusteeWalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7109EB88AE7F535C35F8CF5 /* Pods_trusteeWallet_trusteeWalletTests.framework */; };
+		CB52995C53861D555354744A /* Pods_gravyWallet_gravyWalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7109EB88AE7F535C35F8CF5 /* Pods_gravyWallet_gravyWalletTests.framework */; };
 		E46C390687DA4AF1A56DA066 /* SFUIDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98F0824EFA0F4E16A6E0B25F /* SFUIDisplay-Bold.ttf */; };
 		F39434002BADD49200EA4D51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39433FF2BADD49200EA4D51 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -37,35 +37,35 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = trusteeWallet;
+			remoteInfo = gravyWallet;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* trusteeWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = trusteeWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* gravyWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gravyWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* trusteeWalletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = trusteeWalletTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* trusteeWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trusteeWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = trusteeWallet/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = trusteeWallet/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = trusteeWallet/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = trusteeWallet/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = trusteeWallet/main.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* gravyWalletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gravyWalletTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* gravyWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gravyWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = gravyWallet/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = gravyWallet/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = gravyWallet/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = gravyWallet/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = gravyWallet/main.m; sourceTree = "<group>"; };
 		14B740E203994B649F9AD6F4 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBold.ttf"; path = "../assets/fonts/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		1A0B3CC3E3EA452DB79FB128 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Thin.ttf"; path = "../assets/fonts/Montserrat-Thin.ttf"; sourceTree = "<group>"; };
-		29C534C2241F92E50576DC0D /* Pods_trusteeWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trusteeWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C534C2241F92E50576DC0D /* Pods_gravyWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gravyWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BD867DDA064FBCB2A81A37 /* SFUIDisplay-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIDisplay-Regular.ttf"; path = "../assets/fonts/SFUIDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		36F1B2E8232E46C8B056D9D4 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		3B1713B621774442A97BC53C /* CREDC___.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = CREDC___.ttf; path = ../assets/fonts/CREDC___.ttf; sourceTree = "<group>"; };
-		3B4392A12AC88292D35C810B /* Pods-trusteeWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trusteeWallet.debug.xcconfig"; path = "Target Support Files/Pods-trusteeWallet/Pods-trusteeWallet.debug.xcconfig"; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-gravyWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gravyWallet.debug.xcconfig"; path = "Target Support Files/Pods-gravyWallet/Pods-gravyWallet.debug.xcconfig"; sourceTree = "<group>"; };
 		3BF6EB254D054373ABE3C75F /* SFUIDisplay-Semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIDisplay-Semibold.ttf"; path = "../assets/fonts/SFUIDisplay-Semibold.ttf"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-trusteeWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trusteeWallet.release.xcconfig"; path = "Target Support Files/Pods-trusteeWallet/Pods-trusteeWallet.release.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-gravyWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gravyWallet.release.xcconfig"; path = "Target Support Files/Pods-gravyWallet/Pods-gravyWallet.release.xcconfig"; sourceTree = "<group>"; };
 		59E2614FE75B4B0BAE115F41 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../assets/fonts/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-trusteeWallet-trusteeWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trusteeWallet-trusteeWalletTests.debug.xcconfig"; path = "Target Support Files/Pods-trusteeWallet-trusteeWalletTests/Pods-trusteeWallet-trusteeWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-gravyWallet-gravyWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gravyWallet-gravyWalletTests.debug.xcconfig"; path = "Target Support Files/Pods-gravyWallet-gravyWalletTests/Pods-gravyWallet-gravyWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
 		779FACE92E114CEFB7F6128E /* OCR A Std Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OCR A Std Regular.ttf"; path = "../assets/fonts/OCR A Std Regular.ttf"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = trusteeWallet/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = gravyWallet/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		894DDAD4C4174B67BE5DF1EC /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-trusteeWallet-trusteeWalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trusteeWallet-trusteeWalletTests.release.xcconfig"; path = "Target Support Files/Pods-trusteeWallet-trusteeWalletTests/Pods-trusteeWallet-trusteeWalletTests.release.xcconfig"; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-gravyWallet-gravyWalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gravyWallet-gravyWalletTests.release.xcconfig"; path = "Target Support Files/Pods-gravyWallet-gravyWalletTests/Pods-gravyWallet-gravyWalletTests.release.xcconfig"; sourceTree = "<group>"; };
 		911B65481F9044B58E1377CF /* OCRA-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OCRA-Regular.ttf"; path = "../assets/fonts/OCRA-Regular.ttf"; sourceTree = "<group>"; };
 		964F20511AB74CF7964E4ECD /* icomoon.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = icomoon.ttf; path = ../assets/fonts/icomoon.ttf; sourceTree = "<group>"; };
 		98F0824EFA0F4E16A6E0B25F /* SFUIDisplay-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIDisplay-Bold.ttf"; path = "../assets/fonts/SFUIDisplay-Bold.ttf"; sourceTree = "<group>"; };
@@ -74,8 +74,8 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F3459C842BDC07D60025CD05 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = GravyWallet/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		F39433FF2BADD49200EA4D51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		F39434022BB5B6EC00EA4D51 /* trusteeWallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = trusteeWallet.entitlements; path = trusteeWallet/trusteeWallet.entitlements; sourceTree = "<group>"; };
-		F7109EB88AE7F535C35F8CF5 /* Pods_trusteeWallet_trusteeWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trusteeWallet_trusteeWalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F39434022BB5B6EC00EA4D51 /* gravyWallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = gravyWallet.entitlements; path = gravyWallet/gravyWallet.entitlements; sourceTree = "<group>"; };
+		F7109EB88AE7F535C35F8CF5 /* Pods_gravyWallet_gravyWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gravyWallet_gravyWalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB52995C53861D555354744A /* Pods_trusteeWallet_trusteeWalletTests.framework in Frameworks */,
+				CB52995C53861D555354744A /* Pods_gravyWallet_gravyWalletTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,20 +91,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D9F68A4FE091EF55F972C72 /* Pods_trusteeWallet.framework in Frameworks */,
+				6D9F68A4FE091EF55F972C72 /* Pods_gravyWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* trusteeWalletTests */ = {
+		00E356EF1AD99517003FC87E /* gravyWalletTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* trusteeWalletTests.m */,
+				00E356F21AD99517003FC87E /* gravyWalletTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = trusteeWalletTests;
+			path = gravyWalletTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -136,7 +136,7 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* trusteeWallet */ = {
+		13B07FAE1A68108700A75B9A /* gravyWallet */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -147,17 +147,17 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				F3459C842BDC07D60025CD05 /* PrivacyInfo.xcprivacy */,
-				F39434022BB5B6EC00EA4D51 /* trusteeWallet.entitlements */,
+				F39434022BB5B6EC00EA4D51 /* gravyWallet.entitlements */,
 			);
-			name = trusteeWallet;
+			name = gravyWallet;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				29C534C2241F92E50576DC0D /* Pods_trusteeWallet.framework */,
-				F7109EB88AE7F535C35F8CF5 /* Pods_trusteeWallet_trusteeWalletTests.framework */,
+				29C534C2241F92E50576DC0D /* Pods_gravyWallet.framework */,
+				F7109EB88AE7F535C35F8CF5 /* Pods_gravyWallet_gravyWalletTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -172,9 +172,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* trusteeWallet */,
+				13B07FAE1A68108700A75B9A /* gravyWallet */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* trusteeWalletTests */,
+				00E356EF1AD99517003FC87E /* gravyWalletTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -188,8 +188,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* trusteeWallet.app */,
-				00E356EE1AD99517003FC87E /* trusteeWalletTests.xctest */,
+				13B07F961A680F5B00A75B9A /* gravyWallet.app */,
+				00E356EE1AD99517003FC87E /* gravyWalletTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,10 +197,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-trusteeWallet.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-trusteeWallet.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-trusteeWallet-trusteeWalletTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-trusteeWallet-trusteeWalletTests.release.xcconfig */,
+				3B4392A12AC88292D35C810B /* Pods-gravyWallet.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-gravyWallet.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-gravyWallet-gravyWalletTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-gravyWallet-gravyWalletTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -208,9 +208,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* trusteeWalletTests */ = {
+		00E356ED1AD99517003FC87E /* gravyWalletTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "trusteeWalletTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "gravyWalletTests" */;
 			buildPhases = (
 				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -224,14 +224,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = trusteeWalletTests;
-			productName = trusteeWalletTests;
-			productReference = 00E356EE1AD99517003FC87E /* trusteeWalletTests.xctest */;
+			name = gravyWalletTests;
+			productName = gravyWalletTests;
+			productReference = 00E356EE1AD99517003FC87E /* gravyWalletTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* trusteeWallet */ = {
+		13B07F861A680F5B00A75B9A /* gravyWallet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "trusteeWallet" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "gravyWallet" */;
 			buildPhases = (
 				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -247,9 +247,9 @@
 			);
 			dependencies = (
 			);
-			name = trusteeWallet;
-			productName = trusteeWallet;
-			productReference = 13B07F961A680F5B00A75B9A /* trusteeWallet.app */;
+			name = gravyWallet;
+			productName = gravyWallet;
+			productReference = 13B07F961A680F5B00A75B9A /* gravyWallet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -282,8 +282,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* trusteeWallet */,
-				00E356ED1AD99517003FC87E /* trusteeWalletTests */,
+				13B07F861A680F5B00A75B9A /* gravyWallet */,
+				00E356ED1AD99517003FC87E /* gravyWalletTests */,
 			);
 		};
 /* End PBXProject section */
@@ -345,15 +345,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-trusteeWallet/Pods-trusteeWallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-gravyWallet/Pods-gravyWallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-trusteeWallet/Pods-trusteeWallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-gravyWallet/Pods-gravyWallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-trusteeWallet/Pods-trusteeWallet-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gravyWallet/Pods-gravyWallet-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		0776174A8ECF01A7F4698BF7 /* [CP-User] [RNFB] Core Configuration */ = {
@@ -384,7 +384,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-trusteeWallet-trusteeWalletTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-gravyWallet-gravyWalletTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -406,7 +406,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-trusteeWallet-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-gravyWallet-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -419,15 +419,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-trusteeWallet-trusteeWalletTests/Pods-trusteeWallet-trusteeWalletTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-gravyWallet-gravyWalletTests/Pods-gravyWallet-gravyWalletTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-trusteeWallet-trusteeWalletTests/Pods-trusteeWallet-trusteeWalletTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-gravyWallet-gravyWalletTests/Pods-gravyWallet-gravyWalletTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-trusteeWallet-trusteeWalletTests/Pods-trusteeWallet-trusteeWalletTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gravyWallet-gravyWalletTests/Pods-gravyWallet-gravyWalletTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
@@ -436,15 +436,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-trusteeWallet/Pods-trusteeWallet-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-gravyWallet/Pods-gravyWallet-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-trusteeWallet/Pods-trusteeWallet-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-gravyWallet/Pods-gravyWallet-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-trusteeWallet/Pods-trusteeWallet-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gravyWallet/Pods-gravyWallet-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EAFC1533E0DB225D7243614B /* [CP-User] [RNFB] Crashlytics Configuration */ = {
@@ -467,15 +467,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-trusteeWallet-trusteeWalletTests/Pods-trusteeWallet-trusteeWalletTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-gravyWallet-gravyWalletTests/Pods-gravyWallet-gravyWalletTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-trusteeWallet-trusteeWalletTests/Pods-trusteeWallet-trusteeWalletTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-gravyWallet-gravyWalletTests/Pods-gravyWallet-gravyWalletTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-trusteeWallet-trusteeWalletTests/Pods-trusteeWallet-trusteeWalletTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gravyWallet-gravyWalletTests/Pods-gravyWallet-gravyWalletTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -485,7 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* trusteeWalletTests.m in Sources */,
+				00E356F31AD99517003FC87E /* gravyWalletTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,7 +503,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* trusteeWallet */;
+			target = 13B07F861A680F5B00A75B9A /* gravyWallet */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -511,14 +511,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-trusteeWallet-trusteeWalletTests.debug.xcconfig */;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-gravyWallet-gravyWalletTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = trusteeWalletTests/Info.plist;
+				INFOPLIST_FILE = gravyWalletTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -532,17 +532,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.gravywallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/trusteeWallet.app/trusteeWallet";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gravyWallet.app/gravyWallet";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-trusteeWallet-trusteeWalletTests.release.xcconfig */;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-gravyWallet-gravyWalletTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = trusteeWalletTests/Info.plist;
+				INFOPLIST_FILE = gravyWalletTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -556,24 +556,24 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.gravywallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/trusteeWallet.app/trusteeWallet";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gravyWallet.app/gravyWallet";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-trusteeWallet.debug.xcconfig */;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-gravyWallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = trusteeWallet/trusteeWallet.entitlements;
+				CODE_SIGN_ENTITLEMENTS = gravyWallet/gravyWallet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 431;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 435;
+				DEVELOPMENT_TEAM = MU88T5DUW2;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = MU88T5DUW2;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
-				INFOPLIST_FILE = trusteeWallet/Info.plist;
+				INFOPLIST_FILE = gravyWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -585,7 +585,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.gravywallet;
-				PRODUCT_NAME = trusteeWallet;
+				PRODUCT_NAME = gravyWallet;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -596,17 +596,17 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-trusteeWallet.release.xcconfig */;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-gravyWallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = trusteeWallet/trusteeWallet.entitlements;
+				CODE_SIGN_ENTITLEMENTS = gravyWallet/gravyWallet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 431;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 435;
+				DEVELOPMENT_TEAM = MU88T5DUW2;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = MU88T5DUW2;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
-				INFOPLIST_FILE = trusteeWallet/Info.plist;
+				INFOPLIST_FILE = gravyWallet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -618,7 +618,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.gravywallet;
-				PRODUCT_NAME = trusteeWallet;
+				PRODUCT_NAME = gravyWallet;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "";
 				SWIFT_VERSION = 5.0;
@@ -745,7 +745,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -802,7 +801,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "trusteeWalletTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "gravyWalletTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -811,7 +810,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "trusteeWallet" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "gravyWallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,

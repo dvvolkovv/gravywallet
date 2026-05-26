@@ -11,7 +11,7 @@ prepare_react_native_project!
 # Required so RNFB ships Firebase as static frameworks under use_frameworks!
 $RNFirebaseAsStaticFramework = true
 
-target 'trusteeWallet' do
+target 'gravyWallet' do
   use_frameworks! :linkage => :static
   config = use_native_modules!
 
@@ -32,7 +32,7 @@ target 'trusteeWallet' do
 
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec', :modular_headers => true
 
-  target 'trusteeWalletTests' do
+  target 'gravyWalletTests' do
     inherit! :complete
     # Pods for testing
   end
