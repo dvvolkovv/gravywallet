@@ -130,12 +130,12 @@ android {
     productFlavors {
         prod {
             dimension "default"
-            applicationId "com.gravywallet.app"
+            applicationId "com.gravywallet.android"
             resValue "string", "app_name", "Gravy Wallet"
         }
         dev {
             dimension "default"
-            applicationId "com.gravywallet.app.dev"
+            applicationId "com.gravywallet.android.dev"
             resValue "string", "app_name", "Gravy Wallet Dev"
         }
     }

@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:000000000000:android:0000000000000001",
         "android_client_info": {
-          "package_name": "com.gravywallet.app"
+          "package_name": "com.gravywallet.android"
         }
       },
       "oauth_client": [
@@ -39,7 +39,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:000000000000:android:0000000000000002",
         "android_client_info": {
-          "package_name": "com.gravywallet.app.dev"
+          "package_name": "com.gravywallet.android.dev"
         }
       },
       "oauth_client": [
