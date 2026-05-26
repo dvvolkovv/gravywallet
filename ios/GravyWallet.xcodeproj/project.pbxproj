@@ -607,7 +607,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = gravyWallet/gravyWallet.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 435;
 				DEVELOPMENT_TEAM = MU88T5DUW2;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = MU88T5DUW2;
@@ -625,8 +627,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gravywallet.ios;
 				PRODUCT_NAME = gravyWallet;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = "com.gravywallet.ios AppStore";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.gravywallet.ios AppStore";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
