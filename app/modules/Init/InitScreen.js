@@ -158,7 +158,7 @@ class InitScreen extends React.PureComponent {
                     style={this.state.videoReady
                         ? StyleSheet.absoluteFill
                         : { width: 0, height: 0 }}
-                    resizeMode='cover'
+                    resizeMode='contain'
                     muted
                     paused={false}
                     repeat
