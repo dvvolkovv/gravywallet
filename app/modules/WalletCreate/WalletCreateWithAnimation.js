@@ -25,7 +25,7 @@ import { SettingsKeystore } from '@app/appstores/Stores/Settings/SettingsKeystor
 
 import { palette } from '@app/theme/designSystem'
 
-import gravyVideo from '@assets/videos/gravy.mp4'
+import gravyVideo from '@assets/videos/gravy_portrait.mp4'
 
 const MNEMONIC_PHRASE_LENGTH = 128
 const MIN_VIDEO_MS = 5100

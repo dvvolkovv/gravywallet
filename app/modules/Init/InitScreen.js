@@ -33,7 +33,7 @@ import { getLockScreenStatus } from '@app/appstores/Stores/Settings/selectors'
 import { ThemeContext } from '@app/theme/ThemeProvider'
 import { LockScreenFlowTypes, setLockScreenConfig } from '@app/appstores/Stores/LockScreen/LockScreenActions'
 
-import gravyVideo from '@assets/videos/gravy.mp4'
+import gravyVideo from '@assets/videos/gravy_portrait.mp4'
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window')
 const VIDEO_SIZE = Math.min(SCREEN_WIDTH, SCREEN_HEIGHT)
@@ -158,7 +158,7 @@ class InitScreen extends React.PureComponent {
                     style={this.state.videoReady
                         ? StyleSheet.absoluteFill
                         : { width: 0, height: 0 }}
-                    resizeMode='contain'
+                    resizeMode='cover'
                     muted
                     paused={false}
                     repeat
