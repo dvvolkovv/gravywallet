@@ -121,19 +121,17 @@ class WalletCreateWithAnimation extends PureComponent {
         return (
             <SafeAreaView style={styles.container}>
                 <StatusBar barStyle='dark-content' backgroundColor={palette.bg} />
-                <View style={styles.center}>
-                    <Video
-                        source={gravyVideo}
-                        style={{ width: VIDEO_SIZE, height: VIDEO_SIZE }}
-                        resizeMode='contain'
-                        muted
-                        repeat={false}
-                        playInBackground={false}
-                        playWhenInactive={false}
-                        ignoreSilentSwitch='ignore'
-                        onEnd={this.onVideoEnd}
-                    />
-                </View>
+                <Video
+                    source={gravyVideo}
+                    style={StyleSheet.absoluteFill}
+                    resizeMode='cover'
+                    muted
+                    repeat={false}
+                    playInBackground={false}
+                    playWhenInactive={false}
+                    ignoreSilentSwitch='ignore'
+                    onEnd={this.onVideoEnd}
+                />
             </SafeAreaView>
         )
     }

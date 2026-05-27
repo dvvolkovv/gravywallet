@@ -143,32 +143,30 @@ class InitScreen extends React.PureComponent {
                     </Text>
                 </View>
 
-                <View style={styles.loaderContainer}>
-                    {!this.state.videoReady && (
-                        <View style={styles.fallbackLoader}>
-                            <Image
-                                source={require('@assets/images/logo.png')}
-                                style={{ width: 96, height: 96, marginBottom: 24 }}
-                                resizeMode='contain'
-                            />
-                            <ActivityIndicator size='large' color='#6B4EFF' />
-                        </View>
-                    )}
-                    <Video
-                        source={gravyVideo}
-                        style={this.state.videoReady
-                            ? { width: VIDEO_SIZE, height: VIDEO_SIZE }
-                            : { width: 0, height: 0 }}
-                        resizeMode='contain'
-                        muted
-                        paused={false}
-                        repeat
-                        playInBackground={false}
-                        playWhenInactive={false}
-                        ignoreSilentSwitch='ignore'
-                        onLoad={() => this.setState({ videoReady: true })}
-                    />
-                </View>
+                {!this.state.videoReady && (
+                    <View style={styles.loaderContainer}>
+                        <Image
+                            source={require('@assets/images/logo.png')}
+                            style={{ width: 96, height: 96, marginBottom: 24 }}
+                            resizeMode='contain'
+                        />
+                        <ActivityIndicator size='large' color='#6B4EFF' />
+                    </View>
+                )}
+                <Video
+                    source={gravyVideo}
+                    style={this.state.videoReady
+                        ? StyleSheet.absoluteFill
+                        : { width: 0, height: 0 }}
+                    resizeMode='cover'
+                    muted
+                    paused={false}
+                    repeat
+                    playInBackground={false}
+                    playWhenInactive={false}
+                    ignoreSilentSwitch='ignore'
+                    onLoad={() => this.setState({ videoReady: true })}
+                />
 
                 <View style={{ flex: 1, justifyContent: 'flex-end', marginBottom: GRID_SIZE * 5 }}>
                     <View>
