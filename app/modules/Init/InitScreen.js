@@ -4,7 +4,7 @@
  */
 import React from 'react'
 import { connect } from 'react-redux'
-import { View, Text, TouchableOpacity, Linking, StyleSheet, StatusBar, Dimensions } from 'react-native'
+import { View, Text, TouchableOpacity, Linking, StyleSheet, StatusBar, Image, ActivityIndicator, Dimensions } from 'react-native'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons'
 import Video from 'react-native-video'
@@ -36,12 +36,13 @@ import { LockScreenFlowTypes, setLockScreenConfig } from '@app/appstores/Stores/
 import gravyVideo from '@assets/videos/gravy.mp4'
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window')
-const VIDEO_SIZE = Math.min(SCREEN_WIDTH * 0.6, 300)
+const VIDEO_SIZE = Math.min(SCREEN_WIDTH, 480)
 
 class InitScreen extends React.PureComponent {
 
     state = {
-        status: ''
+        status: '',
+        videoReady: false
     }
 
     componentDidMount() {
@@ -143,15 +144,29 @@ class InitScreen extends React.PureComponent {
                 </View>
 
                 <View style={styles.loaderContainer}>
+                    {!this.state.videoReady && (
+                        <View style={styles.fallbackLoader}>
+                            <Image
+                                source={require('@assets/images/logo.png')}
+                                style={{ width: 96, height: 96, marginBottom: 24 }}
+                                resizeMode='contain'
+                            />
+                            <ActivityIndicator size='large' color='#6B4EFF' />
+                        </View>
+                    )}
                     <Video
                         source={gravyVideo}
-                        style={{ width: VIDEO_SIZE, height: VIDEO_SIZE }}
+                        style={this.state.videoReady
+                            ? { width: VIDEO_SIZE, height: VIDEO_SIZE }
+                            : { width: 0, height: 0 }}
                         resizeMode='contain'
                         muted
+                        paused={false}
                         repeat
                         playInBackground={false}
                         playWhenInactive={false}
                         ignoreSilentSwitch='ignore'
+                        onLoad={() => this.setState({ videoReady: true })}
                     />
                 </View>
 
@@ -222,6 +237,10 @@ const styles = StyleSheet.create({
     },
     loaderContainer: {
         flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    fallbackLoader: {
         alignItems: 'center',
         justifyContent: 'center'
     },
