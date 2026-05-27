@@ -118,7 +118,7 @@
 	<key>FacebookCodelessDebugLogEnabled</key>
 	<true/>
 	<key>FacebookDisplayName</key>
-	<string>Trustee Wallet</string>
+	<string>Gravy Wallet</string>
 	<key>FirebaseDynamicLinksCustomDomains</key>
 	<array>
 		<string>https://trusteeglobal.com/link</string>

@@ -9,12 +9,12 @@ const transformer = {
     })
 }
 
-const trusteeConfig = {
+const gravyConfig = {
     resolver: {
         sourceExts: ['cjs', 'jsx', 'js', 'ts', 'tsx', 'json'],
         extraNodeModules: require('node-libs-browser'),
-        requireCycleIgnorePatterns: [/(^|\/|\\)node_modules($|\/|\\)/, /@trustee/]
+        requireCycleIgnorePatterns: [/(^|\/|\\)node_modules($|\/|\\)/]
     },
     transformer
 }
-module.exports = mergeConfig(getDefaultConfig(__dirname), trusteeConfig)
+module.exports = mergeConfig(getDefaultConfig(__dirname), gravyConfig)

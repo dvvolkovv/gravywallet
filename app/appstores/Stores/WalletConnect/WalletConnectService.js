@@ -122,8 +122,8 @@ const walletConnectService = {
             core,
             metadata: {
                 description: 'Gravy Wallet',
-                url: 'https://trustee.deals',
-                icons: ['https://trusteeglobal.com/wp-content/uploads/2023/03/icon_wallet.png'],
+                url: 'https://gravywallet.com',
+                icons: ['https://gravywallet.com/icon.png'],
                 name: 'Gravy Wallet'
             }
         })

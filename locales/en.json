@@ -1,5 +1,5 @@
 {
-  "appName": "Trustee",
+  "appName": "Gravy",
   "homeScreen": {
     "balance": "Balance",
     "unconfirmed": "Unconfirmed",
@@ -82,7 +82,7 @@
       "signTyped": "WalletConnect Sign Typed Request",
       "signTypedText": "Do you want to sign message ",
       "session": "WalletConnect connection",
-      "sessionText": "Are you sure you want to connect your Trustee wallet to ",
+      "sessionText": "Are you sure you want to connect your Gravy wallet to ",
       "notificationTitle": "Attention!",
       "notificationText": "Make sure {name} is safe. By interacting with this service you provide access to your funds!",
       "disconnect": "Disconnect",
@@ -139,7 +139,7 @@
       "supportSubtitle": "Reach us by email or website",
       "lock": "Lock screen",
       "bio": "Biometrics",
-      "about": "About Trustee",
+      "about": "About Gravy",
       "lang": "Language",
       "copyLogs": "Copy logs",
       "cashback": {
@@ -275,7 +275,7 @@
     },
     "about": {
       "title": "About",
-      "version": "Trustee version: {version}",
+      "version": "Gravy version: {version}",
       "privacy": "Privacy policy",
       "terms": "Terms of use",
       "feedback": "Feedback",
@@ -513,7 +513,7 @@
         }
       },
       "transactionHash": "Transaction hash: ",
-      "cashbackLink": "I’m using Trustee Wallet! Here is my personal link ",
+      "cashbackLink": "I’m using Gravy Wallet! Here is my personal link ",
       "website": "Website: ",
       "self": "This transaction was send to your own address",
       "order": "To order",
@@ -664,7 +664,7 @@
       "totalMinerFee": "Total network fee",
       "customNonce": "Custom nonce",
       "nonce": "Nonce",
-      "trusteeInfo": "Trustee does not charge any fees for cryptocurrency transactions",
+      "trusteeInfo": "Gravy does not charge any fees for cryptocurrency transactions",
       "send": "Send",
       "build": "Build",
       "sending": "Sending",
@@ -737,7 +737,7 @@
     "titleShow": "Recovery phrase",
     "infoScreen": {
       "continue": "Continue",
-      "text1": "TRUSTEE WALLET never sends your recovery phrase anywhere. Therefore, in case of device loss or failure, the only way to restore access to your funds is to use a recovery phrase.",
+      "text1": "GRAVY WALLET never sends your recovery phrase anywhere. Therefore, in case of device loss or failure, the only way to restore access to your funds is to use a recovery phrase.",
       "checkbox1": "I understand that I am fully responsible for the safety of the Recovery Phrase and in the event of its loss or transfer to third parties, I will lose my funds without the possibility of recovery.",
       "checkbox2": "I understand that I must view my recovery phrase in private with no cameras and eyes around",
       "text2": "Be very careful with recovery phrase - anyone with it can access or spend your funds. Please, do not tell the recovery phrase under any circumstances!"
@@ -1061,7 +1061,7 @@
       "unsubscribe": "Unsubscribe"
     },
     "marketModal": {
-      "title": "Welcome to Trustee Smart Swap",
+      "title": "Welcome to Gravy Swap",
       "description": "Note that some information, for example, payment details, will be transferred to exchange providers to carry out the exchange operation.",
       "notShowAgain": "Don't show again",
       "continue": "Continue"

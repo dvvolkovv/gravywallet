@@ -1,5 +1,5 @@
 {
-  "appName": "Trustee",
+  "appName": "Gravy",
   "homeScreen": {
     "balance": "Solde",
     "unconfirmed": "Non-Confirmé",
@@ -82,7 +82,7 @@
       "signTyped": "Demande de type de signe WalletConnect",
       "signTypedText": "Voulez-vous signer le message",
       "session": "Connexion WalletConnect",
-      "sessionText": "Êtes-vous sûr de vouloir connecter votre portefeuille Trustee à",
+      "sessionText": "Êtes-vous sûr de vouloir connecter votre portefeuille Gravy à",
       "notificationTitle": "Attention!",
       "notificationText": "Assurez-vous que {name} est en sécurité. En interagissant avec ce service, vous donnez accès à vos fonds!",
       "disconnect": "Déconnecter",
@@ -138,7 +138,7 @@
       "supportSubtitle": "Contactez-nous par e-mail ou via notre site",
       "lock": "Écran verrouillé",
       "bio": "Biometrique",
-      "about": "À propos de Trustee",
+      "about": "À propos de Gravy",
       "lang": "Language",
       "copyLogs": "Copie des journaux",
       "cashback": {
@@ -274,7 +274,7 @@
     },
     "about": {
       "title": "A Propos",
-      "version": "Trustee version: {version}",
+      "version": "Gravy version: {version}",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation",
       "feedback": "Feedback",
@@ -512,7 +512,7 @@
         }
       },
       "transactionHash": "Transaction hash: ",
-      "cashbackLink": "J'utilise Trustee Wallet ! Voici mon lien personnel",
+      "cashbackLink": "J'utilise Gravy Wallet ! Voici mon lien personnel",
       "website": "Website: ",
       "self": "Cette transaction a été envoyée à votre adresse",
       "order": "Commander",
@@ -663,7 +663,7 @@
       "totalMinerFee": "Frais de réseau totaux",
       "customNonce": "Custom nonce",
       "nonce": "Nonce",
-      "trusteeInfo": "Trustee ne facture aucun frais pour les transactions de crypto-monnaie",
+      "trusteeInfo": "Gravy ne facture aucun frais pour les transactions de crypto-monnaie",
       "send": "Envoyer",
       "build": "Construire",
       "sending": "Envoi en cours",
@@ -736,7 +736,7 @@
     "titleShow": "Phrase de récupération",
     "infoScreen": {
       "continue": "Continuer",
-      "text1": "TRUSTEE WALLET ne dispose pas de votre phrase de récuperation. Par conséquent, en cas de perte ou de panne de l'appareil, l'unique moyen de restaurer l'accès à vos fonds est d'utiliser une phrase de récupération.",
+      "text1": "GRAVY WALLET ne dispose pas de votre phrase de récuperation. Par conséquent, en cas de perte ou de panne de l'appareil, l'unique moyen de restaurer l'accès à vos fonds est d'utiliser une phrase de récupération.",
       "checkbox1": "Je comprends que si je perds cette phrase, je n'aurai pas accès à mes soldes. Et je comprends qu'en passant cette phrase à n'importe qui, je vais perdre mon argent",
       "checkbox2": "Je comprends que je dois voir ma phrase de récupération en privé sans caméra, ni yeux autour",
       "text2": "Soyez très prudent avec la phrase de récupération - n'importe qui avec elle peut accéder ou dépenser vos fonds. S'il vous plaît, ne donnez en aucun cas la phrase de récupération!"
@@ -1060,7 +1060,7 @@
       "unsubscribe": "Se désabonner"
     },
     "marketModal": {
-      "title": "Bienvenue sur Trustee Smart Swap",
+      "title": "Bienvenue sur Gravy Swap",
       "description": "Notez que certaines informations, par exemple les détails de paiement, seront transférées aux prestataires d'échange pour effectuer l'opération d'échange.",
       "notShowAgain": "Ne plus afficher",
       "continue": "Continuer"

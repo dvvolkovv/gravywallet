@@ -35,8 +35,8 @@ import { LockScreenFlowTypes, setLockScreenConfig } from '@app/appstores/Stores/
 
 import gravyVideo from '@assets/videos/gravy.mp4'
 
-const { width: SCREEN_WIDTH } = Dimensions.get('window')
-const VIDEO_SIZE = Math.min(SCREEN_WIDTH, 480)
+const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window')
+const VIDEO_SIZE = Math.min(SCREEN_WIDTH, SCREEN_HEIGHT)
 
 class InitScreen extends React.PureComponent {
 
