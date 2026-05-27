@@ -4,9 +4,10 @@
  */
 import React from 'react'
 import { connect } from 'react-redux'
-import { View, Text, TouchableOpacity, Linking, StyleSheet, StatusBar, Image, ActivityIndicator } from 'react-native'
+import { View, Text, TouchableOpacity, Linking, StyleSheet, StatusBar, Dimensions } from 'react-native'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons'
+import Video from 'react-native-video'
 
 import NavStore from '@app/components/navigation/NavStore'
 
@@ -31,6 +32,11 @@ import { getInit, getInitError } from '@app/appstores/Stores/Init/selectors'
 import { getLockScreenStatus } from '@app/appstores/Stores/Settings/selectors'
 import { ThemeContext } from '@app/theme/ThemeProvider'
 import { LockScreenFlowTypes, setLockScreenConfig } from '@app/appstores/Stores/LockScreen/LockScreenActions'
+
+import gravyVideo from '@assets/videos/gravy.mp4'
+
+const { width: SCREEN_WIDTH } = Dimensions.get('window')
+const VIDEO_SIZE = Math.min(SCREEN_WIDTH * 0.6, 300)
 
 class InitScreen extends React.PureComponent {
 
@@ -137,12 +143,16 @@ class InitScreen extends React.PureComponent {
                 </View>
 
                 <View style={styles.loaderContainer}>
-                    <Image
-                        source={require('@assets/images/logo.png')}
-                        style={{ width: 96, height: 96, marginBottom: 24 }}
+                    <Video
+                        source={gravyVideo}
+                        style={{ width: VIDEO_SIZE, height: VIDEO_SIZE }}
                         resizeMode='contain'
+                        muted
+                        repeat
+                        playInBackground={false}
+                        playWhenInactive={false}
+                        ignoreSilentSwitch='ignore'
                     />
-                    <ActivityIndicator size='large' color='#6B4EFF' />
                 </View>
 
                 <View style={{ flex: 1, justifyContent: 'flex-end', marginBottom: GRID_SIZE * 5 }}>
