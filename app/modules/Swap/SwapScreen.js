@@ -14,7 +14,8 @@ import {
     ScrollView,
     TextInput,
     TouchableOpacity,
-    ActivityIndicator
+    ActivityIndicator,
+    Linking
 } from 'react-native'
 import MaterialCommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons'
 
@@ -24,6 +25,7 @@ import Toast from '@app/services/UI/Toast/Toast'
 
 import { palette, typography, spacing, radius, shadow } from '@app/theme/designSystem'
 import LiFiApi from '@app/services/LiFi/LiFiApi'
+import { executeSwap } from '@app/services/LiFi/LiFiExecutor'
 
 const SUPPORTED_CHAINS = [
     { code: 'ETH', name: 'Ethereum' },
@@ -106,7 +108,9 @@ class SwapScreen extends PureComponent {
         amount: '',
         loading: false,
         quote: null,
-        error: null
+        error: null,
+        executing: null,   // null | 'approve' | 'swap' | 'done'
+        txHash: null
     }
 
     handleBack = () => NavStore.goBack()
@@ -180,8 +184,39 @@ class SwapScreen extends PureComponent {
         }
     }
 
-    handleExecute = () => {
-        Toast.setMessage('Execution coming in next release — Phase 2.5').show()
+    handleExecute = async () => {
+        const { quote, fromChainCode } = this.state
+        const { fromAccount } = this.props
+        if (!quote || !fromAccount) return
+
+        this.setState({ executing: 'approve', error: null, txHash: null })
+        try {
+            const { txHash } = await executeSwap({
+                quote,
+                fromChainCode,
+                fromAccount,
+                onStep: (step) => this.setState({ executing: step })
+            })
+            this.setState({ executing: 'done', txHash })
+            Toast.setMessage('Swap broadcast — view in explorer').show()
+        } catch (e) {
+            this.setState({ executing: null, error: e.message })
+        }
+    }
+
+    explorerUrlFor = (txHash) => {
+        const map = {
+            ETH: 'https://etherscan.io/tx/',
+            BASE: 'https://basescan.org/tx/',
+            ARB: 'https://arbiscan.io/tx/',
+            OPTIMISM: 'https://optimistic.etherscan.io/tx/',
+            MATIC: 'https://polygonscan.com/tx/',
+            AVAX: 'https://snowtrace.io/tx/',
+            LINEA: 'https://lineascan.build/tx/',
+            SCROLL: 'https://scrollscan.com/tx/',
+            BNB_SMART: 'https://bscscan.com/tx/'
+        }
+        return (map[this.state.fromChainCode] || '') + txHash
     }
 
     renderTokenRow(side) {
@@ -277,7 +312,15 @@ class SwapScreen extends PureComponent {
 
                     {error ? <Text style={styles.error}>{error}</Text> : null}
 
-                    {!quote ? (
+                    {this.state.executing === 'done' && this.state.txHash ? (
+                        <View style={styles.successBox}>
+                            <Text style={styles.successTitle}>Swap broadcast</Text>
+                            <Text style={styles.successHash} numberOfLines={1}>{this.state.txHash}</Text>
+                            <TouchableOpacity onPress={() => Linking.openURL(this.explorerUrlFor(this.state.txHash))}>
+                                <Text style={styles.successLink}>View on explorer →</Text>
+                            </TouchableOpacity>
+                        </View>
+                    ) : !quote ? (
                         <TouchableOpacity
                             style={[styles.cta, loading && styles.ctaDisabled]}
                             onPress={loading ? null : this.fetchQuote}
@@ -290,13 +333,26 @@ class SwapScreen extends PureComponent {
                             )}
                         </TouchableOpacity>
                     ) : (
-                        <TouchableOpacity style={styles.cta} onPress={this.handleExecute}>
-                            <Text style={styles.ctaLabel}>Swap</Text>
+                        <TouchableOpacity
+                            style={[styles.cta, this.state.executing && styles.ctaDisabled]}
+                            onPress={this.state.executing ? null : this.handleExecute}
+                            disabled={!!this.state.executing}
+                        >
+                            {this.state.executing ? (
+                                <View style={{ flexDirection: 'row', alignItems: 'center', gap: spacing.sm }}>
+                                    <ActivityIndicator color={palette.textInverse} />
+                                    <Text style={styles.ctaLabel}>
+                                        {this.state.executing === 'approve' ? 'Approving…' : 'Swapping…'}
+                                    </Text>
+                                </View>
+                            ) : (
+                                <Text style={styles.ctaLabel}>Swap</Text>
+                            )}
                         </TouchableOpacity>
                     )}
 
                     <Text style={styles.disclaimer}>
-                        Quotes powered by LiFi. Execution in next release.
+                        Quotes & routing by LiFi. Always verify before signing.
                     </Text>
 
                 </ScrollView>
@@ -409,6 +465,26 @@ const styles = StyleSheet.create({
         color: palette.text3,
         textAlign: 'center',
         marginTop: spacing.lg
+    },
+    successBox: {
+        marginTop: spacing.xl,
+        backgroundColor: palette.primarySubtle,
+        borderRadius: radius.lg,
+        padding: spacing.lg,
+        gap: spacing.sm
+    },
+    successTitle: {
+        ...typography.heading,
+        color: palette.text1
+    },
+    successHash: {
+        ...typography.caption,
+        color: palette.text2
+    },
+    successLink: {
+        ...typography.bodyMedium,
+        color: palette.primary,
+        marginTop: spacing.sm
     }
 })
 
@@ -419,7 +495,13 @@ const mapStateToProps = (state) => {
         ? accountList[selectedWallet]['ETH']
         : null
     return {
-        ethAddress: ethAccount?.address || null
+        ethAddress: ethAccount?.address || null,
+        fromAccount: ethAccount ? {
+            address: ethAccount.address,
+            derivationPath: ethAccount.derivationPath,
+            walletHash: selectedWallet,
+            currencyCode: 'ETH'
+        } : null
     }
 }
 
