@@ -734,6 +734,36 @@ export default {
             darkColor: '#E63E3A'
         }
     },
+    'BASE': {
+        colors: {
+            mainColor: '#0052FF',
+            darkColor: '#0046DB'
+        }
+    },
+    'ARB': {
+        colors: {
+            mainColor: '#28A0F0',
+            darkColor: '#1E7BBC'
+        }
+    },
+    'AVAX': {
+        colors: {
+            mainColor: '#E84142',
+            darkColor: '#C42F30'
+        }
+    },
+    'LINEA': {
+        colors: {
+            mainColor: '#121212',
+            darkColor: '#000000'
+        }
+    },
+    'SCROLL': {
+        colors: {
+            mainColor: '#FFEEDA',
+            darkColor: '#BFA98A'
+        }
+    },
     'TON': {
         colors: {
             mainColor: '#47A9F1',

@@ -60,6 +60,26 @@ export const Web3Injected = (type) => {
         MAIN_CURRENCY_CODE = 'FTM'
         WEB3_LINK = BlocksoftExternalSettings.getStatic('FTM_SERVER')
         MAIN_CHAIN_ID = 250
+    } else if (type === 8453 || type === 'BASE' || type === '0x2105') {
+        MAIN_CURRENCY_CODE = 'BASE'
+        WEB3_LINK = BlocksoftExternalSettings.getStatic('BASE_SERVER')
+        MAIN_CHAIN_ID = 8453
+    } else if (type === 42161 || type === 'ARB' || type === 'ARBITRUM' || type === '0xA4B1') {
+        MAIN_CURRENCY_CODE = 'ARB'
+        WEB3_LINK = BlocksoftExternalSettings.getStatic('ARB_SERVER')
+        MAIN_CHAIN_ID = 42161
+    } else if (type === 43114 || type === 'AVAX' || type === '0xA86A') {
+        MAIN_CURRENCY_CODE = 'AVAX'
+        WEB3_LINK = BlocksoftExternalSettings.getStatic('AVAX_SERVER')
+        MAIN_CHAIN_ID = 43114
+    } else if (type === 59144 || type === 'LINEA' || type === '0xE708') {
+        MAIN_CURRENCY_CODE = 'LINEA'
+        WEB3_LINK = BlocksoftExternalSettings.getStatic('LINEA_SERVER')
+        MAIN_CHAIN_ID = 59144
+    } else if (type === 534352 || type === 'SCROLL' || type === '0x82750') {
+        MAIN_CURRENCY_CODE = 'SCROLL'
+        WEB3_LINK = BlocksoftExternalSettings.getStatic('SCROLL_SERVER')
+        MAIN_CHAIN_ID = 534352
     } else if (type === 16718 || type === 'AMB' || type === '0x414E') {
         MAIN_CURRENCY_CODE = 'AMB'
         WEB3_LINK = BlocksoftExternalSettings.getStatic('AMB_SERVER')

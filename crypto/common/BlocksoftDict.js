@@ -7,10 +7,11 @@ import CoinBlocksoftDict from '@crypto/assets/coinBlocksoftDict.json'
 const { RNFastCrypto } = NativeModules
 
 const VisibleCodes = [
-    'CASHBACK', 'BTC', 'ETH', 'TRX', 'TRX_USDT' // add code here to show on start screen
+    'CASHBACK', 'BTC', 'ETH', 'TRX', 'TRX_USDT', 'BASE', 'ARB', 'OPTIMISM', 'MATIC', 'AVAX' // add code here to show on start screen
 ]
 const Codes = [
-    'CASHBACK', 'NFT', 'BTC', 'ETH', 'USDT', 'LTC', 'ETH_USDT', 'TRX', 'TRX_USDT', 'BNB', 'BNB_SMART', 'MATIC', 'ETH_TRUE_USD', 'ETH_BNB', 'ETH_USDC', 'ETH_PAX', 'ETH_DAI', 'FIO'   // add code here for autocreation the wallet address with the currency
+    'CASHBACK', 'NFT', 'BTC', 'ETH', 'USDT', 'LTC', 'ETH_USDT', 'TRX', 'TRX_USDT', 'BNB', 'BNB_SMART', 'MATIC', 'ETH_TRUE_USD', 'ETH_BNB', 'ETH_USDC', 'ETH_PAX', 'ETH_DAI', 'FIO',
+    'BASE', 'ARB', 'OPTIMISM', 'AVAX', 'LINEA', 'SCROLL'   // add code here for autocreation the wallet address with the currency
 ]
 const Currencies = CoinBlocksoftDict
 

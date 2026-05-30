@@ -225,6 +225,76 @@ export default class EthBasic {
             this._mainTokenType = 'FTM_ERC_20'
             this._mainTokenBlockchain = 'Fantom Network'
             this._mainChainId = 250
+        } else if (settings.currencyCode === 'BASE' || (typeof settings.tokenBlockchain !== 'undefined' && settings.tokenBlockchain === 'BASE')) {
+
+            this._etherscanSuffix = ''
+            this._etherscanApiPath = `https://api.basescan.org/api?module=account&sort=desc&action=txlist&apikey=YourApiKeyToken`
+            this._etherscanApiPathInternal = `https://api.basescan.org/api?module=account&sort=desc&action=txlistinternal&apikey=YourApiKeyToken`
+            this._etherscanApiPathForFee = `https://api.basescan.org/api?module=proxy&action=eth_gasPrice&apikey=YourApiKeyToken`
+
+            this._trezorServer = false
+            this._trezorServerCode = false
+
+            this._mainCurrencyCode = 'BASE'
+            this._mainTokenType = 'BASE_ERC_20'
+            this._mainTokenBlockchain = 'Base'
+            this._mainChainId = 8453
+        } else if (settings.currencyCode === 'ARB' || (typeof settings.tokenBlockchain !== 'undefined' && settings.tokenBlockchain === 'ARB')) {
+
+            this._etherscanSuffix = ''
+            this._etherscanApiPath = `https://api.arbiscan.io/api?module=account&sort=desc&action=txlist&apikey=YourApiKeyToken`
+            this._etherscanApiPathInternal = `https://api.arbiscan.io/api?module=account&sort=desc&action=txlistinternal&apikey=YourApiKeyToken`
+            this._etherscanApiPathForFee = `https://api.arbiscan.io/api?module=proxy&action=eth_gasPrice&apikey=YourApiKeyToken`
+
+            this._trezorServer = false
+            this._trezorServerCode = false
+
+            this._mainCurrencyCode = 'ARB'
+            this._mainTokenType = 'ARB_ERC_20'
+            this._mainTokenBlockchain = 'Arbitrum One'
+            this._mainChainId = 42161
+        } else if (settings.currencyCode === 'AVAX' || (typeof settings.tokenBlockchain !== 'undefined' && settings.tokenBlockchain === 'AVAX')) {
+
+            this._etherscanSuffix = ''
+            this._etherscanApiPath = `https://api.snowtrace.io/api?module=account&sort=desc&action=txlist&apikey=YourApiKeyToken`
+            this._etherscanApiPathInternal = `https://api.snowtrace.io/api?module=account&sort=desc&action=txlistinternal&apikey=YourApiKeyToken`
+            this._etherscanApiPathForFee = `https://api.snowtrace.io/api?module=proxy&action=eth_gasPrice&apikey=YourApiKeyToken`
+
+            this._trezorServer = false
+            this._trezorServerCode = false
+
+            this._mainCurrencyCode = 'AVAX'
+            this._mainTokenType = 'AVAX_ERC_20'
+            this._mainTokenBlockchain = 'Avalanche C-Chain'
+            this._mainChainId = 43114
+        } else if (settings.currencyCode === 'LINEA' || (typeof settings.tokenBlockchain !== 'undefined' && settings.tokenBlockchain === 'LINEA')) {
+
+            this._etherscanSuffix = ''
+            this._etherscanApiPath = `https://api.lineascan.build/api?module=account&sort=desc&action=txlist&apikey=YourApiKeyToken`
+            this._etherscanApiPathInternal = `https://api.lineascan.build/api?module=account&sort=desc&action=txlistinternal&apikey=YourApiKeyToken`
+            this._etherscanApiPathForFee = `https://api.lineascan.build/api?module=proxy&action=eth_gasPrice&apikey=YourApiKeyToken`
+
+            this._trezorServer = false
+            this._trezorServerCode = false
+
+            this._mainCurrencyCode = 'LINEA'
+            this._mainTokenType = 'LINEA_ERC_20'
+            this._mainTokenBlockchain = 'Linea'
+            this._mainChainId = 59144
+        } else if (settings.currencyCode === 'SCROLL' || (typeof settings.tokenBlockchain !== 'undefined' && settings.tokenBlockchain === 'SCROLL')) {
+
+            this._etherscanSuffix = ''
+            this._etherscanApiPath = `https://api.scrollscan.com/api?module=account&sort=desc&action=txlist&apikey=YourApiKeyToken`
+            this._etherscanApiPathInternal = `https://api.scrollscan.com/api?module=account&sort=desc&action=txlistinternal&apikey=YourApiKeyToken`
+            this._etherscanApiPathForFee = `https://api.scrollscan.com/api?module=proxy&action=eth_gasPrice&apikey=YourApiKeyToken`
+
+            this._trezorServer = false
+            this._trezorServerCode = false
+
+            this._mainCurrencyCode = 'SCROLL'
+            this._mainTokenType = 'SCROLL_ERC_20'
+            this._mainTokenBlockchain = 'Scroll'
+            this._mainChainId = 534352
         } else if (settings.currencyCode === 'BTTC' || (typeof settings.tokenBlockchain !== 'undefined' && settings.tokenBlockchain === 'BTTC')) {
 
             this._etherscanSuffix = ''

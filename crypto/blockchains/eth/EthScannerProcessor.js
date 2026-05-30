@@ -24,6 +24,11 @@ const CACHE_GET_MAX_BLOCK = {
     OPTIMISM : { max_block_number: 0, confirmations: 0 },
     METIS : { max_block_number: 0, confirmations: 0 },
     VLX : { max_block_number: 0, confirmations: 0 },
+    BASE : { max_block_number: 0, confirmations: 0 },
+    ARB : { max_block_number: 0, confirmations: 0 },
+    AVAX : { max_block_number: 0, confirmations: 0 },
+    LINEA : { max_block_number: 0, confirmations: 0 },
+    SCROLL : { max_block_number: 0, confirmations: 0 },
 }
 const CACHE_BLOCK_NUMBER_TO_HASH = {
     ETH: {},
@@ -35,7 +40,12 @@ const CACHE_BLOCK_NUMBER_TO_HASH = {
     RSK : {},
     OPTIMISM : {},
     METIS : {},
-    VLX : {}
+    VLX : {},
+    BASE : {},
+    ARB : {},
+    AVAX : {},
+    LINEA : {},
+    SCROLL : {}
 }
 
 const CACHE_VALID_TIME = 30000 // 30 seconds
@@ -49,7 +59,12 @@ const CACHE = {
     RSK : {},
     OPTIMISM : {},
     METIS : {},
-    VLX : {}
+    VLX : {},
+    BASE : {},
+    ARB : {},
+    AVAX : {},
+    LINEA : {},
+    SCROLL : {}
 }
 
 export default class EthScannerProcessor extends EthBasic {
