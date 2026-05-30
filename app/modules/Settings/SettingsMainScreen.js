@@ -281,6 +281,17 @@ class SettingsMainScreen extends PureComponent {
 
                         <View style={styles.card}>
                             <ListItem
+                                title='Swap & Bridge'
+                                subtitle='Cross-chain swap via LiFi'
+                                iconType='swap'
+                                onPress={() => NavStore.goNext('SwapScreen')}
+                                rightContent='arrow'
+                                last
+                            />
+                        </View>
+
+                        <View style={styles.card}>
+                            <ListItem
                                 title={strings('settings.wallets.listTitle')}
                                 subtitle={strings('settings.wallets.listSubtitle', { number: walletsNumber })}
                                 iconType="wallet"

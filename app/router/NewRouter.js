@@ -35,6 +35,8 @@ import SendScreenWithoutAmount from '@app/modules/Send/SendScreenWithoutAmount'
 import SendAdvancedSettingsScreen from '@app/modules/Send/SendAdvancedSettings'
 import ReceiptScreen from '@app/modules/Send/ReceiptScreen'
 
+import SwapScreen from '@app/modules/Swap/SwapScreen'
+
 import AccountScreen from '@app/modules/Account/AccountScreen'
 import AccountSettingsScreen from '@app/modules/Account/AccountSettings/AccountSettingsScreen'
 import AccountSettingsPrivateScreen from '@app/modules/Account/AccountSettingsPrivate/AccountSettingsPrivateScreen'
@@ -124,6 +126,8 @@ const HomeStackScreen = () => {
                 <HomeStack.Screen name='SendScreenWithoutAmount' component={SendScreenWithoutAmount} />
                 <HomeStack.Screen name='SendAdvancedScreen' component={SendAdvancedSettingsScreen} />
                 <HomeStack.Screen name='ReceiptScreen' component={ReceiptScreen} />
+
+                <HomeStack.Screen name='SwapScreen' component={SwapScreen} />
                 <HomeStack.Screen name='AccountScreen' component={AccountScreen} />
                 <HomeStack.Screen name='AccountSettings' component={AccountSettingsScreen} />
                 <HomeStack.Screen name='AccountSettingsPrivate' component={AccountSettingsPrivateScreen} />

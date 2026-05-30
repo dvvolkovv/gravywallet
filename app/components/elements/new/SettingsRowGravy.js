@@ -10,6 +10,7 @@ import Switch from './Switch'
 import { palette, typography, spacing, radius } from '@app/theme/designSystem'
 
 const ICON_MAP = {
+    swap: 'swap-horizontal-bold',
     wallet: 'wallet-outline',
     walletConnect: 'link-variant',
     pinCode: 'lock-outline',
