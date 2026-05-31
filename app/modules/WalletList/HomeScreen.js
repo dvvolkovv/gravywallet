@@ -18,6 +18,7 @@ import { useScrollToTop } from '@react-navigation/native'
 import _isEqual from 'lodash/isEqual'
 
 import CryptoCurrency from './elements/CryptoCurrency'
+import CryptoCurrencyGrid from './elements/CryptoCurrencyGrid'
 import WalletInfo from './elements/WalletInfo'
 import Header from './elements/Header'
 import SortList from './elements/SortList'
@@ -300,7 +301,16 @@ class HomeScreen extends React.PureComponent {
                             :
                             <FlatList
                                 {...this.commonHeaderProps}
-                                data={this.state.data}
+                                data={[]}
+                                ListHeaderComponent={
+                                    <>
+                                        {this.commonHeaderProps.ListHeaderComponent}
+                                        <CryptoCurrencyGrid
+                                            data={this.state.data}
+                                            isBalanceVisible={this.state.isBalanceVisible}
+                                        />
+                                    </>
+                                }
                             />
                         }
                     </View>
