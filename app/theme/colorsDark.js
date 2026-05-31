@@ -3,7 +3,7 @@
  */
 export const colorsDark = {
     common: {
-        background: '#141414',
+        background: '#161616',
         text1: '#dadada',
         text2: '#999',
         text3: '#B8B8B8',
@@ -26,7 +26,7 @@ export const colorsDark = {
             }
         },
         checkbox: {
-            bgChecked: '#9E71E1',
+            bgChecked: '#304DB6',
             borderColorUnchecked: '#DADADA'
         },
         textInput: {
@@ -37,12 +37,12 @@ export const colorsDark = {
         radioButton: {
             text: '#DADADA',
             border: '#DADADA',
-            checked: '#9E71E1',
+            checked: '#304DB6',
             uncheckedBg: '#353535',
             arrow: '#DADADA'
         },
         switch: {
-            bgActive: '#9E71E1',
+            bgActive: '#304DB6',
             bgInactive: '#303030',
             circleBg: '#DADADA'
         },
@@ -66,7 +66,7 @@ export const colorsDark = {
     cashback: {
         qrCode: '#000',
         background: '#FFF',
-        token: '#9E71E1',
+        token: '#304DB6',
         detailsBg: '#252525',
         howItWorksBg: '#2E2E2E',
         chartBg: '#4A4A4A',
@@ -75,7 +75,7 @@ export const colorsDark = {
         progressBarBg: '#5C5C5C'
     },
     notifications: {
-        newNotiesIndicator: '#9E71E1'
+        newNotiesIndicator: '#304DB6'
     },
     initScreen: {
         appName: '#D94988',
@@ -97,10 +97,10 @@ export const colorsDark = {
         dateColorViolet: '#c4c4c4',
         backupBg: 'rgba(134, 77, 217, 0.25)',
         backupDescription: 'rgba(204, 180, 238, 0.75)',
-        listItemBorderGradient: ['#404040', '#9E71E1', '#404040']
+        listItemBorderGradient: ['#404040', '#304DB6', '#404040']
     },
     createWalletScreen: {
-        keyIcon: '#9E71E1',
+        keyIcon: '#304DB6',
         sliderBg: '#262626',
         sliderText: '#DADADA',
         showMnemonic: {
@@ -108,10 +108,10 @@ export const colorsDark = {
             wordShadow: '#000',
             wordIndexBg: '#353535',
             wordIndexText: '#B8B8B8',
-            showButtonText: '#9E71E1'
+            showButtonText: '#304DB6'
         },
         importWallet: {
-            error: '#9E71E1'
+            error: '#304DB6'
         },
         confirmMnemonic: {
             wordsContainerBg: '#252525',
@@ -123,9 +123,9 @@ export const colorsDark = {
         containerBGIcon: ['#5C5C5C', '#303030'],
         headBlockBackground: '#252525',
         trxButtonBorderColor: '#BBBBBB',
-        trxButtonBackgroundColor: '#141414',
+        trxButtonBackgroundColor: '#161616',
         showMoreColor: '#404040',
-        bottomGradient: ['#14141408', '#141414'],
+        bottomGradient: ['#16161608', '#161616'],
         balanceColor: '#404040',
         balanceNotEquivalent: '#999999',
         loaderColor: '#999',
@@ -155,7 +155,7 @@ export const colorsDark = {
     walletManagment: {
         walletItemBg: ['#252525', '#1E1E1E'],
         walletItemBgActive: ['#332743', '#332743'],
-        walletItemBorderColor: '#9E71E1',
+        walletItemBorderColor: '#304DB6',
         advanceWalletNameBg: '#252525'
     },
     fio: {
@@ -167,7 +167,7 @@ export const colorsDark = {
         bgTimerColor: '#2c2c2c'
     },
     modal: {
-        success: '#9E71E1',
+        success: '#304DB6',
         warning: '#D6956F',
         info: '#529CEC'
     },
@@ -195,7 +195,7 @@ export const colorsDark = {
         fileColor: '#C1B8CE'
     },
     stakingPercent: {
-        bg: '#9E71E126',
-        color: '#9E71E1'
+        bg: '#304DB626',
+        color: '#304DB6'
     }
 }

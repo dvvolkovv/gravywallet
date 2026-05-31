@@ -26,7 +26,7 @@ export const colorsLight = {
             }
         },
         checkbox: {
-            bgChecked: '#864DD9',
+            bgChecked: '#304DB6',
             borderColorUnchecked: '#999999'
         },
         textInput: {
@@ -37,12 +37,12 @@ export const colorsLight = {
         radioButton: {
             text: '#404040',
             border: '#999',
-            checked: '#864DD9',
+            checked: '#304DB6',
             uncheckedBg: '#DADADA',
             arrow: '#F7F7F7'
         },
         switch: {
-            bgActive: '#864DD9',
+            bgActive: '#304DB6',
             bgInactive: '#C4C4C4',
             circleBg: '#F7F7F7'
         },
@@ -66,7 +66,7 @@ export const colorsLight = {
     cashback: {
         qrCode: '#404040',
         background: '#F5F5F5',
-        token: '#864DD9',
+        token: '#304DB6',
         detailsBg: '#EBEBEB',
         howItWorksBg: '#F7F7F7',
         chartBg: '#EAEAEA',
@@ -75,7 +75,7 @@ export const colorsLight = {
         progressBarBg: '#B8B8B8'
     },
     notifications: {
-        newNotiesIndicator: '#864DD9'
+        newNotiesIndicator: '#304DB6'
     },
     initScreen: {
         appName: '#F24B93',
@@ -97,10 +97,10 @@ export const colorsLight = {
         dateColorViolet: '#c4c4c4',
         backupBg: '#ede4f9',
         backupDescription: '#aa82e4',
-        listItemBorderGradient: ['#fff', '#864DD9', '#fff']
+        listItemBorderGradient: ['#fff', '#304DB6', '#fff']
     },
     createWalletScreen: {
-        keyIcon: '#864DD9',
+        keyIcon: '#304DB6',
         sliderBg: '#262626',
         sliderText: '#DADADA',
         showMnemonic: {
@@ -108,10 +108,10 @@ export const colorsLight = {
             wordShadow: '#000',
             wordIndexBg: '#f7f7f7',
             wordIndexText: '#B8B8B8',
-            showButtonText: '#864DD9'
+            showButtonText: '#304DB6'
         },
         importWallet: {
-            error: '#864DD9'
+            error: '#304DB6'
         },
         confirmMnemonic: {
             wordsContainerBg: '#EBEBEB',
@@ -155,7 +155,7 @@ export const colorsLight = {
     walletManagment: {
         walletItemBg: ['#ffffff', '#f2f2f2'],
         walletItemBgActive: ['#F3F1F6', '#F3F1F6'],
-        walletItemBorderColor: '#864DD9',
+        walletItemBorderColor: '#304DB6',
         advanceWalletNameBg: '#EBEBEB'
     },
     fio: {
@@ -167,7 +167,7 @@ export const colorsLight = {
         bgTimerColor: '#ebebeb'
     },
     modal: {
-        success: '#864DD9',
+        success: '#304DB6',
         warning: '#F59E6C',
         info: '#2A7FDB'
     },
@@ -195,7 +195,7 @@ export const colorsLight = {
         fileColor: '#4E435F'
     },
     stakingPercent: {
-        bg: '#864DD926',
-        color: '#864DD9'
+        bg: '#304DB626',
+        color: '#304DB6'
     }
 }
